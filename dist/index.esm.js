@@ -1,23 +1,26 @@
-import styled from 'styled-componenets';
+import React$1 from 'react';
 
-function _taggedTemplateLiteral(strings, raw) {
-  if (!raw) {
-    raw = strings.slice(0);
-  }
+// import styled from "styled-componenets";
+// 	display: flex;
+//     borderBottom
+// `;
+// const StatuBar = styled.div`
+// 	display: flex;
+// `;
+// const ActionBar = styled.div`
+// 	display: flex;
+// `;
 
-  return Object.freeze(Object.defineProperties(strings, {
-    raw: {
-      value: Object.freeze(raw)
-    }
-  }));
-}
-
-var _templateObject, _templateObject2, _templateObject3;
-var Navbar = styled.nav(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n\tdisplay: flex;\n    borderBottom\n"])));
-var StatuBar = styled.div(_templateObject2 || (_templateObject2 = _taggedTemplateLiteral(["\n\tdisplay: flex;\n"])));
-styled.div(_templateObject3 || (_templateObject3 = _taggedTemplateLiteral(["\n\tdisplay: flex;\n"])));
 var index$1 = (function () {
-  return /*#__PURE__*/React.createElement(Navbar, null, /*#__PURE__*/React.createElement(StatuBar, null, "My Kindle"));
+  return (
+    /*#__PURE__*/
+    // <Navbar>
+    // 	<StatuBar>
+    //         My Kindle
+    //     </StatuBar>
+    // </Navbar>
+    React$1.createElement(React$1.Fragment, null, "ss")
+  );
 });
 
 var index = (function () {
