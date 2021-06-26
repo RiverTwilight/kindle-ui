@@ -1,0 +1,19 @@
+{
+  "name": "kindlye",
+  "version": "1.0.0",
+  "description": "🎞A kindle-styled React component library.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RiverTwilight/kindlye.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RiverTwilight/kindlye/issues"
+  },
+  "homepage": "https://github.com/RiverTwilight/kindlye#readme"
+}
