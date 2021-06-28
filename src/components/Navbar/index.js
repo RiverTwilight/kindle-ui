@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import React from "react";
-// import Airplane from "../../icons/airplane.svg"
+import Airplane from "../../icons/airplane.svg"
 
 const Navbar = styled.nav`
 	display: flex;

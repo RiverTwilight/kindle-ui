@@ -23,7 +23,6 @@ function _taggedTemplateLiteral(strings, raw) {
 }
 
 var _templateObject, _templateObject2, _templateObject3, _templateObject4;
-
 var Navbar = styled__default['default'].nav(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n\tdisplay: flex;\n\tflex-direction: column;\n\tborder-bottom: 1px solid #000;\n"])));
 var StatuBar = styled__default['default'].div(_templateObject2 || (_templateObject2 = _taggedTemplateLiteral(["\n\tdisplay: flex;\n\tborder-bottom: 1px solid #000;\n\tpadding: 3px 18px;\n\theight: 19px;\n"])));
 var ActionBar = styled__default['default'].div(_templateObject3 || (_templateObject3 = _taggedTemplateLiteral(["\n\tdisplay: flex;\n\theight: 50px;\n"])));
@@ -38,5 +37,11 @@ var index = (function () {
   return /*#__PURE__*/React.createElement("p", null, "asdf");
 });
 
+Object.defineProperty(exports, 'React', {
+  enumerable: true,
+  get: function () {
+    return React__default['default'];
+  }
+});
 exports.List = index;
 exports.Navbar = index$1;

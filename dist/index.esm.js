@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import React$1 from 'react';
+export { default as React } from 'react';
 
 function _taggedTemplateLiteral(strings, raw) {
   if (!raw) {
@@ -14,7 +15,6 @@ function _taggedTemplateLiteral(strings, raw) {
 }
 
 var _templateObject, _templateObject2, _templateObject3, _templateObject4;
-
 var Navbar = styled.nav(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n\tdisplay: flex;\n\tflex-direction: column;\n\tborder-bottom: 1px solid #000;\n"])));
 var StatuBar = styled.div(_templateObject2 || (_templateObject2 = _taggedTemplateLiteral(["\n\tdisplay: flex;\n\tborder-bottom: 1px solid #000;\n\tpadding: 3px 18px;\n\theight: 19px;\n"])));
 var ActionBar = styled.div(_templateObject3 || (_templateObject3 = _taggedTemplateLiteral(["\n\tdisplay: flex;\n\theight: 50px;\n"])));
