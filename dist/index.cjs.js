@@ -37,11 +37,5 @@ var index = (function () {
   return /*#__PURE__*/React.createElement("p", null, "asdf");
 });
 
-Object.defineProperty(exports, 'React', {
-  enumerable: true,
-  get: function () {
-    return React__default['default'];
-  }
-});
 exports.List = index;
 exports.Navbar = index$1;

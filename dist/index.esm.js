@@ -1,6 +1,5 @@
 import styled from 'styled-components';
 import React$1 from 'react';
-export { default as React } from 'react';
 
 function _taggedTemplateLiteral(strings, raw) {
   if (!raw) {
