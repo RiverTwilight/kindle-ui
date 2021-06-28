@@ -51,6 +51,7 @@
 		"rollup": "^2.52.3",
 		"rollup-plugin-delete": "^2.0.0",
 		"rollup-plugin-peer-deps-external": "^2.2.4",
+		"rollup-plugin-react-svg": "^3.0.3",
 		"rollup-plugin-svg": "^2.0.0"
 	}
 }
