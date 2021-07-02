@@ -1,14 +1,24 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import React from "react";
 import Airplane from "../../icons/airplane.svg";
 import BatteryFull from "../../icons/battery-full.svg";
 
-const BORDER_COLOR = "#282424"
+const BORDER_COLOR = "#282424";
+
+const fixedStyle = css`
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 50
+`;
 
 const Navbar = styled.nav`
     display: flex;
     flex-direction: column;
     border-bottom: 1px solid ${BORDER_COLOR};
+    background: #fff;
+    ${(props) => (props.fixed ? fixedStyle : "")}
 `;
 
 const Action = styled.button`
@@ -16,8 +26,8 @@ const Action = styled.button`
     background-color: #fff;
     width: 50px;
     transition: background-color 0.5s;
-    svg{
-        width: 23px
+    svg {
+        width: 23px;
     }
     &:hover {
         background-color: #000;
@@ -47,9 +57,9 @@ const StyledStatuBar = styled(StatuBar)`
     height: 19px;
     .statu-item {
         margin-left: 10px;
-    };
+    }
     .time {
-        transform: scaleY(-50%)
+        transform: scaleY(-50%);
     }
 `;
 
@@ -63,9 +73,9 @@ const StyledActionBar = styled(ActionBar)`
  * @author rivertwilight
  * @param {string} deviceName 设备名称
  */
-export default ({ deviceName = "My Kindle" }) => {
+export default ({ deviceName = "My Kindle", autoClose = true }) => {
     return (
-        <Navbar>
+        <Navbar fixed={autoClose}>
             <StyledStatuBar>
                 <div className="statu-item">{deviceName}</div>
                 <div className="statu-item">
@@ -75,13 +85,16 @@ export default ({ deviceName = "My Kindle" }) => {
             </StyledStatuBar>
             <StyledActionBar>
                 <Action>
-                    <Airplane />Home
+                    <Airplane />
+                    Home
                 </Action>
                 <Action>
-                    <Airplane />Home
+                    <Airplane />
+                    Home
                 </Action>
                 <Action>
-                    <Airplane />Home
+                    <Airplane />
+                    Home
                 </Action>
             </StyledActionBar>
         </Navbar>
