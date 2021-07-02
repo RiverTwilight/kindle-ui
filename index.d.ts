@@ -1,0 +1,1 @@
+export declare function Navbar(props:{t: number}): void;

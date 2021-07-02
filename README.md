@@ -2,7 +2,10 @@
 
 🎞A kindle-styled React component library.
 
-https://hinammehra.medium.com/build-a-private-react-component-library-cra-rollup-material-ui-github-package-registry-1e14da93e790
+## Features
+
+- [ ] 1 native Kindle componenets
+- [ ] Light / Dark theme
 
 ## Contribution
 
@@ -15,3 +18,11 @@ npm run dev
 ## Usage
 
 ### Navbar
+
+## License
+
+inspired by 
+[https://hinammehra.medium.com/build-a-private-react-component-library-cra-rollup-material-ui-github-package-registry-1e14da93e790](
+https://hinammehra.medium.com/build-a-private-react-component-library-cra-rollup-material-ui-github-package-registry-1e14da93e790
+)
+

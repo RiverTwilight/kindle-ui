@@ -3,6 +3,7 @@ import external from "rollup-plugin-peer-deps-external";
 import del from "rollup-plugin-delete";
 import reactSvg from "rollup-plugin-react-svg";
 import pkg from "./package.json";
+import typescript from 'rollup-plugin-typescript2';
 
 export default {
     input: pkg.source,
@@ -15,6 +16,7 @@ export default {
         babel({
             exclude: "node_modules/**",
         }),
+        typescript(),
         reactSvg({
             // svgo options
             svgo: {
@@ -23,7 +25,7 @@ export default {
             },
 
             // whether to output jsx
-            jsx: false,
+            jsx: true,
 
             // include: string
             include: null,
