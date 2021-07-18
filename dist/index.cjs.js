@@ -67,7 +67,7 @@ function SvgAirplane(props) {
 
 // @ts-nocheck
 var BORDER_COLOR = "#282424";
-var fixedStyle = styled.css(templateObject_1 || (templateObject_1 = __makeTemplateObject(["\n    position: fixed;\n    top: 0;\n    right: 0;\n    left: 0;\n    z-index: 50\n"], ["\n    position: fixed;\n    top: 0;\n    right: 0;\n    left: 0;\n    z-index: 50\n"])));
+var fixedStyle = styled.css(templateObject_1$1 || (templateObject_1$1 = __makeTemplateObject(["\n    position: fixed;\n    top: 0;\n    right: 0;\n    left: 0;\n    z-index: 50\n"], ["\n    position: fixed;\n    top: 0;\n    right: 0;\n    left: 0;\n    z-index: 50\n"])));
 var Navbar = styled__default['default'].nav(templateObject_2 || (templateObject_2 = __makeTemplateObject(["\n    display: flex;\n    flex-direction: column;\n    border-bottom: 1px solid ", ";\n    background: #fff;\n    ", "\n"], ["\n    display: flex;\n    flex-direction: column;\n    border-bottom: 1px solid ", ";\n    background: #fff;\n    ", "\n"])), BORDER_COLOR, function (props) { return (props.fixed ? fixedStyle : ""); });
 var Action = styled__default['default'].button(templateObject_3 || (templateObject_3 = __makeTemplateObject(["\n    border: none;\n    background-color: #fff;\n    width: 50px;\n    transition: background-color 0.5s;\n    svg {\n        width: 23px;\n    }\n    &:hover {\n        background-color: #000;\n        svg {\n            stroke: #fff;\n        }\n    }\n"], ["\n    border: none;\n    background-color: #fff;\n    width: 50px;\n    transition: background-color 0.5s;\n    svg {\n        width: 23px;\n    }\n    &:hover {\n        background-color: #000;\n        svg {\n            stroke: #fff;\n        }\n    }\n"])));
 var StatuBar = function (_a) {
@@ -85,7 +85,7 @@ var StyledActionBar = styled__default['default'](ActionBar)(templateObject_5 || 
  * @author rivertwilight
  * @param {string} deviceName 设备名称
  */
-var index = (function (_a) {
+var index$1 = (function (_a) {
     var _b = _a.deviceName, deviceName = _b === void 0 ? "My Kindle" : _b, _c = _a.autoClose, autoClose = _c === void 0 ? true : _c;
     return (React__default['default'].createElement(Navbar, { fixed: autoClose },
         React__default['default'].createElement(StyledStatuBar, null,
@@ -104,6 +104,14 @@ var index = (function (_a) {
                 React__default['default'].createElement(SvgAirplane, null),
                 "Home"))));
 });
-var templateObject_1, templateObject_2, templateObject_3, templateObject_4, templateObject_5;
+var templateObject_1$1, templateObject_2, templateObject_3, templateObject_4, templateObject_5;
 
-exports.Navbar = index;
+var Typography = styled__default['default'].article(templateObject_1 || (templateObject_1 = __makeTemplateObject(["\n    padding: 15px;\n"], ["\n    padding: 15px;\n"])));
+var index = (function (_a) {
+    var children = _a.children;
+    return React__default['default'].createElement(Typography, null, children);
+});
+var templateObject_1;
+
+exports.Navbar = index$1;
+exports.Typography = index;

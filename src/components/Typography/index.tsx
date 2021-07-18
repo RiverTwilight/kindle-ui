@@ -5,6 +5,6 @@ const Typography = styled.article`
     padding: 15px;
 `;
 
-export default ({ children }) => {
+export default ({ children }: any) => {
     return <Typography>{children}</Typography>;
 };
