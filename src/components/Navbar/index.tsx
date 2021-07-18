@@ -3,6 +3,8 @@ import React from "react";
 import Airplane from "../../icons/airplane.svg";
 import BatteryFull from "../../icons/battery-full.svg";
 
+// @ts-nocheck
+
 const BORDER_COLOR = "#282424";
 
 const fixedStyle = css`
@@ -18,7 +20,9 @@ const Navbar = styled.nav`
     flex-direction: column;
     border-bottom: 1px solid ${BORDER_COLOR};
     background: #fff;
-    ${(props) => (props.fixed ? fixedStyle : "")}
+    ${(props:{
+        fixed: boolean,
+    }) => (props.fixed ? fixedStyle : "")}
 `;
 
 const Action = styled.button`
@@ -37,15 +41,11 @@ const Action = styled.button`
     }
 `;
 
-const StyledAirplane = styled(Airplane)`
-    width: 18px;
-`;
-
-const StatuBar = ({ className, children }) => (
+const StatuBar = ({ className, children }:any) => (
     <div className={className}>{children}</div>
 );
 
-const ActionBar = ({ className, children }) => (
+const ActionBar = ({ className, children }: any) => (
     <div className={className}>{children}</div>
 );
 
@@ -57,6 +57,10 @@ const StyledStatuBar = styled(StatuBar)`
     height: 19px;
     .statu-item {
         margin-left: 10px;
+        & svg{
+    width: 18px;
+
+        }
     }
     .time {
         transform: scaleY(-50%);
@@ -79,7 +83,7 @@ export default ({ deviceName = "My Kindle", autoClose = true }) => {
             <StyledStatuBar>
                 <div className="statu-item">{deviceName}</div>
                 <div className="statu-item">
-                    <StyledAirplane />
+                    <Airplane />
                     <span className="time">15:00 AM</span>
                 </div>
             </StyledStatuBar>
