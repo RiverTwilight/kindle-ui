@@ -18,8 +18,9 @@
 		"react-dom": "^17.0.2"
 	},
 	"files":[
-		"index.s.ts",
-		"dist"
+		"index.d.ts",
+		"dist",
+		"custom.d.ts"
 	],
 	"scripts": {
 		"build": "rollup -c",
