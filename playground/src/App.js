@@ -4,7 +4,7 @@ import { Navbar, Typography } from "kindlye";
 function App() {
     return (
         <>
-            <Navbar t={2} />
+            <Navbar t={"df"} />
             <Typography>
                 (CNN)The last US troops have left Bagram Air Base, according to
                 a US defense official, marking the end of the American presence

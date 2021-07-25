@@ -77,14 +77,16 @@ const StyledActionBar = styled(ActionBar)`
  * @author rivertwilight
  * @param {string} deviceName 设备名称
  */
-export default ({ deviceName = "My Kindle", autoClose = true }) => {
+export default ({ deviceName = "My Kindle", autoClose = true }:{
+    autoClose: boolean,
+}) => {
     return (
         <Navbar fixed={autoClose}>
             <StyledStatuBar>
                 <div className="statu-item">{deviceName}</div>
                 <div className="statu-item">
                     <Airplane />
-                    <span className="time">15:00 AM</span>
+                    <span className="time">15:0 AM</span>
                 </div>
             </StyledStatuBar>
             <StyledActionBar>
