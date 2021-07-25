@@ -77,7 +77,7 @@ var index$1 = (function (_a) {
 });
 var templateObject_1$1, templateObject_2, templateObject_3, templateObject_4, templateObject_5;
 
-var Typography = styled.article(templateObject_1 || (templateObject_1 = __makeTemplateObject(["\n    padding: 15px;\n"], ["\n    padding: 15px;\n"])));
+var Typography = styled.article(templateObject_1 || (templateObject_1 = __makeTemplateObject(["\n    padding: 15px;\n    max-width: 1000px;\n"], ["\n    padding: 15px;\n    max-width: 1000px;\n"])));
 var index = (function (_a) {
     var children = _a.children;
     return React__default.createElement(Typography, null, children);
