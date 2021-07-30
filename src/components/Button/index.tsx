@@ -2,8 +2,11 @@ import React from "react";
 import styled from "styled-components";
 
 const Button = styled.button`
-	border: 2px solid #000;
-    width: 
+	border: 3px solid #000;
+	min-width: 70px;
+	height: 50px;
+	background: #fff;
+    font-weight: 600
 `;
 
 export interface IButton {

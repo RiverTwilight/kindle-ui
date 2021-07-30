@@ -195,7 +195,7 @@ var index$2 = (function (_a) {
 });
 var templateObject_1$2, templateObject_2;
 
-var Button = styled__default['default'].button(templateObject_1$1 || (templateObject_1$1 = __makeTemplateObject(["\n\tborder: 2px solid #000;\n    width: \n"], ["\n\tborder: 2px solid #000;\n    width: \n"])));
+var Button = styled__default['default'].button(templateObject_1$1 || (templateObject_1$1 = __makeTemplateObject(["\n\tborder: 3px solid #000;\n\tmin-width: 70px;\n\theight: 50px;\n\tbackground: #fff;\n    font-weight: 600\n"], ["\n\tborder: 3px solid #000;\n\tmin-width: 70px;\n\theight: 50px;\n\tbackground: #fff;\n    font-weight: 600\n"])));
 var index$1 = (function (_a) {
     var children = _a.children;
     return React__default['default'].createElement(Button, null, children);

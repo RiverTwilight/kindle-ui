@@ -8,11 +8,11 @@ function App() {
 			<br />
 			<br />
 			<br />
-			<Typography greyImage>
+			<Typography greyImage={false}>
 				<h1>Hi, kindyle!</h1>
 				<p>
-					(CNN)The last US troops have left Bagram Air Base, according
-					to a US defense official, marking the end of the American
+					(CNN)The last US troops have left <hightlight>Bagram</hightlight> Air Base, according
+					to a US defense <u>official</u>, marking the end of the American
 					presence at the sprawling compound that became the center of
 					military power in Afghanistan.
 				</p>

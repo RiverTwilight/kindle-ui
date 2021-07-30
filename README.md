@@ -6,7 +6,7 @@
 
 ## Features
 
--   [ ] 1 native Kindle componenets
+-   [x] 4 native Kindle componenets
 -   [ ] Light / Dark theme
 
 ## Contribution
@@ -22,6 +22,32 @@ if it throws an error like `Can't resolve 'kindle'...`, you may need to run `npm
 ## Usage
 
 ### Navbar
+
+### Container
+
+If you want to use AmazonEmber font(around 106kb) to get a more kindle-ish ui, you can wrap your app with `Container` componenet, which add a global font-family.
+
+```JSX
+import { Container } from "kindlye";
+
+function App() {
+	return (
+		<Container>
+            {/* ... */}
+		</Container>
+	);
+}
+
+export default App;
+```
+
+### Typography
+
+Use `Typography` to present an article or other rich-text content.
+
+| name      | optional | default | description     |
+| :-------- | :------: | :-----: | --------------- |
+| greyImage |  false   |  true   | make image grey |
 
 ## License
 
