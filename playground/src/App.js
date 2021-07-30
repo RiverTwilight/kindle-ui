@@ -1,9 +1,9 @@
 import "./App.css";
-import { Navbar, Typography } from "kindlye";
+import { Navbar, Typography, Button, Container } from "kindlye";
 
 function App() {
 	return (
-		<>
+		<Container>
 			<Navbar battery={59} />
 			<br />
 			<br />
@@ -16,6 +16,7 @@ function App() {
 					presence at the sprawling compound that became the center of
 					military power in Afghanistan.
 				</p>
+				<Button>Button</Button>
 				<h2>Introduction</h2>
 				<p>
 					习近平总书记“七一”重要讲话是一篇光辉的马克思主义纲领性文献，
@@ -25,7 +26,7 @@ function App() {
 				</p>
 				<img src="https://www.chinanews.com/part/home2013/451/U855P4T451D4F17247DT20210701234543.jpg"></img>
 			</Typography>
-		</>
+		</Container>
 	);
 }
 

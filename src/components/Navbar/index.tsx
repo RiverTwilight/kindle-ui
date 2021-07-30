@@ -5,8 +5,6 @@ import Settings from "../../icons/settings-sharp.svg";
 import ArrowBack from "../../icons/arrow-back-sharp.svg";
 import Home from "../../icons/home-outline.svg";
 import BatteryFull from "../../icons/battery-full-sharp.svg";
-// @ts-expect-error
-import AmazonEmber from "../../fonts/AmazonEmber/AmazonEmber_Rg.ttf";
 
 // @ts-nocheck
 
@@ -21,11 +19,6 @@ const fixedStyle = css`
 `;
 
 const Navbar = styled.nav`
-	font-family: "AmazonEmber-Rg", Trebuchet MS;
-	@font-face {
-		font-family: AmazonEmber-Rg;
-		src: url(${AmazonEmber});
-	}
 	display: flex;
 	flex-direction: column;
 	border-bottom: 1px solid ${BORDER_COLOR};
@@ -45,7 +38,8 @@ const Action = styled.button`
 	&:hover {
 		background-color: #000;
 		svg {
-			stroke: #fff;
+			fill: #fff;
+            stroke: #fff
 		}
 	}
 `;
@@ -73,9 +67,15 @@ const StyledStatuBar = styled(StatuBar)`
 	.battery {
 		display: flex;
 		& svg {
-            transform: translate(1px,-4px);
-            width: 25px;
-            height: 30px;
+			transform: translate(1px, -4px);
+			width: 25px;
+			height: 30px;
+		}
+	}
+	.airplane {
+		& svg {
+			transform: rotate(-90deg);
+			height: 20px;
 		}
 	}
 `;
@@ -105,6 +105,9 @@ export default ({
 			<StyledStatuBar>
 				<div className="">{deviceName}</div>
 				<div className="statu-group">
+					<div className="statu-item airplane">
+						<Airplane />
+					</div>
 					<div className="statu-item battery">
 						{battery}% <BatteryFull />
 					</div>
