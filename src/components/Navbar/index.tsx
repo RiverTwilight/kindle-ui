@@ -1,10 +1,12 @@
 import styled, { css } from "styled-components";
 import React from "react";
 import Airplane from "../../icons/airplane.svg";
-import Settings from "../../icons/settings-sharp.svg"
-import ArrowBack from "../../icons/arrow-back-sharp.svg"
-import Home from "../../icons/home-outline.svg"
+import Settings from "../../icons/settings-sharp.svg";
+import ArrowBack from "../../icons/arrow-back-sharp.svg";
+import Home from "../../icons/home-outline.svg";
 import BatteryFull from "../../icons/battery-full-sharp.svg";
+// @ts-expect-error
+import AmazonEmber from "../../fonts/AmazonEmber/AmazonEmber_Rg.ttf";
 
 // @ts-nocheck
 
@@ -19,6 +21,11 @@ const fixedStyle = css`
 `;
 
 const Navbar = styled.nav`
+	font-family: "AmazonEmber-Rg", Trebuchet MS;
+	@font-face {
+		font-family: AmazonEmber-Rg;
+		src: url(${AmazonEmber});
+	}
 	display: flex;
 	flex-direction: column;
 	border-bottom: 1px solid ${BORDER_COLOR};
@@ -66,8 +73,9 @@ const StyledStatuBar = styled(StatuBar)`
 	.battery {
 		display: flex;
 		& svg {
-			transform: translate(0px, 2px);
-			width: 27px;
+            transform: translate(1px,-4px);
+            width: 25px;
+            height: 30px;
 		}
 	}
 `;
