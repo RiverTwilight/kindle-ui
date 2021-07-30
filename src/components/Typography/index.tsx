@@ -24,7 +24,6 @@ const Typography = styled.article`
 		color: #fff;
 	}
 	p {
-        s
 		font-family: Bookerly;
 		line-height: ${(props: typoStyle) => props.lineHeight}px;
         letter-spacing: .051rem;
