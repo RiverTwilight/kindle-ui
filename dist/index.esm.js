@@ -22,44 +22,44 @@ function __makeTemplateObject(cooked, raw) {
     return cooked;
 }
 
-var _path$4;
+var _path$5;
 
-function _extends$4() { _extends$4 = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends$4.apply(this, arguments); }
+function _extends$6() { _extends$6 = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends$6.apply(this, arguments); }
 
 function SvgAirplane(props) {
-  return /*#__PURE__*/React.createElement("svg", _extends$4({
+  return /*#__PURE__*/React.createElement("svg", _extends$6({
     xmlns: "http://www.w3.org/2000/svg",
     className: "airplane_svg__ionicon",
     viewBox: "0 0 512 512"
-  }, props), _path$4 || (_path$4 = /*#__PURE__*/React.createElement("path", {
+  }, props), _path$5 || (_path$5 = /*#__PURE__*/React.createElement("path", {
     d: "M186.62 464H160a16 16 0 01-14.57-22.6l64.46-142.25L113.1 297l-35.3 42.77C71.07 348.23 65.7 352 52 352H34.08a17.66 17.66 0 01-14.7-7.06c-2.38-3.21-4.72-8.65-2.44-16.41l19.82-71c.15-.53.33-1.06.53-1.58a.38.38 0 000-.15 14.82 14.82 0 01-.53-1.59l-19.84-71.45c-2.15-7.61.2-12.93 2.56-16.06a16.83 16.83 0 0113.6-6.7H52c10.23 0 20.16 4.59 26 12l34.57 42.05 97.32-1.44-64.44-142A16 16 0 01160 48h26.91a25 25 0 0119.35 9.8l125.05 152 57.77-1.52c4.23-.23 15.95-.31 18.66-.31C463 208 496 225.94 496 256c0 9.46-3.78 27-29.07 38.16-14.93 6.6-34.85 9.94-59.21 9.94-2.68 0-14.37-.08-18.66-.31l-57.76-1.54-125.36 152a25 25 0 01-19.32 9.75z"
+  })));
+}
+
+var _path$4;
+
+function _extends$5() { _extends$5 = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends$5.apply(this, arguments); }
+
+function SvgSettingsSharp(props) {
+  return /*#__PURE__*/React.createElement("svg", _extends$5({
+    xmlns: "http://www.w3.org/2000/svg",
+    className: "settings-sharp_svg__ionicon",
+    viewBox: "0 0 512 512"
+  }, props), _path$4 || (_path$4 = /*#__PURE__*/React.createElement("path", {
+    d: "M256 176a80 80 0 1080 80 80.24 80.24 0 00-80-80zm172.72 80a165.53 165.53 0 01-1.64 22.34l48.69 38.12a11.59 11.59 0 012.63 14.78l-46.06 79.52a11.64 11.64 0 01-14.14 4.93l-57.25-23a176.56 176.56 0 01-38.82 22.67l-8.56 60.78a11.93 11.93 0 01-11.51 9.86h-92.12a12 12 0 01-11.51-9.53l-8.56-60.78A169.3 169.3 0 01151.05 393L93.8 416a11.64 11.64 0 01-14.14-4.92L33.6 331.57a11.59 11.59 0 012.63-14.78l48.69-38.12A174.58 174.58 0 0183.28 256a165.53 165.53 0 011.64-22.34l-48.69-38.12a11.59 11.59 0 01-2.63-14.78l46.06-79.52a11.64 11.64 0 0114.14-4.93l57.25 23a176.56 176.56 0 0138.82-22.67l8.56-60.78A11.93 11.93 0 01209.94 26h92.12a12 12 0 0111.51 9.53l8.56 60.78A169.3 169.3 0 01361 119l57.2-23a11.64 11.64 0 0114.14 4.92l46.06 79.52a11.59 11.59 0 01-2.63 14.78l-48.69 38.12a174.58 174.58 0 011.64 22.66z"
   })));
 }
 
 var _path$3;
 
-function _extends$3() { _extends$3 = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends$3.apply(this, arguments); }
-
-function SvgSettingsSharp(props) {
-  return /*#__PURE__*/React.createElement("svg", _extends$3({
-    xmlns: "http://www.w3.org/2000/svg",
-    className: "settings-sharp_svg__ionicon",
-    viewBox: "0 0 512 512"
-  }, props), _path$3 || (_path$3 = /*#__PURE__*/React.createElement("path", {
-    d: "M256 176a80 80 0 1080 80 80.24 80.24 0 00-80-80zm172.72 80a165.53 165.53 0 01-1.64 22.34l48.69 38.12a11.59 11.59 0 012.63 14.78l-46.06 79.52a11.64 11.64 0 01-14.14 4.93l-57.25-23a176.56 176.56 0 01-38.82 22.67l-8.56 60.78a11.93 11.93 0 01-11.51 9.86h-92.12a12 12 0 01-11.51-9.53l-8.56-60.78A169.3 169.3 0 01151.05 393L93.8 416a11.64 11.64 0 01-14.14-4.92L33.6 331.57a11.59 11.59 0 012.63-14.78l48.69-38.12A174.58 174.58 0 0183.28 256a165.53 165.53 0 011.64-22.34l-48.69-38.12a11.59 11.59 0 01-2.63-14.78l46.06-79.52a11.64 11.64 0 0114.14-4.93l57.25 23a176.56 176.56 0 0138.82-22.67l8.56-60.78A11.93 11.93 0 01209.94 26h92.12a12 12 0 0111.51 9.53l8.56 60.78A169.3 169.3 0 01361 119l57.2-23a11.64 11.64 0 0114.14 4.92l46.06 79.52a11.59 11.59 0 01-2.63 14.78l-48.69 38.12a174.58 174.58 0 011.64 22.66z"
-  })));
-}
-
-var _path$2;
-
-function _extends$2() { _extends$2 = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends$2.apply(this, arguments); }
+function _extends$4() { _extends$4 = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends$4.apply(this, arguments); }
 
 function SvgArrowBackSharp(props) {
-  return /*#__PURE__*/React.createElement("svg", _extends$2({
+  return /*#__PURE__*/React.createElement("svg", _extends$4({
     xmlns: "http://www.w3.org/2000/svg",
     className: "arrow-back-sharp_svg__ionicon",
     viewBox: "0 0 512 512"
-  }, props), _path$2 || (_path$2 = /*#__PURE__*/React.createElement("path", {
+  }, props), _path$3 || (_path$3 = /*#__PURE__*/React.createElement("path", {
     fill: "none",
     stroke: "currentColor",
     strokeLinecap: "square",
@@ -69,23 +69,23 @@ function SvgArrowBackSharp(props) {
   })));
 }
 
-var _path$1, _path2$1;
+var _path$2, _path2$2;
 
-function _extends$1() { _extends$1 = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends$1.apply(this, arguments); }
+function _extends$3() { _extends$3 = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends$3.apply(this, arguments); }
 
 function SvgHomeOutline(props) {
-  return /*#__PURE__*/React.createElement("svg", _extends$1({
+  return /*#__PURE__*/React.createElement("svg", _extends$3({
     xmlns: "http://www.w3.org/2000/svg",
     className: "home-outline_svg__ionicon",
     viewBox: "0 0 512 512"
-  }, props), _path$1 || (_path$1 = /*#__PURE__*/React.createElement("path", {
+  }, props), _path$2 || (_path$2 = /*#__PURE__*/React.createElement("path", {
     d: "M80 212v236a16 16 0 0016 16h96V328a24 24 0 0124-24h80a24 24 0 0124 24v136h96a16 16 0 0016-16V212",
     fill: "none",
     stroke: "currentColor",
     strokeLinecap: "round",
     strokeLinejoin: "round",
     strokeWidth: 32
-  })), _path2$1 || (_path2$1 = /*#__PURE__*/React.createElement("path", {
+  })), _path2$2 || (_path2$2 = /*#__PURE__*/React.createElement("path", {
     d: "M480 256L266.89 52c-5-5.28-16.69-5.34-21.78 0L32 256m368-77V64h-48v69",
     fill: "none",
     stroke: "currentColor",
@@ -95,19 +95,68 @@ function SvgHomeOutline(props) {
   })));
 }
 
-var _path, _path2;
+var _path$1, _path2$1;
 
-function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+function _extends$2() { _extends$2 = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends$2.apply(this, arguments); }
 
 function SvgBatteryFullSharp(props) {
-  return /*#__PURE__*/React.createElement("svg", _extends({
+  return /*#__PURE__*/React.createElement("svg", _extends$2({
     xmlns: "http://www.w3.org/2000/svg",
     className: "battery-full-sharp_svg__ionicon",
     viewBox: "0 0 512 512"
-  }, props), _path || (_path = /*#__PURE__*/React.createElement("path", {
+  }, props), _path$1 || (_path$1 = /*#__PURE__*/React.createElement("path", {
     d: "M17 384h432V128H17zm32-224h368v192H49z"
-  })), _path2 || (_path2 = /*#__PURE__*/React.createElement("path", {
+  })), _path2$1 || (_path2$1 = /*#__PURE__*/React.createElement("path", {
     d: "M70.69 182.94h324.63v146.13H70.69zM465 202.67h32v106.67h-32z"
+  })));
+}
+
+var _path, _path2;
+
+function _extends$1() { _extends$1 = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends$1.apply(this, arguments); }
+
+function SvgSearchOutline(props) {
+  return /*#__PURE__*/React.createElement("svg", _extends$1({
+    xmlns: "http://www.w3.org/2000/svg",
+    className: "search-outline_svg__ionicon",
+    viewBox: "0 0 512 512"
+  }, props), _path || (_path = /*#__PURE__*/React.createElement("path", {
+    d: "M221.09 64a157.09 157.09 0 10157.09 157.09A157.1 157.1 0 00221.09 64z",
+    fill: "none",
+    stroke: "currentColor",
+    strokeMiterlimit: 10,
+    strokeWidth: 32
+  })), _path2 || (_path2 = /*#__PURE__*/React.createElement("path", {
+    fill: "none",
+    stroke: "currentColor",
+    strokeLinecap: "round",
+    strokeMiterlimit: 10,
+    strokeWidth: 32,
+    d: "M338.29 338.29L448 448"
+  })));
+}
+
+var _circle, _circle2, _circle3;
+
+function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+
+function SvgEllipsisVertical(props) {
+  return /*#__PURE__*/React.createElement("svg", _extends({
+    xmlns: "http://www.w3.org/2000/svg",
+    className: "ellipsis-vertical_svg__ionicon",
+    viewBox: "0 0 512 512"
+  }, props), _circle || (_circle = /*#__PURE__*/React.createElement("circle", {
+    cx: 256,
+    cy: 256,
+    r: 48
+  })), _circle2 || (_circle2 = /*#__PURE__*/React.createElement("circle", {
+    cx: 256,
+    cy: 416,
+    r: 48
+  })), _circle3 || (_circle3 = /*#__PURE__*/React.createElement("circle", {
+    cx: 256,
+    cy: 96,
+    r: 48
   })));
 }
 
@@ -115,7 +164,6 @@ function SvgBatteryFullSharp(props) {
 var BORDER_COLOR = "#c1b2b2";
 var fixedStyle = css(templateObject_1$3 || (templateObject_1$3 = __makeTemplateObject(["\n\tposition: fixed;\n\ttop: 0;\n\tright: 0;\n\tleft: 0;\n\tz-index: 50;\n"], ["\n\tposition: fixed;\n\ttop: 0;\n\tright: 0;\n\tleft: 0;\n\tz-index: 50;\n"])));
 var Navbar = styled.nav(templateObject_2$1 || (templateObject_2$1 = __makeTemplateObject(["\n\tdisplay: flex;\n\tflex-direction: column;\n\tborder-bottom: 1px solid ", ";\n\tbackground: #fff;\n\t", "\n"], ["\n\tdisplay: flex;\n\tflex-direction: column;\n\tborder-bottom: 1px solid ", ";\n\tbackground: #fff;\n\t", "\n"])), BORDER_COLOR, function (props) { return (props.fixed ? fixedStyle : ""); });
-var Action = styled.button(templateObject_3 || (templateObject_3 = __makeTemplateObject(["\n\tborder: none;\n\tbackground-color: #fff;\n\twidth: 50px;\n\ttransition: background-color 0.5s;\n\tmargin-left: 10px;\n\tsvg {\n\t\twidth: 23px;\n\t}\n\t&:hover {\n\t\tbackground-color: #000;\n\t\tsvg {\n\t\t\tfill: #fff;\n            stroke: #fff\n\t\t}\n\t}\n"], ["\n\tborder: none;\n\tbackground-color: #fff;\n\twidth: 50px;\n\ttransition: background-color 0.5s;\n\tmargin-left: 10px;\n\tsvg {\n\t\twidth: 23px;\n\t}\n\t&:hover {\n\t\tbackground-color: #000;\n\t\tsvg {\n\t\t\tfill: #fff;\n            stroke: #fff\n\t\t}\n\t}\n"])));
 var StatuBar = function (_a) {
     var className = _a.className, children = _a.children;
     return (React__default.createElement("div", { className: className }, children));
@@ -124,14 +172,21 @@ var ActionBar = function (_a) {
     var className = _a.className, children = _a.children;
     return (React__default.createElement("div", { className: className }, children));
 };
-var StyledStatuBar = styled(StatuBar)(templateObject_4 || (templateObject_4 = __makeTemplateObject(["\n\tdisplay: flex;\n\tjustify-content: space-between;\n\tborder-bottom: 1px solid ", ";\n\tpadding: 3px 18px;\n\theight: 19px;\n\t.statu-item {\n\t\tmargin-left: 10px;\n\t}\n\t.statu-group {\n\t\tdisplay: flex;\n\t}\n\t.battery {\n\t\tdisplay: flex;\n\t\t& svg {\n\t\t\ttransform: translate(1px, -4px);\n\t\t\twidth: 25px;\n\t\t\theight: 30px;\n\t\t}\n\t}\n\t.airplane {\n\t\t& svg {\n\t\t\ttransform: rotate(-90deg);\n\t\t\theight: 20px;\n\t\t}\n\t}\n"], ["\n\tdisplay: flex;\n\tjustify-content: space-between;\n\tborder-bottom: 1px solid ", ";\n\tpadding: 3px 18px;\n\theight: 19px;\n\t.statu-item {\n\t\tmargin-left: 10px;\n\t}\n\t.statu-group {\n\t\tdisplay: flex;\n\t}\n\t.battery {\n\t\tdisplay: flex;\n\t\t& svg {\n\t\t\ttransform: translate(1px, -4px);\n\t\t\twidth: 25px;\n\t\t\theight: 30px;\n\t\t}\n\t}\n\t.airplane {\n\t\t& svg {\n\t\t\ttransform: rotate(-90deg);\n\t\t\theight: 20px;\n\t\t}\n\t}\n"])), BORDER_COLOR);
-var StyledActionBar = styled(ActionBar)(templateObject_5 || (templateObject_5 = __makeTemplateObject(["\n\tdisplay: flex;\n\theight: 50px;\n"], ["\n\tdisplay: flex;\n\theight: 50px;\n"])));
+var StyledStatuBar = styled(StatuBar)(templateObject_3 || (templateObject_3 = __makeTemplateObject(["\n\tdisplay: flex;\n\tjustify-content: space-between;\n\tborder-bottom: 1px solid ", ";\n\tpadding: 3px 18px;\n\theight: 19px;\n\t.statu-item {\n\t\tmargin-left: 10px;\n\t}\n\t.statu-group {\n\t\tdisplay: flex;\n\t}\n\t.battery {\n\t\tdisplay: flex;\n\t\t& svg {\n\t\t\ttransform: translate(1px, -4px);\n\t\t\twidth: 25px;\n\t\t\theight: 30px;\n\t\t}\n\t}\n\t.airplane {\n\t\t& svg {\n\t\t\ttransform: rotate(-90deg);\n\t\t\theight: 20px;\n\t\t}\n\t}\n"], ["\n\tdisplay: flex;\n\tjustify-content: space-between;\n\tborder-bottom: 1px solid ", ";\n\tpadding: 3px 18px;\n\theight: 19px;\n\t.statu-item {\n\t\tmargin-left: 10px;\n\t}\n\t.statu-group {\n\t\tdisplay: flex;\n\t}\n\t.battery {\n\t\tdisplay: flex;\n\t\t& svg {\n\t\t\ttransform: translate(1px, -4px);\n\t\t\twidth: 25px;\n\t\t\theight: 30px;\n\t\t}\n\t}\n\t.airplane {\n\t\t& svg {\n\t\t\ttransform: rotate(-90deg);\n\t\t\theight: 20px;\n\t\t}\n\t}\n"])), BORDER_COLOR);
+var StyledActionBar = styled(ActionBar)(templateObject_4 || (templateObject_4 = __makeTemplateObject(["\n\tdisplay: flex;\n\theight: 50px;\n\tjustify-content: space-between;\n\t.action-group {\n\t\tdisplay: flex;\n\t}\n\t.action-item {\n\t\tborder: none;\n\t\tbackground-color: #fff;\n\t\twidth: 50px;\n\t\ttransition: background-color 0.5s;\n\t\tmargin-left: 10px;\n\t\tsvg {\n\t\t\twidth: 23px;\n\t\t}\n\t\t&:hover {\n\t\t\tbackground-color: #000;\n\t\t\tsvg {\n\t\t\t\tfill: #fff;\n\t\t\t\tstroke: #fff;\n\t\t\t}\n\t\t}\n\t}\n"], ["\n\tdisplay: flex;\n\theight: 50px;\n\tjustify-content: space-between;\n\t.action-group {\n\t\tdisplay: flex;\n\t}\n\t.action-item {\n\t\tborder: none;\n\t\tbackground-color: #fff;\n\t\twidth: 50px;\n\t\ttransition: background-color 0.5s;\n\t\tmargin-left: 10px;\n\t\tsvg {\n\t\t\twidth: 23px;\n\t\t}\n\t\t&:hover {\n\t\t\tbackground-color: #000;\n\t\t\tsvg {\n\t\t\t\tfill: #fff;\n\t\t\t\tstroke: #fff;\n\t\t\t}\n\t\t}\n\t}\n"])));
+var SearchBar = function (_a) {
+    var className = _a.className;
+    return (React__default.createElement("div", { className: className },
+        React__default.createElement(SvgSearchOutline, null),
+        React__default.createElement("input", { placeholder: "Search" })));
+};
+var StyledSearchBar = styled(SearchBar)(templateObject_5 || (templateObject_5 = __makeTemplateObject(["\n\tdisplay: flex;\n\talign-items: center;\n\t& > svg {\n        position: relative;\n        left: 50px;\n        height: 36px\n\t}\n\t& input {\n\t\theight: 100%;\n\t\tborder-top: none;\n        border-right: 1px solid ", ";\n        border-left: 1px solid ", ";\n\t\tborder-bottom: none;\n\t\tpadding: 5px 10px;\n\t\tbox-sizing: border-box;\n        text-align: center\n\t}\n"], ["\n\tdisplay: flex;\n\talign-items: center;\n\t& > svg {\n        position: relative;\n        left: 50px;\n        height: 36px\n\t}\n\t& input {\n\t\theight: 100%;\n\t\tborder-top: none;\n        border-right: 1px solid ", ";\n        border-left: 1px solid ", ";\n\t\tborder-bottom: none;\n\t\tpadding: 5px 10px;\n\t\tbox-sizing: border-box;\n        text-align: center\n\t}\n"])), BORDER_COLOR, BORDER_COLOR);
 /**
  * Navbar组件
  * @author rivertwilight
  */
 var index$3 = (function (_a) {
-    var _b = _a.deviceName, deviceName = _b === void 0 ? "My Kindle" : _b, _c = _a.autoClose, autoClose = _c === void 0 ? true : _c, _d = _a.battery, battery = _d === void 0 ? 99 : _d;
+    var _b = _a.deviceName, deviceName = _b === void 0 ? "My Kindle" : _b, _c = _a.autoClose, autoClose = _c === void 0 ? true : _c, _d = _a.battery, battery = _d === void 0 ? 99 : _d; _a.actionItems;
     return (React__default.createElement(Navbar, { fixed: autoClose },
         React__default.createElement(StyledStatuBar, null,
             React__default.createElement("div", { className: "" }, deviceName),
@@ -144,15 +199,20 @@ var index$3 = (function (_a) {
                     React__default.createElement(SvgBatteryFullSharp, null)),
                 React__default.createElement("div", { className: "statu-item time" }, "10:46"))),
         React__default.createElement(StyledActionBar, null,
-            React__default.createElement(Action, null,
-                React__default.createElement(SvgHomeOutline, null),
-                "Home"),
-            React__default.createElement(Action, null,
-                React__default.createElement(SvgArrowBackSharp, null),
-                "back"),
-            React__default.createElement(Action, null,
-                React__default.createElement(SvgSettingsSharp, null),
-                "settings"))));
+            React__default.createElement("div", { className: "action-group" },
+                React__default.createElement("button", { className: "action-item" },
+                    React__default.createElement(SvgHomeOutline, null),
+                    "home"),
+                React__default.createElement("button", { className: "action-item" },
+                    React__default.createElement(SvgArrowBackSharp, null),
+                    "back"),
+                React__default.createElement("button", { className: "action-item" },
+                    React__default.createElement(SvgSettingsSharp, null),
+                    "settings")),
+            React__default.createElement("div", { className: "action-group" },
+                React__default.createElement(StyledSearchBar, null),
+                React__default.createElement("button", { className: "action-item" },
+                    React__default.createElement(SvgEllipsisVertical, null))))));
 });
 var templateObject_1$3, templateObject_2$1, templateObject_3, templateObject_4, templateObject_5;
 
