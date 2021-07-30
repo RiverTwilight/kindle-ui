@@ -4,7 +4,7 @@ import { Navbar, Typography } from "kindlye";
 function App() {
 	return (
 		<>
-			<Navbar t={"df"} />
+			<Navbar battery={59} />
 			<br />
 			<br />
 			<br />

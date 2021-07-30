@@ -1,7 +1,10 @@
 import styled, { css } from "styled-components";
 import React from "react";
 import Airplane from "../../icons/airplane.svg";
-import BatteryFull from "../../icons/battery-full.svg";
+import Settings from "../../icons/settings-sharp.svg"
+import ArrowBack from "../../icons/arrow-back-sharp.svg"
+import Home from "../../icons/home-outline.svg"
+import BatteryFull from "../../icons/battery-full-sharp.svg";
 
 // @ts-nocheck
 
@@ -28,6 +31,7 @@ const Action = styled.button`
 	background-color: #fff;
 	width: 50px;
 	transition: background-color 0.5s;
+	margin-left: 10px;
 	svg {
 		width: 23px;
 	}
@@ -55,12 +59,16 @@ const StyledStatuBar = styled(StatuBar)`
 	height: 19px;
 	.statu-item {
 		margin-left: 10px;
-		& svg {
-			width: 18px;
-		}
 	}
-	.time {
-		transform: scaleY(-50%);
+	.statu-group {
+		display: flex;
+	}
+	.battery {
+		display: flex;
+		& svg {
+			transform: translate(0px, 2px);
+			width: 27px;
+		}
 	}
 `;
 
@@ -71,35 +79,42 @@ const StyledActionBar = styled(ActionBar)`
 
 export interface INavbar {
 	autoClose: boolean;
-    deviceName: string;
+	deviceName: string;
+	battery?: number;
 }
 
 /**
  * Navbar组件
  * @author rivertwilight
  */
-export default ({ deviceName = "My Kindle", autoClose = true }: INavbar) => {
+export default ({
+	deviceName = "My Kindle",
+	autoClose = true,
+	battery = 99,
+}: INavbar) => {
 	return (
 		<Navbar fixed={autoClose}>
 			<StyledStatuBar>
-				<div className="statu-item">{deviceName}</div>
-				<div className="statu-item">
-					<Airplane />
-					<span className="time">15:0 AM</span>
+				<div className="">{deviceName}</div>
+				<div className="statu-group">
+					<div className="statu-item battery">
+						{battery}% <BatteryFull />
+					</div>
+					<div className="statu-item time">10:46</div>
 				</div>
 			</StyledStatuBar>
 			<StyledActionBar>
 				<Action>
-					<Airplane />
+					<Home />
 					Home
 				</Action>
 				<Action>
-					<Airplane />
-					Home
+					<ArrowBack />
+					back
 				</Action>
 				<Action>
-					<Airplane />
-					Home
+					<Settings />
+					settings
 				</Action>
 			</StyledActionBar>
 		</Navbar>
