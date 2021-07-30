@@ -1,7 +1,3 @@
-.App {
-	text-align: center;
-}
-
 body {
 	display: flex;
 	flex-direction: column;
@@ -11,9 +7,4 @@ body {
 
 main {
 	max-width: 900px;
-}
-
-.App-logo {
-	height: 40vmin;
-	pointer-events: none;
 }

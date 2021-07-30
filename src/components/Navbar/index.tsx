@@ -1,5 +1,5 @@
 import styled, { css } from "styled-components";
-import React from "react";
+import React, {useEffect, useState} from "react";
 import Airplane from "../../icons/airplane.svg";
 import Settings from "../../icons/settings-sharp.svg";
 import ArrowBack from "../../icons/arrow-back-sharp.svg";
@@ -23,7 +23,7 @@ const Navbar = styled.nav`
 	display: flex;
 	flex-direction: column;
 	border-bottom: 1px solid ${BORDER_COLOR};
-	background: #fff;
+	background-color: var(--bg-color);
 	${(props: { fixed: boolean }) => (props.fixed ? fixedStyle : "")}
 `;
 
@@ -72,18 +72,22 @@ const StyledActionBar = styled(ActionBar)`
 	}
 	.action-item {
 		border: none;
-		background-color: #fff;
 		width: 50px;
+		background-color: var(--bg-color);
+		color: var(--text-color);
 		transition: background-color 0.5s;
 		margin-left: 10px;
 		svg {
 			width: 23px;
 		}
+		svg path {
+			stroke: var(--text-color);
+		}
 		&:hover {
-			background-color: #000;
-			svg {
-				fill: #fff;
-				stroke: #fff;
+			background-color: var(--text-color);
+			color: var(--bg-color);
+			svg path {
+				stroke: var(--bg-color);
 			}
 		}
 	}
@@ -115,6 +119,7 @@ const StyledSearchBar = styled(SearchBar)`
 		padding: 5px 10px;
 		box-sizing: border-box;
 		text-align: center;
+		background-color: transparent;
 	}
 `;
 
@@ -128,6 +133,11 @@ export interface INavbar {
 	}[];
 }
 
+const getTimeStr = () => {
+	const now = new Date();
+	return `${now.getHours()}:${now.getMinutes() + 1}`;
+};
+
 /**
  * Navbar组件
  * @author rivertwilight
@@ -139,6 +149,12 @@ export default ({
 	airplane = true,
 	actionItems,
 }: INavbar) => {
+	const [timeStr, setTimeStr] = useState(getTimeStr());
+	useEffect(() => {
+		setInterval(() => {
+			setTimeStr(getTimeStr());
+		}, 1000);
+	}, []);
 	return (
 		<Navbar fixed={autoClose}>
 			<StyledStatuBar>
@@ -152,7 +168,7 @@ export default ({
 					<div className="statu-item battery">
 						{battery}% <BatteryFull />
 					</div>
-					<div className="statu-item time">10:46</div>
+					<div className="statu-item time">{timeStr}</div>
 				</div>
 			</StyledStatuBar>
 			<StyledActionBar>
