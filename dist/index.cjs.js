@@ -28,8 +28,8 @@ function _interopNamespace(e) {
 }
 
 var styled__default = /*#__PURE__*/_interopDefaultLegacy(styled);
-var React__namespace = /*#__PURE__*/_interopNamespace(React);
 var React__default = /*#__PURE__*/_interopDefaultLegacy(React);
+var React__namespace = /*#__PURE__*/_interopNamespace(React);
 
 /*! *****************************************************************************
 Copyright (c) Microsoft Corporation.
@@ -50,6 +50,29 @@ function __makeTemplateObject(cooked, raw) {
     if (Object.defineProperty) { Object.defineProperty(cooked, "raw", { value: raw }); } else { cooked.raw = raw; }
     return cooked;
 }
+
+var Menu = function (_a) {
+    var children = _a.children, className = _a.className;
+    return (React__default['default'].createElement("div", { className: className }, children));
+};
+var StyledMenu = styled__default['default'](Menu)(templateObject_1$4 || (templateObject_1$4 = __makeTemplateObject(["\n\tdisplay: ", ";\n\tmin-width: 200px;\n\tborder: 1px solid var(--border-color);\n\tbackground: var(--bg-color);\n\tmin-height: 300px;\n\tposition: fixed;\n\ttop: ", "px;\n\tleft: ", "px;\n"], ["\n\tdisplay: ", ";\n\tmin-width: 200px;\n\tborder: 1px solid var(--border-color);\n\tbackground: var(--bg-color);\n\tmin-height: 300px;\n\tposition: fixed;\n\ttop: ", "px;\n\tleft: ", "px;\n"])), function (props) { return (props.open ? "block" : "none"); }, function (props) { return props.top; }, function (props) { return props.left; });
+var Menu$1 = (function (_a) {
+    _a.children; var anchorEl = _a.anchorEl, open = _a.open; _a.onClose;
+    console.log(anchorEl);
+    var viewportOffset = anchorEl
+        ? // @ts-expect-error
+            anchorEl.getBoundingClientRect()
+        : { top: 0, left: 0 };
+    // these are relative to the viewport, i.e. the window
+    // @ts-expect-error
+    var top = viewportOffset.top + anchorEl ? anchorEl.offsetHeight * 2 : 0;
+    var left = viewportOffset.left;
+    if (left > window.innerWidth - 200)
+        left = window.innerWidth - 200;
+    console.log([top, left]);
+    return (React__default['default'].createElement(StyledMenu, { open: open, top: top, left: left }, "asdf"));
+});
+var templateObject_1$4;
 
 var _path$5;
 
@@ -192,7 +215,7 @@ function SvgEllipsisVertical(props) {
 // @ts-nocheck
 var BORDER_COLOR = "#c1b2b2";
 var fixedStyle = styled.css(templateObject_1$3 || (templateObject_1$3 = __makeTemplateObject(["\n\tposition: fixed;\n\ttop: 0;\n\tright: 0;\n\tleft: 0;\n\tz-index: 50;\n"], ["\n\tposition: fixed;\n\ttop: 0;\n\tright: 0;\n\tleft: 0;\n\tz-index: 50;\n"])));
-var Navbar = styled__default['default'].nav(templateObject_2$1 || (templateObject_2$1 = __makeTemplateObject(["\n\tdisplay: flex;\n\tflex-direction: column;\n\tborder-bottom: 1px solid ", ";\n\tbackground-color: var(--bg-color);\n\t", "\n"], ["\n\tdisplay: flex;\n\tflex-direction: column;\n\tborder-bottom: 1px solid ", ";\n\tbackground-color: var(--bg-color);\n\t", "\n"])), BORDER_COLOR, function (props) { return (props.fixed ? fixedStyle : ""); });
+var Navbar = styled__default['default'].nav(templateObject_2$1 || (templateObject_2$1 = __makeTemplateObject(["\n\t--border-color: #c1b2b2;\n\tdisplay: flex;\n\tflex-direction: column;\n\tborder-bottom: 1px solid ", ";\n\tbackground-color: var(--bg-color);\n\t", "\n"], ["\n\t--border-color: #c1b2b2;\n\tdisplay: flex;\n\tflex-direction: column;\n\tborder-bottom: 1px solid ", ";\n\tbackground-color: var(--bg-color);\n\t", "\n"])), BORDER_COLOR, function (props) { return (props.fixed ? fixedStyle : ""); });
 var StatuBar = function (_a) {
     var className = _a.className, children = _a.children;
     return (React__default['default'].createElement("div", { className: className }, children));
@@ -213,6 +236,16 @@ var StyledSearchBar = styled__default['default'](SearchBar)(templateObject_5 || 
 var getTimeStr = function () {
     var now = new Date();
     return now.getHours() + ":" + (now.getMinutes() + 1);
+};
+var MoreMenu = function () {
+    var _a = React__default['default'].useState(null), anchorEl = _a[0], setAnchorEl = _a[1];
+    var handleClick = function (event) {
+        setAnchorEl(event.currentTarget);
+    };
+    return (React__default['default'].createElement(React__default['default'].Fragment, null,
+        React__default['default'].createElement("button", { className: "action-item", onClick: handleClick },
+            React__default['default'].createElement(SvgEllipsisVertical, null)),
+        React__default['default'].createElement(Menu$1, { open: Boolean(anchorEl), anchorEl: anchorEl })));
 };
 /**
  * Navbar组件
@@ -250,8 +283,7 @@ var index$3 = (function (_a) {
                     "settings")),
             React__default['default'].createElement("div", { className: "action-group" },
                 React__default['default'].createElement(StyledSearchBar, null),
-                React__default['default'].createElement("button", { className: "action-item" },
-                    React__default['default'].createElement(SvgEllipsisVertical, null))))));
+                React__default['default'].createElement(MoreMenu, null)))));
 });
 var templateObject_1$3, templateObject_2$1, templateObject_3, templateObject_4, templateObject_5;
 
@@ -287,5 +319,6 @@ var templateObject_1;
 
 exports.Button = index$1;
 exports.Container = index;
+exports.Menu = Menu$1;
 exports.Navbar = index$3;
 exports.Typography = index$2;

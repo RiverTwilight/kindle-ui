@@ -1,4 +1,5 @@
 /// <reference types="react" />
+export declare const BORDER_COLOR: string;
 export interface INavbar {
     autoClose: boolean;
     deviceName: string;

@@ -1,5 +1,6 @@
 import styled, { css } from "styled-components";
-import React, {useEffect, useState} from "react";
+import React, { useEffect, useState } from "react";
+import Menu from "../Menu/index";
 import Airplane from "../../icons/airplane.svg";
 import Settings from "../../icons/settings-sharp.svg";
 import ArrowBack from "../../icons/arrow-back-sharp.svg";
@@ -9,7 +10,7 @@ import Search from "../../icons/search-outline.svg";
 import Ellipsis from "../../icons/ellipsis-vertical.svg";
 // @ts-nocheck
 
-const BORDER_COLOR = "#c1b2b2";
+export const BORDER_COLOR: string = "#c1b2b2";
 
 const fixedStyle = css`
 	position: fixed;
@@ -20,6 +21,7 @@ const fixedStyle = css`
 `;
 
 const Navbar = styled.nav`
+	--border-color: #c1b2b2;
 	display: flex;
 	flex-direction: column;
 	border-bottom: 1px solid ${BORDER_COLOR};
@@ -138,6 +140,27 @@ const getTimeStr = () => {
 	return `${now.getHours()}:${now.getMinutes() + 1}`;
 };
 
+const MoreMenu = () => {
+	const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
+
+	const handleClick = (event: React.MouseEvent<HTMLButtonElement>) => {
+		setAnchorEl(event.currentTarget);
+	};
+
+	const handleClose = () => {
+		setAnchorEl(null);
+	};
+
+	return (
+		<>
+			<button className="action-item" onClick={handleClick}>
+				<Ellipsis />
+			</button>
+			<Menu open={Boolean(anchorEl)} anchorEl={anchorEl} />
+		</>
+	);
+};
+
 /**
  * Navbar组件
  * @author rivertwilight
@@ -188,9 +211,7 @@ export default ({
 				</div>
 				<div className="action-group">
 					<StyledSearchBar />
-					<button className="action-item">
-						<Ellipsis />
-					</button>
+					<MoreMenu />
 				</div>
 			</StyledActionBar>
 		</Navbar>
