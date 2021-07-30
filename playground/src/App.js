@@ -1,5 +1,5 @@
 import "./App.css";
-import { Navbar, Typography, Button, Container } from "kindlye";
+import { Navbar, Typography, Button, Container } from "kindyle";
 
 function App() {
 	return (
