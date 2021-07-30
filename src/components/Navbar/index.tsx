@@ -6,7 +6,7 @@ import ArrowBack from "../../icons/arrow-back-sharp.svg";
 import Home from "../../icons/home-outline.svg";
 import BatteryFull from "../../icons/battery-full-sharp.svg";
 import Search from "../../icons/search-outline.svg";
-import Ellipsis from "../../icons/ellipsis-vertical.svg"
+import Ellipsis from "../../icons/ellipsis-vertical.svg";
 // @ts-nocheck
 
 const BORDER_COLOR = "#c1b2b2";
@@ -102,19 +102,19 @@ const StyledSearchBar = styled(SearchBar)`
 	display: flex;
 	align-items: center;
 	& > svg {
-        position: relative;
-        left: 50px;
-        height: 36px
+		position: relative;
+		left: 50px;
+		height: 36px;
 	}
 	& input {
 		height: 100%;
 		border-top: none;
-        border-right: 1px solid ${BORDER_COLOR};
-        border-left: 1px solid ${BORDER_COLOR};
+		border-right: 1px solid ${BORDER_COLOR};
+		border-left: 1px solid ${BORDER_COLOR};
 		border-bottom: none;
 		padding: 5px 10px;
 		box-sizing: border-box;
-        text-align: center
+		text-align: center;
 	}
 `;
 
@@ -122,6 +122,7 @@ export interface INavbar {
 	autoClose: boolean;
 	deviceName: string;
 	battery?: number;
+	airplane?: boolean;
 	actionItems: {
 		text: string;
 	}[];
@@ -135,6 +136,7 @@ export default ({
 	deviceName = "My Kindle",
 	autoClose = true,
 	battery = 99,
+	airplane = true,
 	actionItems,
 }: INavbar) => {
 	return (
@@ -142,9 +144,11 @@ export default ({
 			<StyledStatuBar>
 				<div className="">{deviceName}</div>
 				<div className="statu-group">
-					<div className="statu-item airplane">
-						<Airplane />
-					</div>
+					{airplane && (
+						<div className="statu-item airplane">
+							<Airplane />
+						</div>
+					)}
 					<div className="statu-item battery">
 						{battery}% <BatteryFull />
 					</div>

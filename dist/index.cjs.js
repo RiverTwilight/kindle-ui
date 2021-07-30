@@ -209,19 +209,19 @@ var SearchBar = function (_a) {
         React__default['default'].createElement(SvgSearchOutline, null),
         React__default['default'].createElement("input", { placeholder: "Search" })));
 };
-var StyledSearchBar = styled__default['default'](SearchBar)(templateObject_5 || (templateObject_5 = __makeTemplateObject(["\n\tdisplay: flex;\n\talign-items: center;\n\t& > svg {\n        position: relative;\n        left: 50px;\n        height: 36px\n\t}\n\t& input {\n\t\theight: 100%;\n\t\tborder-top: none;\n        border-right: 1px solid ", ";\n        border-left: 1px solid ", ";\n\t\tborder-bottom: none;\n\t\tpadding: 5px 10px;\n\t\tbox-sizing: border-box;\n        text-align: center\n\t}\n"], ["\n\tdisplay: flex;\n\talign-items: center;\n\t& > svg {\n        position: relative;\n        left: 50px;\n        height: 36px\n\t}\n\t& input {\n\t\theight: 100%;\n\t\tborder-top: none;\n        border-right: 1px solid ", ";\n        border-left: 1px solid ", ";\n\t\tborder-bottom: none;\n\t\tpadding: 5px 10px;\n\t\tbox-sizing: border-box;\n        text-align: center\n\t}\n"])), BORDER_COLOR, BORDER_COLOR);
+var StyledSearchBar = styled__default['default'](SearchBar)(templateObject_5 || (templateObject_5 = __makeTemplateObject(["\n\tdisplay: flex;\n\talign-items: center;\n\t& > svg {\n\t\tposition: relative;\n\t\tleft: 50px;\n\t\theight: 36px;\n\t}\n\t& input {\n\t\theight: 100%;\n\t\tborder-top: none;\n\t\tborder-right: 1px solid ", ";\n\t\tborder-left: 1px solid ", ";\n\t\tborder-bottom: none;\n\t\tpadding: 5px 10px;\n\t\tbox-sizing: border-box;\n\t\ttext-align: center;\n\t}\n"], ["\n\tdisplay: flex;\n\talign-items: center;\n\t& > svg {\n\t\tposition: relative;\n\t\tleft: 50px;\n\t\theight: 36px;\n\t}\n\t& input {\n\t\theight: 100%;\n\t\tborder-top: none;\n\t\tborder-right: 1px solid ", ";\n\t\tborder-left: 1px solid ", ";\n\t\tborder-bottom: none;\n\t\tpadding: 5px 10px;\n\t\tbox-sizing: border-box;\n\t\ttext-align: center;\n\t}\n"])), BORDER_COLOR, BORDER_COLOR);
 /**
  * Navbar组件
  * @author rivertwilight
  */
 var index$3 = (function (_a) {
-    var _b = _a.deviceName, deviceName = _b === void 0 ? "My Kindle" : _b, _c = _a.autoClose, autoClose = _c === void 0 ? true : _c, _d = _a.battery, battery = _d === void 0 ? 99 : _d; _a.actionItems;
+    var _b = _a.deviceName, deviceName = _b === void 0 ? "My Kindle" : _b, _c = _a.autoClose, autoClose = _c === void 0 ? true : _c, _d = _a.battery, battery = _d === void 0 ? 99 : _d, _e = _a.airplane, airplane = _e === void 0 ? true : _e; _a.actionItems;
     return (React__default['default'].createElement(Navbar, { fixed: autoClose },
         React__default['default'].createElement(StyledStatuBar, null,
             React__default['default'].createElement("div", { className: "" }, deviceName),
             React__default['default'].createElement("div", { className: "statu-group" },
-                React__default['default'].createElement("div", { className: "statu-item airplane" },
-                    React__default['default'].createElement(SvgAirplane, null)),
+                airplane && (React__default['default'].createElement("div", { className: "statu-item airplane" },
+                    React__default['default'].createElement(SvgAirplane, null))),
                 React__default['default'].createElement("div", { className: "statu-item battery" },
                     battery,
                     "% ",
