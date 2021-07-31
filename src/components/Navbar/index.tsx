@@ -163,7 +163,7 @@ const MoreMenu = () => {
 			<button className="action-item" onClick={handleClick}>
 				<Ellipsis />
 			</button>
-			<Menu open={Boolean(anchorEl)} anchorEl={anchorEl} />
+			<Menu open={Boolean(anchorEl)} onClose={handleClose} anchorEl={anchorEl} />
 		</>
 	);
 };

@@ -55,24 +55,31 @@ var Menu = function (_a) {
     var children = _a.children, className = _a.className;
     return (React__default['default'].createElement("div", { className: className }, children));
 };
-var StyledMenu = styled__default['default'](Menu)(templateObject_1$4 || (templateObject_1$4 = __makeTemplateObject(["\n\tdisplay: ", ";\n\tmin-width: 200px;\n\tborder: 1px solid var(--border-color);\n\tbackground: var(--bg-color);\n\tmin-height: 300px;\n\tposition: fixed;\n\ttop: ", "px;\n\tleft: ", "px;\n"], ["\n\tdisplay: ", ";\n\tmin-width: 200px;\n\tborder: 1px solid var(--border-color);\n\tbackground: var(--bg-color);\n\tmin-height: 300px;\n\tposition: fixed;\n\ttop: ", "px;\n\tleft: ", "px;\n"])), function (props) { return (props.open ? "block" : "none"); }, function (props) { return props.top; }, function (props) { return props.left; });
+var Mask = styled__default['default'].div(templateObject_1$4 || (templateObject_1$4 = __makeTemplateObject(["\n\tposition: fixed;\n\ttop: 0;\n\tleft: 0;\n\tbottom: 0;\n\tright: 0;\n\tdisplay: ", ";\n"], ["\n\tposition: fixed;\n\ttop: 0;\n\tleft: 0;\n\tbottom: 0;\n\tright: 0;\n\tdisplay: ", ";\n"])), function (props) { return (props.show ? "block" : "none"); });
+var StyledMenu = styled__default['default'](Menu)(templateObject_2$2 || (templateObject_2$2 = __makeTemplateObject(["\n\tdisplay: ", ";\n\tmin-width: 200px;\n\tborder: 1px solid var(--border-color);\n\tbackground: var(--bg-color);\n\tmin-height: 300px;\n\tposition: fixed;\n\ttop: ", "px;\n\tleft: ", "px;\n"], ["\n\tdisplay: ", ";\n\tmin-width: 200px;\n\tborder: 1px solid var(--border-color);\n\tbackground: var(--bg-color);\n\tmin-height: 300px;\n\tposition: fixed;\n\ttop: ", "px;\n\tleft: ", "px;\n"])), function (props) { return (props.open ? "block" : "none"); }, function (props) { return props.top; }, function (props) { return props.left; });
 var Menu$1 = (function (_a) {
-    _a.children; var anchorEl = _a.anchorEl, open = _a.open; _a.onClose;
-    console.log(anchorEl);
+    var children = _a.children, anchorEl = _a.anchorEl, open = _a.open, onClose = _a.onClose;
+    var mask = React.useRef();
     var viewportOffset = anchorEl
         ? // @ts-expect-error
             anchorEl.getBoundingClientRect()
         : { top: 0, left: 0 };
     // these are relative to the viewport, i.e. the window
     // @ts-expect-error
-    var top = viewportOffset.top + anchorEl ? anchorEl.offsetHeight * 2 : 0;
+    var top = viewportOffset.top + anchorEl ? anchorEl.offsetHeight * 1.5 : 0;
     var left = viewportOffset.left;
     if (left > window.innerWidth - 200)
         left = window.innerWidth - 200;
-    console.log([top, left]);
-    return (React__default['default'].createElement(StyledMenu, { open: open, top: top, left: left }, "asdf"));
+    React.useEffect(function () {
+        mask.current.addEventListener("click", function () {
+            onClose && onClose();
+        });
+    }, []);
+    return (React__default['default'].createElement(React__default['default'].Fragment, null,
+        React__default['default'].createElement(Mask, { show: open, ref: mask }),
+        React__default['default'].createElement(StyledMenu, { open: open, top: top, left: left }, children)));
 });
-var templateObject_1$4;
+var templateObject_1$4, templateObject_2$2;
 
 var _path$5;
 
@@ -242,10 +249,13 @@ var MoreMenu = function () {
     var handleClick = function (event) {
         setAnchorEl(event.currentTarget);
     };
+    var handleClose = function () {
+        setAnchorEl(null);
+    };
     return (React__default['default'].createElement(React__default['default'].Fragment, null,
         React__default['default'].createElement("button", { className: "action-item", onClick: handleClick },
             React__default['default'].createElement(SvgEllipsisVertical, null)),
-        React__default['default'].createElement(Menu$1, { open: Boolean(anchorEl), anchorEl: anchorEl })));
+        React__default['default'].createElement(Menu$1, { open: Boolean(anchorEl), onClose: handleClose, anchorEl: anchorEl })));
 };
 /**
  * Navbar组件
