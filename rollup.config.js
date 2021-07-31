@@ -4,20 +4,17 @@ import del from "rollup-plugin-delete";
 import pkg from "./package.json";
 import typescript from "rollup-plugin-typescript2";
 import svgr from "@svgr/rollup";
-import url from 'rollup-plugin-url'
+import url from "rollup-plugin-url";
+// import fs from "fs";
 
-export default {
-	input: pkg.source,
-	output: [
-		{ file: pkg.main, format: "cjs" },
-		{ file: pkg.module, format: "esm" },
-	],
-	plugins: [
+const plugins = [
 		external(),
 		babel({
 			exclude: "node_modules/**",
 		}),
-		typescript(),
+		typescript({
+			check: false
+		}),
 		svgr(),
 		url({
 			// by default, rollup-plugin-url will not handle font files
@@ -28,5 +25,36 @@ export default {
 		}),
 		del({ targets: ["dist/*"] }),
 	],
-	external: [...Object.keys(pkg.peerDependencies || {}), "styled-components"],
-};
+	externals = [
+		...Object.keys(pkg.peerDependencies || {}),
+		"styled-components",
+	];
+
+// var splitBundles = [];
+
+// fs.readdirSync("./src/components").forEach((file) => {
+// 	splitBundles.push({
+// 		input: "src/components/" + file + "/index.tsx",
+// 		output: [
+// 			{ file: `dist/${file}/index.cjs.js`, format: "cjs" },
+// 			{ file: `dist/${file}/index.esm.js`, format: "esm" },
+// 		],
+// 		plugins,
+// 		external: externals,
+// 	});
+// });
+
+// console.log(splitBundles);
+
+export default [
+	{
+		input: pkg.source,
+		output: [
+			{ file: pkg.main, format: "cjs" },
+			{ file: pkg.module, format: "esm" },
+		],
+		plugins,
+		external: externals,
+	},
+	// ...splitBundles,
+];

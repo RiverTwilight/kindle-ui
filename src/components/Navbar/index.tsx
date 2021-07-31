@@ -68,9 +68,12 @@ const StyledStatuBar = styled(StatuBar)`
 const StyledActionBar = styled(ActionBar)`
 	display: flex;
 	height: 50px;
-	justify-content: space-between;
 	.action-group {
 		display: flex;
+	}
+	.action-space {
+		flex: 2 4 auto;
+		width: 10px;
 	}
 	.action-item {
 		border: none;
@@ -108,12 +111,14 @@ const StyledSearchBar = styled(SearchBar)`
 	display: flex;
 	align-items: center;
 	& > svg {
-		position: relative;
-		left: 50px;
 		height: 36px;
+		transform: translate(51%, 0px);
+		display: inline;
+		position: absolute; /*脱离标准流不占空间*/
 	}
 	& input {
 		height: 100%;
+		width: 100%;
 		border-top: none;
 		border-right: 1px solid ${BORDER_COLOR};
 		border-left: 1px solid ${BORDER_COLOR};
@@ -137,7 +142,9 @@ export interface INavbar {
 
 const getTimeStr = () => {
 	const now = new Date();
-	return `${now.getHours()}:${now.getMinutes() + 1}`;
+	return `${now.getHours()}:${
+		now.getMinutes() < 10 ? 0 : ""
+	}${now.getMinutes()}`;
 };
 
 const MoreMenu = () => {
@@ -209,6 +216,7 @@ export default ({
 						settings
 					</button>
 				</div>
+				<div className="action-space"></div>
 				<div className="action-group">
 					<StyledSearchBar />
 					<MoreMenu />
