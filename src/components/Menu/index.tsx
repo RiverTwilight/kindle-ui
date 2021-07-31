@@ -23,10 +23,9 @@ const Mask = styled.div`
 
 const StyledMenu = styled(Menu)`
 	display: ${(props) => (props.open ? "block" : "none")};
-	min-width: 200px;
+	min-width: 230px;
 	border: 1px solid var(--border-color);
 	background: var(--bg-color);
-	min-height: 300px;
 	position: fixed;
 	top: ${(props) => props.top}px;
 	left: ${(props) => props.left}px;
@@ -42,7 +41,7 @@ export default ({ children, anchorEl, open, onClose }: IMenu) => {
 	// @ts-expect-error
 	var top = viewportOffset.top + anchorEl ? anchorEl.offsetHeight * 1.5 : 0;
 	var left = viewportOffset.left;
-	if (left > window.innerWidth - 200) left = window.innerWidth - 200;
+	if (left > window.innerWidth - 200) left = window.innerWidth - 230;
 	useEffect(() => {
 		mask.current.addEventListener("click", () => {
 			onClose && onClose();

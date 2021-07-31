@@ -1,6 +1,7 @@
 import styled, { css } from "styled-components";
 import React, { useEffect, useState } from "react";
 import Menu from "../Menu/index";
+import MenuItem from "../MenuItem";
 import Airplane from "../../icons/airplane.svg";
 import Settings from "../../icons/settings-sharp.svg";
 import ArrowBack from "../../icons/arrow-back-sharp.svg";
@@ -8,6 +9,7 @@ import Home from "../../icons/home-outline.svg";
 import BatteryFull from "../../icons/battery-full-sharp.svg";
 import Search from "../../icons/search-outline.svg";
 import Ellipsis from "../../icons/ellipsis-vertical.svg";
+import hover from "../../utils/hover"
 // @ts-nocheck
 
 export const BORDER_COLOR: string = "#c1b2b2";
@@ -88,13 +90,7 @@ const StyledActionBar = styled(ActionBar)`
 		svg path {
 			stroke: var(--text-color);
 		}
-		&:hover {
-			background-color: var(--text-color);
-			color: var(--bg-color);
-			svg path {
-				stroke: var(--bg-color);
-			}
-		}
+		${hover}
 	}
 `;
 
@@ -118,7 +114,7 @@ const StyledSearchBar = styled(SearchBar)`
 	}
 	& input {
 		height: 100%;
-		width: 100%;
+		width: 150px;
 		border-top: none;
 		border-right: 1px solid ${BORDER_COLOR};
 		border-left: 1px solid ${BORDER_COLOR};
@@ -163,7 +159,11 @@ const MoreMenu = () => {
 			<button className="action-item" onClick={handleClick}>
 				<Ellipsis />
 			</button>
-			<Menu open={Boolean(anchorEl)} onClose={handleClose} anchorEl={anchorEl} />
+			<Menu open={Boolean(anchorEl)} onClose={handleClose} anchorEl={anchorEl}>
+				<MenuItem textPrimary="Github" />
+				<MenuItem textPrimary="Github" />
+				<MenuItem textPrimary="Github" />
+			</Menu>
 		</>
 	);
 };
