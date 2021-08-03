@@ -4,7 +4,16 @@ import { Navbar, Typography, Button, Container, ListItem } from "kindyle";
 function App() {
 	return (
 		<Container>
-			<Navbar airplane={true} battery={99} />
+			<Navbar
+				airplane={true}
+				battery={99}
+				charging
+				actionItems={{
+					1: {
+						warpper: ({ children }) => <a>{children}</a>,
+					},
+				}}
+			/>
 			<br />
 			<br />
 			<br />
@@ -26,10 +35,7 @@ function App() {
 						primary="The Adventure of Sherlok Holmoes (福尔摩斯探案集）"
 						second="Arthur Conan Doyle"
 					></ListItem>
-					<ListItem
-						primary="尘埃落定"
-						second="阿来著"
-					></ListItem>
+					<ListItem primary="尘埃落定" second="阿来著"></ListItem>
 				</Typography>
 			</main>
 		</Container>

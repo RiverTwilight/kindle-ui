@@ -1,6 +1,10 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import styled from "styled-components";
 
+/**
+ * Popover Menu
+ * @author rivertwilight
+ */
 export interface IMenu {
 	anchorEl: null | Element | ((element: Element) => Element);
 	open?: boolean;
@@ -33,20 +37,27 @@ const StyledMenu = styled(Menu)`
 
 export default ({ children, anchorEl, open, onClose }: IMenu) => {
 	const mask = useRef();
-	var viewportOffset = anchorEl
-		? // @ts-expect-error
-		  anchorEl.getBoundingClientRect()
-		: { top: 0, left: 0 };
-	// these are relative to the viewport, i.e. the window
-	// @ts-expect-error
-	var top = viewportOffset.top + anchorEl ? anchorEl.offsetHeight * 1.5 : 0;
-	var left = viewportOffset.left;
-	if (left > window.innerWidth - 200) left = window.innerWidth - 230;
+	const [top, setTop] = useState(0);
+	const [left, setLeft] = useState(0);
+
 	useEffect(() => {
-		mask.current.addEventListener("click", () => {
-			onClose && onClose();
-		});
-	}, []);
+		mask.current &&
+			mask.current.addEventListener("click", () => {
+				onClose && onClose();
+			});
+		var viewportOffset = anchorEl
+			? // @ts-expect-error
+			  anchorEl.getBoundingClientRect()
+			: { top: 0, left: 0 };
+		// these are relative to the viewport, i.e. the window
+		var top =
+			viewportOffset.top + anchorEl ? anchorEl.offsetHeight * 1.5 : 0;
+		var left = viewportOffset.left;
+		if (left > window.innerWidth - 200) left = window.innerWidth - 230;
+		setTop(top);
+		setLeft(left);
+	}, [anchorEl]);
+
 	return (
 		<>
 			<Mask show={open} ref={mask} />

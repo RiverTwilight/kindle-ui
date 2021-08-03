@@ -1,6 +1,11 @@
 import React from "react";
 import styled from "styled-components";
 
+/**
+ * Button
+ * @author rivertwilight
+ */
+
 const Button = styled.button`
 	border: 3px solid #000;
 	min-width: 70px;

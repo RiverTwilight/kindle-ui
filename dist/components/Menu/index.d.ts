@@ -1,4 +1,8 @@
 /// <reference types="react" />
+/**
+ * Popover Menu
+ * @author rivertwilight
+ */
 export interface IMenu {
     anchorEl: null | Element | ((element: Element) => Element);
     open?: boolean;
