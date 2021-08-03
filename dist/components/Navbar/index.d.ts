@@ -4,11 +4,9 @@ export declare type TMenuItem = {
     text: string;
     link?: string;
 };
-export declare type TActionItems<T> = {
+export declare type TActionItems = {
     [order: number]: {
-        warpper: ({ children: T }: {
-            children: any;
-        }) => T;
+        handleClick: () => void;
     };
 };
 export declare type StatuInfo = {

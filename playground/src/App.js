@@ -10,9 +10,16 @@ function App() {
 				charging
 				actionItems={{
 					1: {
-						warpper: ({ children }) => <a>{children}</a>,
+						handleClick: () => {
+							console.log("Clicked");
+						},
 					},
 				}}
+				menuItems={[
+					{
+						text: "Github",
+					},
+				]}
 			/>
 			<br />
 			<br />

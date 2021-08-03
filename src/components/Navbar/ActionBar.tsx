@@ -9,7 +9,7 @@ import Search from "../../icons/search-outline.svg";
 import Ellipsis from "../../icons/ellipsis-vertical.svg";
 import hover from "../../utils/hover";
 import border from "../../utils/border";
-import { TMenuItem } from "./index";
+import { TMenuItem, TActionItems } from "./index";
 
 const ActionBar = ({ className, children }: any) => (
 	<div className={className}>{children}</div>
@@ -52,8 +52,6 @@ const MoreMenu = ({ items }: { items?: TMenuItem[] }) => {
 		setAnchorEl(null);
 	};
 
-	if (!anchorEl) return null;
-
 	return (
 		<>
 			<button className="action-item" onClick={handleClick}>
@@ -64,12 +62,13 @@ const MoreMenu = ({ items }: { items?: TMenuItem[] }) => {
 				onClose={handleClose}
 				anchorEl={anchorEl}
 			>
-				{items.map((item, i) => (
-					<MenuItem
-						href="https://github.com/rivertwilight"
-						textPrimary={item.text}
-					/>
-				))}
+				{items &&
+					items.map((item, i) => (
+						<MenuItem
+							href="https://github.com/rivertwilight"
+							textPrimary={item.text}
+						/>
+					))}
 			</Menu>
 		</>
 	);
@@ -107,10 +106,19 @@ const StyledSearchBar = styled(SearchBar)`
 	}
 `;
 
-export default ({ menuItems }: { menuItems?: TMenuItem[], actionItems?:  }) => (
+export default ({
+	menuItems,
+	actionItems,
+}: {
+	menuItems?: TMenuItem[];
+	actionItems?: TActionItems;
+}) => (
 	<StyledActionBar>
 		<div className="action-group">
-			<button className="action-item">
+			<button
+				onClick={actionItems[1].handleClick}
+				className="action-item"
+			>
 				<Home />
 				home
 			</button>

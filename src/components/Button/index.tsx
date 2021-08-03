@@ -11,7 +11,10 @@ const Button = styled.button`
 	min-width: 70px;
 	height: 50px;
 	background: #fff;
-    font-weight: 600
+	font-weight: 600;
+	font-size: 1rem;
+	padding: 0 30px;
+	overflow: hidden
 `;
 
 export interface IButton {

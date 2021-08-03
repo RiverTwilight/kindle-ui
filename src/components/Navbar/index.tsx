@@ -2,7 +2,7 @@ import styled, { css } from "styled-components";
 import React from "react";
 import ActionBar from "./ActionBar";
 import StatuBar from "./StatuBar";
-import border from "../../utils/border"
+import border from "../../utils/border";
 
 export const BORDER_COLOR: string = "#c1b2b2";
 
@@ -33,11 +33,11 @@ export type TMenuItem = {
 	link?: string;
 };
 
-export type TActionItems<T> = {
+export type TActionItems = {
 	[order: number]: {
-		warpper: ({ children: T }) => T;
+		handleClick: () => void;
 	};
-}
+};
 
 export type StatuInfo = {
 	deviceName: string;

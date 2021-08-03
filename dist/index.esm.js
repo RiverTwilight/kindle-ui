@@ -61,7 +61,7 @@ var templateObject_1$a, templateObject_2$3;
  * @author rivertwilight
  * @description Use together with Menu
  */
-var StyledMenuItem = styled.div(templateObject_1$9 || (templateObject_1$9 = __makeTemplateObject(["\n\tpadding-top: 17px;\n\tpadding-bottom: 17px;\n\tpadding-left: 20px;\n\tfont-size: 1.1rem;\n\ta {\n\t\ttext-decoration: none;\n\t}\n"], ["\n\tpadding-top: 17px;\n\tpadding-bottom: 17px;\n\tpadding-left: 20px;\n\tfont-size: 1.1rem;\n\ta {\n\t\ttext-decoration: none;\n\t}\n"])));
+var StyledMenuItem = styled.div(templateObject_1$9 || (templateObject_1$9 = __makeTemplateObject(["\n\tpadding-top: 17px;\n\tpadding-bottom: 17px;\n\tpadding-left: 20px;\n\tfont-size: 1.1rem;\n\ta {\n\t\ttext-decoration: none;\n\t\tcolor: var(--text-color)\n\t}\n"], ["\n\tpadding-top: 17px;\n\tpadding-bottom: 17px;\n\tpadding-left: 20px;\n\tfont-size: 1.1rem;\n\ta {\n\t\ttext-decoration: none;\n\t\tcolor: var(--text-color)\n\t}\n"])));
 var MenuItem = (function (_a) {
     var textPrimary = _a.textPrimary, href = _a.href;
     var Warppper = function (_a) {
@@ -201,12 +201,11 @@ var MoreMenu = function (_a) {
     var handleClose = function () {
         setAnchorEl(null);
     };
-    if (!anchorEl)
-        return null;
     return (React__default.createElement(React__default.Fragment, null,
         React__default.createElement("button", { className: "action-item", onClick: handleClick },
             React__default.createElement(SvgEllipsisVertical, null)),
-        React__default.createElement(Menu$1, { open: Boolean(anchorEl), onClose: handleClose, anchorEl: anchorEl }, items.map(function (item, i) { return (React__default.createElement(MenuItem, { href: "https://github.com/rivertwilight", textPrimary: item.text })); }))));
+        React__default.createElement(Menu$1, { open: Boolean(anchorEl), onClose: handleClose, anchorEl: anchorEl }, items &&
+            items.map(function (item, i) { return (React__default.createElement(MenuItem, { href: "https://github.com/rivertwilight", textPrimary: item.text })); }))));
 };
 var SearchBar = function (_a) {
     var className = _a.className;
@@ -216,10 +215,10 @@ var SearchBar = function (_a) {
 };
 var StyledSearchBar = styled(SearchBar)(templateObject_2$2 || (templateObject_2$2 = __makeTemplateObject(["\n\tdisplay: flex;\n\talign-items: center;\n\t& > svg {\n\t\theight: 36px;\n\t\ttransform: translate(51%, 0px);\n\t\tdisplay: inline;\n\t\tposition: absolute; /*\u8131\u79BB\u6807\u51C6\u6D41\u4E0D\u5360\u7A7A\u95F4*/\n\t}\n\t& input {\n\t\theight: 100%;\n\t\twidth: 150px;\n\t\tborder-top: none;\n\t\tborder-right: ", ";\n\t\tborder-left: ", ";\n\t\tborder-bottom: none;\n\t\tpadding: 5px 10px;\n\t\tbox-sizing: border-box;\n\t\ttext-align: center;\n\t\tbackground-color: transparent;\n\t}\n"], ["\n\tdisplay: flex;\n\talign-items: center;\n\t& > svg {\n\t\theight: 36px;\n\t\ttransform: translate(51%, 0px);\n\t\tdisplay: inline;\n\t\tposition: absolute; /*\u8131\u79BB\u6807\u51C6\u6D41\u4E0D\u5360\u7A7A\u95F4*/\n\t}\n\t& input {\n\t\theight: 100%;\n\t\twidth: 150px;\n\t\tborder-top: none;\n\t\tborder-right: ", ";\n\t\tborder-left: ", ";\n\t\tborder-bottom: none;\n\t\tpadding: 5px 10px;\n\t\tbox-sizing: border-box;\n\t\ttext-align: center;\n\t\tbackground-color: transparent;\n\t}\n"])), border, border);
 var ActionBar$1 = (function (_a) {
-    var menuItems = _a.menuItems;
+    var menuItems = _a.menuItems, actionItems = _a.actionItems;
     return (React__default.createElement(StyledActionBar, null,
         React__default.createElement("div", { className: "action-group" },
-            React__default.createElement("button", { className: "action-item" },
+            React__default.createElement("button", { onClick: actionItems[1].handleClick, className: "action-item" },
                 React__default.createElement(SvgHomeOutline, null),
                 "home"),
             React__default.createElement("button", { className: "action-item" },
@@ -342,7 +341,7 @@ var templateObject_1$3, templateObject_2;
  * Button
  * @author rivertwilight
  */
-var Button = styled.button(templateObject_1$2 || (templateObject_1$2 = __makeTemplateObject(["\n\tborder: 3px solid #000;\n\tmin-width: 70px;\n\theight: 50px;\n\tbackground: #fff;\n    font-weight: 600\n"], ["\n\tborder: 3px solid #000;\n\tmin-width: 70px;\n\theight: 50px;\n\tbackground: #fff;\n    font-weight: 600\n"])));
+var Button = styled.button(templateObject_1$2 || (templateObject_1$2 = __makeTemplateObject(["\n\tborder: 3px solid #000;\n\tmin-width: 70px;\n\theight: 50px;\n\tbackground: #fff;\n\tfont-weight: 600;\n\tfont-size: 1rem;\n\tpadding: 0 30px;\n\toverflow: hidden\n"], ["\n\tborder: 3px solid #000;\n\tmin-width: 70px;\n\theight: 50px;\n\tbackground: #fff;\n\tfont-weight: 600;\n\tfont-size: 1rem;\n\tpadding: 0 30px;\n\toverflow: hidden\n"])));
 var index$2 = (function (_a) {
     var children = _a.children;
     return React__default.createElement(Button, null, children);
