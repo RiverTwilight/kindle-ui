@@ -390,7 +390,7 @@ var index$1 = (function (_a) {
 });
 var templateObject_1$1;
 
-var StyledListItem = styled__default['default'].div(templateObject_1 || (templateObject_1 = __makeTemplateObject(["\n\tdisplay: flex;\n\tpadding-top: 17px;\n\tpadding-bottom: 17px;\n\tpadding-left: 20px;\n\tfont-size: 1.1rem;\n\tfont-family: AmazonEmber_Eg;\n\tborder-bottom: ", ";\n\t", "\n\t.primary{\n\t\tfont-size: 20px;\n\t}\n\t.second{\n\t\tfont-size: 15px;\n\t}\n"], ["\n\tdisplay: flex;\n\tpadding-top: 17px;\n\tpadding-bottom: 17px;\n\tpadding-left: 20px;\n\tfont-size: 1.1rem;\n\tfont-family: AmazonEmber_Eg;\n\tborder-bottom: ", ";\n\t", "\n\t.primary{\n\t\tfont-size: 20px;\n\t}\n\t.second{\n\t\tfont-size: 15px;\n\t}\n"])), border, hover);
+var StyledListItem = styled__default['default'].div(templateObject_1 || (templateObject_1 = __makeTemplateObject(["\n\tdisplay: flex;\n\tpadding-top: 17px;\n\tpadding-bottom: 17px;\n\tpadding-left: 20px;\n\tfont-size: 1.1rem;\n\tfont-family: AmazonEmber_Eg;\n\tborder-bottom: ", ";\n\t", "\n\t.primary{\n\t\tfont-size: 20px;\n\t\toverflow: hidden;\n\t\ttext-overflow: ellipsis;\n\t\twhite-space: nowrap;\n\t\twidth: 300px;\n\t}\n\t.second{\n\t\tfont-size: 15px;\n\t}\n"], ["\n\tdisplay: flex;\n\tpadding-top: 17px;\n\tpadding-bottom: 17px;\n\tpadding-left: 20px;\n\tfont-size: 1.1rem;\n\tfont-family: AmazonEmber_Eg;\n\tborder-bottom: ", ";\n\t", "\n\t.primary{\n\t\tfont-size: 20px;\n\t\toverflow: hidden;\n\t\ttext-overflow: ellipsis;\n\t\twhite-space: nowrap;\n\t\twidth: 300px;\n\t}\n\t.second{\n\t\tfont-size: 15px;\n\t}\n"])), border, hover);
 var index = (function (_a) {
     var primary = _a.primary, second = _a.second;
     return (React__default['default'].createElement(StyledListItem, null,

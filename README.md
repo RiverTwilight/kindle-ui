@@ -1,8 +1,6 @@
 # kindyle
 
-[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FRiverTwilight%2Fkindyle.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2FRiverTwilight%2Fkindyle?ref=badge_shield)
-
-🎞A kindle-styled React component library.
+![](/screenshots/cover.jpg)
 
 ## Features
 

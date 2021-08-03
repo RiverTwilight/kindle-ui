@@ -14,6 +14,10 @@ const StyledListItem = styled.div`
 	${hover}
 	.primary{
 		font-size: 20px;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+		width: 300px;
 	}
 	.second{
 		font-size: 15px;
