@@ -46,7 +46,9 @@ const Typography = styled.article`
 		display: block;
 		${(props: typoStyle) => props.greyImage && greyImage}
 	}
-	h1,
+	h1 {
+		font-size: 2rem;
+	}
 	h2,
 	h3,
 	h4,

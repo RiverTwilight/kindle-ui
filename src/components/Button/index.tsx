@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import hover from "../../utils/hover"
 
 /**
  * Button
@@ -14,13 +15,15 @@ const Button = styled.button`
 	font-weight: 600;
 	font-size: 1rem;
 	padding: 0 30px;
-	overflow: hidden
+	overflow: hidden;
+	${hover}
 `;
 
 export interface IButton {
 	children: JSX.Element | JSX.Element[];
+	onClick?: (e: any) => void
 }
 
-export default ({ children }: IButton) => {
-	return <Button>{children}</Button>;
+export default ({ children, onClick }: IButton) => {
+	return <Button onClick={onClick}>{children}</Button>;
 };

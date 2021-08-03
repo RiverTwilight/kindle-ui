@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import hover from "../../utils/hover";
 
 /**
  * MenuItem
@@ -12,9 +13,10 @@ const StyledMenuItem = styled.div`
 	padding-bottom: 17px;
 	padding-left: 20px;
 	font-size: 1.1rem;
+	${hover}
 	a {
 		text-decoration: none;
-		color: var(--text-color)
+		color: var(--text-color);
 	}
 `;
 
@@ -24,11 +26,7 @@ export interface IMenuItem {
 }
 
 export default ({ textPrimary, href }: IMenuItem) => {
-	const Warppper = ({
-		children,
-	}: {
-		children: string;
-	}) => {
+	const Warppper = ({ children }: { children: string }) => {
 		return href ? <a href={href}>{children}</a> : <>{children}</>;
 	};
 	return (
