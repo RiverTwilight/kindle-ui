@@ -206,7 +206,7 @@ var ActionBar = function (_a) {
     var className = _a.className, children = _a.children;
     return (React__default.createElement("div", { className: className }, children));
 };
-var StyledActionBar = styled(ActionBar)(templateObject_1$6 || (templateObject_1$6 = __makeTemplateObject(["\n\tdisplay: flex;\n\theight: 50px;\n\t.action-group {\n\t\tdisplay: flex;\n\t}\n\t.action-space {\n\t\tflex: 2 4 auto;\n\t\twidth: 10px;\n\t}\n\t.action-item {\n\t\tborder: none;\n\t\twidth: 50px;\n\t\tbackground-color: var(--bg-color);\n\t\tcolor: var(--text-color);\n\t\tmargin-left: 10px;\n\t\tsvg {\n\t\t\twidth: 23px;\n\t\t}\n\t\tsvg path {\n\t\t\tstroke: var(--text-color);\n\t\t}\n\t\t", "\n\t}\n"], ["\n\tdisplay: flex;\n\theight: 50px;\n\t.action-group {\n\t\tdisplay: flex;\n\t}\n\t.action-space {\n\t\tflex: 2 4 auto;\n\t\twidth: 10px;\n\t}\n\t.action-item {\n\t\tborder: none;\n\t\twidth: 50px;\n\t\tbackground-color: var(--bg-color);\n\t\tcolor: var(--text-color);\n\t\tmargin-left: 10px;\n\t\tsvg {\n\t\t\twidth: 23px;\n\t\t}\n\t\tsvg path {\n\t\t\tstroke: var(--text-color);\n\t\t}\n\t\t", "\n\t}\n"])), hover);
+var StyledActionBar = styled(ActionBar)(templateObject_1$6 || (templateObject_1$6 = __makeTemplateObject(["\n\tdisplay: flex;\n\theight: 50px;\n\t.action-group {\n\t\tdisplay: flex;\n\t}\n\t.action-space {\n\t\tflex: 2 4 auto;\n\t\twidth: 10px;\n\t}\n\t.action-item {\n\t\tborder: none;\n\t\twidth: 50px;\n\t\tbackground-color: var(--bg-color);\n\t\tcolor: var(--text-color);\n\t\tmargin-left: 10px;\n\t\tsvg {\n\t\t\twidth: 23px;\n\t\t}\n\t\tsvg path {\n\t\t\tstroke: var(--text-color);\n\t\t}\n\t\ttext-transform: lowercase;\n\t\t", "\n\t}\n"], ["\n\tdisplay: flex;\n\theight: 50px;\n\t.action-group {\n\t\tdisplay: flex;\n\t}\n\t.action-space {\n\t\tflex: 2 4 auto;\n\t\twidth: 10px;\n\t}\n\t.action-item {\n\t\tborder: none;\n\t\twidth: 50px;\n\t\tbackground-color: var(--bg-color);\n\t\tcolor: var(--text-color);\n\t\tmargin-left: 10px;\n\t\tsvg {\n\t\t\twidth: 23px;\n\t\t}\n\t\tsvg path {\n\t\t\tstroke: var(--text-color);\n\t\t}\n\t\ttext-transform: lowercase;\n\t\t", "\n\t}\n"])), hover);
 var MoreMenu = function (_a) {
     var items = _a.items;
     var _b = React__default.useState(null), anchorEl = _b[0], setAnchorEl = _b[1];
@@ -248,15 +248,15 @@ var ActionBar$1 = (function (_a) {
     return (React__default.createElement(React__default.Fragment, null,
         React__default.createElement(StyledActionBar, null,
             React__default.createElement("div", { className: "action-group" },
-                React__default.createElement("button", { onClick: actionItems[1].handleClick, className: "action-item" },
+                React__default.createElement("button", { onClick: actionItems[1].onClick, className: "action-item" },
                     React__default.createElement(SvgHomeOutline, null),
-                    actionItems[1].text),
-                React__default.createElement("button", { onClick: actionItems[2].handleClick, className: "action-item" },
+                    actionItems[1].text || "home"),
+                React__default.createElement("button", { onClick: actionItems[2].onClick, className: "action-item" },
                     React__default.createElement(SvgArrowBackSharp, null),
-                    actionItems[2].text),
-                React__default.createElement("button", { onClick: actionItems[3].handleClick, className: "action-item" },
+                    actionItems[2].text || "Back"),
+                React__default.createElement("button", { onClick: actionItems[3].onClick, className: "action-item" },
                     React__default.createElement(SvgSettingsSharp, null),
-                    actionItems[3].text)),
+                    actionItems[3].text || "settings")),
             React__default.createElement("div", { className: "action-space" }),
             React__default.createElement("div", { className: "action-group" },
                 React__default.createElement(StyledSearchBar, null),

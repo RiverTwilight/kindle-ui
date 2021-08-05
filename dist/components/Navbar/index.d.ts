@@ -6,7 +6,7 @@ export declare type TMenuItem = {
 };
 export declare type TActionItems = {
     [order: number]: {
-        handleClick: () => void;
+        onClick: () => void;
         text: string;
     };
 };

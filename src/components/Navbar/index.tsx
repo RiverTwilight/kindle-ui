@@ -35,7 +35,7 @@ export type TMenuItem = {
 
 export type TActionItems = {
 	[order: number]: {
-		handleClick: () => void;
+		onClick: () => void;
 		text: string;
 	};
 };

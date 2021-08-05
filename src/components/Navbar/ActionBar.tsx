@@ -37,6 +37,7 @@ const StyledActionBar = styled(ActionBar)`
 		svg path {
 			stroke: var(--text-color);
 		}
+		text-transform: lowercase;
 		${hover}
 	}
 `;
@@ -136,25 +137,25 @@ export default ({
 			<StyledActionBar>
 				<div className="action-group">
 					<button
-						onClick={actionItems[1].handleClick}
+						onClick={actionItems[1].onClick}
 						className="action-item"
 					>
 						<Home />
-						{actionItems[1].text}
+						{actionItems[1].text || "home"}
 					</button>
 					<button
-						onClick={actionItems[2].handleClick}
+						onClick={actionItems[2].onClick}
 						className="action-item"
 					>
 						<ArrowBack />
-						{actionItems[2].text}
+						{actionItems[2].text || "Back"}
 					</button>
 					<button
-						onClick={actionItems[3].handleClick}
+						onClick={actionItems[3].onClick}
 						className="action-item"
 					>
 						<Settings />
-						{actionItems[3].text}
+						{actionItems[3].text || "settings"}
 					</button>
 				</div>
 				<div className="action-space"></div>

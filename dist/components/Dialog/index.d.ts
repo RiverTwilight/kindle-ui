@@ -1,7 +1,13 @@
 /// <reference types="react" />
-export interface IButton {
-    children: JSX.Element | JSX.Element[];
-    onClick?: (e: any) => void;
+/**
+ * Menu
+ * @author rivertwilight
+ */
+export interface IDialog {
+    anchorEl: null | Element | ((element: Element) => Element);
+    open?: boolean;
+    onClose?: () => void;
+    children?: JSX.Element | JSX.Element[];
 }
-declare const _default: ({ children, onClick }: IButton) => JSX.Element;
+declare const _default: ({ children, anchorEl, open, onClose }: IDialog) => JSX.Element;
 export default _default;

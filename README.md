@@ -2,10 +2,12 @@
 
 ![](/screenshots/cover.jpg)
 
-## Features
+## 🍊Features
 
--   [x] 4 native Kindle componenets
--   [x] Light / Dark theme
+-   [x] 9 interactive Kindle componenets
+-   [x] Light / Dark theme switch
+-   [x] Native kindle OS font (Optional)
+-   [ ] Still developing...
 
 ## Usage
 
