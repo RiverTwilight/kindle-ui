@@ -5,6 +5,8 @@ import pkg from "./package.json";
 import typescript from "rollup-plugin-typescript2";
 import svgr from "@svgr/rollup";
 import url from "rollup-plugin-url";
+import gzipPlugin from 'rollup-plugin-gzip'
+import { uglify } from "rollup-plugin-uglify";
 // import fs from "fs";
 
 const plugins = [
@@ -24,6 +26,7 @@ const plugins = [
 			limit: Infinity,
 		}),
 		del({ targets: ["dist/*"] }),
+		uglify()
 	],
 	externals = [
 		...Object.keys(pkg.peerDependencies || {}),

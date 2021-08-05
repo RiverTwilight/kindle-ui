@@ -24,14 +24,17 @@ const greyImage = css`
 	filter: gray;
 `;
 
-const Typography = styled.article`
-	padding: 15px;
-	max-width: 1000px;
-	@font-face {
+/**
+ * 	@font-face {
 		font-family: "Bookerly";
 		src: url(${Bookerly});
 	}
 	font-family: Bookerly;
+ */
+const Typography = styled.article`
+	padding: 15px;
+	max-width: 1000px;
+
 	& ::selection {
 		background-color: #000;
 		color: #fff;

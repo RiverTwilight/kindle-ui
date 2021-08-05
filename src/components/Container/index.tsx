@@ -3,12 +3,15 @@ import React from "react";
 // @ts-expect-error
 import AmazonEmber from "../../fonts/AmazonEmber/AmazonEmber_Rg.ttf";
 
-const Container = styled.div`
-	@font-face {
+/**
+ * 	@font-face {
 		font-family: AmazonEmber-Rg;
 		src: url(${AmazonEmber});
 	}
 	font-family: "AmazonEmber-Rg", Trebuchet MS;
+ */
+const Container = styled.div`
+
 	${(props: { dark?: boolean }) =>
 		props.dark
 			? `--text-color: #fff;
