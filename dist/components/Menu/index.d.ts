@@ -1,6 +1,6 @@
 /// <reference types="react" />
 /**
- * Popover Menu
+ * Menu
  * @author rivertwilight
  */
 export interface IMenu {

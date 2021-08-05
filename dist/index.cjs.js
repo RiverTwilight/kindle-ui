@@ -51,22 +51,37 @@ function __makeTemplateObject(cooked, raw) {
     return cooked;
 }
 
-var Menu = function (_a) {
+var Popover = function (_a) {
     var children = _a.children, className = _a.className;
     return (React__default['default'].createElement("div", { className: className }, children));
 };
-var Mask = styled__default['default'].div(templateObject_1$a || (templateObject_1$a = __makeTemplateObject(["\n\tposition: fixed;\n\ttop: 0;\n\tleft: 0;\n\tbottom: 0;\n\tright: 0;\n\tdisplay: ", ";\n"], ["\n\tposition: fixed;\n\ttop: 0;\n\tleft: 0;\n\tbottom: 0;\n\tright: 0;\n\tdisplay: ", ";\n"])), function (props) { return (props.show ? "block" : "none"); });
-var StyledMenu = styled__default['default'](Menu)(templateObject_2$3 || (templateObject_2$3 = __makeTemplateObject(["\n\tdisplay: ", ";\n\tmin-width: 230px;\n\tborder: 1px solid var(--border-color);\n\tbackground: var(--bg-color);\n\tposition: fixed;\n\ttop: ", "px;\n\tleft: ", "px;\n"], ["\n\tdisplay: ", ";\n\tmin-width: 230px;\n\tborder: 1px solid var(--border-color);\n\tbackground: var(--bg-color);\n\tposition: fixed;\n\ttop: ", "px;\n\tleft: ", "px;\n"])), function (props) { return (props.open ? "block" : "none"); }, function (props) { return props.top; }, function (props) { return props.left; });
-var Menu$1 = (function (_a) {
-    var children = _a.children, anchorEl = _a.anchorEl, open = _a.open, onClose = _a.onClose;
+var Mask = styled__default['default'].div(templateObject_1$b || (templateObject_1$b = __makeTemplateObject(["\n\tposition: fixed;\n\ttop: 0;\n\tleft: 0;\n\tbottom: 0;\n\tright: 0;\n\tdisplay: ", ";\n"], ["\n\tposition: fixed;\n\ttop: 0;\n\tleft: 0;\n\tbottom: 0;\n\tright: 0;\n\tdisplay: ", ";\n"])), function (props) { return (props.show ? "block" : "none"); });
+var StyledPopover = styled__default['default'](Popover)(templateObject_2$3 || (templateObject_2$3 = __makeTemplateObject(["\n\tdisplay: ", ";\n"], ["\n\tdisplay: ", ";\n"])), function (props) { return (props.open ? "block" : "none"); });
+var Popover$1 = (function (_a) {
+    var children = _a.children, open = _a.open, onClose = _a.onClose;
     var mask = React.useRef();
-    var _b = React.useState(0), top = _b[0], setTop = _b[1];
-    var _c = React.useState(0), left = _c[0], setLeft = _c[1];
     React.useEffect(function () {
         mask.current &&
             mask.current.addEventListener("click", function () {
                 onClose && onClose();
             });
+    }, []);
+    return (React__default['default'].createElement(React__default['default'].Fragment, null,
+        React__default['default'].createElement(Mask, { show: open, ref: mask }),
+        React__default['default'].createElement(StyledPopover, { open: open }, children)));
+});
+var templateObject_1$b, templateObject_2$3;
+
+var Menu = function (_a) {
+    var children = _a.children, className = _a.className;
+    return (React__default['default'].createElement("div", { className: className }, children));
+};
+var StyledMenu = styled__default['default'](Menu)(templateObject_1$a || (templateObject_1$a = __makeTemplateObject(["\n\tdisplay: ", ";\n\tmin-width: 230px;\n\tborder: 1px solid var(--border-color);\n\tbackground: var(--bg-color);\n\tposition: fixed;\n\ttop: ", "px;\n\tleft: ", "px;\n"], ["\n\tdisplay: ", ";\n\tmin-width: 230px;\n\tborder: 1px solid var(--border-color);\n\tbackground: var(--bg-color);\n\tposition: fixed;\n\ttop: ", "px;\n\tleft: ", "px;\n"])), function (props) { return (props.open ? "block" : "none"); }, function (props) { return props.top; }, function (props) { return props.left; });
+var Menu$1 = (function (_a) {
+    var children = _a.children, anchorEl = _a.anchorEl, open = _a.open, onClose = _a.onClose;
+    var _b = React.useState(0), top = _b[0], setTop = _b[1];
+    var _c = React.useState(0), left = _c[0], setLeft = _c[1];
+    React.useEffect(function () {
         var viewportOffset = anchorEl
             ? // @ts-expect-error
                 anchorEl.getBoundingClientRect()
@@ -80,10 +95,10 @@ var Menu$1 = (function (_a) {
         setLeft(left);
     }, [anchorEl]);
     return (React__default['default'].createElement(React__default['default'].Fragment, null,
-        React__default['default'].createElement(Mask, { show: open, ref: mask }),
-        React__default['default'].createElement(StyledMenu, { open: open, top: top, left: left }, children)));
+        React__default['default'].createElement(Popover$1, { open: open, onClose: onClose },
+            React__default['default'].createElement(StyledMenu, { open: open, top: top, left: left }, children))));
 });
-var templateObject_1$a, templateObject_2$3;
+var templateObject_1$a;
 
 var hover = styled.css(templateObject_1$9 || (templateObject_1$9 = __makeTemplateObject(["\n\ttransition: background-color 0.5s;\n\t&:hover {\n\t\tbackground-color: var(--text-color);\n\t\tcolor: var(--bg-color) !important;\n\t\ta {\n\t\t\tcolor: var(--bg-color) !important;\n\t\t}\n\t\tsvg path {\n\t\t\tstroke: var(--bg-color);\n\t\t}\n\t}\n"], ["\n\ttransition: background-color 0.5s;\n\t&:hover {\n\t\tbackground-color: var(--text-color);\n\t\tcolor: var(--bg-color) !important;\n\t\ta {\n\t\t\tcolor: var(--bg-color) !important;\n\t\t}\n\t\tsvg path {\n\t\t\tstroke: var(--bg-color);\n\t\t}\n\t}\n"])));
 var templateObject_1$9;
@@ -244,22 +259,37 @@ var SearchBar = function (_a) {
 };
 var StyledSearchBar = styled__default['default'](SearchBar)(templateObject_2$2 || (templateObject_2$2 = __makeTemplateObject(["\n\tdisplay: flex;\n\talign-items: center;\n\t& > svg {\n\t\theight: 36px;\n\t\ttransform: translate(51%, 0px);\n\t\tdisplay: inline;\n\t\tposition: absolute; /*\u8131\u79BB\u6807\u51C6\u6D41\u4E0D\u5360\u7A7A\u95F4*/\n\t}\n\t& input {\n\t\theight: 100%;\n\t\twidth: 150px;\n\t\tborder-top: none;\n\t\tborder-right: ", ";\n\t\tborder-left: ", ";\n\t\tborder-bottom: none;\n\t\tpadding: 5px 10px;\n\t\tbox-sizing: border-box;\n\t\ttext-align: center;\n\t\tbackground-color: transparent;\n\t}\n"], ["\n\tdisplay: flex;\n\talign-items: center;\n\t& > svg {\n\t\theight: 36px;\n\t\ttransform: translate(51%, 0px);\n\t\tdisplay: inline;\n\t\tposition: absolute; /*\u8131\u79BB\u6807\u51C6\u6D41\u4E0D\u5360\u7A7A\u95F4*/\n\t}\n\t& input {\n\t\theight: 100%;\n\t\twidth: 150px;\n\t\tborder-top: none;\n\t\tborder-right: ", ";\n\t\tborder-left: ", ";\n\t\tborder-bottom: none;\n\t\tpadding: 5px 10px;\n\t\tbox-sizing: border-box;\n\t\ttext-align: center;\n\t\tbackground-color: transparent;\n\t}\n"])), border, border);
 var ActionBar$1 = (function (_a) {
-    var menuItems = _a.menuItems, actionItems = _a.actionItems;
-    return (React__default['default'].createElement(StyledActionBar, null,
-        React__default['default'].createElement("div", { className: "action-group" },
-            React__default['default'].createElement("button", { onClick: actionItems[1].handleClick, className: "action-item" },
-                React__default['default'].createElement(SvgHomeOutline, null),
-                "home"),
-            React__default['default'].createElement("button", { className: "action-item" },
-                React__default['default'].createElement(SvgArrowBackSharp, null),
-                "back"),
-            React__default['default'].createElement("button", { className: "action-item" },
-                React__default['default'].createElement(SvgSettingsSharp, null),
-                "settings")),
-        React__default['default'].createElement("div", { className: "action-space" }),
-        React__default['default'].createElement("div", { className: "action-group" },
-            React__default['default'].createElement(StyledSearchBar, null),
-            React__default['default'].createElement(MoreMenu, { items: menuItems }))));
+    var menuItems = _a.menuItems, _b = _a.actionItems, actionItems = _b === void 0 ? {
+        1: {
+            text: "home",
+            handleClick: function () { },
+        },
+        2: {
+            text: "back",
+            handleClick: function () { },
+        },
+        3: {
+            text: "settings",
+            handleClick: function () { },
+        },
+    } : _b;
+    var _c = React.useState(false); _c[0]; _c[1];
+    return (React__default['default'].createElement(React__default['default'].Fragment, null,
+        React__default['default'].createElement(StyledActionBar, null,
+            React__default['default'].createElement("div", { className: "action-group" },
+                React__default['default'].createElement("button", { onClick: actionItems[1].handleClick, className: "action-item" },
+                    React__default['default'].createElement(SvgHomeOutline, null),
+                    actionItems[1].text),
+                React__default['default'].createElement("button", { onClick: actionItems[2].handleClick, className: "action-item" },
+                    React__default['default'].createElement(SvgArrowBackSharp, null),
+                    actionItems[2].text),
+                React__default['default'].createElement("button", { onClick: actionItems[3].handleClick, className: "action-item" },
+                    React__default['default'].createElement(SvgSettingsSharp, null),
+                    actionItems[3].text)),
+            React__default['default'].createElement("div", { className: "action-space" }),
+            React__default['default'].createElement("div", { className: "action-group" },
+                React__default['default'].createElement(StyledSearchBar, null),
+                React__default['default'].createElement(MoreMenu, { items: menuItems })))));
 });
 var templateObject_1$6, templateObject_2$2;
 
@@ -391,7 +421,7 @@ var index$1 = (function (_a) {
 var templateObject_1$1;
 
 // TODO 阅读进度
-var StyledListItem = styled__default['default'].div(templateObject_1 || (templateObject_1 = __makeTemplateObject(["\n\tdisplay: flex;\n\tpadding-top: 17px;\n\tpadding-bottom: 17px;\n\tpadding-left: 20px;\n\tfont-size: 1.1rem;\n\tfont-family: AmazonEmber_Eg;\n\tborder-bottom: ", ";\n\t", "\n\t.primary{\n\t\tfont-size: 20px;\n\t\toverflow: hidden;\n\t\ttext-overflow: ellipsis;\n\t\twhite-space: nowrap;\n\t\twidth: 300px;\n\t}\n\t.second{\n\t\tfont-size: 15px;\n\t}\n"], ["\n\tdisplay: flex;\n\tpadding-top: 17px;\n\tpadding-bottom: 17px;\n\tpadding-left: 20px;\n\tfont-size: 1.1rem;\n\tfont-family: AmazonEmber_Eg;\n\tborder-bottom: ", ";\n\t", "\n\t.primary{\n\t\tfont-size: 20px;\n\t\toverflow: hidden;\n\t\ttext-overflow: ellipsis;\n\t\twhite-space: nowrap;\n\t\twidth: 300px;\n\t}\n\t.second{\n\t\tfont-size: 15px;\n\t}\n"])), border, hover);
+var StyledListItem = styled__default['default'].div(templateObject_1 || (templateObject_1 = __makeTemplateObject(["\n\tdisplay: flex;\n\tpadding-top: 17px;\n\tpadding-bottom: 17px;\n\tpadding-left: 20px;\n\tfont-size: 1.1rem;\n\tfont-family: AmazonEmber-Rg;\n\tborder-bottom: ", ";\n\t", "\n\t.primary {\n\t\tfont-size: 20px;\n\t\toverflow: hidden;\n\t\ttext-overflow: ellipsis;\n\t\twhite-space: nowrap;\n\t\twidth: 300px;\n\t}\n\t.second {\n\t\tfont-size: 15px;\n\t}\n"], ["\n\tdisplay: flex;\n\tpadding-top: 17px;\n\tpadding-bottom: 17px;\n\tpadding-left: 20px;\n\tfont-size: 1.1rem;\n\tfont-family: AmazonEmber-Rg;\n\tborder-bottom: ", ";\n\t", "\n\t.primary {\n\t\tfont-size: 20px;\n\t\toverflow: hidden;\n\t\ttext-overflow: ellipsis;\n\t\twhite-space: nowrap;\n\t\twidth: 300px;\n\t}\n\t.second {\n\t\tfont-size: 15px;\n\t}\n"])), border, hover);
 var index = (function (_a) {
     var primary = _a.primary, second = _a.second;
     return (React__default['default'].createElement(StyledListItem, null,

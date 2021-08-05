@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import React from "react";
+import React, { useState } from "react";
 import Menu from "../Menu";
 import MenuItem from "../MenuItem";
 import Settings from "../../icons/settings-sharp.svg";
@@ -108,33 +108,61 @@ const StyledSearchBar = styled(SearchBar)`
 
 export default ({
 	menuItems,
-	actionItems,
+	actionItems = {
+		1: {
+			text: "home",
+			handleClick: () => {},
+		},
+		2: {
+			text: "back",
+			handleClick: () => {},
+		},
+		3: {
+			text: "settings",
+			handleClick: () => {},
+		},
+	},
 }: {
 	menuItems?: TMenuItem[];
 	actionItems?: TActionItems;
-}) => (
-	<StyledActionBar>
-		<div className="action-group">
-			<button
-				onClick={actionItems[1].handleClick}
-				className="action-item"
-			>
-				<Home />
-				home
-			</button>
-			<button className="action-item">
-				<ArrowBack />
-				back
-			</button>
-			<button className="action-item">
-				<Settings />
-				settings
-			</button>
-		</div>
-		<div className="action-space"></div>
-		<div className="action-group">
-			<StyledSearchBar />
-			<MoreMenu items={menuItems} />
-		</div>
-	</StyledActionBar>
-);
+}) => {
+	const [openSettings, setOpenSettings] = useState(false);
+	const handleClose = () => {
+		setOpenSettings(false);
+	};
+	return (
+		<>
+			{/* <Settings onClose={handleClose} open={openSettings} /> */}
+			<StyledActionBar>
+				<div className="action-group">
+					<button
+						onClick={actionItems[1].handleClick}
+						className="action-item"
+					>
+						<Home />
+						{actionItems[1].text}
+					</button>
+					<button
+						onClick={actionItems[2].handleClick}
+						className="action-item"
+					>
+						<ArrowBack />
+						{actionItems[2].text}
+					</button>
+					<button
+						onClick={actionItems[3].handleClick}
+						className="action-item"
+					>
+						<Settings />
+						{actionItems[3].text}
+					</button>
+				</div>
+				<div className="action-space"></div>
+				<div className="action-group">
+					<StyledSearchBar />
+					<MoreMenu items={menuItems} />
+				</div>
+			</StyledActionBar>
+		</>
+	);
+};

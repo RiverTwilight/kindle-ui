@@ -4,7 +4,6 @@ import ActionBar from "./ActionBar";
 import StatuBar from "./StatuBar";
 import border from "../../utils/border";
 
-export const BORDER_COLOR: string = "#c1b2b2";
 
 /**
  * Navbar组件
@@ -36,7 +35,6 @@ export type TMenuItem = {
 export type TActionItems = {
 	[order: number]: {
 		handleClick: () => void;
-		text: string;
 	};
 };
 
@@ -46,6 +44,7 @@ export type StatuInfo = {
 	airplane?: boolean;
 	charging?: boolean;
 };
+
 
 export interface INavbar {
 	autoClose: boolean;
@@ -68,6 +67,7 @@ export default ({
 }: INavbar) => {
 	return (
 		<Navbar fixed={autoClose}>
+			<S
 			<StatuBar
 				charging={charging}
 				airplane={airplane}

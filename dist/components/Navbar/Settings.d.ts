@@ -1,5 +1,4 @@
 /// <reference types="react" />
-export declare const BORDER_COLOR: string;
 export declare type TMenuItem = {
     text: string;
     link?: string;
@@ -7,7 +6,6 @@ export declare type TMenuItem = {
 export declare type TActionItems = {
     [order: number]: {
         handleClick: () => void;
-        text: string;
     };
 };
 export declare type StatuInfo = {

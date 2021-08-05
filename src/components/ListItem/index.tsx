@@ -11,17 +11,17 @@ const StyledListItem = styled.div`
 	padding-bottom: 17px;
 	padding-left: 20px;
 	font-size: 1.1rem;
-	font-family: AmazonEmber_Eg;
+	font-family: AmazonEmber-Rg;
 	border-bottom: ${border};
 	${hover}
-	.primary{
+	.primary {
 		font-size: 20px;
 		overflow: hidden;
 		text-overflow: ellipsis;
 		white-space: nowrap;
 		width: 300px;
 	}
-	.second{
+	.second {
 		font-size: 15px;
 	}
 `;

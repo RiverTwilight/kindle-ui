@@ -8,13 +8,6 @@ function App() {
 				airplane={true}
 				battery={99}
 				charging
-				actionItems={{
-					1: {
-						handleClick: () => {
-							console.log("Clicked");
-						},
-					},
-				}}
 				menuItems={[
 					{
 						text: "Github",
@@ -27,7 +20,6 @@ function App() {
 			<main>
 				<Typography greyImage={true}>
 					<h1>Hi, kindyle!</h1>
-
 					<h2>Typography</h2>
 					<p>
 						Kindyle is a react component library to build
