@@ -7,13 +7,22 @@
 -   [x] 9 interactive Kindle componenets
 -   [x] Light / Dark theme switch
 -   [x] Native kindle OS font (Optional)
+-   [ ] Browser
 -   [ ] Still developing...
-
-## Usage
 
 ```bash
 npm i kindyle
 ```
+
+## App
+
+An app is a highly-integrated app in kindle, in most case you cannot edit it. If you use them in your project, you may need to also add a router yourself.
+
+### Browser
+
+### Reader
+
+## Componenets
 
 ### Navbar
 
@@ -45,6 +54,12 @@ Use `Typography` to present an article or other rich-text content.
 | :-------- | :------: | :-----: | --------------- |
 | greyImage |  false   |  true   | make image grey |
 
+### Button
+
+| name | optional | default | description    |
+| :--- | :------: | :-----: | -------------- |
+| href |   true   |   --    | make it a link |
+
 ## Contribution
 
 ```bash
@@ -61,6 +76,6 @@ if it throws an error like `Can't resolve 'kindle'...`, follow the steps below t
 
 ## License
 
-inspired by [this article](https://hinammehra.medium.com/build-a-private-react-component-library-cra-rollup-material-ui-github-package-registry-1e14da93e790)
+inspired by [this blog](https://ash.ms)
 
 [![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FRiverTwilight%2Fkindyle.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2FRiverTwilight%2Fkindyle?ref=badge_large)
