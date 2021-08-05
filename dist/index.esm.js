@@ -17,6 +17,29 @@ OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
 PERFORMANCE OF THIS SOFTWARE.
 ***************************************************************************** */
 
+var __assign = function() {
+    __assign = Object.assign || function __assign(t) {
+        for (var s, i = 1, n = arguments.length; i < n; i++) {
+            s = arguments[i];
+            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p)) t[p] = s[p];
+        }
+        return t;
+    };
+    return __assign.apply(this, arguments);
+};
+
+function __rest(s, e) {
+    var t = {};
+    for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p) && e.indexOf(p) < 0)
+        t[p] = s[p];
+    if (s != null && typeof Object.getOwnPropertySymbols === "function")
+        for (var i = 0, p = Object.getOwnPropertySymbols(s); i < p.length; i++) {
+            if (e.indexOf(p[i]) < 0 && Object.prototype.propertyIsEnumerable.call(s, p[i]))
+                t[p[i]] = s[p[i]];
+        }
+    return t;
+}
+
 function __makeTemplateObject(cooked, raw) {
     if (Object.defineProperty) { Object.defineProperty(cooked, "raw", { value: raw }); } else { cooked.raw = raw; }
     return cooked;
@@ -371,10 +394,17 @@ var templateObject_1$3, templateObject_2;
  * Button
  * @author rivertwilight
  */
-var Button = styled.button(templateObject_1$2 || (templateObject_1$2 = __makeTemplateObject(["\n\tborder: 3px solid #000;\n\tmin-width: 70px;\n\theight: 50px;\n\tbackground: #fff;\n\tfont-weight: 600;\n\tfont-size: 1rem;\n\tpadding: 0 30px;\n\toverflow: hidden;\n\t", "\n"], ["\n\tborder: 3px solid #000;\n\tmin-width: 70px;\n\theight: 50px;\n\tbackground: #fff;\n\tfont-weight: 600;\n\tfont-size: 1rem;\n\tpadding: 0 30px;\n\toverflow: hidden;\n\t", "\n"])), hover);
+var Button = function (_a) {
+    var children = _a.children, className = _a.className, href = _a.href, props = __rest(_a, ["children", "className", "href"]);
+    if (href)
+        return (React__default.createElement("a", { href: href },
+            React__default.createElement("button", __assign({ className: className, type: "button" }, props), children)));
+    return (React__default.createElement("button", __assign({ className: className }, props, { href: href }), children));
+};
+var StyledButton = styled(Button)(templateObject_1$2 || (templateObject_1$2 = __makeTemplateObject(["\n\tborder: 3px solid #000;\n\tmin-width: 70px;\n\theight: 50px;\n\tbackground: #fff;\n\tfont-weight: 600;\n\tfont-size: 1rem;\n\tpadding: 0 30px;\n\toverflow: hidden;\n\t", "\n\tcolor: var(--text-color);\n\tfont-family: \"AmazonEmber-Rg\";\n"], ["\n\tborder: 3px solid #000;\n\tmin-width: 70px;\n\theight: 50px;\n\tbackground: #fff;\n\tfont-weight: 600;\n\tfont-size: 1rem;\n\tpadding: 0 30px;\n\toverflow: hidden;\n\t", "\n\tcolor: var(--text-color);\n\tfont-family: \"AmazonEmber-Rg\";\n"])), hover);
 var index$2 = (function (_a) {
-    var children = _a.children, onClick = _a.onClick;
-    return React__default.createElement(Button, { onClick: onClick }, children);
+    var children = _a.children, onClick = _a.onClick, href = _a.href, props = __rest(_a, ["children", "onClick", "href"]);
+    return (React__default.createElement(StyledButton, __assign({ href: href, onClick: onClick }, props), children));
 });
 var templateObject_1$2;
 
