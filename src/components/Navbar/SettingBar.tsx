@@ -1,7 +1,7 @@
 import styled, { css } from "styled-components";
 import React from "react";
-import ActionBar from "./ActionBar";
-import StatuBar from "./StatuBar";
+import ActionBar from "../ActionBar";
+import StatuBar from "../Statubar";
 import border from "../../utils/border";
 
 
@@ -67,7 +67,6 @@ export default ({
 }: INavbar) => {
 	return (
 		<Navbar fixed={autoClose}>
-			<S
 			<StatuBar
 				charging={charging}
 				airplane={airplane}

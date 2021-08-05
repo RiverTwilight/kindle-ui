@@ -2,61 +2,48 @@ import {
 	ActionGroup,
 	ArrowBackSharpIcon,
 	ActionItem,
-	ActionSpace,
-    Navbar
+	ActionBarSpace,
+	Navbar,
+	SearchBar,
+	StatuBar,
+	ActionBar,
+	ActionBarMenu,
+	HomeOutlineIcon,
 } from "kindyle";
+import React from "react";
 
 export default () => {
 	return (
-		<Navbar fixed={autoClose}>
-			<StatuBar
-				airplane={true}
-				battery={99}
-				charging
-				deviceName={"My Kindle"}
-			/>
-			<ActionBar
-				menuItems={[
-					{
-						text: "Github",
-					},
-				]}
-				actionItems={{
-					1: {
-						onClick: () => {
-							history.push("/");
-						},
-					},
-					2: {
-						onClick: () => {
-							history.goBack();
-						},
-					},
-					3: {
-						onClick: () => {
-							history.push("/setting");
-						},
-					},
-				}}
-			>
+		<Navbar fixed>
+			<StatuBar deviceName="My Kindle" />
+			<ActionBar>
 				<ActionGroup>
-					<ActionItem onClick={actionItems[1].onClick}>
-						<Home />
-						{actionItems[1].text || "home"}
+					<ActionItem>
+						<HomeOutlineIcon />
+						home
 					</ActionItem>
-					<ActionItem onClick={actionItems[2].onClick}>
-						<ArrowBack />
-						{actionItems[2].text || "Back"}
+					<ActionItem>
+						<ArrowBackSharpIcon />
+						BACK
 					</ActionItem>
-					<ActionItem onClick={actionItems[3].onClick}>
-						<Settings />
-						{actionItems[3].text || "settings"}
+					<ActionItem>
+						<HomeOutlineIcon />
+						settings
 					</ActionItem>
 				</ActionGroup>
-				<ActionSpace />
+				<ActionBarSpace />
 				<ActionGroup>
-					<StyledSearchBar />
-					<MoreMenu items={menuItems} />
+					<SearchBar />
+					<ActionBarMenu
+						items={[
+							{
+								text: "Github",
+							},
+							{
+								text: "Twitter",
+							},
+						]}
+					/>
 				</ActionGroup>
 			</ActionBar>
 		</Navbar>

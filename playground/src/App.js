@@ -9,7 +9,7 @@ import {
 import { Container, Navbar } from "kindyle";
 import Home from "./page/home";
 import Setting from "./page/setting";
-import Header from "./components/Header";
+import Header from "./components/Header.tsx";
 
 const Main = () => {
 	let history = useHistory();
