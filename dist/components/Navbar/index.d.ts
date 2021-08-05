@@ -1,29 +1,13 @@
 /// <reference types="react" />
-export declare const BORDER_COLOR: string;
-export declare type TMenuItem = {
-    text: string;
-    link?: string;
-};
 export declare type TActionItems = {
     [order: number]: {
         onClick: () => void;
         text: string;
     };
 };
-export declare type StatuInfo = {
-    deviceName: string;
-    battery?: number;
-    airplane?: boolean;
-    charging?: boolean;
-};
 export interface INavbar {
-    autoClose: boolean;
-    deviceName: string;
-    battery?: number;
-    airplane?: boolean;
-    charging?: boolean;
-    actionItems: TActionItems;
-    menuItems?: TMenuItem[];
+    autoClose?: boolean;
+    children: JSX.Element | JSX.Element[];
 }
-declare const _default: ({ deviceName, autoClose, battery, airplane, actionItems, charging, menuItems, }: INavbar) => JSX.Element;
+declare const _default: ({ autoClose, children }: INavbar) => JSX.Element;
 export default _default;

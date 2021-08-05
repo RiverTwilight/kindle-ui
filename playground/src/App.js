@@ -9,46 +9,23 @@ import {
 import { Container, Navbar } from "kindyle";
 import Home from "./page/home";
 import Setting from "./page/setting";
+import Header from "./components/Header";
 
 const Main = () => {
 	let history = useHistory();
 	return (
 		<>
-			<Navbar
-				airplane={true}
-				battery={99}
-				charging
-				menuItems={[
-					{
-						text: "Github",
-					},
-				]}
-				actionItems={{
-					1: {
-						onClick: () => {
-							history.push("/");
-						},
-					},
-					2: {
-						onClick: () => {
-							history.goBack();
-						},
-					},
-					3: {
-						onClick: () => {
-							history.push("/setting");
-
-						},
-					},
-				}}
-			/>
+			<Header />
 			<Switch>
-				<Route path="/setting">
-					<Setting />
-				</Route>
 				<Route path="/">
 					<Home />
 				</Route>
+				<Route path="/setting">
+					<Setting />
+				</Route>
+				{/* <Route path="/browser">
+					<Browser />
+				</Route> */}
 			</Switch>
 		</>
 	);

@@ -4,7 +4,6 @@ import Airplane from "../../icons/airplane.svg";
 import BatteryFull from "../../icons/battery-full-sharp.svg";
 import BatteryCharging from "../../icons/battery-charging-sharp.svg";
 import border from "../../utils/border";
-import { StatuInfo } from "./index";
 
 const getTimeStr = () => {
 	const now = new Date();
@@ -45,7 +44,14 @@ const StyledStatuBar = styled(StatuBar)`
 	}
 `;
 
-export default ({ deviceName, airplane, battery, charging }: StatuInfo) => {
+export interface IStatubar {
+	deviceName: string;
+	battery?: number;
+	airplane?: boolean;
+	charging?: boolean;
+}
+
+export default ({ deviceName, airplane, battery, charging }: IStatubar) => {
 	const [timeStr, setTimeStr] = useState(getTimeStr());
 	useEffect(() => {
 		setInterval(() => {
@@ -54,7 +60,7 @@ export default ({ deviceName, airplane, battery, charging }: StatuInfo) => {
 	}, []);
 	return (
 		<StyledStatuBar>
-			<div className="">{deviceName}</div>
+			<div>{deviceName}</div>
 			<div className="statu-group">
 				{airplane && (
 					<div className="statu-item airplane">

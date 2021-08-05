@@ -1,10 +1,6 @@
-import styled, { css } from "styled-components";
 import React from "react";
-import ActionBar from "./ActionBar";
-import StatuBar from "./StatuBar";
+import styled, { css } from "styled-components";
 import border from "../../utils/border";
-
-export const BORDER_COLOR: string = "#c1b2b2";
 
 /**
  * Navbar组件
@@ -28,11 +24,6 @@ const Navbar = styled.nav`
 	${(props: { fixed: boolean }) => (props.fixed ? fixedStyle : "")}
 `;
 
-export type TMenuItem = {
-	text: string;
-	link?: string;
-};
-
 export type TActionItems = {
 	[order: number]: {
 		onClick: () => void;
@@ -40,41 +31,11 @@ export type TActionItems = {
 	};
 };
 
-export type StatuInfo = {
-	deviceName: string;
-	battery?: number;
-	airplane?: boolean;
-	charging?: boolean;
-};
-
 export interface INavbar {
-	autoClose: boolean;
-	deviceName: string;
-	battery?: number;
-	airplane?: boolean;
-	charging?: boolean;
-	actionItems: TActionItems;
-	menuItems?: TMenuItem[];
+	autoClose?: boolean;
+	children: JSX.Element | JSX.Element[];
 }
 
-export default ({
-	deviceName = "My Kindle",
-	autoClose = true,
-	battery = 99,
-	airplane = true,
-	actionItems,
-	charging = false,
-	menuItems,
-}: INavbar) => {
-	return (
-		<Navbar fixed={autoClose}>
-			<StatuBar
-				charging={charging}
-				airplane={airplane}
-				battery={battery}
-				deviceName={deviceName}
-			/>
-			<ActionBar menuItems={menuItems} actionItems={actionItems} />
-		</Navbar>
-	);
+export default ({ autoClose = true, children }: INavbar) => {
+	return <Navbar fixed={autoClose}>{children}</Navbar>;
 };
