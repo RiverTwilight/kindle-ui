@@ -11,7 +11,9 @@ export { default as ActionBarMenu } from "./components/ActionBarMenu/index";
 export { default as ActionBarSpace } from "./components/ActionBarSpace/index";
 export { default as StatuBar } from "./components/StatuBar/index";
 export { default as SearchBar } from "./components/SearchBar/index";
+export { default as Card } from "./components/Card/index";
 
+export { default as CogSharpIcon } from "./icons/cog-sharp.svg";
 export { default as AirplaneIcon } from "./icons/airplane.svg";
 export { default as HomeOutlineIcon } from "./icons/home-outline.svg";
 export { default as WifiSharpIcon } from "./icons/wifi-sharp.svg";

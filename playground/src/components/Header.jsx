@@ -9,25 +9,35 @@ import {
 	ActionBar,
 	ActionBarMenu,
 	HomeOutlineIcon,
+	CogSharpIcon
 } from "kindyle";
 import React from "react";
+import {
+	useHistory,
+} from "react-router-dom";
 
 export default () => {
+	let history = useHistory();
+
 	return (
 		<Navbar>
 			<StatuBar battery={86} deviceName="My Kindle" />
 			<ActionBar>
 				<ActionGroup>
-					<ActionItem>
+					<ActionItem onClick={()=>{
+						history.push('/')
+					}}>
 						<HomeOutlineIcon />
 						home
 					</ActionItem>
-					<ActionItem>
+					<ActionItem onClick={()=>{
+						history.goBack()
+					}}>
 						<ArrowBackSharpIcon />
 						BACK
 					</ActionItem>
 					<ActionItem>
-						<HomeOutlineIcon />
+						<CogSharpIcon />
 						settings
 					</ActionItem>
 				</ActionGroup>

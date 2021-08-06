@@ -3,7 +3,6 @@ import {
 	BrowserRouter as Router,
 	Switch,
 	Route,
-	Link,
 	useHistory,
 } from "react-router-dom";
 import { Container } from "kindyle";
@@ -12,7 +11,6 @@ import Setting from "./page/setting";
 import Header from "./components/Header.jsx";
 
 const Main = () => {
-	let history = useHistory();
 	return (
 		<>
 			<Header />

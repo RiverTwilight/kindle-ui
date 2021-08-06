@@ -1,4 +1,4 @@
-import { Typography, Button, ListItem, Dialog } from "kindyle";
+import { Typography, Button, ListItem, Card } from "kindyle";
 
 export default () => {
 	return (
@@ -25,7 +25,8 @@ export default () => {
 					second="Arthur Conan Doyle"
 				></ListItem>
 				<ListItem primary="尘埃落定" second="阿来著"></ListItem>
-				<h2>Dialog</h2>
+				<h2>Card</h2>
+				<Card>asdfkhjf</Card>
 			</Typography>
 		</>
 	);
