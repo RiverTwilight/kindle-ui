@@ -1,16 +1,10 @@
 import React, { useState } from "react";
-import styled from "styled-components";
 import ActionItem from "../ActionItem";
-import MenuItem from "../MenuItem";
+import MenuItem, { IMenuItem } from "../MenuItem";
 import Menu from "../Menu";
 import Ellipsis from "../../icons/ellipsis-vertical.svg";
 
-export type TMenuItem = {
-	text: string;
-	link?: string;
-};
-
-export default ({ items }: { items?: TMenuItem[] }) => {
+export default ({ items }: { items?: IMenuItem[] }) => {
 	const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
 
 	const handleClick = (event: React.MouseEvent<HTMLButtonElement>) => {
@@ -33,10 +27,7 @@ export default ({ items }: { items?: TMenuItem[] }) => {
 			>
 				{items &&
 					items.map((item, i) => (
-						<MenuItem
-							href="https://github.com/rivertwilight"
-							textPrimary={item.text}
-						/>
+						<MenuItem key={i + item.textPrimary} {...item} />
 					))}
 			</Menu>
 		</>

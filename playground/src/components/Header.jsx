@@ -14,8 +14,8 @@ import React from "react";
 
 export default () => {
 	return (
-		<Navbar fixed>
-			<StatuBar deviceName="My Kindle" />
+		<Navbar>
+			<StatuBar battery={86} deviceName="My Kindle" />
 			<ActionBar>
 				<ActionGroup>
 					<ActionItem>
@@ -37,10 +37,12 @@ export default () => {
 					<ActionBarMenu
 						items={[
 							{
-								text: "Github",
+								textPrimary: "Github",
+								component: "a",
+								href: "https://github.com/rivertwilight"
 							},
 							{
-								text: "Twitter",
+								textPrimary: "Expermintal Browser",
 							},
 						]}
 					/>

@@ -1,17 +1,13 @@
-import styled, { css } from "styled-components";
-import React from "react";
+import styled from "styled-components";
 // @ts-expect-error
 import AmazonEmber from "../../fonts/AmazonEmber/AmazonEmber_Rg.ttf";
 
-/**
- * 	@font-face {
+export default styled.div`
+	@font-face {
 		font-family: AmazonEmber-Rg;
 		src: url(${AmazonEmber});
 	}
 	font-family: "AmazonEmber-Rg", Trebuchet MS;
- */
-const Container = styled.div`
-
 	${(props: { dark?: boolean }) =>
 		props.dark
 			? `--text-color: #fff;
@@ -32,7 +28,3 @@ export interface IContainer {
 	children: JSX.Element | JSX.Element[];
 	dark?: boolean;
 }
-
-export default ({ children, dark }: IContainer) => {
-	return <Container dark={dark}>{children}</Container>;
-};

@@ -11,7 +11,14 @@ const Button = ({ children, className, href, ...props }: any) => {
 	if (href)
 		return (
 			<a href={href}>
-				<button className={className} type="button" {...props}>
+				<button
+					style={{
+						cursor: "pointer",
+					}}
+					className={className}
+					type="button"
+					{...props}
+				>
 					{children}
 				</button>
 			</a>
@@ -23,7 +30,7 @@ const Button = ({ children, className, href, ...props }: any) => {
 	);
 };
 
-const StyledButton = styled(Button)`
+export default styled(Button)`
 	border: 3px solid #000;
 	min-width: 70px;
 	height: 50px;
@@ -42,11 +49,3 @@ export interface IButton {
 	onClick?: (e: any) => void;
 	href?: string;
 }
-
-export default ({ children, onClick, href, ...props }: IButton) => {
-	return (
-		<StyledButton href={href} onClick={onClick} {...props}>
-			{children}
-		</StyledButton>
-	);
-};

@@ -1,9 +1,6 @@
 /// <reference types="react" />
-export declare type TMenuItem = {
-    text: string;
-    link?: string;
-};
+import { IMenuItem } from "../MenuItem";
 declare const _default: ({ items }: {
-    items?: TMenuItem[] | undefined;
+    items?: IMenuItem[] | undefined;
 }) => JSX.Element;
 export default _default;

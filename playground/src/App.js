@@ -6,10 +6,10 @@ import {
 	Link,
 	useHistory,
 } from "react-router-dom";
-import { Container, Navbar } from "kindyle";
+import { Container } from "kindyle";
 import Home from "./page/home";
 import Setting from "./page/setting";
-import Header from "./components/Header.tsx";
+import Header from "./components/Header.jsx";
 
 const Main = () => {
 	let history = useHistory();

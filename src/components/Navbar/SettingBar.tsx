@@ -1,7 +1,7 @@
 import styled, { css } from "styled-components";
 import React from "react";
 import ActionBar from "../ActionBar";
-import StatuBar from "../Statubar";
+import StatuBar from "../StatuBar";
 import border from "../../utils/border";
 
 

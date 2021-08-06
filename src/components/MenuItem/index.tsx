@@ -8,30 +8,33 @@ import hover from "../../utils/hover";
  * @description Use together with Menu
  */
 
-const StyledMenuItem = styled.div`
-	padding-top: 17px;
-	padding-bottom: 17px;
+const MenuItem = ({
+	component = "div",
+	className,
+	textPrimary,
+	...props
+}: any) => {
+	const Comp = component;
+	return (
+		<Comp className={className} {...props}>
+			{textPrimary}
+		</Comp>
+	);
+};
+
+export default styled(MenuItem)`
+	display: block;
+	height: 60px;
 	padding-left: 20px;
+	line-height: 60px;
 	font-size: 1.1rem;
 	${hover}
-	a {
-		text-decoration: none;
-		color: var(--text-color);
-	}
+	text-decoration: none;
+	color: var(--text-color);
 `;
 
 export interface IMenuItem {
 	textPrimary: string;
 	href?: string;
+	component?: string;
 }
-
-export default ({ textPrimary, href }: IMenuItem) => {
-	const Warppper = ({ children }: { children: string }) => {
-		return href ? <a href={href}>{children}</a> : <>{children}</>;
-	};
-	return (
-		<StyledMenuItem>
-			<Warppper>{textPrimary}</Warppper>
-		</StyledMenuItem>
-	);
-};

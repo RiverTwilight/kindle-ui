@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import ActionBar from "../../components/ActionBar";
-import StatuBar from "../../components/Statubar"
+import StatuBar from "../../components/StatuBar"
 
 const frame = styled.iframe`
     width: 100%
