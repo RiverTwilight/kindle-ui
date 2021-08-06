@@ -31,6 +31,7 @@ export interface IListItem {
 	second?: string;
 }
 
+// TODO receive componenet
 export default ({ primary, second }: IListItem) => {
 	return (
 		<StyledListItem>

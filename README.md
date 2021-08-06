@@ -4,7 +4,7 @@
 
 ## 🍊Features
 
--   [x] 9 interactive Kindle componenets
+-   [x] 9 interactive Kindle components
 -   [x] Light / Dark theme switch
 -   [x] Native kindle OS font (Optional)
 -   [ ] Browser
@@ -75,6 +75,8 @@ if it throws an error like `Can't resolve 'kindle'...`, follow the steps below t
 2. Check whether the `playground/node_modules/kindyle` exsit and linked to root directory. if not, you may need to run `npm i ../ -save`mannually in `playgrpund` folder.
 
 ## License
+
+MIT
 
 inspired by [this blog](https://ash.ms)
 

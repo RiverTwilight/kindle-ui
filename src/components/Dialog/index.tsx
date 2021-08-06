@@ -3,7 +3,7 @@ import styled from "styled-components";
 import Popover from "../Popover";
 
 /**
- * Menu
+ * Dialog
  * @author rivertwilight
  */
 
@@ -24,7 +24,8 @@ const Dialog = ({ children, className, title }: any) => (
 const StyledDialog = styled(Dialog)`
 	display: ${(props) => (props.open ? "block" : "none")};
 	min-width: 230px;
-	border: 1px solid var(--border-color);
+	border: 3px solid var(--border-color);
+	border-radius: 6px;
 	background: var(--bg-color);
 	position: fixed;
 `;

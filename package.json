@@ -1,5 +1,6 @@
 {
 	"name": "kindyle",
+	"description": "A react component library to build Kindle OS in the browser.",
 	"version": "0.1.1",
 	"private": false,
 	"main": "dist/index.cjs.js",
