@@ -1,3 +1,4 @@
+import { useState } from "react"
 import styled from "styled-components";
 // @ts-expect-error
 import AmazonEmber from "../../fonts/AmazonEmber/AmazonEmber_Rg.ttf";
@@ -27,4 +28,8 @@ export default styled.div`
 export interface IContainer {
 	children: JSX.Element | JSX.Element[];
 	dark?: boolean;
+}
+
+const Container = () => {
+	const [dark, setDark] = useState(false);
 }
