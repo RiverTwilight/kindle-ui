@@ -32,6 +32,9 @@ const StyledListItem = styled(ListItem)`
 	font-size: 1.1rem;
 	font-family: AmazonEmber-Rg, sans-serif;
 	border-bottom: ${border};
+	&:last-child{
+		border-bottom: none;
+	}
 	text-decoration: none;
 	color: var(--text-color);
 `;
