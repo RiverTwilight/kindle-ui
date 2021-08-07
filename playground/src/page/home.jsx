@@ -1,4 +1,12 @@
-import { Typography, Button, ListItem, Card } from "kindyle";
+import {
+	Typography,
+	Button,
+	ListItem,
+	ListItemText,
+	ListItemIcon,
+	Card,
+	EllipsisVerticalIcon,
+} from "kindyle";
 
 export default () => {
 	return (
@@ -20,11 +28,20 @@ export default () => {
 					With Link
 				</Button>
 				<h2>List</h2>
-				<ListItem
-					primary="The Adventure of Sherlok Holmoes (福尔摩斯探案集）"
-					second="Arthur Conan Doyle"
-				></ListItem>
-				<ListItem primary="尘埃落定" second="阿来著"></ListItem>
+				<ListItem>
+					<ListItemText primary="尘埃落定" second="阿来著" />
+				</ListItem>
+				<ListItem component="a" href="https://github.com">
+					<ListItemText
+						primary="The Adventure of Sherlok Holmoes (福尔摩斯探案集）"
+						second="Arthur Conan Doyle"
+					/>
+					<ListItemIcon onClick={()=>{
+						alert("sdf")
+					}}>
+						<EllipsisVerticalIcon />
+					</ListItemIcon>
+				</ListItem>
 				<h2>Card</h2>
 				<Card>asdfkhjf</Card>
 			</Typography>

@@ -1,6 +1,6 @@
 /// <reference types="react" />
 /**
- * Menu
+ * Dialog
  * @author rivertwilight
  */
 export interface IDialog {

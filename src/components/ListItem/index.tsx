@@ -1,44 +1,39 @@
 import React from "react";
 import styled from "styled-components";
-import hover from "../../utils/hover";
 import border from "../../utils/border";
 
 // TODO 阅读进度
 
-const StyledListItem = styled.div`
-	display: flex;
-	padding-top: 17px;
-	padding-bottom: 17px;
-	padding-left: 20px;
-	font-size: 1.1rem;
-	font-family: AmazonEmber-Rg;
-	border-bottom: ${border};
-	${hover}
-	.primary {
-		font-size: 20px;
-		overflow: hidden;
-		text-overflow: ellipsis;
-		white-space: nowrap;
-		width: 300px;
-	}
-	.second {
-		font-size: 15px;
-	}
-`;
-
 export interface IListItem {
-	primary?: string;
-	second?: string;
+	children: JSX.Element | JSX.Element[];
+	component?: string;
+	className?: any;
 }
 
-// TODO receive componenet
-export default ({ primary, second }: IListItem) => {
+const ListItem = ({
+	className,
+	component = "div",
+	children,
+	...props
+}: IListItem) => {
+	const Comp = component;
 	return (
-		<StyledListItem>
-			<div className="textGroup">
-				<div className="primary">{primary}</div>
-				<div className="second">{second}</div>
-			</div>
-		</StyledListItem>
+		<Comp className={className} {...props}>
+			{children}
+		</Comp>
 	);
 };
+
+const StyledListItem = styled(ListItem)`
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0 10px;
+	font-size: 1.1rem;
+	font-family: AmazonEmber-Rg, sans-serif;
+	border-bottom: ${border};
+	text-decoration: none;
+	color: var(--text-color);
+`;
+
+export default StyledListItem;

@@ -5,6 +5,8 @@ export { default as Container } from "./components/Container/index";
 export { default as Menu } from "./components/Menu/index";
 export { default as ActionBar } from "./components/ActionBar/index";
 export { default as ListItem } from "./components/ListItem/index";
+export { default as ListItemIcon } from "./components/ListItemIcon/index";
+export { default as ListItemText } from "./components/ListItemText/index";
 export { default as ActionItem } from "./components/ActionItem/index";
 export { default as ActionGroup } from "./components/ActionGroup/index";
 export { default as ActionBarMenu } from "./components/ActionBarMenu/index";
