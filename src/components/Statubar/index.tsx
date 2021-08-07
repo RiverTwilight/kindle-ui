@@ -51,6 +51,10 @@ export interface IStatubar {
 	charging?: boolean;
 }
 
+
+/**
+ * Statubar
+ */
 export default ({ deviceName, airplane, battery, charging }: IStatubar) => {
 	const [timeStr, setTimeStr] = useState(getTimeStr());
 	useEffect(() => {

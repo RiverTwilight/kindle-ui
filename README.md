@@ -68,11 +68,13 @@ npm run i-all
 npm run dev
 ```
 
-if it throws an error like `Can't resolve 'kindle'...`, follow the steps below to solve:
+if it throws an error like `Can't resolve 'kindle'...`, Try three solustions:
 
 1. Check whether the `dist` folder is empty, if so, run `npm run build` to build a production bundle then run `npm run dev`.
 
 2. Check whether the `playground/node_modules/kindyle` exsit and linked to root directory. if not, you may need to run `npm i ../ -save`mannually in `playgrpund` folder.
+
+3. If both 1 and 2 doesn't work, open two terminals, run `npm run build-watch`in first erminal and run `npm run start-playground` in another one.
 
 ## License
 

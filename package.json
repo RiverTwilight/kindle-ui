@@ -1,8 +1,9 @@
 {
 	"name": "kindyle",
 	"description": "A react component library to build Kindle OS in the browser.",
-	"version": "0.1.1",
+	"version": "1.0.1",
 	"private": false,
+	"license": "MIT",
 	"main": "dist/index.cjs.js",
 	"module": "dist/index.esm.js",
 	"source": "src/index.ts",
@@ -29,7 +30,7 @@
 		"build-watch": "rollup -c -w",
 		"start-playground": "cd playground && npm run start",
 		"i-all": " cd playground && npm i && cd ../ && npm i",
-		"dev": "npm-run-all --parallel build-watch start-playground"
+		"dev": "npm-run-all --parallel start-playground build-watch"
 	},
 	"eslintConfig": {
 		"extends": [

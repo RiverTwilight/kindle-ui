@@ -24,6 +24,7 @@ export default styled(ListItemText)`
 	flex: 1;
 	.primary {
 		font-size: 20px;
+		font-weight: 600;
 		width: 90%;
 		overflow: hidden;
 		text-overflow: ellipsis;

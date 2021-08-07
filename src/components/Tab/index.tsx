@@ -5,6 +5,5 @@ import styled from "styled-components";
 
 export default styled.div`
 	display: flex;
-    overflow-x: scroll;
     padding: 10px 5px;
 `;

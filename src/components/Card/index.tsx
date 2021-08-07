@@ -1,7 +1,9 @@
 import styled from "styled-components";
+import border from "../../utils/border";
 
 // TODO rich content
 export default styled.div`
-	border: 3px solid #000;
+	border: ${border};
 	border-radius: 7px;
+	display: flex;
 `;

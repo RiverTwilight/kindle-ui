@@ -18,9 +18,7 @@ const greyImage = css`
 	-moz-filter: grayscale(100%);
 	-ms-filter: grayscale(100%);
 	-o-filter: grayscale(100%);
-
 	filter: grayscale(100%);
-
 	filter: gray;
 `;
 
@@ -31,7 +29,7 @@ const Typography = styled.article`
 		font-family: "Bookerly";
 		src: url(${Bookerly});
 	}
-	font-family: Bookerly;
+	font-family: Bookerly, serif;
 	& ::selection {
 		background-color: #000;
 		color: #fff;
@@ -60,9 +58,10 @@ export default ({
 	children,
 	lineHeight = 25,
 	greyImage = false,
+	...props
 }: ITypography) => {
 	return (
-		<Typography greyImage={greyImage} lineHeight={lineHeight}>
+		<Typography {...props} greyImage={greyImage} lineHeight={lineHeight}>
 			{children}
 		</Typography>
 	);

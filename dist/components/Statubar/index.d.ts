@@ -6,4 +6,7 @@ export interface IStatubar {
     charging?: boolean;
 }
 declare const _default: ({ deviceName, airplane, battery, charging }: IStatubar) => JSX.Element;
+/**
+ * Statubar
+ */
 export default _default;
