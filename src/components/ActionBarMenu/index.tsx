@@ -17,7 +17,7 @@ export default ({ items }: { items?: IMenuItem[] }) => {
 
 	return (
 		<>
-			<ActionItem onClick={handleClick}>
+			<ActionItem style={{ marginLeft: 0 }} onClick={handleClick}>
 				<Ellipsis />
 			</ActionItem>
 			<Menu

@@ -17,4 +17,4 @@ const ActionItem = styled.button`
 	${hover}
 `;
 
-export default ActionItem
+export default ActionItem;
