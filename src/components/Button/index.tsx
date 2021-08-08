@@ -31,10 +31,10 @@ const Button = ({ children, className, href, ...props }: any) => {
 };
 
 export default styled(Button)`
-	border: 3px solid #000;
+	border: 3px solid var(--text-color);
 	min-width: 70px;
 	height: 50px;
-	background: #fff;
+	background: var(--bg-color);
 	font-weight: 600;
 	font-size: 1rem;
 	padding: 0 30px;
