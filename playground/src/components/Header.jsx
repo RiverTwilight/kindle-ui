@@ -11,7 +11,6 @@ import {
 	HomeOutlineIcon,
 	CogSharpIcon
 } from "kindyle";
-import React from "react";
 import {
 	useHistory,
 } from "react-router-dom";
@@ -21,7 +20,7 @@ export default () => {
 
 	return (
 		<Navbar>
-			<StatuBar battery={86} deviceName="My Kindle" />
+			<StatuBar airplane battery={86} deviceName="My Kindle" />
 			<ActionBar>
 				<ActionGroup>
 					<ActionItem onClick={()=>{

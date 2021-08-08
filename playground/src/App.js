@@ -8,6 +8,7 @@ import {
 import { Container } from "kindyle";
 import Home from "./page/home";
 import Setting from "./page/setting";
+import Reader from "./page/reader";
 import Header from "./components/Header.jsx";
 
 const Main = () => {
@@ -21,9 +22,9 @@ const Main = () => {
 				<Route path="/setting">
 					<Setting />
 				</Route>
-				{/* <Route path="/browser">
-					<Browser />
-				</Route> */}
+				<Route path="/reader">
+					<Reader />
+				</Route>
 			</Switch>
 		</>
 	);

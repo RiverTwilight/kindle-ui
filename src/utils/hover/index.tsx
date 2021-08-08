@@ -10,6 +10,7 @@ export default css`
 		}
 		svg path {
 			stroke: var(--bg-color);
+			fill: var(--bg-color);
 		}
 	}
 `;

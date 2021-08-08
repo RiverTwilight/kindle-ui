@@ -21,6 +21,7 @@ const Navbar = styled.nav`
 	flex-direction: column;
 	border-bottom: ${border};
 	background-color: var(--bg-color);
+	z-index: 20;
 	${(props: { fixed: boolean }) => (props.fixed ? fixedStyle : "")}
 `;
 

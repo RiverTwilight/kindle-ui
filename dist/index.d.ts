@@ -19,6 +19,7 @@ export { default as CardContent } from "./components/CardContent/index";
 export { default as CardTitle } from "./components/CardTitle/index";
 export { default as Tab } from "./components/Tab/index";
 export { default as TabItem } from "./components/TabItem/index";
+export { default as TimeBar } from "./components/TimeBar/index";
 export { default as CogSharpIcon } from "./icons/cog-sharp.svg";
 export { default as AirplaneIcon } from "./icons/airplane.svg";
 export { default as HomeOutlineIcon } from "./icons/home-outline.svg";

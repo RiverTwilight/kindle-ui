@@ -7,8 +7,6 @@ interface ITabItem {
 }
 
 export default styled.div`
-	width: 200px;
-	height: 300px;
 	img {
 		${greyImage}
 		object-fit: cover;

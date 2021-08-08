@@ -4,13 +4,7 @@ import Airplane from "../../icons/airplane.svg";
 import BatteryFull from "../../icons/battery-full-sharp.svg";
 import BatteryCharging from "../../icons/battery-charging-sharp.svg";
 import border from "../../utils/border";
-
-const getTimeStr = () => {
-	const now = new Date();
-	return `${now.getHours()}:${
-		now.getMinutes() < 10 ? 0 : ""
-	}${now.getMinutes()}`;
-};
+import getTimeStr from "../../utils/getTimeStr";
 
 const StatuBar = ({ className, children }: any) => (
 	<div className={className}>{children}</div>

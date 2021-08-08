@@ -12,6 +12,9 @@ import {
 	TabItem,
 	EllipsisVerticalIcon,
 } from "kindyle";
+import {
+	Link,
+} from "react-router-dom";
 
 export default () => {
 	return (
@@ -33,7 +36,7 @@ export default () => {
 					With Link
 				</Button>
 				<h2>List</h2>
-				<ListItem>
+				<ListItem component={Link} to="/reader">
 					<ListItemText primary="尘埃落定" second="阿来著" />
 				</ListItem>
 				<ListItem component="a" href="https://github.com">
