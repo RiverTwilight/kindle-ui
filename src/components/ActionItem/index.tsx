@@ -6,12 +6,15 @@ const ActionItem = styled.button`
 	width: 50px;
 	background-color: var(--bg-color);
 	color: var(--text-color);
-	margin-left: 10px;
+	@media (min-width: 460px) {
+		margin-left: 10px;
+	}
 	svg {
 		width: 23px;
 	}
 	svg path {
 		stroke: var(--text-color);
+		/* DO NOT ADD THIS: fill: var(--text-color);*/
 	}
 	text-transform: lowercase;
 	${hover}

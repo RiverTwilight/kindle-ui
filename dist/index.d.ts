@@ -17,6 +17,7 @@ export { default as Card } from "./components/Card/index";
 export { default as CardMedia } from "./components/CardMedia/index";
 export { default as CardContent } from "./components/CardContent/index";
 export { default as CardTitle } from "./components/CardTitle/index";
+export { default as CardAction } from "./components/CardAction/index";
 export { default as Tab } from "./components/Tab/index";
 export { default as TabItem } from "./components/TabItem/index";
 export { default as TimeBar } from "./components/TimeBar/index";

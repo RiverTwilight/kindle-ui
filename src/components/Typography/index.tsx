@@ -29,17 +29,22 @@ const Typography = styled.article`
 		font-family: "Bookerly";
 		src: url(${Bookerly});
 	}
-	font-family: Bookerly, serif;
+	font-family: Bookerly, AmazonEmber-Rg;
+	color: var(--text-color);
 	& ::selection {
-		background-color: #000;
-		color: #fff;
+		background-color: var(--text-color);
+		color: var(--bg-color);
+	}
+	a {
+		color: var(--text-color);
 	}
 	p {
 		line-height: ${(props: typoStyle) => props.lineHeight}px;
 		letter-spacing: 0.051rem;
 	}
 	img {
-		max-width: 90%;
+		max-width: 400px;
+		max-height: 1000px;
 		margin: 0 auto;
 		display: block;
 		${(props: typoStyle) => props.greyImage && greyImage}

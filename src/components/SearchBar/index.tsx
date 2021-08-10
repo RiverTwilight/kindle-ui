@@ -15,6 +15,7 @@ const SearchBar = ({ className }: any) => {
 export default styled(SearchBar)`
 	display: flex;
 	align-items: center;
+	margin: 0 1px;
 	& > svg {
 		height: 36px;
 		transform: translate(51%, 0px);
