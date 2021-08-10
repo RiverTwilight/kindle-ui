@@ -25,6 +25,7 @@ const greyImage = css`
 const Typography = styled.article`
 	padding: 15px;
 	max-width: 1000px;
+	font-size: 1.1rem;
 	@font-face {
 		font-family: "Bookerly";
 		src: url(${Bookerly});

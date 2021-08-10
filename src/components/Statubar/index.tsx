@@ -22,6 +22,11 @@ const StyledStatuBar = styled(StatuBar)`
 	.statu-group {
 		display: flex;
 	}
+	.device-name {
+		text-overflow: ellipsis;
+		white-space: nowrap;
+		overflow: hidden;
+	}
 	.battery {
 		display: flex;
 		& svg {
@@ -45,7 +50,6 @@ export interface IStatubar {
 	charging?: boolean;
 }
 
-
 /**
  * Statubar
  */
@@ -58,7 +62,7 @@ export default ({ deviceName, airplane, battery, charging }: IStatubar) => {
 	}, []);
 	return (
 		<StyledStatuBar>
-			<div>{deviceName}</div>
+			<div className="device-name">{deviceName}</div>
 			<div className="statu-group">
 				{airplane && (
 					<div className="statu-item airplane">
