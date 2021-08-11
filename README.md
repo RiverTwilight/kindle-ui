@@ -28,6 +28,53 @@ An app is a highly-integrated app in kindle, in most case you cannot edit it. If
 
 Navbar is an integrated kindle native component. All icons are un-editable, but you can still change some status and callback functions such as battery, device name and so on.
 
+<details>
+  <summary>Example:</summary>
+  
+```JSX
+<Navbar>
+	<StatuBar airplane battery={86} deviceName="My Kindle" />
+	<ActionBar>
+		<ActionGroup>
+			<ActionItem
+				onClick={() => {
+					history.push("/");
+				}}
+			>
+				<HomeOutlineIcon />
+				home
+			</ActionItem>
+			<ActionItem
+				onClick={() => {
+					history.goBack();
+				}}
+			>
+				<ArrowBackSharpIcon />
+				BACK
+			</ActionItem>
+			<ActionItem>
+				<CogSharpIcon />
+				settings
+			</ActionItem>
+		</ActionGroup>
+		<ActionBarSpace />
+		<ActionGroup>
+			<SearchBar />
+			<ActionBarMenu
+				items={[
+					{
+						textPrimary: "Github",
+						component: "a",
+						href: "https://github.com/rivertwilight",
+					},
+				]}
+			/>
+		</ActionGroup>
+	</ActionBar>
+</Navbar>
+```
+</details>
+
 ### Container
 
 If you want to use AmazonEmber font(around 106kb) and dark mode to get a more kindle-ish ui, you can wrap your app with `Container` componenet, which adds a global font-family.

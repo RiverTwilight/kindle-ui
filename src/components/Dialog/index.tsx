@@ -14,30 +14,21 @@ export interface IDialog {
 	children?: JSX.Element | JSX.Element[];
 }
 
-const Dialog = ({ children, className, title }: any) => (
-	<div className={className}>
-		<div>{title}</div>
-		{children}
-	</div>
-);
-
-const StyledDialog = styled(Dialog)`
-	display: ${(props) => (props.open ? "block" : "none")};
-	min-width: 230px;
-	border: 3px solid var(--border-color);
-	border-radius: 6px;
+const StyledDialog = styled.div`
+	border: 3px solid var(--text-color);
 	background: var(--bg-color);
+	border-radius: 6px;
 	position: fixed;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	min-width: 400px;
 `;
 
 export default ({ children, anchorEl, open, onClose }: IDialog) => {
 	return (
-		<>
-			<Popover open={open} onClose={onClose}>
-				<StyledDialog title="test" open={open}>
-					{children}
-				</StyledDialog>
-			</Popover>
-		</>
+		<Popover open={open} onClose={onClose}>
+			<StyledDialog title="test">{children}</StyledDialog>
+		</Popover>
 	);
 };

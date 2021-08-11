@@ -5,4 +5,5 @@ export interface IButton {
     children: JSX.Element | JSX.Element[];
     onClick?: (e: any) => void;
     href?: string;
+    variant?: "default" | "outline";
 }

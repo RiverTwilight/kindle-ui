@@ -31,7 +31,8 @@ const Button = ({ children, className, href, ...props }: any) => {
 };
 
 export default styled(Button)`
-	border: 3px solid var(--text-color);
+	${(props: IButton) =>
+		props.variant === "outline" && `border: 3px solid var(--text-color);`}
 	min-width: 70px;
 	height: 50px;
 	background: var(--bg-color);
@@ -48,4 +49,5 @@ export interface IButton {
 	children: JSX.Element | JSX.Element[];
 	onClick?: (e: any) => void;
 	href?: string;
+	variant?: "default" | "outline";
 }
