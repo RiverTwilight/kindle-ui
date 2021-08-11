@@ -4,7 +4,7 @@
  * @author rivertwilight
  */
 export interface IDialog {
-    anchorEl: null | Element | ((element: Element) => Element);
+    anchorEl?: null | Element | ((element: Element) => Element);
     open?: boolean;
     onClose?: () => void;
     children?: JSX.Element | JSX.Element[];
