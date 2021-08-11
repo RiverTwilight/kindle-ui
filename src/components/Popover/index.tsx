@@ -40,6 +40,10 @@ export default ({ children, open, onClose }: IPopover) => {
 	const mask = useRef(null);
 	const [index, setIndex] = useState(1);
 
+	const handleClick = () => {
+		onClose && onClose();
+	};
+
 	useEffect(() => {
 		if (mask.current) {
 			console.log("Useeffect");
@@ -49,15 +53,11 @@ export default ({ children, open, onClose }: IPopover) => {
 			} else {
 				window.maskNumber = 1;
 			}
-			mask.current.addEventListener("click", () => {
-				onClose && onClose();
-			});
+			mask.current.addEventListener("click", handleClick);
 		}
 		return () => {
 			if (mask.current) {
-				mask.current.removeEventListener("click", () => {
-					onClose && onClose();
-				});
+				mask.current.removeEventListener("click", handleClick);
 			}
 		};
 	}, [open]);

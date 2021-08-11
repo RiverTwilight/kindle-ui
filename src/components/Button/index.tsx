@@ -49,6 +49,7 @@ export default styled(Button)`
 	${hover}
 	color: var(--text-color);
 	font-family: "AmazonEmber-Rg";
+	text-transform: uppercase;
 `;
 
 export interface IButton {
