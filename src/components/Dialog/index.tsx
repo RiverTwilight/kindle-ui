@@ -15,6 +15,7 @@ export interface IDialog {
 }
 
 const StyledDialog = styled.div`
+	padding: 10px;
 	border: 3px solid var(--text-color);
 	background: var(--bg-color);
 	border-radius: 6px;
@@ -22,13 +23,13 @@ const StyledDialog = styled.div`
 	left: 50%;
 	top: 50%;
 	transform: translate(-50%, -50%);
-	min-width: 400px;
+	max-width: 400px;
 `;
 
 export default ({ children, anchorEl, open, onClose }: IDialog) => {
 	return (
 		<Popover open={open} onClose={onClose}>
-			<StyledDialog title="test">{children}</StyledDialog>
+			<StyledDialog>{children}</StyledDialog>
 		</Popover>
 	);
 };

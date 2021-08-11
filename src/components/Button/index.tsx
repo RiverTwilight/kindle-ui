@@ -6,8 +6,13 @@ import hover from "../../utils/hover";
  * Button
  * @author rivertwilight
  */
-
-const Button = ({ children, className, href, ...props }: any) => {
+const Button = ({
+	children,
+	className,
+	variant = "default",
+	href,
+	...props
+}: any) => {
 	if (href)
 		return (
 			<a href={href}>
@@ -31,10 +36,11 @@ const Button = ({ children, className, href, ...props }: any) => {
 };
 
 export default styled(Button)`
-	${(props: IButton) =>
-		props.variant === "outline" && `border: 3px solid var(--text-color);`}
+	border: ${(props: IButton) =>
+		props.variant === "outline" ? "3px solid var(--text-color)" : "none"};
 	min-width: 70px;
-	height: 50px;
+	height: ${(props) => (props.variant === "outline" ? "50px" : "40px")};
+	outline: none;
 	background: var(--bg-color);
 	font-weight: 600;
 	font-size: 1rem;

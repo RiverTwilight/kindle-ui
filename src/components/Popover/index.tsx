@@ -29,7 +29,7 @@ const Mask = styled.div`
 
 const StyledPopover = styled(Popover)`
 	display: ${(props) => (props.open ? "block" : "none")};
-	z-index: 500;
+	z-index: ${(props) => props.index && 500 + props.index};
 `;
 
 /**
@@ -65,7 +65,9 @@ export default ({ children, open, onClose }: IPopover) => {
 	return (
 		<>
 			<Mask index={index} show={open} ref={mask} />
-			<StyledPopover open={open}>{children}</StyledPopover>
+			<StyledPopover index={index} open={open}>
+				{children}
+			</StyledPopover>
 		</>
 	);
 };
