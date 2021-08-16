@@ -4,10 +4,9 @@
 
 ## 🍊Features
 
--   [x] 9 interactive Kindle components
+-   [x] 10 interactive Kindle components（Dialog, Button, List, Navbar...)
 -   [x] Light / Dark theme switch
 -   [x] Native kindle OS font (Optional)
--   [ ] Browser
 -   [ ] Still developing...
 
 ```bash

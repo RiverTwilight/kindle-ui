@@ -4,5 +4,5 @@ export interface IListItem {
     component?: string;
     className?: any;
 }
-declare const StyledListItem: import("styled-components").StyledComponent<({ className, component, children, ...props }: IListItem) => JSX.Element, any, {}, never>;
+declare const StyledListItem: import("styled-components").StyledComponent<({ className, component, LinkComponent, children, ...other }: IListItem) => JSX.Element, any, {}, never>;
 export default StyledListItem;

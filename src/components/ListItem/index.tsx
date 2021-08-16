@@ -13,14 +13,19 @@ export interface IListItem {
 const ListItem = ({
 	className,
 	component = "div",
+	LinkComponent = "a",
 	children,
-	...props
+	...other
 }: IListItem) => {
-	const Comp = component;
+	let ComponentProp = component;
+
+	if (ComponentProp === "div" && (other.href || other.to)) {
+		ComponentProp = LinkComponent;
+	}
 	return (
-		<Comp className={className} {...props}>
+		<ComponentProp className={className} {...other}>
 			{children}
-		</Comp>
+		</ComponentProp>
 	);
 };
 
@@ -32,7 +37,7 @@ const StyledListItem = styled(ListItem)`
 	font-size: 1.1rem;
 	font-family: AmazonEmber-Rg, sans-serif;
 	border-bottom: ${border};
-	&:last-child{
+	&:last-child {
 		border-bottom: none;
 	}
 	text-decoration: none;
