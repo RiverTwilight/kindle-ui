@@ -7,7 +7,11 @@ A react component library to build Kindle OS in the browser.
 -   [x] 10 interactive Kindle components（Dialog, Button, List, Navbar...)
 -   [x] Light / Dark theme switch
 -   [x] Native kindle OS font (Optional)
--   [ ] Still developing...
+-   [ ] 100% TypeScript support
+-   [ ] Multi-style Dialog
+-   [ ] `Expermintal Browser` App
+-   [ ] `Font Setting` App
+-   [ ] Unit test
 
 ```bash
 npm i kindle-ui
