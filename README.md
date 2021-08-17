@@ -1,6 +1,6 @@
 # Kindle-UI
 
-![](/screenshots/cover.jpg)
+A react component library to build Kindle OS in the browser.
 
 ## 🍊Features
 
