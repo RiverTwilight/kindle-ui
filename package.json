@@ -1,5 +1,5 @@
 {
-	"name": "kindyle",
+	"name": "kindle-ui",
 	"description": "A react component library to build Kindle OS in the browser.",
 	"version": "1.0.2",
 	"private": false,

@@ -1,4 +1,4 @@
-# kindyle
+# Kindle-UI
 
 ![](/screenshots/cover.jpg)
 
@@ -10,7 +10,7 @@
 -   [ ] Still developing...
 
 ```bash
-npm i kindyle
+npm i kindle-ui
 ```
 
 ## App
