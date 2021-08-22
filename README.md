@@ -115,7 +115,7 @@ export default App;
 ## 贡献
 
 ```bash
-git clone https://github.com/rivertwilight/kindyle.git
+git clone https://gitee.com/rivertwilight/kindle-ui.git
 npm run i-all
 npm run dev
 ```

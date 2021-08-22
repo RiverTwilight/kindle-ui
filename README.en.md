@@ -115,7 +115,7 @@ Use `Typography` to present an article or other rich-text content.
 ## Contribution
 
 ```bash
-git clone https://github.com/rivertwilight/kindyle.git
+git clone https://gitee.com/rivertwilight/kindle-ui.git
 npm run i-all
 npm run dev
 ```
