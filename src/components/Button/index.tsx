@@ -7,9 +7,7 @@ import hover from "../../utils/hover";
  * @author rivertwilight
  */
 
-// FIXME 根据传入的组件类型
-
-const Button = ({
+export default ({
 	children,
 	className,
 	variant = "default",
@@ -39,27 +37,22 @@ const Button = ({
 		}
 	}
 
-	// console.log(ComponentProp);
-
-	// if (typeof component !== "string") {
-	// 	return (
-	// 		<ComponentProp {...other}>
-	// 			<button className={className} {...buttonProps}>
-	// 				{children}
-	// 			</button>
-	// 		</ComponentProp>
-	// 	);
-	// }
 
 	return (
-		<ComponentProp className={className} {...buttonProps} {...other}>
+		<StyledButton
+			as={ComponentProp}
+			className={className}
+			variant={variant}
+			{...buttonProps}
+			{...other}
+		>
 			{children}
-		</ComponentProp>
+		</StyledButton>
 	);
 };
 
-export default styled(Button)`
-	border: ${(props: IButton) =>
+const StyledButton = styled.div`
+	border: ${(props) =>
 		props.variant === "outline" ? "3px solid var(--text-color)" : "none"};
 	min-width: 70px;
 	height: ${(props) => (props.variant === "outline" ? "50px" : "40px")};
@@ -87,10 +80,3 @@ export default styled(Button)`
 	textdecoration: none;
 `;
 
-export interface IButton {
-	children: JSX.Element | JSX.Element[];
-	onClick?: (e: any) => void;
-	href?: string;
-	variant?: "default" | "outline";
-	component?: JSX.Element | JSX.Element[] | string;
-}

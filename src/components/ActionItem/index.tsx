@@ -3,6 +3,7 @@ import hover from "../../utils/hover";
 
 const ActionItem = styled.button`
 	border: none;
+	box-sizing: border-box;
 	width: 50px;
 	background-color: var(--bg-color);
 	color: var(--text-color);

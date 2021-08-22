@@ -7,6 +7,8 @@ import Popover from "../Popover";
  * @author rivertwilight
  */
 
+const WIDTH_PX = 230;
+
 export interface IMenu {
 	anchorEl: null | Element | ((element: Element) => Element);
 	open?: boolean;
@@ -20,7 +22,8 @@ const Menu = ({ children, className }: any) => (
 
 const StyledMenu = styled(Menu)`
 	display: ${(props) => (props.open ? "block" : "none")};
-	min-width: 230px;
+	box-sizing: border-box;
+	min-width: ${WIDTH_PX}px;
 	border: 1px solid var(--border-color);
 	background: var(--bg-color);
 	position: fixed;
@@ -38,10 +41,10 @@ export default ({ children, anchorEl, open, onClose }: IMenu) => {
 			  anchorEl.getBoundingClientRect()
 			: { top: 0, left: 0 };
 		// these are relative to the viewport, i.e. the window
-		var top =
-			viewportOffset.top + anchorEl ? anchorEl.offsetHeight * 1.5 : 0;
+		var top = viewportOffset.bottom;
 		var left = viewportOffset.left;
-		if (left > window.innerWidth - 200) left = window.innerWidth - 230;
+		if (left > window.innerWidth - WIDTH_PX)
+			left = window.innerWidth - WIDTH_PX;
 		setTop(top);
 		setLeft(left);
 	}, [anchorEl]);
