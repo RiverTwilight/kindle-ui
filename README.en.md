@@ -2,7 +2,7 @@
 
 A react component library to build Kindle OS in the browser.
 
-English Version | [简体中文](./README.en.md)
+English Version | [简体中文](./README.md)
 
 ## 🍊Features
 
