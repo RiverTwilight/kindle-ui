@@ -4,6 +4,8 @@
 
 本项目是我高考前最后一个坑啦，欢迎 PR！
 
+Amazon 官方已于今年八月陆续推送新版本的 UI。
+
 [English Version](./README.en.md) | 简体中文
 
 ## 🍊 特性
@@ -82,7 +84,7 @@ Navbar 是一个集成的 Kindle 原生组件。 所有图标都是不可编辑�
 
 ### Container
 
-如果你想使用 AmazonEmber 字体（约 106kb）和深色模式来获得更接近原生Kindle的ui，你可以用`Container` 组件包裹你的 App，它添加了一个全局字体系列。
+如果你想使用 AmazonEmber 字体（约 106kb）和深色模式来获得更接近原生 Kindle 的 ui，你可以用`Container` 组件包裹你的 App，它添加了一个全局字体系列。
 
 ```JSX
 import { Container } from "kindyle";
