@@ -11,10 +11,8 @@ import {
 	Tab,
 	TabItem,
 	EllipsisVerticalIcon,
-} from "kindyle";
-import {
-	Link,
-} from "react-router-dom";
+} from "kindle-ui";
+import { Link } from "react-router-dom";
 
 export default () => {
 	return (
@@ -23,11 +21,11 @@ export default () => {
 			<br />
 			<br />
 			<Typography greyImage={true}>
-				<h1>Hi, kindyle!</h1>
+				<h1>Hi, kindle-ui!</h1>
 				<h2>Typography</h2>
 				<p>
-					Kindyle is a react component library to build Kindle-styled
-					UI.
+					kindle-ui is a react component library to build
+					Kindle-styled UI.
 				</p>
 				<img src="https://www.chinanews.com/part/home2013/451/U855P4T451D4F17247DT20210701234543.jpg"></img>
 				<h2>Button</h2>
@@ -65,19 +63,18 @@ export default () => {
 
 					<CardContent>
 						<CardTitle>Title</CardTitle>
-							One of the reasons that flexbox quickly caught the
-							interest of web developers is that it brought proper
-							alignment capabilities to the web for the first
-							time. It enabled proper vertical alignment, so we
-							can at last easily center a box. In this guide, we
-							will take a thorough look at how the alignment and
-							justification properties work in Flexbox. To center
-							our box we use the align-items property to align our
-							item on the cross axis, which in this case is the
-							block axis running vertically. We use
-							justify-content to align the item on the main axis,
-							which in this case the inline axis running
-							horizontally.
+						One of the reasons that flexbox quickly caught the
+						interest of web developers is that it brought proper
+						alignment capabilities to the web for the first time. It
+						enabled proper vertical alignment, so we can at last
+						easily center a box. In this guide, we will take a
+						thorough look at how the alignment and justification
+						properties work in Flexbox. To center our box we use the
+						align-items property to align our item on the cross
+						axis, which in this case is the block axis running
+						vertically. We use justify-content to align the item on
+						the main axis, which in this case the inline axis
+						running horizontally.
 					</CardContent>
 				</Card>
 			</Typography>

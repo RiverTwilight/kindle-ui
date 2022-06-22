@@ -9,11 +9,9 @@ import {
 	ActionBar,
 	ActionBarMenu,
 	HomeOutlineIcon,
-	CogSharpIcon
-} from "kindyle";
-import {
-	useHistory,
-} from "react-router-dom";
+	CogSharpIcon,
+} from "kindle-ui";
+import { useHistory } from "react-router-dom";
 
 export default () => {
 	let history = useHistory();
@@ -23,15 +21,19 @@ export default () => {
 			<StatuBar airplane battery={86} deviceName="My Kindle" />
 			<ActionBar>
 				<ActionGroup>
-					<ActionItem onClick={()=>{
-						history.push('/')
-					}}>
+					<ActionItem
+						onClick={() => {
+							history.push("/");
+						}}
+					>
 						<HomeOutlineIcon />
 						home
 					</ActionItem>
-					<ActionItem onClick={()=>{
-						history.goBack()
-					}}>
+					<ActionItem
+						onClick={() => {
+							history.goBack();
+						}}
+					>
 						<ArrowBackSharpIcon />
 						BACK
 					</ActionItem>
@@ -48,7 +50,7 @@ export default () => {
 							{
 								textPrimary: "Github",
 								component: "a",
-								href: "https://github.com/rivertwilight"
+								href: "https://github.com/rivertwilight",
 							},
 							{
 								textPrimary: "Expermintal Browser",

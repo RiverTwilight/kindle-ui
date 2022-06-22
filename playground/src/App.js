@@ -5,7 +5,7 @@ import {
 	Route,
 	useHistory,
 } from "react-router-dom";
-import { Container } from "kindyle";
+import { Container } from "kindle-ui";
 import Home from "./page/home";
 import Setting from "./page/setting";
 import Reader from "./page/reader";

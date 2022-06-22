@@ -1,4 +1,4 @@
-import { TimeBar, Typography } from "kindyle";
+import { TimeBar, Typography } from "kindle-ui";
 
 export default () => {
 	return (
