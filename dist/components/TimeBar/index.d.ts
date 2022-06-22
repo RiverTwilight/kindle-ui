@@ -1,9 +1,9 @@
 /// <reference types="react" />
 export interface IStatubar {
 }
-declare const _default: ({}: IStatubar) => JSX.Element;
 /**
  * TimeBar
  * @author rivertwilight
  */
+declare const _default: ({}: IStatubar) => JSX.Element;
 export default _default;

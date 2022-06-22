@@ -4,9 +4,9 @@ export interface IPopover {
     onClose?: () => void;
     children?: JSX.Element | JSX.Element[];
 }
-declare const _default: ({ children, open, onClose }: IPopover) => JSX.Element;
 /**
  * Popover
  * @author rivertwilight
  */
+declare const _default: ({ children, open, onClose }: IPopover) => JSX.Element;
 export default _default;
