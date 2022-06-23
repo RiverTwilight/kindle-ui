@@ -8,9 +8,6 @@ export default () => {
 		<div className="wrapper">
 			<aside>asdkljfjsahfk</aside>
 			<main>
-				<br />
-				<br />
-				<br />
 				<Typography greyImage={true}>
 					<h1>Hi, kindle-ui!</h1>
 					<h2>Typography</h2>
@@ -21,6 +18,7 @@ export default () => {
 					<img src="/Kindle-UI.png"></img>
 					<h2>Button</h2>
 					<Button>Button</Button>
+					<Button variant="outline">OUTLINE</Button>
 					<Button href="https://github.com/rivertwilight">
 						With Link
 					</Button>

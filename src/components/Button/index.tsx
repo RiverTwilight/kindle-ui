@@ -7,6 +7,17 @@ import hover from "../../utils/hover";
  * @author rivertwilight
  */
 
+export interface BaseButtonProps {
+	variant?: "outline" | "default";
+	disabled?: boolean;
+	children: React.ReactNode;
+}
+
+export type NativeButtonProps = {
+	onClick?: React.MouseEventHandler<HTMLElement>;
+} & BaseButtonProps &
+	Omit<React.ButtonHTMLAttributes<any>, "type" | "onClick">;
+
 export default ({
 	children,
 	className,
@@ -16,14 +27,14 @@ export default ({
 	disabled,
 	type,
 	...other
-}: any) => {
+}: NativeButtonProps) => {
 	let ComponentProp = component;
 
 	if (ComponentProp === "button" && (other.href || other.to)) {
 		ComponentProp = LinkComponent;
 	}
 
-	const buttonProps = {};
+	const buttonProps: NativeButtonProps = {};
 
 	if (ComponentProp === "button") {
 		buttonProps.type = type === undefined ? "button" : type;
@@ -51,31 +62,34 @@ export default ({
 };
 
 const StyledButton = styled.div`
-	border: ${(props) =>
+	boxsizing: border-box;
+	border: ${(props: NativeButtonProps) =>
 		props.variant === "outline" ? "3px solid var(--text-color)" : "none"};
 	min-width: 70px;
-	height: ${(props) => (props.variant === "outline" ? "50px" : "40px")};
+	height: 50px;
 	outline: 0;
 	background: var(--bg-color);
+
 	font-weight: 600;
 	font-size: 1rem;
+	color: var(--text-color);
+	text-decoration: none;
+	font-family: "AmazonEmber-Rg";
+	textdecoration: none;
+	text-transform: uppercase;
+
 	display: inline-flex;
 	align-items: center;
 	justifycontent: center;
 	position: relative;
 	boxsizing: border-box;
+
 	padding: 0 30px;
 	overflow: hidden;
 	${hover}
-	color: var(--text-color);
-	text-decoration: none;
-	font-family: "AmazonEmber-Rg";
-	text-transform: uppercase;
 	cursor: pointer;
 	userselect: none;
 	verticalalign: middle;
 	mozappearance: none;
 	webkitappearance: none;
-	textdecoration: none;
-	text-transform: uppercase;
 `;

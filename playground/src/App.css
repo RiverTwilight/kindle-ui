@@ -6,6 +6,7 @@ body {
 }
 
 main {
+	padding-top: 50px;
 	max-width: 900px;
 }
 
@@ -13,10 +14,13 @@ main {
 	margin: 0 auto;
 	display: flex;
 	flex-direction: row;
-	align-items: center;
 	justify-content: center;
+	max-width: 1000px;
 }
 
 aside {
-	width: 200px;
+	padding-top: 90px;
+	display: flex;
+	flex-direction: column;
+	width: 280px;
 }
