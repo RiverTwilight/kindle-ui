@@ -5,6 +5,5 @@ import border from "../../utils/border";
 export default styled.div`
 	border: ${border};
 	border-radius: 7px;
-	display: flex;
 	padding: 10px;
 `;

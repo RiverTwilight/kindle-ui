@@ -98,7 +98,7 @@ var index$j = (function (_a) {
     }
     return (React__default.createElement(StyledButton, __assign({ as: ComponentProp, className: className, variant: variant }, buttonProps, other), children));
 });
-var StyledButton = styled.div(templateObject_1$p || (templateObject_1$p = __makeTemplateObject(["\n\tborder: ", ";\n\tmin-width: 70px;\n\theight: ", ";\n\toutline: 0;\n\tbackground: var(--bg-color);\n\tfont-weight: 600;\n\tfont-size: 1rem;\n\tdisplay: inline-flex;\n\talign-items: center;\n\tjustifycontent: center;\n\tposition: relative;\n\tboxsizing: border-box;\n\tpadding: 0 30px;\n\toverflow: hidden;\n\t", "\n\tcolor: var(--text-color);\n\ttext-decoration: none;\n\tfont-family: \"AmazonEmber-Rg\";\n\ttext-transform: uppercase;\n\tcursor: pointer;\n\tuserselect: none;\n\tverticalalign: middle;\n\tmozappearance: none;\n\twebkitappearance: none;\n\ttextdecoration: none;\n"], ["\n\tborder: ", ";\n\tmin-width: 70px;\n\theight: ", ";\n\toutline: 0;\n\tbackground: var(--bg-color);\n\tfont-weight: 600;\n\tfont-size: 1rem;\n\tdisplay: inline-flex;\n\talign-items: center;\n\tjustifycontent: center;\n\tposition: relative;\n\tboxsizing: border-box;\n\tpadding: 0 30px;\n\toverflow: hidden;\n\t", "\n\tcolor: var(--text-color);\n\ttext-decoration: none;\n\tfont-family: \"AmazonEmber-Rg\";\n\ttext-transform: uppercase;\n\tcursor: pointer;\n\tuserselect: none;\n\tverticalalign: middle;\n\tmozappearance: none;\n\twebkitappearance: none;\n\ttextdecoration: none;\n"])), function (props) {
+var StyledButton = styled.div(templateObject_1$p || (templateObject_1$p = __makeTemplateObject(["\n\tborder: ", ";\n\tmin-width: 70px;\n\theight: ", ";\n\toutline: 0;\n\tbackground: var(--bg-color);\n\tfont-weight: 600;\n\tfont-size: 1rem;\n\tdisplay: inline-flex;\n\talign-items: center;\n\tjustifycontent: center;\n\tposition: relative;\n\tboxsizing: border-box;\n\tpadding: 0 30px;\n\toverflow: hidden;\n\t", "\n\tcolor: var(--text-color);\n\ttext-decoration: none;\n\tfont-family: \"AmazonEmber-Rg\";\n\ttext-transform: uppercase;\n\tcursor: pointer;\n\tuserselect: none;\n\tverticalalign: middle;\n\tmozappearance: none;\n\twebkitappearance: none;\n\ttextdecoration: none;\n\ttext-transform: uppercase;\n"], ["\n\tborder: ", ";\n\tmin-width: 70px;\n\theight: ", ";\n\toutline: 0;\n\tbackground: var(--bg-color);\n\tfont-weight: 600;\n\tfont-size: 1rem;\n\tdisplay: inline-flex;\n\talign-items: center;\n\tjustifycontent: center;\n\tposition: relative;\n\tboxsizing: border-box;\n\tpadding: 0 30px;\n\toverflow: hidden;\n\t", "\n\tcolor: var(--text-color);\n\ttext-decoration: none;\n\tfont-family: \"AmazonEmber-Rg\";\n\ttext-transform: uppercase;\n\tcursor: pointer;\n\tuserselect: none;\n\tverticalalign: middle;\n\tmozappearance: none;\n\twebkitappearance: none;\n\ttextdecoration: none;\n\ttext-transform: uppercase;\n"])), function (props) {
     return props.variant === "outline" ? "3px solid var(--text-color)" : "none";
 }, function (props) { return (props.variant === "outline" ? "50px" : "40px"); }, hover);
 var templateObject_1$p;
@@ -108,7 +108,7 @@ var AmazonEmber = "data:font/ttf;base64,AAEAAAASAQAABAAgRFNJR+oF1HEAAYTcAAAZMEdE
 var index$i = styled.div(templateObject_1$o || (templateObject_1$o = __makeTemplateObject(["\n\t@font-face {\n\t\tfont-family: AmazonEmber-Rg;\n\t\tsrc: url(", ");\n\t}\n\tfont-family: \"AmazonEmber-Rg\", Trebuchet MS;\n\t", "\n"], ["\n\t@font-face {\n\t\tfont-family: AmazonEmber-Rg;\n\t\tsrc: url(", ");\n\t}\n\tfont-family: \"AmazonEmber-Rg\", Trebuchet MS;\n\t", "\n"])), AmazonEmber, function (props) {
     return props.dark
         ? "--text-color: #fff;\n\t\t\tcolor: #fff;\n\t\t\tbackground-color: #000;\n\t\t\t--bg-color: #000;\n\t\t\t& svg{\n\t\t\t\tfill: #fff\n\t\t\t}\n\t"
-        : "--text-color: #000;\n\t\t\tcolor: #000;\n\t\t\tbackground-color: #fff;\n\t--bg-color: #fff;";
+        : "--text-color: #000;\n\t\t\tcolor: #000;\n\t\t\tbackground-color: #f7f7f7;\n\t--bg-color: #f7f7f7;";
 });
 var templateObject_1$o;
 
@@ -400,7 +400,7 @@ var index$b = styled(SearchBar)(templateObject_1$c || (templateObject_1$c = __ma
 var templateObject_1$c;
 
 // TODO rich content
-var index$a = styled.div(templateObject_1$b || (templateObject_1$b = __makeTemplateObject(["\n\tborder: ", ";\n\tborder-radius: 7px;\n\tdisplay: flex;\n\tpadding: 10px;\n"], ["\n\tborder: ", ";\n\tborder-radius: 7px;\n\tdisplay: flex;\n\tpadding: 10px;\n"])), border);
+var index$a = styled.div(templateObject_1$b || (templateObject_1$b = __makeTemplateObject(["\n\tborder: ", ";\n\tborder-radius: 7px;\n\tpadding: 10px;\n"], ["\n\tborder: ", ";\n\tborder-radius: 7px;\n\tpadding: 10px;\n"])), border);
 var templateObject_1$b;
 
 var greyImage = css(templateObject_1$a || (templateObject_1$a = __makeTemplateObject(["\n\t-webkit-filter: grayscale(100%);\n\t-moz-filter: grayscale(100%);\n\t-ms-filter: grayscale(100%);\n\t-o-filter: grayscale(100%);\n\tfilter: grayscale(100%);\n\tfilter: gray;\n"], ["\n\t-webkit-filter: grayscale(100%);\n\t-moz-filter: grayscale(100%);\n\t-ms-filter: grayscale(100%);\n\t-o-filter: grayscale(100%);\n\tfilter: grayscale(100%);\n\tfilter: gray;\n"])));

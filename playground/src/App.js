@@ -6,7 +6,7 @@ import {
 	useHistory,
 } from "react-router-dom";
 import { Container } from "kindle-ui";
-import Home from "./page/home";
+import Home from "./page/Home";
 import Setting from "./page/setting";
 import Reader from "./page/reader";
 import Header from "./components/Header.jsx";

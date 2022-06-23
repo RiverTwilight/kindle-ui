@@ -37,7 +37,6 @@ export default ({
 		}
 	}
 
-
 	return (
 		<StyledButton
 			as={ComponentProp}
@@ -78,5 +77,5 @@ const StyledButton = styled.div`
 	mozappearance: none;
 	webkitappearance: none;
 	textdecoration: none;
+	text-transform: uppercase;
 `;
-

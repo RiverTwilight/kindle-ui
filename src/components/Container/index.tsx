@@ -1,4 +1,4 @@
-import { useState } from "react"
+import { useState } from "react";
 import styled from "styled-components";
 // @ts-expect-error
 import AmazonEmber from "../../fonts/AmazonEmber/AmazonEmber_Rg.ttf";
@@ -21,8 +21,8 @@ export default styled.div`
 	`
 			: `--text-color: #000;
 			color: #000;
-			background-color: #fff;
-	--bg-color: #fff;`}
+			background-color: #f7f7f7;
+	--bg-color: #f7f7f7;`}
 `;
 
 export interface IContainer {
@@ -32,4 +32,4 @@ export interface IContainer {
 
 const Container = () => {
 	const [dark, setDark] = useState(false);
-}
+};
