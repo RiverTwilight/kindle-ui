@@ -18,7 +18,7 @@ export default () => {
 						kindle-ui is a react component library to build
 						Kindle-styled UI.
 					</p>
-					<img src="https://www.chinanews.com/part/home2013/451/U855P4T451D4F17247DT20210701234543.jpg"></img>
+					<img src="/Kindle-UI.png"></img>
 					<h2>Button</h2>
 					<Button>Button</Button>
 					<Button href="https://github.com/rivertwilight">
