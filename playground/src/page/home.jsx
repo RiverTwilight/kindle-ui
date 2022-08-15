@@ -2,6 +2,7 @@ import { Typography, Button } from "kindle-ui";
 import CardExample from "../examples/Card";
 import List from "../examples/List";
 import TabExample from "../examples/Tab";
+import DialogExample from "../examples/Dialog";
 import { Card } from "kindle-ui";
 
 export default () => {
@@ -13,18 +14,13 @@ export default () => {
 			<main>
 				<Typography greyImage={true}>
 					<h1>Hi, kindle-ui!</h1>
-					<h2>Install</h2>
-					<p>
-						<code>npm i kindle-ui</code>
-					</p>
-					or
-					<p>
-						<code>yarn add kindle-ui</code>
-					</p>
 					<h2>Typography</h2>
 					<p>
-						kindle-ui is a react component library to build
-						Kindle-styled UI.
+						kindle-ui is a <b>react</b> component library inspired
+						by
+						<a>Amazon Kindle reader</a>. Though amazon has released
+						a <u>newer UI</u>, this classic desgin is still
+						valuable.
 					</p>
 					<img src="/Kindle-UI.png"></img>
 					<h2>Button</h2>
@@ -39,6 +35,8 @@ export default () => {
 					<TabExample />
 					<h2>Card</h2>
 					<CardExample />
+					<h2>Dialog</h2>
+					<DialogExample />
 				</Typography>
 			</main>
 		</div>

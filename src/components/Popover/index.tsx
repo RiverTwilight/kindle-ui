@@ -13,7 +13,6 @@ const Popover = ({ children, className }: any) => (
 
 interface IMask {
 	show: boolean;
-	index: number;
 	ref: React.MutableRefObject<undefined>;
 }
 
@@ -24,12 +23,11 @@ const Mask = styled.div`
 	bottom: 0;
 	right: 0;
 	display: ${(props: IMask) => (props.show ? "block" : "none")};
-	z-index: ${(props: IMask) => `${10 + props.index}`};
 `;
 
-const StyledPopover = styled(Popover)`
-	display: ${(props) => (props.open ? "block" : "none")};
-	z-index: ${(props) => props.index && 500 + props.index};
+const StyledPopover = styled.div`
+	z-index: 2;
+	height: 100%;
 `;
 
 /**
@@ -37,37 +35,44 @@ const StyledPopover = styled(Popover)`
  * @author rivertwilight
  */
 export default ({ children, open, onClose }: IPopover) => {
-	const mask = useRef(null);
-	const [index, setIndex] = useState(1);
+	const mask = useRef();
 
-	const handleClick = () => {
+	const handleMouseDown = (event) => {
+		console.log("Click content");
+		// We don't want to close the dialog when clicking the dialog content.
+		// Make sure the event starts and ends on the same DOM element.
+		mask.current = event.target === event.currentTarget;
+	};
+
+	// const handleMouseUp = (event) => {
+	// 	mask = false;
+	// };
+
+	const handleClickMask = (event) => {
+		if (!mask.current) return;
+
+		console.log("Clicked mask");
+
+		mask.current = null;
+
 		onClose && onClose();
 	};
 
-	useEffect(() => {
-		if (mask.current) {
-			console.log("Useeffect");
-			if (window.maskNumber) {
-				window.maskNumber += 1;
-				setIndex(window.maskNumber);
-			} else {
-				window.maskNumber = 1;
-			}
-			mask.current.addEventListener("click", handleClick);
-		}
-		return () => {
-			if (mask.current) {
-				mask.current.removeEventListener("click", handleClick);
-			}
-		};
-	}, [open]);
+	//add props to children
+	const childrenWithProps = React.Children.map(children, (child) => {
+		return React.cloneElement(child as React.ReactElement, {
+			// onMouseDown: handleMouseDown,
+			// onMouseUp: handleMouseUp,
+		});
+	});
 
 	return (
 		<>
-			<Mask index={index} show={open} ref={mask} />
-			<StyledPopover index={index} open={open}>
-				{children}
-			</StyledPopover>
+			<Mask onClick={handleClickMask} show={open} ref={mask}>
+				<StyledPopover onMouseDown={handleMouseDown}>
+					{childrenWithProps}
+				</StyledPopover>
+			</Mask>
 		</>
 	);
 };

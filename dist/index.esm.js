@@ -116,44 +116,41 @@ var Container = function (_a) {
 };
 var templateObject_1$o;
 
-var Popover = function (_a) {
-    var children = _a.children, className = _a.className;
-    return (React__default.createElement("div", { className: className }, children));
-};
-var Mask = styled.div(templateObject_1$n || (templateObject_1$n = __makeTemplateObject(["\n\tposition: fixed;\n\ttop: 0;\n\tleft: 0;\n\tbottom: 0;\n\tright: 0;\n\tdisplay: ", ";\n\tz-index: ", ";\n"], ["\n\tposition: fixed;\n\ttop: 0;\n\tleft: 0;\n\tbottom: 0;\n\tright: 0;\n\tdisplay: ", ";\n\tz-index: ", ";\n"])), function (props) { return (props.show ? "block" : "none"); }, function (props) { return "".concat(10 + props.index); });
-var StyledPopover = styled(Popover)(templateObject_2 || (templateObject_2 = __makeTemplateObject(["\n\tdisplay: ", ";\n\tz-index: ", ";\n"], ["\n\tdisplay: ", ";\n\tz-index: ", ";\n"])), function (props) { return (props.open ? "block" : "none"); }, function (props) { return props.index && 500 + props.index; });
+var Mask = styled.div(templateObject_1$n || (templateObject_1$n = __makeTemplateObject(["\n\tposition: fixed;\n\ttop: 0;\n\tleft: 0;\n\tbottom: 0;\n\tright: 0;\n\tdisplay: ", ";\n"], ["\n\tposition: fixed;\n\ttop: 0;\n\tleft: 0;\n\tbottom: 0;\n\tright: 0;\n\tdisplay: ", ";\n"])), function (props) { return (props.show ? "block" : "none"); });
+var StyledPopover = styled.div(templateObject_2 || (templateObject_2 = __makeTemplateObject(["\n\tz-index: 2;\n\theight: 100%;\n"], ["\n\tz-index: 2;\n\theight: 100%;\n"])));
 /**
  * Popover
  * @author rivertwilight
  */
-var Popover$1 = (function (_a) {
+var Popover = (function (_a) {
     var children = _a.children, open = _a.open, onClose = _a.onClose;
-    var mask = useRef(null);
-    var _b = useState(1), index = _b[0], setIndex = _b[1];
-    var handleClick = function () {
+    var mask = useRef();
+    var handleMouseDown = function (event) {
+        console.log("Click content");
+        // We don't want to close the dialog when clicking the dialog content.
+        // Make sure the event starts and ends on the same DOM element.
+        mask.current = event.target === event.currentTarget;
+    };
+    // const handleMouseUp = (event) => {
+    // 	mask = false;
+    // };
+    var handleClickMask = function (event) {
+        if (!mask.current)
+            return;
+        console.log("Clicked mask");
+        mask.current = null;
         onClose && onClose();
     };
-    useEffect(function () {
-        if (mask.current) {
-            console.log("Useeffect");
-            if (window.maskNumber) {
-                window.maskNumber += 1;
-                setIndex(window.maskNumber);
-            }
-            else {
-                window.maskNumber = 1;
-            }
-            mask.current.addEventListener("click", handleClick);
-        }
-        return function () {
-            if (mask.current) {
-                mask.current.removeEventListener("click", handleClick);
-            }
-        };
-    }, [open]);
+    //add props to children
+    var childrenWithProps = React__default.Children.map(children, function (child) {
+        return React__default.cloneElement(child, {
+        // onMouseDown: handleMouseDown,
+        // onMouseUp: handleMouseUp,
+        });
+    });
     return (React__default.createElement(React__default.Fragment, null,
-        React__default.createElement(Mask, { index: index, show: open, ref: mask }),
-        React__default.createElement(StyledPopover, { index: index, open: open }, children)));
+        React__default.createElement(Mask, { onClick: handleClickMask, show: open, ref: mask },
+            React__default.createElement(StyledPopover, { onMouseDown: handleMouseDown }, childrenWithProps))));
 });
 var templateObject_1$n, templateObject_2;
 
@@ -185,7 +182,7 @@ var Menu$1 = (function (_a) {
         setLeft(left);
     }, [anchorEl]);
     return (React__default.createElement(React__default.Fragment, null,
-        React__default.createElement(Popover$1, { open: open, onClose: onClose },
+        React__default.createElement(Popover, { open: open, onClose: onClose },
             React__default.createElement(StyledMenu, { open: open, top: top, left: left }, children))));
 });
 var templateObject_1$m;
@@ -456,7 +453,7 @@ var templateObject_1$3;
 var StyledDialog = styled.div(templateObject_1$2 || (templateObject_1$2 = __makeTemplateObject(["\n\tpadding: 10px;\n\tborder: 3px solid var(--text-color);\n\tbackground: var(--bg-color);\n\tborder-radius: 6px;\n\tposition: fixed;\n\tleft: 50%;\n\ttop: 50%;\n\ttransform: translate(-50%, -50%);\n\tmax-width: 400px;\n\tmin-width: 250px;\n"], ["\n\tpadding: 10px;\n\tborder: 3px solid var(--text-color);\n\tbackground: var(--bg-color);\n\tborder-radius: 6px;\n\tposition: fixed;\n\tleft: 50%;\n\ttop: 50%;\n\ttransform: translate(-50%, -50%);\n\tmax-width: 400px;\n\tmin-width: 250px;\n"])));
 var index$2 = (function (_a) {
     var children = _a.children; _a.anchorEl; var open = _a.open, onClose = _a.onClose;
-    return (React__default.createElement(Popover$1, { open: open, onClose: onClose },
+    return (React__default.createElement(Popover, { open: open, onClose: onClose },
         React__default.createElement(StyledDialog, null, children)));
 });
 var templateObject_1$2;
