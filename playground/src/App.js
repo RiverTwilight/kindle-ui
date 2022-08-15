@@ -6,7 +6,7 @@ import {
 	useHistory,
 } from "react-router-dom";
 import { Container } from "kindle-ui";
-import Home from "./page/Home";
+import Home from "./page/Home.jsx";
 import Setting from "./page/setting";
 import Reader from "./page/reader";
 import Header from "./components/Header.jsx";
@@ -32,11 +32,11 @@ const Main = () => {
 
 function App() {
 	return (
-		<Router>
-			<Container>
+		<Container>
+			<Router>
 				<Main />
-			</Container>
-		</Router>
+			</Router>
+		</Container>
 	);
 }
 

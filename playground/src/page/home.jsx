@@ -1,15 +1,26 @@
 import { Typography, Button } from "kindle-ui";
-import Card from "../examples/Card";
+import CardExample from "../examples/Card";
 import List from "../examples/List";
-import Tab from "../examples/Tab";
+import TabExample from "../examples/Tab";
+import { Card } from "kindle-ui";
 
 export default () => {
 	return (
 		<div className="wrapper">
-			<aside>asdkljfjsahfk</aside>
+			<aside>
+				<Card>asfmsdfm</Card>
+			</aside>
 			<main>
 				<Typography greyImage={true}>
 					<h1>Hi, kindle-ui!</h1>
+					<h2>Install</h2>
+					<p>
+						<code>npm i kindle-ui</code>
+					</p>
+					or
+					<p>
+						<code>yarn add kindle-ui</code>
+					</p>
 					<h2>Typography</h2>
 					<p>
 						kindle-ui is a react component library to build
@@ -25,9 +36,9 @@ export default () => {
 					<h2>List</h2>
 					<List />
 					<h2>Tab</h2>
-					<Tab />
+					<TabExample />
 					<h2>Card</h2>
-					<Card />
+					<CardExample />
 				</Typography>
 			</main>
 		</div>

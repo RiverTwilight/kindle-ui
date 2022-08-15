@@ -18,6 +18,12 @@ main {
 	max-width: 1000px;
 }
 
+@media screen and (max-width: 768px) {
+	.wrapper {
+		flex-direction: column;
+	}
+}
+
 aside {
 	padding-top: 90px;
 	display: flex;
