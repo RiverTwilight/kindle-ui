@@ -3,6 +3,7 @@ import CardExample from "../examples/Card";
 import List from "../examples/List";
 import TabExample from "../examples/Tab";
 import DialogExample from "../examples/Dialog";
+import GridExample from "../examples/Grid";
 import { Card } from "kindle-ui";
 
 export default () => {
@@ -37,6 +38,9 @@ export default () => {
 					<CardExample />
 					<h2>Dialog</h2>
 					<DialogExample />
+					<h2>Grid</h2>
+					<p>This is grid book list in Kindle.</p>
+					<GridExample />
 				</Typography>
 			</main>
 		</div>
