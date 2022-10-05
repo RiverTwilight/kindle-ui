@@ -10,8 +10,8 @@ import {
 export default function () {
 	return (
 		<Card>
+			<CardTitle>Title</CardTitle>
 			<CardContent>
-				<CardTitle>Title</CardTitle>
 				<CardMedia>
 					<img src="/earth.jpg"></img>
 				</CardMedia>

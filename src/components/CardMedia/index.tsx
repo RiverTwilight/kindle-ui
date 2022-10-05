@@ -7,6 +7,9 @@ interface ITabItem {
 }
 
 export default styled.div`
+	flex: 0 0 33.33333333%;
+	max-height: 200px;
+	margin-right: 16px;
 	img {
 		${greyImage}
 		object-fit: cover;
