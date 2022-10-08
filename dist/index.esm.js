@@ -45,7 +45,7 @@ function __makeTemplateObject(cooked, raw) {
     return cooked;
 }
 
-var index$l = styled.div(templateObject_1$v || (templateObject_1$v = __makeTemplateObject(["\n\tdisplay: flex;\n\theight: 50px;\n\tpadding: 2px 0;\n"], ["\n\tdisplay: flex;\n\theight: 50px;\n\tpadding: 2px 0;\n"])));
+var index$l = styled.div(templateObject_1$v || (templateObject_1$v = __makeTemplateObject(["\n\tdisplay: flex;\n\theight: 54px;\n\tpadding: 0;\n"], ["\n\tdisplay: flex;\n\theight: 54px;\n\tpadding: 0;\n"])));
 var templateObject_1$v;
 
 var hover = css(templateObject_1$u || (templateObject_1$u = __makeTemplateObject(["\n\ttransition: background-color 0.5s;\n\t&:hover {\n\t\tbackground-color: var(--text-color);\n\t\tcolor: var(--bg-color) !important;\n\t\ta {\n\t\t\tcolor: var(--bg-color) !important;\n\t\t}\n\t\tsvg path {\n\t\t\tstroke: var(--bg-color);\n\t\t\tfill: var(--bg-color);\n\t\t}\n\t}\n"], ["\n\ttransition: background-color 0.5s;\n\t&:hover {\n\t\tbackground-color: var(--text-color);\n\t\tcolor: var(--bg-color) !important;\n\t\ta {\n\t\t\tcolor: var(--bg-color) !important;\n\t\t}\n\t\tsvg path {\n\t\t\tstroke: var(--bg-color);\n\t\t\tfill: var(--bg-color);\n\t\t}\n\t}\n"])));
@@ -387,7 +387,7 @@ var StatuBar = function (_a) {
     var className = _a.className, children = _a.children;
     return (React__default.createElement("div", { className: className }, children));
 };
-var StyledStatuBar = styled(StatuBar)(templateObject_1$5 || (templateObject_1$5 = __makeTemplateObject(["\n\tdisplay: flex;\n\tjustify-content: space-between;\n\tborder-bottom: ", ";\n\tpadding: 3px 18px;\n\theight: 19px;\n\t.statu-item {\n\t\tmargin-left: 10px;\n\t}\n\t.statu-group {\n\t\tdisplay: flex;\n\t}\n\t.device-name {\n\t\ttext-overflow: ellipsis;\n\t\twhite-space: nowrap;\n\t\toverflow: hidden;\n\t}\n\t.battery {\n\t\tdisplay: flex;\n\t\t& svg {\n\t\t\ttransform: translate(1px, -4px);\n\t\t\twidth: 25px;\n\t\t\theight: 30px;\n\t\t}\n\t}\n\t.airplane {\n\t\t& svg {\n\t\t\ttransform: rotate(-90deg);\n\t\t\theight: 20px;\n\t\t}\n\t}\n"], ["\n\tdisplay: flex;\n\tjustify-content: space-between;\n\tborder-bottom: ", ";\n\tpadding: 3px 18px;\n\theight: 19px;\n\t.statu-item {\n\t\tmargin-left: 10px;\n\t}\n\t.statu-group {\n\t\tdisplay: flex;\n\t}\n\t.device-name {\n\t\ttext-overflow: ellipsis;\n\t\twhite-space: nowrap;\n\t\toverflow: hidden;\n\t}\n\t.battery {\n\t\tdisplay: flex;\n\t\t& svg {\n\t\t\ttransform: translate(1px, -4px);\n\t\t\twidth: 25px;\n\t\t\theight: 30px;\n\t\t}\n\t}\n\t.airplane {\n\t\t& svg {\n\t\t\ttransform: rotate(-90deg);\n\t\t\theight: 20px;\n\t\t}\n\t}\n"])), border);
+var StyledStatuBar = styled(StatuBar)(templateObject_1$5 || (templateObject_1$5 = __makeTemplateObject(["\n\tdisplay: flex;\n\tjustify-content: space-between;\n\tborder-bottom: ", ";\n\tpadding: 3px 18px;\n\theight: 22px;\n\t.statu-item {\n\t\tmargin-left: 12px;\n\t\tline-height: 1.5em;\n\t}\n\t.statu-group {\n\t\tdisplay: flex;\n\t\talign-content: center;\n\t}\n\t.device-name {\n\t\ttext-overflow: ellipsis;\n\t\twhite-space: nowrap;\n\t\toverflow: hidden;\n\t}\n\t.battery {\n\t\tdisplay: flex;\n\t\talign-content: center;\n\t\t& svg {\n\t\t\ttransform: translate(1px, -4px);\n\t\t\twidth: 25px;\n\t\t\theight: 30px;\n\t\t}\n\t\t& > div:first-child {\n\t\t\tfont-size: 0.8em;\n\t\t}\n\t}\n\t.airplane {\n\t\talign-content: center;\n\t\t& svg {\n\t\t\ttransform: rotate(-90deg);\n\t\t\theight: 20px;\n\t\t}\n\t}\n"], ["\n\tdisplay: flex;\n\tjustify-content: space-between;\n\tborder-bottom: ", ";\n\tpadding: 3px 18px;\n\theight: 22px;\n\t.statu-item {\n\t\tmargin-left: 12px;\n\t\tline-height: 1.5em;\n\t}\n\t.statu-group {\n\t\tdisplay: flex;\n\t\talign-content: center;\n\t}\n\t.device-name {\n\t\ttext-overflow: ellipsis;\n\t\twhite-space: nowrap;\n\t\toverflow: hidden;\n\t}\n\t.battery {\n\t\tdisplay: flex;\n\t\talign-content: center;\n\t\t& svg {\n\t\t\ttransform: translate(1px, -4px);\n\t\t\twidth: 25px;\n\t\t\theight: 30px;\n\t\t}\n\t\t& > div:first-child {\n\t\t\tfont-size: 0.8em;\n\t\t}\n\t}\n\t.airplane {\n\t\talign-content: center;\n\t\t& svg {\n\t\t\ttransform: rotate(-90deg);\n\t\t\theight: 20px;\n\t\t}\n\t}\n"])), border);
 /**
  * Statubar
  */
@@ -404,11 +404,11 @@ var index$5 = (function (_a) {
         React__default.createElement("div", { className: "statu-group" },
             airplane && (React__default.createElement("div", { className: "statu-item airplane" },
                 React__default.createElement(SvgAirplane, null))),
-            React__default.createElement("div", { className: "statu-item battery" },
-                battery,
-                "%",
-                " ",
-                charging ? React__default.createElement(SvgBatteryChargingSharp, null) : React__default.createElement(SvgBatteryFullSharp, null)),
+            battery && (React__default.createElement("div", { className: "statu-item battery" },
+                React__default.createElement("div", null,
+                    battery,
+                    "%"),
+                charging ? React__default.createElement(SvgBatteryChargingSharp, null) : React__default.createElement(SvgBatteryFullSharp, null))),
             React__default.createElement("div", { className: "statu-item time" }, timeStr))));
 });
 var templateObject_1$5;

@@ -15,12 +15,14 @@ const StyledStatuBar = styled(StatuBar)`
 	justify-content: space-between;
 	border-bottom: ${border};
 	padding: 3px 18px;
-	height: 19px;
+	height: 22px;
 	.statu-item {
-		margin-left: 10px;
+		margin-left: 12px;
+		line-height: 1.5em;
 	}
 	.statu-group {
 		display: flex;
+		align-content: center;
 	}
 	.device-name {
 		text-overflow: ellipsis;
@@ -29,13 +31,18 @@ const StyledStatuBar = styled(StatuBar)`
 	}
 	.battery {
 		display: flex;
+		align-content: center;
 		& svg {
 			transform: translate(1px, -4px);
 			width: 25px;
 			height: 30px;
 		}
+		& > div:first-child {
+			font-size: 0.8em;
+		}
 	}
 	.airplane {
+		align-content: center;
 		& svg {
 			transform: rotate(-90deg);
 			height: 20px;
@@ -55,11 +62,13 @@ export interface IStatubar {
  */
 export default ({ deviceName, airplane, battery, charging }: IStatubar) => {
 	const [timeStr, setTimeStr] = useState(getTimeStr());
+
 	useEffect(() => {
 		setInterval(() => {
 			setTimeStr(getTimeStr());
 		}, 1000);
 	}, []);
+
 	return (
 		<StyledStatuBar>
 			<div className="device-name">{deviceName}</div>
@@ -69,10 +78,12 @@ export default ({ deviceName, airplane, battery, charging }: IStatubar) => {
 						<Airplane />
 					</div>
 				)}
-				<div className="statu-item battery">
-					{battery}%{" "}
-					{charging ? <BatteryCharging /> : <BatteryFull />}
-				</div>
+				{battery && (
+					<div className="statu-item battery">
+						<div>{battery}%</div>
+						{charging ? <BatteryCharging /> : <BatteryFull />}
+					</div>
+				)}
 				<div className="statu-item time">{timeStr}</div>
 			</div>
 		</StyledStatuBar>
