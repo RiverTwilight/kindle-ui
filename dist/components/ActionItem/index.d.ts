@@ -1,2 +1,3 @@
-declare const ActionItem: import("styled-components").StyledComponent<"button", any, {}, never>;
+/// <reference types="react" />
+declare function ActionItem(props: any): JSX.Element;
 export default ActionItem;

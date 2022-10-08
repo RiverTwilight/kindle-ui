@@ -26,10 +26,12 @@
 	],
 	"scripts": {
 		"build": "rollup -c",
+		"dev": "npm-run-all --parallel start-playground build-watch",
 		"build-watch": "rollup -c -w",
 		"start-playground": "cd playground && npm run start",
 		"i-all": " cd playground && npm i && cd ../ && npm i",
-		"dev": "npm-run-all --parallel start-playground build-watch"
+		"prepublishOnly": "",
+		"test": "react-scripts test"
 	},
 	"eslintConfig": {
 		"extends": [

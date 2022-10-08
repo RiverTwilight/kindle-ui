@@ -1,12 +1,22 @@
+import * as React from "react";
 import styled from "styled-components";
 import hover from "../../utils/hover";
 
-const ActionItem = styled.button`
+const StyledActionItem = styled.button`
 	border: none;
 	box-sizing: border-box;
 	width: 50px;
 	background-color: var(--bg-color);
 	color: var(--text-color);
+
+	display: inline-flex;
+	align-items: center;
+	align-content: center;
+	justify-content: center;
+	place-content: center;
+	aspect-ratio: 1;
+	padding: 2ch;
+
 	@media (min-width: 460px) {
 		margin-left: 10px;
 	}
@@ -20,5 +30,13 @@ const ActionItem = styled.button`
 	text-transform: lowercase;
 	${hover}
 `;
+
+function ActionItem(props: any) {
+	return (
+		<StyledActionItem>
+			<div>{props.children}</div>
+		</StyledActionItem>
+	);
+}
 
 export default ActionItem;

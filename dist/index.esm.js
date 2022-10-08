@@ -51,10 +51,14 @@ var templateObject_1$v;
 var hover = css(templateObject_1$u || (templateObject_1$u = __makeTemplateObject(["\n\ttransition: background-color 0.5s;\n\t&:hover {\n\t\tbackground-color: var(--text-color);\n\t\tcolor: var(--bg-color) !important;\n\t\ta {\n\t\t\tcolor: var(--bg-color) !important;\n\t\t}\n\t\tsvg path {\n\t\t\tstroke: var(--bg-color);\n\t\t\tfill: var(--bg-color);\n\t\t}\n\t}\n"], ["\n\ttransition: background-color 0.5s;\n\t&:hover {\n\t\tbackground-color: var(--text-color);\n\t\tcolor: var(--bg-color) !important;\n\t\ta {\n\t\t\tcolor: var(--bg-color) !important;\n\t\t}\n\t\tsvg path {\n\t\t\tstroke: var(--bg-color);\n\t\t\tfill: var(--bg-color);\n\t\t}\n\t}\n"])));
 var templateObject_1$u;
 
-var ActionItem = styled.button(templateObject_1$t || (templateObject_1$t = __makeTemplateObject(["\n\tborder: none;\n\tbox-sizing: border-box;\n\twidth: 50px;\n\tbackground-color: var(--bg-color);\n\tcolor: var(--text-color);\n\t@media (min-width: 460px) {\n\t\tmargin-left: 10px;\n\t}\n\tsvg {\n\t\twidth: 23px;\n\t}\n\tsvg path {\n\t\tstroke: var(--text-color);\n\t\t/* DO NOT ADD THIS: fill: var(--text-color);*/\n\t}\n\ttext-transform: lowercase;\n\t", "\n"], ["\n\tborder: none;\n\tbox-sizing: border-box;\n\twidth: 50px;\n\tbackground-color: var(--bg-color);\n\tcolor: var(--text-color);\n\t@media (min-width: 460px) {\n\t\tmargin-left: 10px;\n\t}\n\tsvg {\n\t\twidth: 23px;\n\t}\n\tsvg path {\n\t\tstroke: var(--text-color);\n\t\t/* DO NOT ADD THIS: fill: var(--text-color);*/\n\t}\n\ttext-transform: lowercase;\n\t", "\n"])), hover);
+var StyledActionItem = styled.button(templateObject_1$t || (templateObject_1$t = __makeTemplateObject(["\n\tborder: none;\n\tbox-sizing: border-box;\n\twidth: 50px;\n\tbackground-color: var(--bg-color);\n\tcolor: var(--text-color);\n\n\tdisplay: inline-flex;\n\talign-items: center;\n\talign-content: center;\n\tjustify-content: center;\n\tplace-content: center;\n\taspect-ratio: 1;\n\tpadding: 2ch;\n\n\t@media (min-width: 460px) {\n\t\tmargin-left: 10px;\n\t}\n\tsvg {\n\t\twidth: 23px;\n\t}\n\tsvg path {\n\t\tstroke: var(--text-color);\n\t\t/* DO NOT ADD THIS: fill: var(--text-color);*/\n\t}\n\ttext-transform: lowercase;\n\t", "\n"], ["\n\tborder: none;\n\tbox-sizing: border-box;\n\twidth: 50px;\n\tbackground-color: var(--bg-color);\n\tcolor: var(--text-color);\n\n\tdisplay: inline-flex;\n\talign-items: center;\n\talign-content: center;\n\tjustify-content: center;\n\tplace-content: center;\n\taspect-ratio: 1;\n\tpadding: 2ch;\n\n\t@media (min-width: 460px) {\n\t\tmargin-left: 10px;\n\t}\n\tsvg {\n\t\twidth: 23px;\n\t}\n\tsvg path {\n\t\tstroke: var(--text-color);\n\t\t/* DO NOT ADD THIS: fill: var(--text-color);*/\n\t}\n\ttext-transform: lowercase;\n\t", "\n"])), hover);
+function ActionItem(props) {
+    return (React.createElement(StyledActionItem, null,
+        React.createElement("div", null, props.children)));
+}
 var templateObject_1$t;
 
-var index$k = styled.div(templateObject_1$s || (templateObject_1$s = __makeTemplateObject(["\n\tdisplay: flex;\n"], ["\n\tdisplay: flex;\n"])));
+var index$k = styled.div(templateObject_1$s || (templateObject_1$s = __makeTemplateObject(["\n\tdisplay: flex;\n\tbox-sizing: border-box;\n"], ["\n\tdisplay: flex;\n\tbox-sizing: border-box;\n"])));
 var templateObject_1$s;
 
 /**
@@ -630,6 +634,17 @@ function SvgEllipsisVerticalCircleSharp(props) {
   }, props), _path || (_path = /*#__PURE__*/React.createElement("path", {
     d: "M464 256c0-114.87-93.13-208-208-208S48 141.13 48 256s93.13 208 208 208 208-93.13 208-208zm-234-90a26 26 0 1126 26 26 26 0 01-26-26zm0 90a26 26 0 1126 26 26 26 0 01-26-26zm0 90a26 26 0 1126 26 26 26 0 01-26-26z"
   })));
+}
+
+var ENV = process.env.NODE_ENV;
+if (ENV !== "production" &&
+    ENV !== "test" &&
+    typeof console !== "undefined" &&
+    console.warn && // eslint-disable-line no-console
+    typeof window !== "undefined") {
+    // eslint-disable-next-line no-console
+    console.warn("You are using a whole package of Kindle-ui, " +
+        "please use https://www.npmjs.com/package/babel-plugin-import to reduce app bundle size.");
 }
 
 export { index$l as ActionBar, index$j as ActionBarMenu, index$i as ActionBarSpace, index$k as ActionGroup, ActionItem, SvgAirplane as AirplaneIcon, SvgArrowBackSharp as ArrowBackSharpIcon, SvgBatteryFull as BatteryFullIcon, SvgBatteryHalfSharp as BatteryHalfSharpIcon, index$h as Button, index$g as Card, index$c as CardAction, index$e as CardContent, index$f as CardMedia, index$d as CardTitle, SvgCogSharp as CogSharpIcon, Container, index$b as Dialog, index$a as DialogAction, index$9 as DialogContent, SvgEllipsisVerticalCircleSharp as EllipsisVerticalCircleSharpIcon, SvgEllipsisVertical as EllipsisVerticalIcon, index$8 as Grid, GridItem, SvgHomeOutline as HomeOutlineIcon, StyledListItem as ListItem, StyledListItemIcon as ListItemIcon, index$7 as ListItemText, Menu$1 as Menu, index$6 as Navbar, index$4 as SearchBar, index$5 as StatuBar, index$2 as Tab, index$1 as TabItem, index as TimeBar, index$3 as Typography, SvgWifiSharp as WifiSharpIcon };
