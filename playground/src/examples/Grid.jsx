@@ -8,6 +8,10 @@ export default function () {
 				<GridItem src="/img/cover_0.jpg" />
 				<GridItem src="/img/cover_1.jpg" />
 				<GridItem src="/img/cover_2.jpg" />
+				<GridItem src="/img/cover_2.jpg" />
+				<GridItem src="/img/cover_2.jpg" />
+				<GridItem src="/img/cover_2.jpg" />
+				<GridItem src="/img/cover_2.jpg" />
 			</Grid>
 		</>
 	);

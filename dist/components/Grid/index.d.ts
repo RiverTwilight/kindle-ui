@@ -1,6 +1,6 @@
-/// <reference types="react" />
+import * as React from "react";
 export interface IGrid extends React.HTMLAttributes<HTMLDivElement> {
     children: JSX.Element | JSX.Element[];
 }
-declare const _default: import("styled-components").StyledComponent<"div", any, {}, never>;
-export default _default;
+declare function Grid({ children }: IGrid): JSX.Element;
+export default Grid;

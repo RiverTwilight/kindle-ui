@@ -8,10 +8,18 @@ export interface IGridItem extends React.HTMLAttributes<HTMLDivElement> {
 }
 
 const StyledGridItem = styled.div`
-	min-height: 30px;
-	display: block;
-	flex: 0 0 33.33333333%;
-	max-width: 33.33333333%;
+	display: flex;
+
+	@media (max-width: 768px) {
+		width: 25vh;
+		height: calc(25vh / 0.626);
+	}
+
+	@media (min-width: 768px) {
+		width: 200px;
+		height: 317px;
+	}
+
 	& > img {
 		width: 100%;
 		object-fit: cover;
