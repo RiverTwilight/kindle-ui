@@ -1,8 +1,8 @@
-# Kindle-UI
-
 <a href="https://app.fossa.com/projects/git%2Bgithub.com%2FRiverTwilight%2Fkindyle?ref=badge_large">
 <img src="https://app.fossa.com/api/projects/git%2Bgithub.com%2FRiverTwilight%2Fkindyle.svg?type=large" align="right" height="288" width="288">
 </a>
+
+# Kindle-UI
 
 [English Version](./README.en.md) | 简体中文
 
@@ -14,7 +14,7 @@ Amazon 官方已于今年八月陆续推送新版本的 UI。
 
 ## 🍊 特性
 
--   [x] 10 个交互式 Kindle 组件（对话框、按钮、列表、文本框、导航栏...）
+-   [x] 11 个交互式 Kindle 组件（对话框、按钮、列表、文本框、导航栏...）
 -   [x] 夜间模式
 -   [x] 原汁原味 Kindle OS 字体（可选）
 -   [ ] 100% TypeScript
