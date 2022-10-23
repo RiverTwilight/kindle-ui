@@ -1,13 +1,34 @@
 import * as React from "react";
 import styled from "styled-components";
+import { greyImage } from "../Typography";
 
 export interface IGridItem extends React.HTMLAttributes<HTMLDivElement> {
 	children: JSX.Element | JSX.Element[];
 	src?: string;
 	href?: string;
+	target?: string;
+	greyImage?: boolean;
 }
 
-const StyledGridItem = styled.div`
+const GridItem: React.FC<IGridItem> = ({ className, src, href, target }) => {
+	if (href) {
+		return (
+			<div className={className}>
+				<a target={target} href={href}>
+					<img src={src} alt="grid item" />
+				</a>
+			</div>
+		);
+	}
+
+	return (
+		<div className={className}>
+			<img src={src}></img>
+		</div>
+	);
+};
+
+const StyledGridItem = styled(GridItem)`
 	display: flex;
 
 	@media (max-width: 768px) {
@@ -20,28 +41,18 @@ const StyledGridItem = styled.div`
 		height: 317px;
 	}
 
-	& > img {
+	& img {
+		${(props) => props.greyImage && greyImage}
 		width: 100%;
+		height: 100%;
 		object-fit: cover;
+	}
+
+	a {
+		width: 100%;
+		height: 100%;
+		display: block;
 	}
 `;
 
-const GridItem: React.FC<IGridItem> = ({ src, href }) => {
-	if (href) {
-		return (
-			<StyledGridItem>
-				<a href={href}>
-					<img src={src} alt="grid item" />
-				</a>
-			</StyledGridItem>
-		);
-	}
-
-	return (
-		<StyledGridItem>
-			<img src={src}></img>
-		</StyledGridItem>
-	);
-};
-
-export default GridItem;
+export default StyledGridItem;

@@ -72,3 +72,5 @@ export default ({
 		</Typography>
 	);
 };
+
+export { greyImage };

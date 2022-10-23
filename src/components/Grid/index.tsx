@@ -23,8 +23,6 @@ const StyledGrid = styled.div`
 function Grid({ children }: IGrid) {
 	const cldLength = React.Children.count(children);
 
-	console.log(cldLength);
-
 	return <StyledGrid cldLength={cldLength}>{children}</StyledGrid>;
 }
 

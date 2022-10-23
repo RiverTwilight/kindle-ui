@@ -1,7 +1,6 @@
 import React from "react";
+import styled from "styled-components";
 
-export default () => {
-    return(
-        <p>asdf</p>
-    )
-}
+const List = styled.div``;
+
+export default List;

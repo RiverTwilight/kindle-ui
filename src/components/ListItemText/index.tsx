@@ -11,7 +11,7 @@ export interface IListItemText {
 const ListItemText = ({ primary, second, className }: IListItemText) => (
 	<div className={className}>
 		<div className="primary">{primary}</div>
-		<div className="second">{second}</div>
+		<div className="secondary">{second}</div>
 	</div>
 );
 
@@ -22,6 +22,7 @@ export default styled(ListItemText)`
 	display: flex;
 	flex-direction: column;
 	flex: 1;
+
 	.primary {
 		font-size: 20px;
 		font-weight: 600;
@@ -30,7 +31,8 @@ export default styled(ListItemText)`
 		text-overflow: ellipsis;
 		white-space: nowrap;
 	}
-	.second {
+
+	.secondary {
 		font-size: 15px;
 	}
 `;

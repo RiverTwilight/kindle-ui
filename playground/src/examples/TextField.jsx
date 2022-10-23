@@ -1,5 +1,4 @@
 import {
-	List,
 	ListItem,
 	ListItemText,
 	EllipsisVerticalIcon,
@@ -9,7 +8,7 @@ import { Link } from "react-router-dom";
 
 export default function () {
 	return (
-		<List>
+		<>
 			<ListItem component={Link} to="/reader">
 				<ListItemText primary="尘埃落定" second="阿来著" />
 			</ListItem>
@@ -26,6 +25,6 @@ export default function () {
 					<EllipsisVerticalIcon />
 				</ListItemIcon>
 			</ListItem>
-		</List>
+		</>
 	);
 }
