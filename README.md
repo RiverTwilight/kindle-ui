@@ -1,12 +1,16 @@
 # Kindle-UI
 
+<a href="https://app.fossa.com/projects/git%2Bgithub.com%2FRiverTwilight%2Fkindyle?ref=badge_large">
+<img src="https://app.fossa.com/api/projects/git%2Bgithub.com%2FRiverTwilight%2Fkindyle.svg?type=large" align="right" height="288" width="288">
+</a>
+
+[English Version](./README.en.md) | 简体中文
+
 一个用于在浏览器中构建 Kindle 系统的组件库。
 
 ~~本项目是我高考前最后一个坑啦，欢迎 PR！~~
 
 Amazon 官方已于今年八月陆续推送新版本的 UI。
-
-[English Version](./README.en.md) | 简体中文
 
 ## 🍊 特性
 
@@ -29,7 +33,7 @@ App 是 kindle 中高度集成的应用程序，大多数情况下你无法对�
 
 ### 实验性浏览器
 
-## 组件
+## 🪟 组件
 
 ### Navbar
 
@@ -114,6 +118,38 @@ export default App;
 | :--- | :------: | :-----: | ----------- |
 | href |   true   |   --    | --          |
 
+### List
+
+<details>
+  <summary>Example:</summary>
+
+```JSX
+	<List>
+		<ListItem component={Link} to="/reader">
+			<ListItemText primary="尘埃落定" second="阿来著" />
+		</ListItem>
+		<ListItem component="a" href="https://github.com">
+			<ListItemText
+				primary="The Adventure of Sherlok Holmoes (福尔摩斯探案集）"
+				second="Arthur Conan Doyle"
+			/>
+			<ListItemIcon
+				onClick={() => {
+					alert("sdf");
+				}}
+			>
+				<EllipsisVerticalIcon />
+			</ListItemIcon>
+		</ListItem>
+	</List>
+```
+
+</details>
+
+| name | optional | default | description |
+| :--- | :------: | :-----: | ----------- |
+| href |   true   |   --    | --          |
+
 ## 贡献
 
 ```bash
@@ -124,18 +160,18 @@ npm run dev
 
 ### 常见问题
 
-如果抛出“Can't resolve 'kindle-ui'...”之类的错误，请尝试三种解决方案：
+#### I. 抛出“Can't resolve 'kindle-ui'...”之类的错误
 
-1.检查`dist`文件夹是否为空，如果是，运行`npm run build`构建生产包，然后运行`npm run dev`。
+请尝试以下三种解决方案：
 
-2.检查`playground/node_modules/kindle-ui`是否存在并链接到根目录。 如果没有，你可能需要在 `playgrpund` 文件夹中手动运行 `npm i ../ -save`。
+1. 检查`dist`文件夹是否为空，如果是，运行`npm run build`构建生产包，然后运行`npm run dev`。
 
-3.如果 1 和 2 都不起作用，打开两个终端，在第一个终端运行`npm run build-watch`，在另一个终端运行`npm run start-playground`。
+2. 检查`playground/node_modules/kindle-ui`是否存在并链接到根目录。 如果没有，你可能需要在 `playgrpund` 文件夹中手动运行 `npm i ../ -save`。
+
+3. 如果 1 和 2 都不起作用，打开两个终端，在第一个终端运行`npm run build-watch`，在另一个终端运行`npm run start-playground`。
 
 ## License
 
 MIT
 
 灵感来源于 [这个博客](https://ash.ms)
-
-[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FRiverTwilight%2Fkindyle.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2FRiverTwilight%2Fkindyle?ref=badge_large)
