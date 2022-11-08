@@ -33,7 +33,7 @@ const StyledActionItem = styled.button`
 
 function ActionItem(props: any) {
 	return (
-		<StyledActionItem>
+		<StyledActionItem {...props}>
 			<div>{props.children}</div>
 		</StyledActionItem>
 	);
