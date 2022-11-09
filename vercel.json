@@ -1,0 +1,4 @@
+{
+	"buildCommand": "yarn run docs:build",
+	"outputDirectory": "./packages/docs/build"
+}
