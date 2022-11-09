@@ -1,35 +1,25 @@
 {
 	"name": "kindle-ui",
 	"description": "A react component library to build Kindle OS in the browser.",
-	"version": "1.0.4",
-	"private": false,
+	"version": "1.0.5",
+	"private": true,
 	"license": "MIT",
-	"main": "dist/index.cjs.js",
-	"module": "dist/index.esm.js",
-	"source": "src/index.ts",
-	"typings": "dist/index.d.ts",
-	"dependencies": {
-		"@rollup/plugin-typescript": "^8.2.3",
-		"@testing-library/jest-dom": "^5.11.4",
-		"@testing-library/react": "^11.1.0",
-		"@testing-library/user-event": "^12.1.10",
-		"react-scripts": "5.0.1",
-		"styled-components": "^5.3.0"
+	"main": "packages/kindle-ui/dist/index.cjs.js",
+	"module": "packages/kindle-ui/dist/index.esm.js",
+	"source": "packages/kindle-ui/src/index.ts",
+	"typings": "packages/kindle-ui/dist/index.d.ts",
+	"dependencies": {},
+	"workspaces": {
+		"packages": [
+			"packages/*"
+		]
 	},
-	"peerDependencies": {
-		"react": "^17.0.2",
-		"react-dom": "^17.0.2"
-	},
-	"files": [
-		"dist",
-		"custom.d.ts"
-	],
 	"scripts": {
-		"build": "rollup -c",
-		"dev": "npm-run-all --parallel start-playground build-watch",
-		"build-watch": "rollup -c -w",
-		"start-playground": "cd playground && npm run start",
-		"i-all": " cd playground && npm i && cd ../ && npm i",
+		"build": "yarn workspace kindle-ui build",
+		"build:watch": "yarn workspace kindle-ui build:watch",
+		"dev": "npm-run-all --parallel docs:dev build:watch",
+		"docs:dev": "yarn workspace docs start",
+		"i-all": "cd ./packages/kindle-ui && yarn install && cd ../docs && yarn install",
 		"prepublishOnly": "",
 		"test": "react-scripts test"
 	},
@@ -50,24 +40,5 @@
 			"last 1 firefox version",
 			"last 1 safari version"
 		]
-	},
-	"devDependencies": {
-		"@babel/cli": "^7.14.5",
-		"@babel/core": "^7.14.6",
-		"@babel/preset-env": "^7.14.7",
-		"@babel/preset-react": "^7.14.5",
-		"@rollup/plugin-babel": "^5.3.0",
-		"@svgr/rollup": "^5.5.0",
-		"@types/react": "^17.0.13",
-		"@types/react-dom": "^17.0.8",
-		"@types/styled-components": "^5.1.10",
-		"npm-run-all": "^4.1.5",
-		"rollup": "^2.52.3",
-		"rollup-plugin-delete": "^2.0.0",
-		"rollup-plugin-peer-deps-external": "^2.2.4",
-		"rollup-plugin-react-svg": "^3.0.3",
-		"rollup-plugin-typescript2": "^0.30.0",
-		"rollup-plugin-url": "^3.0.1",
-		"typescript": "^4.3.5"
 	}
 }
