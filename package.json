@@ -16,10 +16,12 @@
 	},
 	"scripts": {
 		"build": "yarn workspace kindle-ui build",
+		"postbuild": "scripts/postbuild.sh",
 		"build:watch": "yarn workspace kindle-ui build:watch",
 		"dev": "npm-run-all --parallel docs:dev build:watch",
+		"dev:install": "cd ./packages/kindle-ui && yarn install && cd ../docs && yarn install",
 		"docs:dev": "yarn workspace docs start",
-		"i-all": "cd ./packages/kindle-ui && yarn install && cd ../docs && yarn install",
+		"docs:build": "yarn workspace docs build",
 		"prepublishOnly": "",
 		"test": "react-scripts test"
 	},
