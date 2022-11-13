@@ -1,6 +1,11 @@
 {
 	"name": "@kindle-ui/app",
-	"description": "A react component library to build Kindle OS in the browser.",
+	"description": "Some integrated kindle apps.",
+	"keywords": [
+		"react",
+		"kindle",
+		"amazon"
+	],
 	"version": "1.0.6",
 	"private": false,
 	"license": "MIT",
@@ -9,11 +14,11 @@
 	"source": "src/index.ts",
 	"typings": "dist/index.d.ts",
 	"dependencies": {
+		"@kindle-ui/core": "^1.0.6",
 		"@rollup/plugin-typescript": "^8.2.3",
 		"@testing-library/jest-dom": "^5.11.4",
 		"@testing-library/react": "^11.1.0",
 		"@testing-library/user-event": "^12.1.10",
-		"react-scripts": "5.0.1",
 		"styled-components": "^5.3.0"
 	},
 	"peerDependencies": {
@@ -23,15 +28,12 @@
 	"files": [
 		"dist/index.cjs.js",
 		"dist/index.esm.js",
-		"custom.d.ts",
 		"LICENSE",
 		"README.md"
 	],
 	"scripts": {
 		"build": "rollup -c",
-		"build:watch": "rollup -c -w",
-		"prepublishOnly": "",
-		"test": "react-scripts test"
+		"build:watch": "rollup -c -w"
 	},
 	"eslintConfig": {
 		"extends": [

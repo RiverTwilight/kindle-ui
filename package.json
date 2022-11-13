@@ -1,7 +1,12 @@
 {
 	"name": "kindle-ui",
 	"description": "A react component library to build Kindle OS in the browser.",
-	"version": "1.0.5",
+	"version": "1.0.6",
+	"keywords": [
+		"kindle",
+		"react",
+		"react-component"
+	],
 	"private": true,
 	"license": "MIT",
 	"main": "packages/kindle-ui/dist/index.cjs.js",
