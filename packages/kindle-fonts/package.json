@@ -1,8 +1,12 @@
 {
 	"name": "kindle-fonts",
 	"version": "1.0.0",
-	"description": "",
+	"description": "Some fonts used by Amazon kindle e-reader",
 	"main": "index.js",
+	"files": [
+		"bookerly.css",
+		"amazon-ember.css"
+	],
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1"
 	},

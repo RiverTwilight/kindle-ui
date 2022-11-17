@@ -1,0 +1,18 @@
+@font-face {
+	font-family: "Bookerly";
+	src: url("./fonts/Bookerly/@font-face/663c911905498d27729fe0a7f1ca2cc4.eot"); /* IE9*/
+	src: url("./fonts/Bookerly/@font-face/663c911905498d27729fe0a7f1ca2cc4.eot?#iefix")
+			format("embedded-opentype"),
+		/* IE6-IE8 */
+			url("./fonts/Bookerly/@font-face/663c911905498d27729fe0a7f1ca2cc4.woff2")
+			format("woff2"),
+		/* chrome、firefox */
+			url("./fonts/Bookerly/@font-face/663c911905498d27729fe0a7f1ca2cc4.woff")
+			format("woff"),
+		/* chrome、firefox */
+			url("./fonts/Bookerly/@font-face/663c911905498d27729fe0a7f1ca2cc4.ttf")
+			format("truetype"),
+		/* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+			url("./fonts/Bookerly/@font-face/./fonts/Bookerly/@font-face/663c911905498d27729fe0a7f1ca2cc4.svg#Bookerly")
+			format("svg"); /* iOS 4.1- */
+}
