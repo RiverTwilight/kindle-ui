@@ -150,6 +150,21 @@ export default App;
 | :--- | :------: | :-----: | ----------- |
 | href |   true   |   --    | --          |
 
+## 字体
+
+```bash
+npm i kindle-fonts
+# or
+yarn add kindle-fonts
+```
+
+Then import it in your project:
+
+```JSX
+import "@kindle-fonts/amazon-ember.css";
+import "@kindle-fonts/bookerly.css";
+```
+
 ## 贡献
 
 ```bash
