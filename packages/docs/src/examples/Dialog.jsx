@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { DialogContent, Dialog, DialogAction, Button } from "kindle-ui";
+import { DialogContent, Dialog, DialogAction, Button } from "@kindle-ui/core";
 
 export default function () {
 	const [open, setOpen] = useState(false);

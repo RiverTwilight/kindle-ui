@@ -1,4 +1,4 @@
-import { Tab, TabItem } from "kindle-ui";
+import { Tab, TabItem } from "@kindle-ui/core";
 
 export default function () {
 	return (

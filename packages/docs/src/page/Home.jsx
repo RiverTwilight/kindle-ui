@@ -1,11 +1,11 @@
-import { Typography, Button } from "kindle-ui";
+import { Typography, Button } from "@kindle-ui/core";
 import CardExample from "../examples/Card";
 import List from "../examples/List";
 import TabExample from "../examples/Tab";
 import DialogExample from "../examples/Dialog";
 import GridExample from "../examples/Grid";
 import TextFieldExample from "../examples/TextField";
-import { Card } from "kindle-ui";
+import { Card } from "@kindle-ui/core";
 
 export default () => {
 	return (

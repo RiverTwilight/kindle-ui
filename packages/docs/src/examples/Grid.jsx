@@ -1,4 +1,4 @@
-import { Grid, GridItem } from "kindle-ui";
+import { Grid, GridItem } from "@kindle-ui/core";
 import { Link } from "react-router-dom";
 
 export default function () {

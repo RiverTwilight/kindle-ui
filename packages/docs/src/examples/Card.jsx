@@ -5,7 +5,7 @@ import {
 	Button,
 	CardContent,
 	CardTitle,
-} from "kindle-ui";
+} from "@kindle-ui/core";
 
 export default function () {
 	return (

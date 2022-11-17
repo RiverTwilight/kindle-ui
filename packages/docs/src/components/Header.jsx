@@ -10,7 +10,7 @@ import {
 	ActionBarMenu,
 	HomeOutlineIcon,
 	CogSharpIcon,
-} from "kindle-ui";
+} from "@kindle-ui/core";
 import { useHistory } from "react-router-dom";
 
 export default () => {
