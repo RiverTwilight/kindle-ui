@@ -1,6 +1,6 @@
 import styled from "styled-components";
-import hover from "../../utils/hover";
-import border from "../../utils/border";
+import hover from "@/utils/hover";
+import border from "@/utils/border";
 
 interface ITabItem {
 	active?: boolean;
@@ -10,10 +10,10 @@ interface ITabItem {
 export default styled.div`
 	font-family: AmazonEmber-Rg, sans-serif;
 	display: flex;
-    padding: 0 10px;
+	padding: 0 10px;
 	cursor: pointer;
 	color: #888;
-    text-transform: uppercase;
+	text-transform: uppercase;
 	${hover}
 	border-right: ${border};
 	${(props: ITabItem) =>

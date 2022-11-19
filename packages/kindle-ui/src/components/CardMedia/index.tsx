@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import greyImage from "../../utils/greyImage";
+import greyImage from "@/utils/greyImage";
 
 interface ITabItem {
 	active?: boolean;

@@ -1,6 +1,6 @@
 import React from "react";
 import styled, { css } from "styled-components";
-import border from "../../utils/border";
+import border from "@/utils/border";
 
 /**
  * Navbar组件

@@ -2,8 +2,7 @@ import styled, { css } from "styled-components";
 import React from "react";
 import ActionBar from "../ActionBar";
 import StatuBar from "../StatuBar";
-import border from "../../utils/border";
-
+import border from "@/utils/border";
 
 /**
  * Navbar组件
@@ -44,7 +43,6 @@ export type StatuInfo = {
 	airplane?: boolean;
 	charging?: boolean;
 };
-
 
 export interface INavbar {
 	autoClose: boolean;

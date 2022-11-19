@@ -1,6 +1,6 @@
 import * as React from "react";
 import styled from "styled-components";
-import hover from "../../utils/hover";
+import hover from "@/utils/hover";
 
 const StyledActionItem = styled.button`
 	border: none;

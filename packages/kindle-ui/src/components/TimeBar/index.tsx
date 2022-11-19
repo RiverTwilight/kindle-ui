@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import React, { useEffect, useState } from "react";
-import getTimeStr from "../../utils/getTimeStr";
+import getTimeStr from "@/utils/getTimeStr";
 
 const TimeBar = styled.div`
 	z-index: 10;

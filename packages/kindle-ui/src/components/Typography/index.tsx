@@ -1,7 +1,5 @@
 import styled, { css } from "styled-components";
 import React from "react";
-// @ts-expect-error
-import Bookerly from "../../fonts/Bookerly/@font-face/663c911905498d27729fe0a7f1ca2cc4.woff";
 
 interface typoStyle {
 	// px
@@ -26,10 +24,6 @@ const Typography = styled.article`
 	padding: 15px;
 	max-width: 1000px;
 	font-size: 1.1rem;
-	@font-face {
-		font-family: "Bookerly";
-		src: url(${Bookerly});
-	}
 	font-family: Bookerly, AmazonEmber-Rg;
 	color: var(--text-color);
 	& ::selection {
@@ -38,6 +32,10 @@ const Typography = styled.article`
 	}
 	a {
 		color: var(--text-color);
+	}
+	blockquote {
+		border-left: 5px solid var(--text-color);
+		padding 0 15px;
 	}
 	p {
 		line-height: ${(props: typoStyle) => props.lineHeight}px;

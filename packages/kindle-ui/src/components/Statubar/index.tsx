@@ -3,8 +3,8 @@ import React, { useEffect, useState } from "react";
 import Airplane from "../../icons/airplane.svg";
 import BatteryFull from "../../icons/battery-full-sharp.svg";
 import BatteryCharging from "../../icons/battery-charging-sharp.svg";
-import border from "../../utils/border";
-import getTimeStr from "../../utils/getTimeStr";
+import border from "@/utils/border";
+import getTimeStr from "@/utils/getTimeStr";
 
 const StatuBar = ({ className, children }: any) => (
 	<div className={className}>{children}</div>

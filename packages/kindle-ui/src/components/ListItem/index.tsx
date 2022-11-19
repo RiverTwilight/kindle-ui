@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import border from "../../utils/border";
+import border from "@/utils/border";
 
 // TODO 阅读进度
 

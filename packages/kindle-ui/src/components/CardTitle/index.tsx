@@ -1,6 +1,6 @@
 import styled from "styled-components";
-import hover from "../../utils/hover";
-import border from "../../utils/border";
+import hover from "@/utils/hover";
+import border from "@/utils/border";
 
 interface ITabItem {
 	active?: boolean;
