@@ -1,7 +1,7 @@
 {
 	"name": "@kindle-ui/core",
 	"description": "A react component library to build Kindle OS in the browser.",
-	"version": "1.0.6",
+	"version": "1.0.7",
 	"private": false,
 	"license": "MIT",
 	"main": "dist/index.cjs.js",

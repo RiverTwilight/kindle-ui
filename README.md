@@ -161,8 +161,8 @@ yarn add kindle-fonts
 Then import it in your project:
 
 ```JSX
-import "@kindle-fonts/amazon-ember.css";
-import "@kindle-fonts/bookerly.css";
+import "kindle-fonts/bookerly.css";
+import "kindle-fonts/amazon-ember.css";
 ```
 
 ## 贡献
