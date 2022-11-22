@@ -44,7 +44,16 @@ Navbar 是一个集成的 Kindle 原生组件。 所有图标都是不可编辑�
   
 ```JSX
 <Navbar>
-	<StatuBar airplane battery={86} deviceName="My Kindle" />
+	<StatuBar
+		airplane
+		celluar={{
+			on: true,
+			label: "LTE",
+			siginal: 3,
+		}}
+		battery={86}
+		deviceName="My Kindle"
+	/>
 	<ActionBar>
 		<ActionGroup>
 			<ActionItem

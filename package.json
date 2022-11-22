@@ -1,7 +1,7 @@
 {
 	"name": "kindle-ui",
 	"description": "A react component library to build Kindle OS in the browser.",
-	"version": "1.0.6",
+	"version": "1.0.7",
 	"keywords": [
 		"kindle",
 		"react",
@@ -27,6 +27,8 @@
 		"dev:install": "cd ./packages/kindle-ui && yarn install && cd ../docs && yarn install",
 		"docs:dev": "yarn workspace docs start",
 		"docs:build": "yarn workspace docs build",
+		"publish:core": "yarn workspace @kindle-ui/core publish",
+		"publish:fonts": "yarn workspace kindle-fonts publish",
 		"prepublishOnly": "",
 		"test": "react-scripts test"
 	},
