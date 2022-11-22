@@ -17,7 +17,7 @@ Amazon 官方已于今年八月陆续推送新版本的 UI。
 -   [x] 11 个交互式 Kindle 组件（对话框、按钮、列表、文本框、导航栏...）
 -   [x] 夜间模式
 -   [x] 原汁原味 Kindle OS 字体（可选）
--   [ ] 100% TypeScript
+-   [x] 100% TypeScript
 -   [ ] 多样式对话框
 -   [ ] `Expermintal Browser` App
 -   [ ] `Font Setting` App
@@ -88,7 +88,7 @@ Navbar 是一个集成的 Kindle 原生组件。 所有图标都是不可编辑�
 
 ### Container
 
-如果你想使用 AmazonEmber 字体（约 106kb）和深色模式来获得更接近原生 Kindle 的 ui，你可以用`Container` 组件包裹你的 App，它添加了一个全局字体系列。
+使用 Container 容器可以赋予神色模式切换的能力。
 
 ```JSX
 import { Container } from "kindyle";

@@ -1,15 +1,9 @@
 import React, { useEffect, useState } from "react";
 import styled from "styled-components";
-// @ts-expect-error
-import AmazonEmber from "../../fonts/AmazonEmber/AmazonEmber_Rg.ttf";
 
 const StyledContainer = styled.div`
-	@font-face {
-		font-family: AmazonEmber-Rg;
-		src: url(${AmazonEmber});
-	}
-	font-family: "AmazonEmber-Rg", Trebuchet MS;
 	margin: 0;
+	font-family: "Amazon Ember", "Bookerly";
 
 	${(props: { dark?: boolean }) =>
 		props.dark

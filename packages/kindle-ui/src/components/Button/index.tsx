@@ -9,6 +9,7 @@ import hover from "@/utils/hover";
 
 export interface BaseButtonProps {
 	variant?: "outline" | "default";
+	component: string | JSX.Element;
 	disabled?: boolean;
 	children: React.ReactNode;
 }
@@ -74,7 +75,7 @@ const StyledButton = styled.div`
 	font-size: 1rem;
 	color: var(--text-color);
 	text-decoration: none;
-	font-family: "AmazonEmber-Rg";
+	font-family: "Amazon Ember";
 	textdecoration: none;
 	text-transform: uppercase;
 
