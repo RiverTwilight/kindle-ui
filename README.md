@@ -91,7 +91,7 @@ Navbar 是一个集成的 Kindle 原生组件。 所有图标都是不可编辑�
 使用 Container 容器可以赋予神色模式切换的能力。
 
 ```JSX
-import { Container } from "kindyle";
+import { Container } from "@kindle-ui/core";
 
 function App() {
 	return (
@@ -135,7 +135,7 @@ export default App;
 			/>
 			<ListItemIcon
 				onClick={() => {
-					alert("sdf");
+					alert("Hello");
 				}}
 			>
 				<EllipsisVerticalIcon />
