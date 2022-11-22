@@ -17,7 +17,8 @@
 		"baseUrl": ".",
 		"paths": {
 			"@/components/*": ["src/components/*"],
-			"@/utils/*": ["src/utils/*"]
+			"@/utils/*": ["src/utils/*"],
+			"@/icons/*": ["src/icons/*"]
 		},
 		// "composite": true,                     /* Enable project compilation */
 		// "tsBuildInfoFile": "./",               /* Specify file to store incremental compilation information */

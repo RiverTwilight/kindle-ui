@@ -27,7 +27,9 @@ export default () => {
 					<img src="/Kindle-UI.png"></img>
 					<h2>Button</h2>
 					<Button>Button</Button>
+					&nbsp;
 					<Button variant="outline">OUTLINE</Button>
+					&nbsp;
 					<Button href="https://github.com/rivertwilight">
 						With Link
 					</Button>

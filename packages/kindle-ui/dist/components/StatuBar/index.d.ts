@@ -3,9 +3,14 @@ export interface IStatubar {
     battery?: number;
     airplane?: boolean;
     charging?: boolean;
+    celluar?: {
+        on: boolean;
+        label: string;
+        signal: number;
+    };
 }
 /**
  * Statubar
  */
-declare const _default: ({ deviceName, airplane, battery, charging }: IStatubar) => JSX.Element;
+declare const _default: (props: IStatubar) => JSX.Element;
 export default _default;

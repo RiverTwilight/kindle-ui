@@ -146,9 +146,9 @@ var Menu$1 = (function (_a) {
 var templateObject_1$q;
 
 var _circle, _circle2, _circle3;
-function _extends$b() { _extends$b = Object.assign ? Object.assign.bind() : function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends$b.apply(this, arguments); }
+function _extends$c() { _extends$c = Object.assign ? Object.assign.bind() : function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends$c.apply(this, arguments); }
 function SvgEllipsisVertical(props) {
-  return /*#__PURE__*/React.createElement("svg", _extends$b({
+  return /*#__PURE__*/React.createElement("svg", _extends$c({
     xmlns: "http://www.w3.org/2000/svg",
     className: "ellipsis-vertical_svg__ionicon",
     viewBox: "0 0 512 512"
@@ -342,45 +342,57 @@ var index$5 = (function (_a) {
 });
 var templateObject_1$5, templateObject_2;
 
-var _path$a;
-function _extends$a() { _extends$a = Object.assign ? Object.assign.bind() : function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends$a.apply(this, arguments); }
+var _path$b;
+function _extends$b() { _extends$b = Object.assign ? Object.assign.bind() : function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends$b.apply(this, arguments); }
 function SvgAirplane(props) {
-  return /*#__PURE__*/React.createElement("svg", _extends$a({
+  return /*#__PURE__*/React.createElement("svg", _extends$b({
     xmlns: "http://www.w3.org/2000/svg",
     className: "airplane_svg__ionicon",
     viewBox: "0 0 512 512"
-  }, props), _path$a || (_path$a = /*#__PURE__*/React.createElement("path", {
+  }, props), _path$b || (_path$b = /*#__PURE__*/React.createElement("path", {
     d: "M186.62 464H160a16 16 0 01-14.57-22.6l64.46-142.25L113.1 297l-35.3 42.77C71.07 348.23 65.7 352 52 352H34.08a17.66 17.66 0 01-14.7-7.06c-2.38-3.21-4.72-8.65-2.44-16.41l19.82-71c.15-.53.33-1.06.53-1.58a.38.38 0 000-.15 14.82 14.82 0 01-.53-1.59l-19.84-71.45c-2.15-7.61.2-12.93 2.56-16.06a16.83 16.83 0 0113.6-6.7H52c10.23 0 20.16 4.59 26 12l34.57 42.05 97.32-1.44-64.44-142A16 16 0 01160 48h26.91a25 25 0 0119.35 9.8l125.05 152 57.77-1.52c4.23-.23 15.95-.31 18.66-.31C463 208 496 225.94 496 256c0 9.46-3.78 27-29.07 38.16-14.93 6.6-34.85 9.94-59.21 9.94-2.68 0-14.37-.08-18.66-.31l-57.76-1.54-125.36 152a25 25 0 01-19.32 9.75z"
   })));
 }
 
-var _path$9, _path2$5;
-function _extends$9() { _extends$9 = Object.assign ? Object.assign.bind() : function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends$9.apply(this, arguments); }
+var _path$a, _path2$5;
+function _extends$a() { _extends$a = Object.assign ? Object.assign.bind() : function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends$a.apply(this, arguments); }
 function SvgBatteryFullSharp(props) {
-  return /*#__PURE__*/React.createElement("svg", _extends$9({
+  return /*#__PURE__*/React.createElement("svg", _extends$a({
     xmlns: "http://www.w3.org/2000/svg",
     className: "battery-full-sharp_svg__ionicon",
     viewBox: "0 0 512 512"
-  }, props), _path$9 || (_path$9 = /*#__PURE__*/React.createElement("path", {
+  }, props), _path$a || (_path$a = /*#__PURE__*/React.createElement("path", {
     d: "M17 384h432V128H17zm32-224h368v192H49z"
   })), _path2$5 || (_path2$5 = /*#__PURE__*/React.createElement("path", {
     d: "M70.69 182.94h324.63v146.13H70.69zM465 202.67h32v106.67h-32z"
   })));
 }
 
-var _path$8, _path2$4, _path3;
-function _extends$8() { _extends$8 = Object.assign ? Object.assign.bind() : function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends$8.apply(this, arguments); }
+var _path$9, _path2$4, _path3;
+function _extends$9() { _extends$9 = Object.assign ? Object.assign.bind() : function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends$9.apply(this, arguments); }
 function SvgBatteryChargingSharp(props) {
-  return /*#__PURE__*/React.createElement("svg", _extends$8({
+  return /*#__PURE__*/React.createElement("svg", _extends$9({
     xmlns: "http://www.w3.org/2000/svg",
     className: "battery-charging-sharp_svg__ionicon",
     viewBox: "0 0 512 512"
-  }, props), _path$8 || (_path$8 = /*#__PURE__*/React.createElement("path", {
+  }, props), _path$9 || (_path$9 = /*#__PURE__*/React.createElement("path", {
     d: "M306.68 237.62h-66.5l15.33-54.7 6.43-22.92 3.94-14 4.29-15.33a3.56 3.56 0 00.06-.44v-.19a1.85 1.85 0 000-.23 2 2 0 000-.24v-.14c0-.1-.07-.19-.11-.29v-.05a2.33 2.33 0 00-2-1.35h-.1a2.25 2.25 0 00-1.8 1l-12.5 17.15-18.82 25.55-8.36 11.48-35.41 48.6L160 274.26h66.44l-30 107a3.93 3.93 0 00-.06.48v.1a1.94 1.94 0 000 .34.29.29 0 000 .09 3 3 0 00.07.32v.06a1.83 1.83 0 00.14.32 2.38 2.38 0 001.52 1.16h.57a2.1 2.1 0 001.31-.5l.06-.05a2.6 2.6 0 00.42-.45L223.3 352l13-17.82z"
   })), _path2$4 || (_path2$4 = /*#__PURE__*/React.createElement("path", {
     d: "M289.78 134.55l-.14.74-.21.73-6.72 24H417V352H248.05l-23.33 32H449V128H290.13a22.62 22.62 0 01-.35 6.55zM49 160h169.49l23.31-32H17v256h159.49a22.73 22.73 0 01.34-6.67l.15-.75.2-.73 6.69-23.85H49z"
   })), _path3 || (_path3 = /*#__PURE__*/React.createElement("path", {
     d: "M264.76 329.08h130.55V182.92H276.28l-9.73 34.7H346l-23.16 31.78-58.08 79.68zM160 294.26h-39.31l23.15-31.78 57.95-79.56H70.69v146.16h119.6l9.77-34.82H160zm305-91.59h32v106.67h-32z"
+  })));
+}
+
+var _path$8;
+function _extends$8() { _extends$8 = Object.assign ? Object.assign.bind() : function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends$8.apply(this, arguments); }
+function SvgCellularSharp(props) {
+  return /*#__PURE__*/React.createElement("svg", _extends$8({
+    xmlns: "http://www.w3.org/2000/svg",
+    className: "cellular-sharp_svg__ionicon",
+    viewBox: "0 0 512 512"
+  }, props), _path$8 || (_path$8 = /*#__PURE__*/React.createElement("path", {
+    d: "M496 432h-96V80h96zm-128 0h-96V160h96zm-128 0h-96V224h96zm-128 0H16V288h96z"
   })));
 }
 
@@ -393,13 +405,13 @@ var StatuBar = function (_a) {
     var className = _a.className, children = _a.children;
     return (React__default.createElement("div", { className: className }, children));
 };
-var StyledStatuBar = styled(StatuBar)(templateObject_1$4 || (templateObject_1$4 = __makeTemplateObject(["\n\tdisplay: flex;\n\tjustify-content: space-between;\n\tborder-bottom: ", ";\n\tpadding: 3px 18px;\n\theight: 22px;\n\t.statu-item {\n\t\tmargin-left: 12px;\n\t\tline-height: 1.5em;\n\t}\n\t.statu-group {\n\t\tdisplay: flex;\n\t\talign-content: center;\n\t}\n\t.device-name {\n\t\ttext-overflow: ellipsis;\n\t\twhite-space: nowrap;\n\t\toverflow: hidden;\n\t}\n\t.battery {\n\t\tdisplay: flex;\n\t\talign-content: center;\n\t\t& svg {\n\t\t\ttransform: translate(1px, -4px);\n\t\t\twidth: 25px;\n\t\t\theight: 30px;\n\t\t}\n\t\t& > div:first-child {\n\t\t\tfont-size: 0.8em;\n\t\t}\n\t}\n\t.airplane {\n\t\talign-content: center;\n\t\t& svg {\n\t\t\ttransform: rotate(-90deg);\n\t\t\theight: 20px;\n\t\t}\n\t}\n"], ["\n\tdisplay: flex;\n\tjustify-content: space-between;\n\tborder-bottom: ", ";\n\tpadding: 3px 18px;\n\theight: 22px;\n\t.statu-item {\n\t\tmargin-left: 12px;\n\t\tline-height: 1.5em;\n\t}\n\t.statu-group {\n\t\tdisplay: flex;\n\t\talign-content: center;\n\t}\n\t.device-name {\n\t\ttext-overflow: ellipsis;\n\t\twhite-space: nowrap;\n\t\toverflow: hidden;\n\t}\n\t.battery {\n\t\tdisplay: flex;\n\t\talign-content: center;\n\t\t& svg {\n\t\t\ttransform: translate(1px, -4px);\n\t\t\twidth: 25px;\n\t\t\theight: 30px;\n\t\t}\n\t\t& > div:first-child {\n\t\t\tfont-size: 0.8em;\n\t\t}\n\t}\n\t.airplane {\n\t\talign-content: center;\n\t\t& svg {\n\t\t\ttransform: rotate(-90deg);\n\t\t\theight: 20px;\n\t\t}\n\t}\n"])), border);
+var StyledStatuBar = styled(StatuBar)(templateObject_1$4 || (templateObject_1$4 = __makeTemplateObject(["\n\tdisplay: flex;\n\tjustify-content: space-between;\n\tborder-bottom: ", ";\n\tpadding: 3px 18px;\n\theight: 22px;\n\t.statu-item {\n\t\tmargin-left: 12px;\n\t\tline-height: 1.5em;\n\t\tdisplay: flex;\n\t}\n\t.statu-group {\n\t\tdisplay: flex;\n\t\talign-content: center;\n\t}\n\t.device-name {\n\t\ttext-overflow: ellipsis;\n\t\twhite-space: nowrap;\n\t\toverflow: hidden;\n\t}\n\t.battery {\n\t\tdisplay: flex;\n\t\talign-content: center;\n\t\t& svg {\n\t\t\ttransform: translate(1px, -4px);\n\t\t\twidth: 25px;\n\t\t\theight: 30px;\n\t\t}\n\t\t& > label {\n\t\t\tfont-size: 0.9em;\n\t\t}\n\t}\n\t.celluar {\n\t\t& label {\n\t\t\ttransform: translate(-1px, 0px);\n\t\t\tfont-size: 0.9em;\n\t\t}\n\t\t& svg {\n\t\t\theight: 20px;\n\t\t}\n\t}\n\t.airplane {\n\t\talign-content: center;\n\t\t& svg {\n\t\t\ttransform: rotate(-90deg);\n\t\t\theight: 20px;\n\t\t}\n\t}\n"], ["\n\tdisplay: flex;\n\tjustify-content: space-between;\n\tborder-bottom: ", ";\n\tpadding: 3px 18px;\n\theight: 22px;\n\t.statu-item {\n\t\tmargin-left: 12px;\n\t\tline-height: 1.5em;\n\t\tdisplay: flex;\n\t}\n\t.statu-group {\n\t\tdisplay: flex;\n\t\talign-content: center;\n\t}\n\t.device-name {\n\t\ttext-overflow: ellipsis;\n\t\twhite-space: nowrap;\n\t\toverflow: hidden;\n\t}\n\t.battery {\n\t\tdisplay: flex;\n\t\talign-content: center;\n\t\t& svg {\n\t\t\ttransform: translate(1px, -4px);\n\t\t\twidth: 25px;\n\t\t\theight: 30px;\n\t\t}\n\t\t& > label {\n\t\t\tfont-size: 0.9em;\n\t\t}\n\t}\n\t.celluar {\n\t\t& label {\n\t\t\ttransform: translate(-1px, 0px);\n\t\t\tfont-size: 0.9em;\n\t\t}\n\t\t& svg {\n\t\t\theight: 20px;\n\t\t}\n\t}\n\t.airplane {\n\t\talign-content: center;\n\t\t& svg {\n\t\t\ttransform: rotate(-90deg);\n\t\t\theight: 20px;\n\t\t}\n\t}\n"])), border);
 /**
  * Statubar
  */
-var index$4 = (function (_a) {
-    var deviceName = _a.deviceName, airplane = _a.airplane, battery = _a.battery, charging = _a.charging;
-    var _b = useState(getTimeStr()), timeStr = _b[0], setTimeStr = _b[1];
+var index$4 = (function (props) {
+    var deviceName = props.deviceName, airplane = props.airplane, battery = props.battery, charging = props.charging, celluar = props.celluar;
+    var _a = useState(getTimeStr()), timeStr = _a[0], setTimeStr = _a[1];
     useEffect(function () {
         setInterval(function () {
             setTimeStr(getTimeStr());
@@ -410,8 +422,11 @@ var index$4 = (function (_a) {
         React__default.createElement("div", { className: "statu-group" },
             airplane && (React__default.createElement("div", { className: "statu-item airplane" },
                 React__default.createElement(SvgAirplane, null))),
+            celluar && celluar.on && (React__default.createElement("div", { className: "statu-item celluar" },
+                celluar.label && React__default.createElement("label", null, celluar.label),
+                React__default.createElement(SvgCellularSharp, null))),
             battery && (React__default.createElement("div", { className: "statu-item battery" },
-                React__default.createElement("div", null,
+                React__default.createElement("label", null,
                     battery,
                     "%"),
                 charging ? React__default.createElement(SvgBatteryChargingSharp, null) : React__default.createElement(SvgBatteryFullSharp, null))),
@@ -478,10 +493,27 @@ var index = (function (_a) {
 });
 var templateObject_1;
 
-var _rect, _rect2, _path$6;
+var _path$6;
 function _extends$6() { _extends$6 = Object.assign ? Object.assign.bind() : function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends$6.apply(this, arguments); }
-function SvgBatteryFull(props) {
+function SvgArrowBackSharp(props) {
   return /*#__PURE__*/React.createElement("svg", _extends$6({
+    xmlns: "http://www.w3.org/2000/svg",
+    className: "arrow-back-sharp_svg__ionicon",
+    viewBox: "0 0 512 512"
+  }, props), _path$6 || (_path$6 = /*#__PURE__*/React.createElement("path", {
+    fill: "none",
+    stroke: "currentColor",
+    strokeLinecap: "square",
+    strokeMiterlimit: 10,
+    strokeWidth: 48,
+    d: "M244 400L100 256l144-144M120 256h292"
+  })));
+}
+
+var _rect, _rect2, _path$5;
+function _extends$5() { _extends$5 = Object.assign ? Object.assign.bind() : function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends$5.apply(this, arguments); }
+function SvgBatteryFull(props) {
+  return /*#__PURE__*/React.createElement("svg", _extends$5({
     xmlns: "http://www.w3.org/2000/svg",
     className: "battery-full_svg__ionicon",
     viewBox: "0 0 512 512"
@@ -508,7 +540,7 @@ function SvgBatteryFull(props) {
     strokeLinecap: "square",
     strokeMiterlimit: 10,
     strokeWidth: 32
-  })), _path$6 || (_path$6 = /*#__PURE__*/React.createElement("path", {
+  })), _path$5 || (_path$5 = /*#__PURE__*/React.createElement("path", {
     fill: "none",
     stroke: "currentColor",
     strokeLinecap: "round",
@@ -518,40 +550,52 @@ function SvgBatteryFull(props) {
   })));
 }
 
-var _path$5, _path2$2;
-function _extends$5() { _extends$5 = Object.assign ? Object.assign.bind() : function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends$5.apply(this, arguments); }
+var _path$4, _path2$2;
+function _extends$4() { _extends$4 = Object.assign ? Object.assign.bind() : function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends$4.apply(this, arguments); }
 function SvgBatteryHalfSharp(props) {
-  return /*#__PURE__*/React.createElement("svg", _extends$5({
+  return /*#__PURE__*/React.createElement("svg", _extends$4({
     xmlns: "http://www.w3.org/2000/svg",
     className: "battery-half-sharp_svg__ionicon",
     viewBox: "0 0 512 512"
-  }, props), _path$5 || (_path$5 = /*#__PURE__*/React.createElement("path", {
+  }, props), _path$4 || (_path$4 = /*#__PURE__*/React.createElement("path", {
     d: "M17 384h432V128H17zm32-224h368v192H49z"
   })), _path2$2 || (_path2$2 = /*#__PURE__*/React.createElement("path", {
     d: "M70.69 182.92H256v146.16H70.69zM465 202.67h32v106.67h-32z"
   })));
 }
 
-var _path$4;
-function _extends$4() { _extends$4 = Object.assign ? Object.assign.bind() : function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends$4.apply(this, arguments); }
+var _path$3;
+function _extends$3() { _extends$3 = Object.assign ? Object.assign.bind() : function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends$3.apply(this, arguments); }
 function SvgCogSharp(props) {
-  return /*#__PURE__*/React.createElement("svg", _extends$4({
+  return /*#__PURE__*/React.createElement("svg", _extends$3({
     xmlns: "http://www.w3.org/2000/svg",
     className: "cog-sharp_svg__ionicon",
     viewBox: "0 0 512 512"
-  }, props), _path$4 || (_path$4 = /*#__PURE__*/React.createElement("path", {
+  }, props), _path$3 || (_path$3 = /*#__PURE__*/React.createElement("path", {
     d: "M464 249.93a10.58 10.58 0 00-9.36-9.94L429 235.84a5.42 5.42 0 01-4.5-4.67c-.49-3.15-1-6.42-1.7-9.52a5.52 5.52 0 012.63-5.85l22.78-12.65a10.35 10.35 0 005-12.83l-3.95-10.9a10.32 10.32 0 00-12.13-6.51l-25.55 5a5.5 5.5 0 01-5.82-2.81c-1.49-2.79-3.11-5.63-4.8-8.42a5.6 5.6 0 01.44-6.5l17-19.63a10.44 10.44 0 00.39-13.77l-7.42-8.91a10.24 10.24 0 00-13.58-2l-22.37 13.43a5.39 5.39 0 01-6.39-.63c-2.47-2.17-4.95-4.26-7.37-6.19a5.45 5.45 0 01-1.72-6.21l9.26-24.4a10.35 10.35 0 00-4.31-13.07l-10.08-5.85a10.31 10.31 0 00-13.46 2.83L325 96.28a4.58 4.58 0 01-5.6 1.72c-.62-.25-5.77-2.36-9.78-3.7a5.42 5.42 0 01-3.74-5.23l.39-26.07a10.48 10.48 0 00-8.57-10.88l-11.45-2a10.45 10.45 0 00-11.75 7.17L266 82.1a5.42 5.42 0 01-5.36 3.65h-9.75a5.53 5.53 0 01-5.3-3.67l-8.46-24.67a10.46 10.46 0 00-11.77-7.25l-11.46 2a10.46 10.46 0 00-8.57 10.79l.4 26.16a5.45 5.45 0 01-3.86 5.25c-2.28.89-7.26 2.78-9.51 3.63-2 .72-4.19-.07-6-2.1l-16.26-20A10.3 10.3 0 00156.69 73l-10.06 5.83A10.36 10.36 0 00142.31 92l9.25 24.34a5.54 5.54 0 01-1.7 6.23c-2.43 2-4.92 4-7.4 6.22a5.38 5.38 0 01-6.35.64L114 115.74a10.39 10.39 0 00-13.61 2l-7.4 8.9a10.32 10.32 0 00.37 13.76l17.09 19.6a5.42 5.42 0 01.45 6.45c-1.71 2.72-3.34 5.58-4.82 8.44a5.53 5.53 0 01-5.86 2.82l-25.51-4.93a10.34 10.34 0 00-12.14 6.51l-4 10.88a10.37 10.37 0 005 12.85l22.78 12.65a5.39 5.39 0 012.65 5.92l-.23 1.24c-.53 2.8-1 5.45-1.47 8.27a5.48 5.48 0 01-4.46 4.64l-25.7 4.15A10.42 10.42 0 0048 250.16v11.58A10.26 10.26 0 0057.16 272l25.68 4.14a5.41 5.41 0 014.5 4.67c.49 3.16 1 6.42 1.7 9.52a5.52 5.52 0 01-2.63 5.85l-22.77 12.67a10.35 10.35 0 00-5 12.83l4 10.9a10.33 10.33 0 0012.13 6.51l25.55-4.95a5.5 5.5 0 015.82 2.81c1.5 2.8 3.12 5.64 4.8 8.42a5.58 5.58 0 01-.44 6.5l-17 19.64a10.41 10.41 0 00-.5 13.76l7.41 8.91a10.24 10.24 0 0013.58 2l22.37-13.43a5.39 5.39 0 016.39.63c2.48 2.17 5 4.26 7.37 6.19a5.45 5.45 0 011.72 6.21l-9.26 24.4a10.35 10.35 0 004.31 13.07l10.11 5.84a10.3 10.3 0 0013.45-2.82L187 415.92c1.39-1.73 3.6-2.5 5.24-1.84 3.47 1.44 5.8 2.25 9.93 3.63a5.44 5.44 0 013.75 5.23l-.4 26.05a10.5 10.5 0 008.57 10.88l11.45 2a10.44 10.44 0 0011.75-7.17l8.5-24.77a5.48 5.48 0 015.36-3.65h9.75a5.52 5.52 0 015.3 3.67l8.47 24.67a10.48 10.48 0 0010 7.41 9.74 9.74 0 001.78-.16l11.47-2a10.46 10.46 0 008.56-10.79l-.4-26.16a5.43 5.43 0 013.75-5.2c3.84-1.29 6.53-2.33 8.91-3.24l.6-.24c3.06-1.06 4.53.14 5.47 1.31l16.75 20.63A10.3 10.3 0 00355 439l10.07-5.83a10.35 10.35 0 004.31-13.1l-9.24-24.34a5.52 5.52 0 011.69-6.23c2.43-2 4.92-4 7.4-6.22a5.39 5.39 0 016.38-.62l22.39 13.4a10.39 10.39 0 0013.61-2l7.4-8.9a10.31 10.31 0 00-.37-13.75l-17.06-19.67a5.42 5.42 0 01-.45-6.45c1.71-2.71 3.34-5.57 4.82-8.44a5.56 5.56 0 015.86-2.82l25.48 4.97a10.34 10.34 0 0012.14-6.51l3.95-10.88a10.36 10.36 0 00-5-12.84l-22.8-12.67a5.4 5.4 0 01-2.61-5.89l.23-1.25c.53-2.8 1-5.44 1.47-8.26a5.48 5.48 0 014.46-4.64l25.7-4.14a10.43 10.43 0 009.17-10.28v-11.71zM171.59 361.27a135.12 135.12 0 01.5-210.94l60 105.61zM256 391.11a133.75 133.75 0 01-48.49-9.05L268 276.79h121.22C379.21 341.45 323.29 391.11 256 391.11zm12.06-155.9l-59.95-105.5a133.87 133.87 0 0147.89-8.82c67.29 0 123.21 49.66 133.22 114.32z"
   })));
 }
 
-var _path$3, _path2$1;
-function _extends$3() { _extends$3 = Object.assign ? Object.assign.bind() : function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends$3.apply(this, arguments); }
+var _path$2;
+function _extends$2() { _extends$2 = Object.assign ? Object.assign.bind() : function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends$2.apply(this, arguments); }
+function SvgEllipsisVerticalCircleSharp(props) {
+  return /*#__PURE__*/React.createElement("svg", _extends$2({
+    xmlns: "http://www.w3.org/2000/svg",
+    className: "ellipsis-vertical-circle-sharp_svg__ionicon",
+    viewBox: "0 0 512 512"
+  }, props), _path$2 || (_path$2 = /*#__PURE__*/React.createElement("path", {
+    d: "M464 256c0-114.87-93.13-208-208-208S48 141.13 48 256s93.13 208 208 208 208-93.13 208-208zm-234-90a26 26 0 1126 26 26 26 0 01-26-26zm0 90a26 26 0 1126 26 26 26 0 01-26-26zm0 90a26 26 0 1126 26 26 26 0 01-26-26z"
+  })));
+}
+
+var _path$1, _path2$1;
+function _extends$1() { _extends$1 = Object.assign ? Object.assign.bind() : function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends$1.apply(this, arguments); }
 function SvgHomeOutline(props) {
-  return /*#__PURE__*/React.createElement("svg", _extends$3({
+  return /*#__PURE__*/React.createElement("svg", _extends$1({
     xmlns: "http://www.w3.org/2000/svg",
     className: "home-outline_svg__ionicon",
     viewBox: "0 0 512 512"
-  }, props), _path$3 || (_path$3 = /*#__PURE__*/React.createElement("path", {
+  }, props), _path$1 || (_path$1 = /*#__PURE__*/React.createElement("path", {
     d: "M80 212v236a16 16 0 0016 16h96V328a24 24 0 0124-24h80a24 24 0 0124 24v136h96a16 16 0 0016-16V212",
     fill: "none",
     stroke: "currentColor",
@@ -568,14 +612,14 @@ function SvgHomeOutline(props) {
   })));
 }
 
-var _path$2, _path2;
-function _extends$2() { _extends$2 = Object.assign ? Object.assign.bind() : function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends$2.apply(this, arguments); }
+var _path, _path2;
+function _extends() { _extends = Object.assign ? Object.assign.bind() : function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
 function SvgWifiSharp(props) {
-  return /*#__PURE__*/React.createElement("svg", _extends$2({
+  return /*#__PURE__*/React.createElement("svg", _extends({
     xmlns: "http://www.w3.org/2000/svg",
     className: "wifi-sharp_svg__ionicon",
     viewBox: "0 0 512 512"
-  }, props), _path$2 || (_path$2 = /*#__PURE__*/React.createElement("path", {
+  }, props), _path || (_path = /*#__PURE__*/React.createElement("path", {
     d: "M332.69 320a115 115 0 00-152.8 0m213.85-61a201.26 201.26 0 00-274.92 0M448 191.52a288 288 0 00-383.44 0",
     fill: "none",
     stroke: "currentColor",
@@ -584,35 +628,6 @@ function SvgWifiSharp(props) {
     strokeWidth: 42
   })), _path2 || (_path2 = /*#__PURE__*/React.createElement("path", {
     d: "M300.67 384L256 433l-44.34-49a56.73 56.73 0 0188.92 0z"
-  })));
-}
-
-var _path$1;
-function _extends$1() { _extends$1 = Object.assign ? Object.assign.bind() : function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends$1.apply(this, arguments); }
-function SvgArrowBackSharp(props) {
-  return /*#__PURE__*/React.createElement("svg", _extends$1({
-    xmlns: "http://www.w3.org/2000/svg",
-    className: "arrow-back-sharp_svg__ionicon",
-    viewBox: "0 0 512 512"
-  }, props), _path$1 || (_path$1 = /*#__PURE__*/React.createElement("path", {
-    fill: "none",
-    stroke: "currentColor",
-    strokeLinecap: "square",
-    strokeMiterlimit: 10,
-    strokeWidth: 48,
-    d: "M244 400L100 256l144-144M120 256h292"
-  })));
-}
-
-var _path;
-function _extends() { _extends = Object.assign ? Object.assign.bind() : function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
-function SvgEllipsisVerticalCircleSharp(props) {
-  return /*#__PURE__*/React.createElement("svg", _extends({
-    xmlns: "http://www.w3.org/2000/svg",
-    className: "ellipsis-vertical-circle-sharp_svg__ionicon",
-    viewBox: "0 0 512 512"
-  }, props), _path || (_path = /*#__PURE__*/React.createElement("path", {
-    d: "M464 256c0-114.87-93.13-208-208-208S48 141.13 48 256s93.13 208 208 208 208-93.13 208-208zm-234-90a26 26 0 1126 26 26 26 0 01-26-26zm0 90a26 26 0 1126 26 26 26 0 01-26-26zm0 90a26 26 0 1126 26 26 26 0 01-26-26z"
   })));
 }
 
@@ -627,4 +642,4 @@ if (ENV !== "production" &&
         "please use https://www.npmjs.com/package/babel-plugin-import to reduce app bundle size.");
 }
 
-export { index$k as ActionBar, index$i as ActionBarMenu, index$h as ActionBarSpace, index$j as ActionGroup, ActionItem, SvgAirplane as AirplaneIcon, SvgArrowBackSharp as ArrowBackSharpIcon, SvgBatteryFull as BatteryFullIcon, SvgBatteryHalfSharp as BatteryHalfSharpIcon, index$g as Button, index$f as Card, index$b as CardAction, index$d as CardContent, index$e as CardMedia, index$c as CardTitle, SvgCogSharp as CogSharpIcon, Container, index$a as Dialog, index$9 as DialogAction, index$8 as DialogContent, SvgEllipsisVerticalCircleSharp as EllipsisVerticalCircleSharpIcon, SvgEllipsisVertical as EllipsisVerticalIcon, Grid, StyledGridItem as GridItem, SvgHomeOutline as HomeOutlineIcon, List, StyledListItem as ListItem, StyledListItemIcon as ListItemIcon, index$6 as ListItemText, Menu$1 as Menu, index$5 as Navbar, index$3 as SearchBar, index$4 as StatuBar, index$2 as Tab, index$1 as TabItem, index as TimeBar, index$7 as Typography, SvgWifiSharp as WifiSharpIcon };
+export { index$k as ActionBar, index$i as ActionBarMenu, index$h as ActionBarSpace, index$j as ActionGroup, ActionItem, SvgAirplane as AirplaneIcon, SvgArrowBackSharp as ArrowBackSharpIcon, SvgBatteryFull as BatteryFullIcon, SvgBatteryHalfSharp as BatteryHalfSharpIcon, index$g as Button, index$f as Card, index$b as CardAction, index$d as CardContent, index$e as CardMedia, index$c as CardTitle, SvgCellularSharp as CelluarIcon, SvgCogSharp as CogSharpIcon, Container, index$a as Dialog, index$9 as DialogAction, index$8 as DialogContent, SvgEllipsisVerticalCircleSharp as EllipsisVerticalCircleSharpIcon, SvgEllipsisVertical as EllipsisVerticalIcon, Grid, StyledGridItem as GridItem, SvgHomeOutline as HomeOutlineIcon, List, StyledListItem as ListItem, StyledListItemIcon as ListItemIcon, index$6 as ListItemText, Menu$1 as Menu, index$5 as Navbar, index$3 as SearchBar, index$4 as StatuBar, index$2 as Tab, index$1 as TabItem, index as TimeBar, index$7 as Typography, SvgWifiSharp as WifiSharpIcon };

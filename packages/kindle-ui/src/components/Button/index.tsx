@@ -15,6 +15,8 @@ export interface BaseButtonProps {
 }
 
 export type NativeButtonProps = {
+	to?: string;
+	href?: string;
 	onClick?: React.MouseEventHandler<HTMLElement>;
 } & BaseButtonProps &
 	Omit<React.ButtonHTMLAttributes<any>, "type" | "onClick">;

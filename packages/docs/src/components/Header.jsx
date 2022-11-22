@@ -18,7 +18,16 @@ export default () => {
 
 	return (
 		<Navbar>
-			<StatuBar airplane battery={86} deviceName="My Kindle" />
+			<StatuBar
+				airplane
+				celluar={{
+					on: true,
+					label: "LTE",
+					siginal: 3,
+				}}
+				battery={86}
+				deviceName="My Kindle"
+			/>
 			<ActionBar>
 				<ActionGroup>
 					<ActionItem
