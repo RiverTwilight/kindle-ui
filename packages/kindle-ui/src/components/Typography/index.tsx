@@ -35,6 +35,7 @@ const Typography = styled.article`
 	}
 	blockquote {
 		border-left: 5px solid #9d9797;
+		color: var(--text-color-secondary);
 		padding 4px 15px;
 		margin-left: 0px;
 	}

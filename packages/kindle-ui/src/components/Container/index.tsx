@@ -5,6 +5,7 @@ const StyledContainer = styled.div`
 	margin: 0;
 	font-family: "Amazon Ember", "Bookerly";
 
+	--text-color-secondary: #9d9797;
 	${(props: { dark?: boolean }) =>
 		props.dark
 			? `--text-color: #fff;
@@ -16,7 +17,7 @@ const StyledContainer = styled.div`
 			: `--text-color: #000;
 				color: #000;
 			   --bg-color: #f7f7f7;
-		`}
+		`};
 `;
 
 export interface IContainer {

@@ -18,8 +18,8 @@ export default () => {
 					<h1>Hi, kindle-ui!</h1>
 					<h2>Typography</h2>
 					<blockquote>
-						“We read to know we're not alone.” ― William Nicholson,
-						Shadowlands
+						“We read to know we're not alone.” ―{" "}
+						<b>William Nicholson</b>, Shadowlands
 					</blockquote>
 					<p>
 						kindle-ui is a <b>react</b> component library inspired
