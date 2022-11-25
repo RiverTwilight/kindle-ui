@@ -1,5 +1,5 @@
-import styled, { css } from "styled-components";
 import React from "react";
+import styled, { css } from "styled-components";
 
 interface typoStyle {
 	// px
@@ -34,8 +34,9 @@ const Typography = styled.article`
 		color: var(--text-color);
 	}
 	blockquote {
-		border-left: 5px solid var(--text-color);
-		padding 0 15px;
+		border-left: 5px solid #9d9797;
+		padding 4px 15px;
+		margin-left: 0px;
 	}
 	p {
 		line-height: ${(props: typoStyle) => props.lineHeight}px;

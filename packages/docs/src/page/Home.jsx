@@ -17,6 +17,10 @@ export default () => {
 				<Typography greyImage={true}>
 					<h1>Hi, kindle-ui!</h1>
 					<h2>Typography</h2>
+					<blockquote>
+						“We read to know we're not alone.” ― William Nicholson,
+						Shadowlands
+					</blockquote>
 					<p>
 						kindle-ui is a <b>react</b> component library inspired
 						by
