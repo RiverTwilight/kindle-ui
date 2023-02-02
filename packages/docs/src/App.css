@@ -5,9 +5,119 @@ body {
 	justify-content: center;
 }
 
-main {
-	padding-top: 50px;
+#device {
 	max-width: 900px;
+	position: relative;
+	box-sizing: content-box;
+	padding-left: 40px;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	padding-right: 150px;
+	border-radius: 30px;
+	background: linear-gradient(
+		235deg,
+		rgba(0, 0, 0, 0.5382528011204482) 0%,
+		rgba(0, 0, 0, 1) 23%
+	);
+	border: 8px double #3a3737;
+	overflow: hidden;
+	height: 100vh;
+	transform: translateY(30px);
+}
+
+
+#content {
+	overflow-y: scroll;
+	height: 100%;
+}
+
+#content::-webkit-scrollbar{
+	display: none;
+}
+
+main {
+	padding-top: 40px;
+}
+
+#screen {
+	background-color: #f7f7f7;
+	padding: 0 2px;
+	position: relative;
+	height: 100%;
+}
+
+* {
+	--hbutton-height: 148px;
+}
+
+.hardButton {
+	width: 13px;
+	height: var(--hbutton-height);
+	border-radius: 20px;
+	background: #414449;
+	position: absolute;
+	right: 45px;
+	top: calc(50vh + 30px);
+	border-left: 3px solid black;
+	border-right: 4px ridge  #888;
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+}
+
+.hardButton-up {
+	transform: translateY(-150px);
+}
+
+.hardButton-down {
+	transform: translateY(100px);
+}
+
+#shadowTop::after {
+	content: "";
+	position: absolute;
+	z-index: 3;
+	right: 0;
+	left: 0;
+	height: 10px;
+	display: inline;
+	background: linear-gradient(
+		180deg,
+		rgba(0, 0, 0, 0.5) 0%,
+		rgba(0, 212, 255, 0) 100%
+	);
+}
+
+#screen::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	background: linear-gradient(
+		90deg,
+		rgba(0, 0, 0, 0.5) 0%,
+		rgba(0, 212, 255, 0) 100%
+	);
+	width: 10px;
+	transform: translate(0px, 0px);
+	z-index: 2;
+}
+
+#screen::after {
+	content: "";
+	position: absolute;
+	top: 0;
+	right: 0;
+	height: 100%;
+	background: linear-gradient(
+		90deg,
+		rgba(0, 0, 0, 0) 0%,
+		rgba(0, 0, 0, 0.5) 100%
+	);
+	width: 10px;
+	transform: translate(0px, 0px);
+	height: 100%;
+	z-index: 2;
 }
 
 .wrapper {

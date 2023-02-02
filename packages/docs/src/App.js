@@ -13,20 +13,30 @@ import Header from "./components/Header.jsx";
 
 const Main = () => {
 	return (
-		<>
-			<Header />
-			<Switch>
-				<Route path="/">
-					<Home />
-				</Route>
-				<Route path="/setting">
-					<Setting />
-				</Route>
-				<Route path="/reader">
-					<Reader />
-				</Route>
-			</Switch>
-		</>
+		<div id="device">
+			<div className="hardButton hardButton-up"></div>
+			<div className="hardButton hardButton-down"></div>
+			<div id="screen">
+				<div id="shadowTop"></div>
+				<div id="content">
+					<Header />
+					<main>
+						<Switch>
+							<Route path="/">
+								<Home />
+							</Route>
+							<Route path="/setting">
+								<Setting />
+							</Route>
+							<Route path="/reader">
+								<Reader />
+							</Route>
+						</Switch>
+					</main>
+				</div>
+				<div id="shadowBottom"></div>
+			</div>
+		</div>
 	);
 };
 

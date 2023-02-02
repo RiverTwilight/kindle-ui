@@ -13,7 +13,7 @@ export default () => {
 			<aside>
 				<Card>目录</Card>
 			</aside>
-			<main>
+			<div>
 				<Typography greyImage={true}>
 					<h1>Hi, kindle-ui!</h1>
 					<h2>Typography</h2>
@@ -51,7 +51,7 @@ export default () => {
 					<h2>TextField</h2>
 					<TextFieldExample />
 				</Typography>
-			</main>
+			</div>
 		</div>
 	);
 };

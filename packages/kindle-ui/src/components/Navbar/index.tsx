@@ -8,11 +8,11 @@ import border from "@/utils/border";
  */
 
 const fixedStyle = css`
-	position: fixed;
+	position: sticky;
 	top: 0;
 	right: 0;
 	left: 0;
-	z-index: 50;
+	z-index: 1;
 `;
 
 const Navbar = styled.nav`
@@ -22,7 +22,7 @@ const Navbar = styled.nav`
 	border-bottom: ${border};
 	background-color: var(--bg-color);
 	z-index: 20;
-	${(props: { fixed: boolean }) => (props.fixed ? fixedStyle : "")}
+	${(props: INavbar) => (props.fixed ? fixedStyle : "")}
 `;
 
 export type TActionItems = {
@@ -34,9 +34,10 @@ export type TActionItems = {
 
 export interface INavbar {
 	autoClose?: boolean;
+	fixed?: boolean;
 	children: JSX.Element | JSX.Element[];
 }
 
-export default ({ autoClose = true, children }: INavbar) => {
-	return <Navbar fixed={autoClose}>{children}</Navbar>;
+export default ({ autoClose, fixed, children }: INavbar) => {
+	return <Navbar fixed={fixed}>{children}</Navbar>;
 };

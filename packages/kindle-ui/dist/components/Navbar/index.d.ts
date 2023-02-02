@@ -6,7 +6,8 @@ export declare type TActionItems = {
 };
 export interface INavbar {
     autoClose?: boolean;
+    fixed?: boolean;
     children: JSX.Element | JSX.Element[];
 }
-declare const _default: ({ autoClose, children }: INavbar) => JSX.Element;
+declare const _default: ({ autoClose, fixed, children }: INavbar) => JSX.Element;
 export default _default;

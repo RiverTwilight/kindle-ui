@@ -17,7 +17,7 @@ export default () => {
 	let history = useHistory();
 
 	return (
-		<Navbar>
+		<Navbar fixed>
 			<StatuBar
 				airplane
 				celluar={{

@@ -22,6 +22,8 @@
 	"files": [
 		"dist/index.cjs.js",
 		"dist/index.esm.js",
+		"dist/index.d.ts",
+		"dist/components/**/*",
 		"custom.d.ts",
 		"LICENSE",
 		"README.md"

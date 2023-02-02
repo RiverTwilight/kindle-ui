@@ -361,11 +361,11 @@ var templateObject_1$6;
  * Navbar组件
  * @author rivertwilight
  */
-var fixedStyle = styled.css(templateObject_1$5 || (templateObject_1$5 = __makeTemplateObject(["\n\tposition: fixed;\n\ttop: 0;\n\tright: 0;\n\tleft: 0;\n\tz-index: 50;\n"], ["\n\tposition: fixed;\n\ttop: 0;\n\tright: 0;\n\tleft: 0;\n\tz-index: 50;\n"])));
+var fixedStyle = styled.css(templateObject_1$5 || (templateObject_1$5 = __makeTemplateObject(["\n\tposition: sticky;\n\ttop: 0;\n\tright: 0;\n\tleft: 0;\n\tz-index: 1;\n"], ["\n\tposition: sticky;\n\ttop: 0;\n\tright: 0;\n\tleft: 0;\n\tz-index: 1;\n"])));
 var Navbar = styled__default["default"].nav(templateObject_2 || (templateObject_2 = __makeTemplateObject(["\n\t--border-color: #c1b2b2;\n\tdisplay: flex;\n\tflex-direction: column;\n\tborder-bottom: ", ";\n\tbackground-color: var(--bg-color);\n\tz-index: 20;\n\t", "\n"], ["\n\t--border-color: #c1b2b2;\n\tdisplay: flex;\n\tflex-direction: column;\n\tborder-bottom: ", ";\n\tbackground-color: var(--bg-color);\n\tz-index: 20;\n\t", "\n"])), border, function (props) { return (props.fixed ? fixedStyle : ""); });
 var index$5 = (function (_a) {
-    var _b = _a.autoClose, autoClose = _b === void 0 ? true : _b, children = _a.children;
-    return React__default["default"].createElement(Navbar, { fixed: autoClose }, children);
+    _a.autoClose; var fixed = _a.fixed, children = _a.children;
+    return React__default["default"].createElement(Navbar, { fixed: fixed }, children);
 });
 var templateObject_1$5, templateObject_2;
 
