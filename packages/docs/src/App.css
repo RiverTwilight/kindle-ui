@@ -20,7 +20,7 @@ body {
 }
 
 aside {
-	padding-top: 90px;
+	padding-top: 40px;
 	display: flex;
 	flex-direction: column;
 	width: 280px;

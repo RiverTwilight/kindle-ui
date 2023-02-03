@@ -6,7 +6,7 @@
 
 [English Version](./README.en.md) | 简体中文
 
-一个用于在浏览器中构建 Kindle 系统的组件库。
+一个用于在浏览器中构建 Kindle 界面的 React 组件库。
 
 ~~本项目是我高考前最后一个坑啦，欢迎 PR！~~
 
@@ -17,11 +17,11 @@ Amazon 官方已于今年八月陆续推送新版本的 UI。
 -   [x] 11 个交互式 Kindle 组件（对话框、按钮、列表、文本框、导航栏...）
 -   [x] 夜间模式
 -   [x] 原汁原味 Kindle OS 字体（可选）
+-   [x] Kindle 经典外观复刻（Kindle Oasis, Kindle Paperwhite, Kindle Voyage）
 -   [x] 100% TypeScript
 -   [ ] 多样式对话框
 -   [ ] `Expermintal Browser` App
 -   [ ] `Font Setting` App
--   [ ] Unit test
 
 ```bash
 npm i kindle-ui

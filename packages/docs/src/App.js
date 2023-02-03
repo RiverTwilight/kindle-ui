@@ -1,15 +1,14 @@
-import "./App.css";
 import {
 	BrowserRouter as Router,
 	Switch,
 	Route,
-	useHistory,
 } from "react-router-dom";
 import { Container, KindleOasis } from "@kindle-ui/core";
 import Home from "./page/Home.jsx";
 import Setting from "./page/setting";
 import Reader from "./page/reader";
 import Header from "./components/Header.jsx";
+import "./App.css";
 
 const Main = () => {
 	return (
