@@ -42,7 +42,6 @@ const StyledContainer = styled.div`
 		border: 8px double #3a3737;
 		overflow: hidden;
 		height: 100vh;
-		transform: translateY(30px);
 
 		.hardButton {
 			width: 13px;
@@ -70,8 +69,8 @@ const StyledContainer = styled.div`
 			content: "";
 			position: absolute;
 			z-index: 3;
-			right: 10;
-			left: 0;
+			right: 1px;
+			left: 1px;
 			height: var(--border-shadow-width);
 			display: inline;
 			background: linear-gradient(
@@ -94,7 +93,7 @@ const StyledContainer = styled.div`
 			);
 			width: var(--border-shadow-width);
 			transform: translate(0px, 0px);
-			z-index: 2;
+			z-index: 3;
 		}
 
 		.screen {
@@ -118,7 +117,7 @@ const StyledContainer = styled.div`
 			width: var(--border-shadow-width);
 			transform: translate(0px, 0px);
 			height: 100%;
-			z-index: 2;
+			z-index: 3;
 		}
 
 		.content {

@@ -13,7 +13,7 @@ import Header from "./components/Header.jsx";
 
 const Main = () => {
 	return (
-		<div>
+		<>
 			<Header />
 			<Switch>
 				<Route path="/">
@@ -26,17 +26,20 @@ const Main = () => {
 					<Reader />
 				</Route>
 			</Switch>
-		</div>
+		</>
 	);
 };
 
 function App() {
 	return (
-		<Container dark={false} deviceFrame={KindleOasis}>
-			<Router>
-				<Main />
-			</Router>
-		</Container>
+		<>
+			<div style={{ height: "30px" }}></div>
+			<Container dark={false} deviceFrame={KindleOasis}>
+				<Router>
+					<Main />
+				</Router>
+			</Container>
+		</>
 	);
 }
 

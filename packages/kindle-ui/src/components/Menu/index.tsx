@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useMemo, useState } from "react";
 import styled from "styled-components";
 import Popover from "../Popover";
 
@@ -32,30 +32,27 @@ const StyledMenu = styled(Menu)`
 `;
 
 export default ({ children, anchorEl, open, onClose }: IMenu) => {
-	const [top, setTop] = useState(0);
-	const [left, setLeft] = useState(0);
-
-	useEffect(() => {
-		var viewportOffset = anchorEl
-			? // @ts-expect-error
-			  anchorEl.getBoundingClientRect()
-			: { top: 0, left: 0 };
-		// these are relative to the viewport, i.e. the window
-		var top = viewportOffset.bottom;
-		var left = viewportOffset.left;
-		if (left > window.innerWidth - WIDTH_PX)
-			left = window.innerWidth - WIDTH_PX;
-		setTop(top);
-		setLeft(left);
+	const targetPosition = useMemo(() => {
+		if (anchorEl) {
+			console.log(anchorEl);
+			return {
+				// @ts-expect-error
+				top:  anchorEl.getBoundingClientRect().top + anchorEl.getBoundingClientRect().height + 2,
+				left: anchorEl.getBoundingClientRect().right - WIDTH_PX
+			};
+		}
+		return { top:0, left: 0}
 	}, [anchorEl]);
 
 	return (
-		<>
-			<Popover open={open} onClose={onClose}>
-				<StyledMenu open={open} top={top} left={left}>
-					{children}
-				</StyledMenu>
-			</Popover>
-		</>
+		<Popover open={open} onClose={onClose}>
+			<StyledMenu
+				open={open}
+				top={targetPosition.top}
+				left={targetPosition.left}
+			>
+				{children}
+			</StyledMenu>
+		</Popover>
 	);
 };
