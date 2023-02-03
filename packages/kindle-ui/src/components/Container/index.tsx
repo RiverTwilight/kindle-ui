@@ -22,22 +22,22 @@ const StyledContainer = styled.div`
 
 export interface IContainer {
 	children: JSX.Element | JSX.Element[];
+	deviceFrame?: React.ElementType;
 	dark?: boolean;
 	setDark?: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
-const Container: React.FC = ({ children }) => {
-	const [dark, setDark] = useState<boolean>(false);
+const Container: React.FC<IContainer> = ({ children, deviceFrame, dark }) => {
+	if (deviceFrame) {
+		let DeviceFrame = deviceFrame;
+		return (
+			<StyledContainer dark={dark}>
+				<DeviceFrame dark={dark}>{children}</DeviceFrame>
+			</StyledContainer>
+		);
+	}
 
-	useEffect(() => {
-		document.body.style.backgroundColor = dark ? "#000" : "#f7f7f7";
-	}, []);
-
-	return (
-		<StyledContainer setDark={setDark} dark={dark}>
-			{children}
-		</StyledContainer>
-	);
+	return <StyledContainer dark={dark}>{children}</StyledContainer>;
 };
 
 export default Container;

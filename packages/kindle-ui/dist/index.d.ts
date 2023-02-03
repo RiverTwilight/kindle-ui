@@ -27,6 +27,7 @@ export { default as Typography } from "./components/Typography/index";
 export { default as Tab } from "./components/Tab/index";
 export { default as TabItem } from "./components/TabItem/index";
 export { default as TimeBar } from "./components/TimeBar/index";
+export { default as KindleOasis } from "./components/KindleOasis/index";
 export { default as AirplaneIcon } from "./icons/airplane.svg";
 export { default as ArrowBackSharpIcon } from "./icons/arrow-back-sharp.svg";
 export { default as BatteryFullIcon } from "./icons/battery-full.svg";
