@@ -29,7 +29,7 @@
 		"docs:build": "yarn workspace docs build",
 		"publish:core": "yarn workspace @kindle-ui/core publish",
 		"publish:fonts": "yarn workspace kindle-fonts publish",
-		"prepublishOnly": "",
+		"prepublishOnly": "cp ./README.md ./packages/kindle-ui/README.md && yarn build && yarn docs:build",
 		"test": "react-scripts test"
 	},
 	"eslintConfig": {

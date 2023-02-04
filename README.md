@@ -97,20 +97,18 @@ Navbar 是一个集成的 Kindle 原生组件。 所有图标都是不可编辑�
 
 ### Container
 
-使用 Container 容器可以赋予神色模式切换的能力。
+使用 Container 容器可以赋予颜色模式切换的能力，并且可以添加设备外观。
 
 ```JSX
-import { Container } from "@kindle-ui/core";
+import { Container, KindleOasis } from "@kindle-ui/core";
 
 function App() {
 	return (
-		<Container>
+		<Container dark deviceFrame={KindleOasis}>
             {/* ... */}
 		</Container>
 	);
 }
-
-export default App;
 ```
 
 ### Typography
@@ -159,7 +157,13 @@ export default App;
 | :--- | :------: | :-----: | ----------- |
 | href |   true   |   --    | --          |
 
+### Grid
+
+该组件模仿 Kindle 的书架布局。
+
 ## 字体
+
+如果要使用 Kindle 原生字体，需要先安装`kindle-fonts`.
 
 ```bash
 npm i kindle-fonts
