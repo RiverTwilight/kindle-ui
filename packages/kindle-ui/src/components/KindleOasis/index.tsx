@@ -4,7 +4,7 @@ import styled, { css } from "styled-components";
 const environmentLight = css`
 	linear-gradient(
 		235deg,
-		rgb(203 203 203 / 54%) 0%,
+		rgb(203 203 203 / 100%) 0%,
 		rgba(0, 0, 0, 1) 23%
 	);
 `;
