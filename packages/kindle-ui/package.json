@@ -9,10 +9,6 @@
 	"source": "src/index.ts",
 	"typings": "dist/index.d.ts",
 	"dependencies": {
-		"@rollup/plugin-typescript": "^8.2.3",
-		"@testing-library/jest-dom": "^5.11.4",
-		"@testing-library/react": "^11.1.0",
-		"@testing-library/user-event": "^12.1.10",
 		"styled-components": "^5.3.0"
 	},
 	"peerDependencies": {
@@ -62,7 +58,11 @@
 		"@babel/preset-react": "^7.14.5",
 		"@rollup/plugin-alias": "^4.0.2",
 		"@rollup/plugin-babel": "^5.3.0",
+		"@rollup/plugin-typescript": "^11.0.0",
 		"@svgr/rollup": "^5.5.0",
+		"@testing-library/jest-dom": "^5.16.5",
+		"@testing-library/react": "^13.4.0",
+		"@testing-library/user-event": "^14.4.3",
 		"@types/react": "^17.0.13",
 		"@types/react-dom": "^17.0.8",
 		"@types/styled-components": "^5.1.10",
@@ -87,5 +87,9 @@
 	"bugs": {
 		"url": "https://github.com/RiverTwilight/kindle-ui/issues"
 	},
-	"homepage": "https://github.com/RiverTwilight/kindle-ui#readme"
+	"homepage": "https://github.com/RiverTwilight/kindle-ui#readme",
+	"sideEffects": false,
+	"engines": {
+		"node": ">=12.0.0"
+	}
 }

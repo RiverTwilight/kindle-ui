@@ -24,7 +24,7 @@ const ListItem = ({
 		ComponentProp = LinkComponent;
 	}
 	return (
-		<ComponentProp className={className} {...other}>
+		<ComponentProp role="ListItem" className={className} {...other}>
 			{children}
 		</ComponentProp>
 	);

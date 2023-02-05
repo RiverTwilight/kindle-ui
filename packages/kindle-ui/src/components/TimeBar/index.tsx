@@ -9,7 +9,7 @@ const TimeBar = styled.div`
 	justify-content: center;
 	height: 20px;
 	background: var(--bg-color);
-	position: fixed;
+	position: stickey;
 	top: 0;
 	left: 0;
 	right: 0;
@@ -25,9 +25,11 @@ export interface IStatubar {}
 export default ({}: IStatubar) => {
 	const [timeStr, setTimeStr] = useState(getTimeStr());
 	useEffect(() => {
-		setInterval(() => {
+		let timeUpdater = setInterval(() => {
 			setTimeStr(getTimeStr());
 		}, 1000);
+		
+		return clearInterval(timeUpdater)
 	}, []);
 	return (
 		<TimeBar>

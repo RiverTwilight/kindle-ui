@@ -329,7 +329,7 @@ var ListItem = function (_a) {
     if (ComponentProp === "div" && (other.href || other.to)) {
         ComponentProp = LinkComponent;
     }
-    return (React__default["default"].createElement(ComponentProp, __assign({ className: className }, other), children));
+    return (React__default["default"].createElement(ComponentProp, __assign({ role: "ListItem", className: className }, other), children));
 };
 var StyledListItem = styled__default["default"](ListItem)(templateObject_1$9 || (templateObject_1$9 = __makeTemplateObject(["\n\tdisplay: flex;\n\talign-items: center;\n\tjustify-content: space-between;\n\tpadding: 0 10px;\n\tfont-size: 1.1rem;\n\tfont-family: AmazonEmber-Rg, sans-serif;\n\tborder-bottom: ", ";\n\n\t&:last-child {\n\t\tborder-bottom: none;\n\t}\n\n\ttext-decoration: none;\n\tcolor: var(--text-color);\n"], ["\n\tdisplay: flex;\n\talign-items: center;\n\tjustify-content: space-between;\n\tpadding: 0 10px;\n\tfont-size: 1.1rem;\n\tfont-family: AmazonEmber-Rg, sans-serif;\n\tborder-bottom: ", ";\n\n\t&:last-child {\n\t\tborder-bottom: none;\n\t}\n\n\ttext-decoration: none;\n\tcolor: var(--text-color);\n"])), border);
 var templateObject_1$9;
@@ -499,7 +499,7 @@ var index$1 = styled__default["default"].div(templateObject_1$2 || (templateObje
 });
 var templateObject_1$2;
 
-var TimeBar = styled__default["default"].div(templateObject_1$1 || (templateObject_1$1 = __makeTemplateObject(["\n\tz-index: 10;\n\tdisplay: flex;\n\tflex-direction: row;\n\tjustify-content: center;\n\theight: 20px;\n\tbackground: var(--bg-color);\n\tposition: fixed;\n\ttop: 0;\n\tleft: 0;\n\tright: 0;\n"], ["\n\tz-index: 10;\n\tdisplay: flex;\n\tflex-direction: row;\n\tjustify-content: center;\n\theight: 20px;\n\tbackground: var(--bg-color);\n\tposition: fixed;\n\ttop: 0;\n\tleft: 0;\n\tright: 0;\n"])));
+var TimeBar = styled__default["default"].div(templateObject_1$1 || (templateObject_1$1 = __makeTemplateObject(["\n\tz-index: 10;\n\tdisplay: flex;\n\tflex-direction: row;\n\tjustify-content: center;\n\theight: 20px;\n\tbackground: var(--bg-color);\n\tposition: stickey;\n\ttop: 0;\n\tleft: 0;\n\tright: 0;\n"], ["\n\tz-index: 10;\n\tdisplay: flex;\n\tflex-direction: row;\n\tjustify-content: center;\n\theight: 20px;\n\tbackground: var(--bg-color);\n\tposition: stickey;\n\ttop: 0;\n\tleft: 0;\n\tright: 0;\n"])));
 /**
  * TimeBar
  * @author rivertwilight
@@ -507,9 +507,10 @@ var TimeBar = styled__default["default"].div(templateObject_1$1 || (templateObje
 var index = (function (_a) {
     var _b = React.useState(getTimeStr()), timeStr = _b[0], setTimeStr = _b[1];
     React.useEffect(function () {
-        setInterval(function () {
+        var timeUpdater = setInterval(function () {
             setTimeStr(getTimeStr());
         }, 1000);
+        return clearInterval(timeUpdater);
     }, []);
     return (React__default["default"].createElement(TimeBar, null,
         React__default["default"].createElement("div", { className: "time-str" }, timeStr)));
