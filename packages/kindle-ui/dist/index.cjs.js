@@ -72,21 +72,21 @@ function __makeTemplateObject(cooked, raw) {
     return cooked;
 }
 
-var index$k = styled__default["default"].div(templateObject_1$x || (templateObject_1$x = __makeTemplateObject(["\n\tdisplay: flex;\n\theight: 54px;\n\tpadding: 0;\n"], ["\n\tdisplay: flex;\n\theight: 54px;\n\tpadding: 0;\n"])));
+var index$k = styled__default["default"].div(templateObject_1$y || (templateObject_1$y = __makeTemplateObject(["\n\tdisplay: flex;\n\theight: 54px;\n\tpadding: 0;\n"], ["\n\tdisplay: flex;\n\theight: 54px;\n\tpadding: 0;\n"])));
+var templateObject_1$y;
+
+var hover = styled.css(templateObject_1$x || (templateObject_1$x = __makeTemplateObject(["\n\ttransition: background-color 0.5s;\n\n\t&:hover {\n\t\tbackground-color: var(--text-color);\n\t\tcolor: var(--bg-color) !important;\n\t\ta {\n\t\t\tcolor: var(--bg-color) !important;\n\t\t}\n\t\tsvg path,\n\t\tcircle {\n\t\t\ttransition: stroke 0.5s;\n\t\t\tstroke: var(--bg-color);\n\t\t\tfill: var(--bg-color);\n\t\t}\n\t}\n"], ["\n\ttransition: background-color 0.5s;\n\n\t&:hover {\n\t\tbackground-color: var(--text-color);\n\t\tcolor: var(--bg-color) !important;\n\t\ta {\n\t\t\tcolor: var(--bg-color) !important;\n\t\t}\n\t\tsvg path,\n\t\tcircle {\n\t\t\ttransition: stroke 0.5s;\n\t\t\tstroke: var(--bg-color);\n\t\t\tfill: var(--bg-color);\n\t\t}\n\t}\n"])));
 var templateObject_1$x;
 
-var hover = styled.css(templateObject_1$w || (templateObject_1$w = __makeTemplateObject(["\n\ttransition: background-color 0.5s;\n\n\t&:hover {\n\t\tbackground-color: var(--text-color);\n\t\tcolor: var(--bg-color) !important;\n\t\ta {\n\t\t\tcolor: var(--bg-color) !important;\n\t\t}\n\t\tsvg path,\n\t\tcircle {\n\t\t\ttransition: stroke 0.5s;\n\t\t\tstroke: var(--bg-color);\n\t\t\tfill: var(--bg-color);\n\t\t}\n\t}\n"], ["\n\ttransition: background-color 0.5s;\n\n\t&:hover {\n\t\tbackground-color: var(--text-color);\n\t\tcolor: var(--bg-color) !important;\n\t\ta {\n\t\t\tcolor: var(--bg-color) !important;\n\t\t}\n\t\tsvg path,\n\t\tcircle {\n\t\t\ttransition: stroke 0.5s;\n\t\t\tstroke: var(--bg-color);\n\t\t\tfill: var(--bg-color);\n\t\t}\n\t}\n"])));
-var templateObject_1$w;
-
-var StyledActionItem = styled__default["default"].button(templateObject_1$v || (templateObject_1$v = __makeTemplateObject(["\n\tborder: none;\n\tbox-sizing: border-box;\n\twidth: 50px;\n\tbackground-color: var(--bg-color);\n\tcolor: var(--text-color);\n\n\tdisplay: inline-flex;\n\talign-items: center;\n\talign-content: center;\n\tjustify-content: center;\n\tplace-content: center;\n\taspect-ratio: 1;\n\tpadding: 2ch;\n\n\t@media (min-width: 460px) {\n\t\tmargin-left: 10px;\n\t}\n\tsvg {\n\t\twidth: 23px;\n\t}\n\tsvg path {\n\t\tstroke: var(--text-color);\n\t\t/* DO NOT ADD THIS: fill: var(--text-color);*/\n\t}\n\ttext-transform: lowercase;\n\t", "\n"], ["\n\tborder: none;\n\tbox-sizing: border-box;\n\twidth: 50px;\n\tbackground-color: var(--bg-color);\n\tcolor: var(--text-color);\n\n\tdisplay: inline-flex;\n\talign-items: center;\n\talign-content: center;\n\tjustify-content: center;\n\tplace-content: center;\n\taspect-ratio: 1;\n\tpadding: 2ch;\n\n\t@media (min-width: 460px) {\n\t\tmargin-left: 10px;\n\t}\n\tsvg {\n\t\twidth: 23px;\n\t}\n\tsvg path {\n\t\tstroke: var(--text-color);\n\t\t/* DO NOT ADD THIS: fill: var(--text-color);*/\n\t}\n\ttext-transform: lowercase;\n\t", "\n"])), hover);
+var StyledActionItem = styled__default["default"].button(templateObject_1$w || (templateObject_1$w = __makeTemplateObject(["\n\tborder: none;\n\tbox-sizing: border-box;\n\twidth: 50px;\n\tbackground-color: var(--bg-color);\n\tcolor: var(--text-color);\n\n\tdisplay: inline-flex;\n\talign-items: center;\n\talign-content: center;\n\tjustify-content: center;\n\tplace-content: center;\n\taspect-ratio: 1;\n\tpadding: 2ch;\n\n\t@media (min-width: 460px) {\n\t\tmargin-left: 10px;\n\t}\n\tsvg {\n\t\twidth: 23px;\n\t}\n\tsvg path {\n\t\tstroke: var(--text-color);\n\t\t/* DO NOT ADD THIS: fill: var(--text-color);*/\n\t}\n\ttext-transform: lowercase;\n\t", "\n"], ["\n\tborder: none;\n\tbox-sizing: border-box;\n\twidth: 50px;\n\tbackground-color: var(--bg-color);\n\tcolor: var(--text-color);\n\n\tdisplay: inline-flex;\n\talign-items: center;\n\talign-content: center;\n\tjustify-content: center;\n\tplace-content: center;\n\taspect-ratio: 1;\n\tpadding: 2ch;\n\n\t@media (min-width: 460px) {\n\t\tmargin-left: 10px;\n\t}\n\tsvg {\n\t\twidth: 23px;\n\t}\n\tsvg path {\n\t\tstroke: var(--text-color);\n\t\t/* DO NOT ADD THIS: fill: var(--text-color);*/\n\t}\n\ttext-transform: lowercase;\n\t", "\n"])), hover);
 function ActionItem(props) {
     return (React__namespace.createElement(StyledActionItem, __assign({}, props),
         React__namespace.createElement("div", null, props.children)));
 }
-var templateObject_1$v;
+var templateObject_1$w;
 
-var index$j = styled__default["default"].div(templateObject_1$u || (templateObject_1$u = __makeTemplateObject(["\n\tdisplay: flex;\n\tbox-sizing: border-box;\n"], ["\n\tdisplay: flex;\n\tbox-sizing: border-box;\n"])));
-var templateObject_1$u;
+var index$j = styled__default["default"].div(templateObject_1$v || (templateObject_1$v = __makeTemplateObject(["\n\tdisplay: flex;\n\tbox-sizing: border-box;\n"], ["\n\tdisplay: flex;\n\tbox-sizing: border-box;\n"])));
+var templateObject_1$v;
 
 /**
  * MenuItem
@@ -98,10 +98,10 @@ var MenuItem = function (_a) {
     var Comp = component;
     return (React__default["default"].createElement(Comp, __assign({ className: className }, props), textPrimary));
 };
-var MenuItem$1 = styled__default["default"](MenuItem)(templateObject_1$t || (templateObject_1$t = __makeTemplateObject(["\n\tdisplay: block;\n\theight: 60px;\n\tpadding-left: 20px;\n\tline-height: 60px;\n\tfont-size: 1.1rem;\n\t", "\n\ttext-decoration: none;\n\tcolor: var(--text-color);\n"], ["\n\tdisplay: block;\n\theight: 60px;\n\tpadding-left: 20px;\n\tline-height: 60px;\n\tfont-size: 1.1rem;\n\t", "\n\ttext-decoration: none;\n\tcolor: var(--text-color);\n"])), hover);
-var templateObject_1$t;
+var MenuItem$1 = styled__default["default"](MenuItem)(templateObject_1$u || (templateObject_1$u = __makeTemplateObject(["\n\tdisplay: block;\n\theight: 60px;\n\tpadding-left: 20px;\n\tline-height: 60px;\n\tfont-size: 1.1rem;\n\t", "\n\ttext-decoration: none;\n\tcolor: var(--text-color);\n"], ["\n\tdisplay: block;\n\theight: 60px;\n\tpadding-left: 20px;\n\tline-height: 60px;\n\tfont-size: 1.1rem;\n\t", "\n\ttext-decoration: none;\n\tcolor: var(--text-color);\n"])), hover);
+var templateObject_1$u;
 
-var Mask = styled__default["default"].div(templateObject_1$s || (templateObject_1$s = __makeTemplateObject(["\n\tposition: fixed;\n\ttop: 0;\n\tleft: 0;\n\tbottom: 0;\n\tright: 0;\n\tdisplay: ", ";\n"], ["\n\tposition: fixed;\n\ttop: 0;\n\tleft: 0;\n\tbottom: 0;\n\tright: 0;\n\tdisplay: ", ";\n"])), function (props) { return (props.show ? "block" : "none"); });
+var Mask = styled__default["default"].div(templateObject_1$t || (templateObject_1$t = __makeTemplateObject(["\n\tposition: fixed;\n\ttop: 0;\n\tleft: 0;\n\tbottom: 0;\n\tright: 0;\n\tdisplay: ", ";\n"], ["\n\tposition: fixed;\n\ttop: 0;\n\tleft: 0;\n\tbottom: 0;\n\tright: 0;\n\tdisplay: ", ";\n"])), function (props) { return (props.show ? "block" : "none"); });
 var StyledPopover = styled__default["default"].div(templateObject_2$3 || (templateObject_2$3 = __makeTemplateObject(["\n\tz-index: 2;\n\theight: 100%;\n"], ["\n\tz-index: 2;\n\theight: 100%;\n"])));
 /**
  * Popover
@@ -137,7 +137,7 @@ var Popover = (function (_a) {
         React__default["default"].createElement(Mask, { onClick: handleClickMask, show: open, ref: mask },
             React__default["default"].createElement(StyledPopover, { onMouseDown: handleMouseDown }, childrenWithProps))));
 });
-var templateObject_1$s, templateObject_2$3;
+var templateObject_1$t, templateObject_2$3;
 
 /**
  * Menu
@@ -148,7 +148,7 @@ var Menu = function (_a) {
     var children = _a.children, className = _a.className;
     return (React__default["default"].createElement("div", { className: className }, children));
 };
-var StyledMenu = styled__default["default"](Menu)(templateObject_1$r || (templateObject_1$r = __makeTemplateObject(["\n\tdisplay: ", ";\n\tbox-sizing: border-box;\n\tmin-width: ", "px;\n\tborder: 1px solid var(--border-color);\n\tbackground: var(--bg-color);\n\tposition: fixed;\n\ttop: ", "px;\n\tleft: ", "px;\n"], ["\n\tdisplay: ", ";\n\tbox-sizing: border-box;\n\tmin-width: ", "px;\n\tborder: 1px solid var(--border-color);\n\tbackground: var(--bg-color);\n\tposition: fixed;\n\ttop: ", "px;\n\tleft: ", "px;\n"])), function (props) { return (props.open ? "block" : "none"); }, WIDTH_PX, function (props) { return props.top; }, function (props) { return props.left; });
+var StyledMenu = styled__default["default"](Menu)(templateObject_1$s || (templateObject_1$s = __makeTemplateObject(["\n\tdisplay: ", ";\n\tbox-sizing: border-box;\n\tmin-width: ", "px;\n\tborder: 1px solid var(--border-color);\n\tbackground: var(--bg-color);\n\tposition: fixed;\n\ttop: ", "px;\n\tleft: ", "px;\n"], ["\n\tdisplay: ", ";\n\tbox-sizing: border-box;\n\tmin-width: ", "px;\n\tborder: 1px solid var(--border-color);\n\tbackground: var(--bg-color);\n\tposition: fixed;\n\ttop: ", "px;\n\tleft: ", "px;\n"])), function (props) { return (props.open ? "block" : "none"); }, WIDTH_PX, function (props) { return props.top; }, function (props) { return props.left; });
 var Menu$1 = (function (_a) {
     var children = _a.children, anchorEl = _a.anchorEl, open = _a.open, onClose = _a.onClose;
     var targetPosition = React.useMemo(function () {
@@ -165,7 +165,7 @@ var Menu$1 = (function (_a) {
     return (React__default["default"].createElement(Popover, { open: open, onClose: onClose },
         React__default["default"].createElement(StyledMenu, { open: open, top: targetPosition.top, left: targetPosition.left }, children)));
 });
-var templateObject_1$r;
+var templateObject_1$s;
 
 var _circle, _circle2, _circle3;
 function _extends$c() { _extends$c = Object.assign ? Object.assign.bind() : function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends$c.apply(this, arguments); }
@@ -206,8 +206,8 @@ var index$i = (function (_a) {
             items.map(function (item, i) { return (React__default["default"].createElement(MenuItem$1, __assign({ key: i + item.textPrimary }, item))); }))));
 });
 
-var index$h = styled__default["default"].div(templateObject_1$q || (templateObject_1$q = __makeTemplateObject(["\n\tflex: 2 4 auto;\n\twidth: 10px;\n"], ["\n\tflex: 2 4 auto;\n\twidth: 10px;\n"])));
-var templateObject_1$q;
+var index$h = styled__default["default"].div(templateObject_1$r || (templateObject_1$r = __makeTemplateObject(["\n\tflex: 2 4 auto;\n\twidth: 10px;\n"], ["\n\tflex: 2 4 auto;\n\twidth: 10px;\n"])));
+var templateObject_1$r;
 
 var index$g = (function (_a) {
     var children = _a.children, className = _a.className, _b = _a.variant, variant = _b === void 0 ? "default" : _b, _c = _a.component, component = _c === void 0 ? "button" : _c, _d = _a.LinkComponent, LinkComponent = _d === void 0 ? "a" : _d, disabled = _a.disabled, type = _a.type, other = __rest(_a, ["children", "className", "variant", "component", "LinkComponent", "disabled", "type"]);
@@ -230,38 +230,38 @@ var index$g = (function (_a) {
     }
     return (React__default["default"].createElement(StyledButton, __assign({ as: ComponentProp, className: className, variant: variant }, buttonProps, other), children));
 });
-var StyledButton = styled__default["default"].div(templateObject_1$p || (templateObject_1$p = __makeTemplateObject(["\n\tboxsizing: border-box;\n\tborder: ", ";\n\tmin-width: 70px;\n\theight: 50px;\n\toutline: 0;\n\tbackground: var(--bg-color);\n\n\tfont-weight: 600;\n\tfont-size: 1rem;\n\tcolor: var(--text-color);\n\ttext-decoration: none;\n\tfont-family: \"Amazon Ember\";\n\ttextdecoration: none;\n\ttext-transform: uppercase;\n\n\tdisplay: inline-flex;\n\talign-items: center;\n\tjustifycontent: center;\n\tposition: relative;\n\tboxsizing: border-box;\n\n\tpadding: 0 30px;\n\toverflow: hidden;\n\t", "\n\tcursor: pointer;\n\tuserselect: none;\n\tverticalalign: middle;\n\tmozappearance: none;\n\twebkitappearance: none;\n"], ["\n\tboxsizing: border-box;\n\tborder: ", ";\n\tmin-width: 70px;\n\theight: 50px;\n\toutline: 0;\n\tbackground: var(--bg-color);\n\n\tfont-weight: 600;\n\tfont-size: 1rem;\n\tcolor: var(--text-color);\n\ttext-decoration: none;\n\tfont-family: \"Amazon Ember\";\n\ttextdecoration: none;\n\ttext-transform: uppercase;\n\n\tdisplay: inline-flex;\n\talign-items: center;\n\tjustifycontent: center;\n\tposition: relative;\n\tboxsizing: border-box;\n\n\tpadding: 0 30px;\n\toverflow: hidden;\n\t", "\n\tcursor: pointer;\n\tuserselect: none;\n\tverticalalign: middle;\n\tmozappearance: none;\n\twebkitappearance: none;\n"])), function (props) {
+var StyledButton = styled__default["default"].div(templateObject_1$q || (templateObject_1$q = __makeTemplateObject(["\n\tboxsizing: border-box;\n\tborder: ", ";\n\tmin-width: 70px;\n\theight: 50px;\n\toutline: 0;\n\tbackground: var(--bg-color);\n\n\tfont-weight: 600;\n\tfont-size: 1rem;\n\tcolor: var(--text-color);\n\ttext-decoration: none;\n\tfont-family: \"Amazon Ember\";\n\ttextdecoration: none;\n\ttext-transform: uppercase;\n\n\tdisplay: inline-flex;\n\talign-items: center;\n\tjustifycontent: center;\n\tposition: relative;\n\tboxsizing: border-box;\n\n\tpadding: 0 30px;\n\toverflow: hidden;\n\t", "\n\tcursor: pointer;\n\tuserselect: none;\n\tverticalalign: middle;\n\tmozappearance: none;\n\twebkitappearance: none;\n"], ["\n\tboxsizing: border-box;\n\tborder: ", ";\n\tmin-width: 70px;\n\theight: 50px;\n\toutline: 0;\n\tbackground: var(--bg-color);\n\n\tfont-weight: 600;\n\tfont-size: 1rem;\n\tcolor: var(--text-color);\n\ttext-decoration: none;\n\tfont-family: \"Amazon Ember\";\n\ttextdecoration: none;\n\ttext-transform: uppercase;\n\n\tdisplay: inline-flex;\n\talign-items: center;\n\tjustifycontent: center;\n\tposition: relative;\n\tboxsizing: border-box;\n\n\tpadding: 0 30px;\n\toverflow: hidden;\n\t", "\n\tcursor: pointer;\n\tuserselect: none;\n\tverticalalign: middle;\n\tmozappearance: none;\n\twebkitappearance: none;\n"])), function (props) {
     return props.variant === "outline" ? "3px solid var(--text-color)" : "none";
 }, hover);
+var templateObject_1$q;
+
+var border = styled.css(templateObject_1$p || (templateObject_1$p = __makeTemplateObject(["\n\t1px solid #c1b2b2\n"], ["\n\t1px solid #c1b2b2\n"])));
 var templateObject_1$p;
 
-var border = styled.css(templateObject_1$o || (templateObject_1$o = __makeTemplateObject(["\n\t1px solid #c1b2b2\n"], ["\n\t1px solid #c1b2b2\n"])));
+// TODO rich content
+var index$f = styled__default["default"].div(templateObject_1$o || (templateObject_1$o = __makeTemplateObject(["\n\tborder: ", ";\n\tborder-radius: 7px;\n\tpadding: 10px;\n"], ["\n\tborder: ", ";\n\tborder-radius: 7px;\n\tpadding: 10px;\n"])), border);
 var templateObject_1$o;
 
-// TODO rich content
-var index$f = styled__default["default"].div(templateObject_1$n || (templateObject_1$n = __makeTemplateObject(["\n\tborder: ", ";\n\tborder-radius: 7px;\n\tpadding: 10px;\n"], ["\n\tborder: ", ";\n\tborder-radius: 7px;\n\tpadding: 10px;\n"])), border);
+var greyImage$1 = styled.css(templateObject_1$n || (templateObject_1$n = __makeTemplateObject(["\n\t-webkit-filter: grayscale(100%);\n\t-moz-filter: grayscale(100%);\n\t-ms-filter: grayscale(100%);\n\t-o-filter: grayscale(100%);\n\tfilter: grayscale(100%);\n\tfilter: gray;\n"], ["\n\t-webkit-filter: grayscale(100%);\n\t-moz-filter: grayscale(100%);\n\t-ms-filter: grayscale(100%);\n\t-o-filter: grayscale(100%);\n\tfilter: grayscale(100%);\n\tfilter: gray;\n"])));
 var templateObject_1$n;
 
-var greyImage$1 = styled.css(templateObject_1$m || (templateObject_1$m = __makeTemplateObject(["\n\t-webkit-filter: grayscale(100%);\n\t-moz-filter: grayscale(100%);\n\t-ms-filter: grayscale(100%);\n\t-o-filter: grayscale(100%);\n\tfilter: grayscale(100%);\n\tfilter: gray;\n"], ["\n\t-webkit-filter: grayscale(100%);\n\t-moz-filter: grayscale(100%);\n\t-ms-filter: grayscale(100%);\n\t-o-filter: grayscale(100%);\n\tfilter: grayscale(100%);\n\tfilter: gray;\n"])));
+var index$e = styled__default["default"].div(templateObject_1$m || (templateObject_1$m = __makeTemplateObject(["\n\tflex: 0 0 33.33333333%;\n\tmax-height: 200px;\n\tmargin-right: 16px;\n\timg {\n\t\t", "\n\t\tobject-fit: cover;\n\t\theight: 100%;\n\t\twidth: 100%;\n\t\tborder-radius: 3px;\n\t}\n"], ["\n\tflex: 0 0 33.33333333%;\n\tmax-height: 200px;\n\tmargin-right: 16px;\n\timg {\n\t\t", "\n\t\tobject-fit: cover;\n\t\theight: 100%;\n\t\twidth: 100%;\n\t\tborder-radius: 3px;\n\t}\n"])), greyImage$1);
 var templateObject_1$m;
 
-var index$e = styled__default["default"].div(templateObject_1$l || (templateObject_1$l = __makeTemplateObject(["\n\tflex: 0 0 33.33333333%;\n\tmax-height: 200px;\n\tmargin-right: 16px;\n\timg {\n\t\t", "\n\t\tobject-fit: cover;\n\t\theight: 100%;\n\t\twidth: 100%;\n\t\tborder-radius: 3px;\n\t}\n"], ["\n\tflex: 0 0 33.33333333%;\n\tmax-height: 200px;\n\tmargin-right: 16px;\n\timg {\n\t\t", "\n\t\tobject-fit: cover;\n\t\theight: 100%;\n\t\twidth: 100%;\n\t\tborder-radius: 3px;\n\t}\n"])), greyImage$1);
+var index$d = styled__default["default"].div(templateObject_1$l || (templateObject_1$l = __makeTemplateObject(["\n\tdisplay: flex;\n\trow-gap: 8px;\n\tfont-family: AmazonEmber-Rg, sans-serif;\n"], ["\n\tdisplay: flex;\n\trow-gap: 8px;\n\tfont-family: AmazonEmber-Rg, sans-serif;\n"])));
 var templateObject_1$l;
 
-var index$d = styled__default["default"].div(templateObject_1$k || (templateObject_1$k = __makeTemplateObject(["\n\tdisplay: flex;\n\trow-gap: 8px;\n\tfont-family: AmazonEmber-Rg, sans-serif;\n"], ["\n\tdisplay: flex;\n\trow-gap: 8px;\n\tfont-family: AmazonEmber-Rg, sans-serif;\n"])));
+var index$c = styled__default["default"].div(templateObject_1$k || (templateObject_1$k = __makeTemplateObject(["\n\tfont-size: 1.5rem;\n\tfont-weight: 500;\n\tmargin-bottom: 10px;\n"], ["\n\tfont-size: 1.5rem;\n\tfont-weight: 500;\n\tmargin-bottom: 10px;\n"])));
 var templateObject_1$k;
-
-var index$c = styled__default["default"].div(templateObject_1$j || (templateObject_1$j = __makeTemplateObject(["\n\tfont-size: 1.5rem;\n\tfont-weight: 500;\n\tmargin-bottom: 10px;\n"], ["\n\tfont-size: 1.5rem;\n\tfont-weight: 500;\n\tmargin-bottom: 10px;\n"])));
-var templateObject_1$j;
 
 /**
  * Card Content
  * // FIXME Button Layout Problem
  */
-var index$b = styled__default["default"].div(templateObject_1$i || (templateObject_1$i = __makeTemplateObject(["\n\tpadding: 10px 10px 0 10px;\n\tdisplay: flex;\n\tflex-direction: row-reverse;\n"], ["\n\tpadding: 10px 10px 0 10px;\n\tdisplay: flex;\n\tflex-direction: row-reverse;\n"])));
-var templateObject_1$i;
+var index$b = styled__default["default"].div(templateObject_1$j || (templateObject_1$j = __makeTemplateObject(["\n\tpadding: 10px 10px 0 10px;\n\tdisplay: flex;\n\tflex-direction: row-reverse;\n"], ["\n\tpadding: 10px 10px 0 10px;\n\tdisplay: flex;\n\tflex-direction: row-reverse;\n"])));
+var templateObject_1$j;
 
-var StyledContainer$1 = styled__default["default"].div(templateObject_1$h || (templateObject_1$h = __makeTemplateObject(["\n\tmargin: 0;\n\tfont-family: \"Amazon Ember\", \"Bookerly\";\n\n\t--text-color-secondary: #9d9797;\n\t", ";\n"], ["\n\tmargin: 0;\n\tfont-family: \"Amazon Ember\", \"Bookerly\";\n\n\t--text-color-secondary: #9d9797;\n\t", ";\n"])), function (props) {
+var StyledContainer$1 = styled__default["default"].div(templateObject_1$i || (templateObject_1$i = __makeTemplateObject(["\n\tmargin: 0;\n\tfont-family: \"Amazon Ember\", \"Bookerly\";\n\n\t--text-color-secondary: #9d9797;\n\t", ";\n"], ["\n\tmargin: 0;\n\tfont-family: \"Amazon Ember\", \"Bookerly\";\n\n\t--text-color-secondary: #9d9797;\n\t", ";\n"])), function (props) {
     return props.dark
         ? "--text-color: #fff;\n\t\t\t\tcolor: #fff;\n\t\t\t\t--bg-color: #000;\n\t\t\t\t& svg{\n\t\t\t\t\tfill: #fff\n\t\t\t\t}"
         : "--text-color: #000;\n\t\t\t\tcolor: #000;\n\t\t\t   --bg-color: #f7f7f7;\n\t\t";
@@ -275,37 +275,37 @@ var Container$1 = function (_a) {
     }
     return React__default["default"].createElement(StyledContainer$1, { dark: dark }, children);
 };
-var templateObject_1$h;
+var templateObject_1$i;
 
-var StyledDialog = styled__default["default"].div(templateObject_1$g || (templateObject_1$g = __makeTemplateObject(["\n\tpadding: 10px;\n\tborder: 3px solid var(--text-color);\n\tbackground: var(--bg-color);\n\tborder-radius: 6px;\n\tposition: fixed;\n\tleft: 50%;\n\ttop: 50%;\n\ttransform: translate(-50%, -50%);\n\tmax-width: 400px;\n\tmin-width: 250px;\n"], ["\n\tpadding: 10px;\n\tborder: 3px solid var(--text-color);\n\tbackground: var(--bg-color);\n\tborder-radius: 6px;\n\tposition: fixed;\n\tleft: 50%;\n\ttop: 50%;\n\ttransform: translate(-50%, -50%);\n\tmax-width: 400px;\n\tmin-width: 250px;\n"])));
+var StyledDialog = styled__default["default"].div(templateObject_1$h || (templateObject_1$h = __makeTemplateObject(["\n\tpadding: 10px;\n\tborder: 3px solid var(--text-color);\n\tbackground: var(--bg-color);\n\tborder-radius: 6px;\n\tposition: fixed;\n\tleft: 50%;\n\ttop: 50%;\n\ttransform: translate(-50%, -50%);\n\tmax-width: 400px;\n\tmin-width: 250px;\n"], ["\n\tpadding: 10px;\n\tborder: 3px solid var(--text-color);\n\tbackground: var(--bg-color);\n\tborder-radius: 6px;\n\tposition: fixed;\n\tleft: 50%;\n\ttop: 50%;\n\ttransform: translate(-50%, -50%);\n\tmax-width: 400px;\n\tmin-width: 250px;\n"])));
 var index$a = (function (_a) {
     var children = _a.children; _a.anchorEl; var open = _a.open, onClose = _a.onClose;
     return (React__default["default"].createElement(Popover, { open: open, onClose: onClose },
         React__default["default"].createElement(StyledDialog, null, children)));
 });
+var templateObject_1$h;
+
+var index$9 = styled__default["default"].div(templateObject_1$g || (templateObject_1$g = __makeTemplateObject(["\n\tdisplay: flex;\n\tflex-direction: row-reverse;\n"], ["\n\tdisplay: flex;\n\tflex-direction: row-reverse;\n"])));
 var templateObject_1$g;
 
-var index$9 = styled__default["default"].div(templateObject_1$f || (templateObject_1$f = __makeTemplateObject(["\n\tdisplay: flex;\n\tflex-direction: row-reverse;\n"], ["\n\tdisplay: flex;\n\tflex-direction: row-reverse;\n"])));
+var index$8 = styled__default["default"].div(templateObject_1$f || (templateObject_1$f = __makeTemplateObject(["\n\tpadding: 10px\n"], ["\n\tpadding: 10px\n"])));
 var templateObject_1$f;
 
-var index$8 = styled__default["default"].div(templateObject_1$e || (templateObject_1$e = __makeTemplateObject(["\n\tpadding: 10px\n"], ["\n\tpadding: 10px\n"])));
-var templateObject_1$e;
-
-var StyledGrid = styled__default["default"].div(templateObject_1$d || (templateObject_1$d = __makeTemplateObject(["\n\tdisplay: flex;\n\tjustify-content: space-between;\n\n\t@media (max-width: 768px) {\n\t\tflex-flow: row wrap;\n\t}\n\n\t@media (min-width: 768px) {\n\t\trow-gap: 16px;\n\t\tflex-direction: row;\n\t\tflex-flow: row wrap;\n\t}\n"], ["\n\tdisplay: flex;\n\tjustify-content: space-between;\n\n\t@media (max-width: 768px) {\n\t\tflex-flow: row wrap;\n\t}\n\n\t@media (min-width: 768px) {\n\t\trow-gap: 16px;\n\t\tflex-direction: row;\n\t\tflex-flow: row wrap;\n\t}\n"])));
+var StyledGrid = styled__default["default"].div(templateObject_1$e || (templateObject_1$e = __makeTemplateObject(["\n\tdisplay: flex;\n\tjustify-content: space-between;\n\n\t@media (max-width: 768px) {\n\t\tflex-flow: row wrap;\n\t}\n\n\t@media (min-width: 768px) {\n\t\trow-gap: 16px;\n\t\tflex-direction: row;\n\t\tflex-flow: row wrap;\n\t}\n"], ["\n\tdisplay: flex;\n\tjustify-content: space-between;\n\n\t@media (max-width: 768px) {\n\t\tflex-flow: row wrap;\n\t}\n\n\t@media (min-width: 768px) {\n\t\trow-gap: 16px;\n\t\tflex-direction: row;\n\t\tflex-flow: row wrap;\n\t}\n"])));
 function Grid(_a) {
     var children = _a.children;
     var cldLength = React__namespace.Children.count(children);
     return React__namespace.createElement(StyledGrid, { cldLength: cldLength }, children);
 }
-var templateObject_1$d;
+var templateObject_1$e;
 
-var greyImage = styled.css(templateObject_1$c || (templateObject_1$c = __makeTemplateObject(["\n\t-webkit-filter: grayscale(100%);\n\t-moz-filter: grayscale(100%);\n\t-ms-filter: grayscale(100%);\n\t-o-filter: grayscale(100%);\n\tfilter: grayscale(100%);\n\tfilter: gray;\n"], ["\n\t-webkit-filter: grayscale(100%);\n\t-moz-filter: grayscale(100%);\n\t-ms-filter: grayscale(100%);\n\t-o-filter: grayscale(100%);\n\tfilter: grayscale(100%);\n\tfilter: gray;\n"])));
+var greyImage = styled.css(templateObject_1$d || (templateObject_1$d = __makeTemplateObject(["\n\t-webkit-filter: grayscale(100%);\n\t-moz-filter: grayscale(100%);\n\t-ms-filter: grayscale(100%);\n\t-o-filter: grayscale(100%);\n\tfilter: grayscale(100%);\n\tfilter: gray;\n"], ["\n\t-webkit-filter: grayscale(100%);\n\t-moz-filter: grayscale(100%);\n\t-ms-filter: grayscale(100%);\n\t-o-filter: grayscale(100%);\n\tfilter: grayscale(100%);\n\tfilter: gray;\n"])));
 var Typography = styled__default["default"].article(templateObject_2$2 || (templateObject_2$2 = __makeTemplateObject(["\n\tpadding: 15px;\n\tmax-width: 1000px;\n\tfont-size: 1.1rem;\n\tfont-family: Bookerly, AmazonEmber-Rg;\n\tcolor: var(--text-color);\n\t& ::selection {\n\t\tbackground-color: var(--text-color);\n\t\tcolor: var(--bg-color);\n\t}\n\ta {\n\t\tcolor: var(--text-color);\n\t}\n\tblockquote {\n\t\tborder-left: 5px solid #9d9797;\n\t\tcolor: var(--text-color-secondary);\n\t\tpadding 4px 15px;\n\t\tmargin-left: 0px;\n\t}\n\tp {\n\t\tline-height: ", "px;\n\t\tletter-spacing: 0.051rem;\n\t}\n\timg {\n\t\tmax-width: 400px;\n\t\tmax-height: 1000px;\n\t\tmargin: 0 auto;\n\t\tdisplay: block;\n\t\t", "\n\t}\n\th1 {\n\t\tfont-size: 2rem;\n\t}\n\th2,\n\th3,\n\th4,\n\th5 {\n\t}\n"], ["\n\tpadding: 15px;\n\tmax-width: 1000px;\n\tfont-size: 1.1rem;\n\tfont-family: Bookerly, AmazonEmber-Rg;\n\tcolor: var(--text-color);\n\t& ::selection {\n\t\tbackground-color: var(--text-color);\n\t\tcolor: var(--bg-color);\n\t}\n\ta {\n\t\tcolor: var(--text-color);\n\t}\n\tblockquote {\n\t\tborder-left: 5px solid #9d9797;\n\t\tcolor: var(--text-color-secondary);\n\t\tpadding 4px 15px;\n\t\tmargin-left: 0px;\n\t}\n\tp {\n\t\tline-height: ", "px;\n\t\tletter-spacing: 0.051rem;\n\t}\n\timg {\n\t\tmax-width: 400px;\n\t\tmax-height: 1000px;\n\t\tmargin: 0 auto;\n\t\tdisplay: block;\n\t\t", "\n\t}\n\th1 {\n\t\tfont-size: 2rem;\n\t}\n\th2,\n\th3,\n\th4,\n\th5 {\n\t}\n"])), function (props) { return props.lineHeight; }, function (props) { return props.greyImage && greyImage; });
 var index$7 = (function (_a) {
     var children = _a.children, _b = _a.lineHeight, lineHeight = _b === void 0 ? 25 : _b, _c = _a.greyImage, greyImage = _c === void 0 ? false : _c, props = __rest(_a, ["children", "lineHeight", "greyImage"]);
     return (React__default["default"].createElement(Typography, __assign({}, props, { greyImage: greyImage, lineHeight: lineHeight }), children));
 });
-var templateObject_1$c, templateObject_2$2;
+var templateObject_1$d, templateObject_2$2;
 
 var GridItem = function (_a) {
     var className = _a.className, src = _a.src, href = _a.href, target = _a.target;
@@ -317,11 +317,11 @@ var GridItem = function (_a) {
     return (React__namespace.createElement("div", { className: className },
         React__namespace.createElement("img", { src: src })));
 };
-var StyledGridItem = styled__default["default"](GridItem)(templateObject_1$b || (templateObject_1$b = __makeTemplateObject(["\n\tdisplay: flex;\n\n\t@media (max-width: 768px) {\n\t\twidth: 25vh;\n\t\theight: calc(25vh / 0.626);\n\t}\n\n\t@media (min-width: 768px) {\n\t\twidth: 200px;\n\t\theight: 317px;\n\t}\n\n\t& img {\n\t\t", "\n\t\twidth: 100%;\n\t\theight: 100%;\n\t\tobject-fit: cover;\n\t}\n\n\ta {\n\t\twidth: 100%;\n\t\theight: 100%;\n\t\tdisplay: block;\n\t}\n"], ["\n\tdisplay: flex;\n\n\t@media (max-width: 768px) {\n\t\twidth: 25vh;\n\t\theight: calc(25vh / 0.626);\n\t}\n\n\t@media (min-width: 768px) {\n\t\twidth: 200px;\n\t\theight: 317px;\n\t}\n\n\t& img {\n\t\t", "\n\t\twidth: 100%;\n\t\theight: 100%;\n\t\tobject-fit: cover;\n\t}\n\n\ta {\n\t\twidth: 100%;\n\t\theight: 100%;\n\t\tdisplay: block;\n\t}\n"])), function (props) { return props.greyImage && greyImage; });
-var templateObject_1$b;
+var StyledGridItem = styled__default["default"](GridItem)(templateObject_1$c || (templateObject_1$c = __makeTemplateObject(["\n\tdisplay: flex;\n\n\t@media (max-width: 768px) {\n\t\twidth: 25vh;\n\t\theight: calc(25vh / 0.626);\n\t}\n\n\t@media (min-width: 768px) {\n\t\twidth: 200px;\n\t\theight: 317px;\n\t}\n\n\t& img {\n\t\t", "\n\t\twidth: 100%;\n\t\theight: 100%;\n\t\tobject-fit: cover;\n\t}\n\n\ta {\n\t\twidth: 100%;\n\t\theight: 100%;\n\t\tdisplay: block;\n\t}\n"], ["\n\tdisplay: flex;\n\n\t@media (max-width: 768px) {\n\t\twidth: 25vh;\n\t\theight: calc(25vh / 0.626);\n\t}\n\n\t@media (min-width: 768px) {\n\t\twidth: 200px;\n\t\theight: 317px;\n\t}\n\n\t& img {\n\t\t", "\n\t\twidth: 100%;\n\t\theight: 100%;\n\t\tobject-fit: cover;\n\t}\n\n\ta {\n\t\twidth: 100%;\n\t\theight: 100%;\n\t\tdisplay: block;\n\t}\n"])), function (props) { return props.greyImage && greyImage; });
+var templateObject_1$c;
 
-var List = styled__default["default"].div(templateObject_1$a || (templateObject_1$a = __makeTemplateObject([""], [""])));
-var templateObject_1$a;
+var List = styled__default["default"].div(templateObject_1$b || (templateObject_1$b = __makeTemplateObject([""], [""])));
+var templateObject_1$b;
 
 var ListItem = function (_a) {
     var className = _a.className, _b = _a.component, component = _b === void 0 ? "div" : _b, _c = _a.LinkComponent, LinkComponent = _c === void 0 ? "a" : _c, children = _a.children, other = __rest(_a, ["className", "component", "LinkComponent", "children"]);
@@ -331,8 +331,8 @@ var ListItem = function (_a) {
     }
     return (React__default["default"].createElement(ComponentProp, __assign({ role: "ListItem", className: className }, other), children));
 };
-var StyledListItem = styled__default["default"](ListItem)(templateObject_1$9 || (templateObject_1$9 = __makeTemplateObject(["\n\tdisplay: flex;\n\talign-items: center;\n\tjustify-content: space-between;\n\tpadding: 0 10px;\n\tfont-size: 1.1rem;\n\tfont-family: AmazonEmber-Rg, sans-serif;\n\tborder-bottom: ", ";\n\n\t&:last-child {\n\t\tborder-bottom: none;\n\t}\n\n\ttext-decoration: none;\n\tcolor: var(--text-color);\n"], ["\n\tdisplay: flex;\n\talign-items: center;\n\tjustify-content: space-between;\n\tpadding: 0 10px;\n\tfont-size: 1.1rem;\n\tfont-family: AmazonEmber-Rg, sans-serif;\n\tborder-bottom: ", ";\n\n\t&:last-child {\n\t\tborder-bottom: none;\n\t}\n\n\ttext-decoration: none;\n\tcolor: var(--text-color);\n"])), border);
-var templateObject_1$9;
+var StyledListItem$1 = styled__default["default"](ListItem)(templateObject_1$a || (templateObject_1$a = __makeTemplateObject(["\n\tdisplay: flex;\n\talign-items: center;\n\tjustify-content: space-between;\n\tpadding: 0 10px;\n\tfont-size: 1.1rem;\n\tfont-family: AmazonEmber-Rg, sans-serif;\n\tborder-bottom: ", ";\n\n\t&:last-child {\n\t\tborder-bottom: none;\n\t}\n\n\ttext-decoration: none;\n\tcolor: var(--text-color);\n"], ["\n\tdisplay: flex;\n\talign-items: center;\n\tjustify-content: space-between;\n\tpadding: 0 10px;\n\tfont-size: 1.1rem;\n\tfont-family: AmazonEmber-Rg, sans-serif;\n\tborder-bottom: ", ";\n\n\t&:last-child {\n\t\tborder-bottom: none;\n\t}\n\n\ttext-decoration: none;\n\tcolor: var(--text-color);\n"])), border);
+var templateObject_1$a;
 
 var ListItemIcon = function (_a) {
     var className = _a.className, onClick = _a.onClick, children = _a.children;
@@ -341,8 +341,8 @@ var ListItemIcon = function (_a) {
             onClick && onClick();
         }, className: className }, children));
 };
-var StyledListItemIcon = styled__default["default"](ListItemIcon)(templateObject_1$8 || (templateObject_1$8 = __makeTemplateObject(["\n\tsvg {\n\t\twidth: 20px;\n\t}\n"], ["\n\tsvg {\n\t\twidth: 20px;\n\t}\n"])));
-var templateObject_1$8;
+var StyledListItemIcon = styled__default["default"](ListItemIcon)(templateObject_1$9 || (templateObject_1$9 = __makeTemplateObject(["\n\tsvg {\n\t\twidth: 20px;\n\t}\n"], ["\n\tsvg {\n\t\twidth: 20px;\n\t}\n"])));
+var templateObject_1$9;
 
 var ListItemText = function (_a) {
     var primary = _a.primary, second = _a.second, className = _a.className;
@@ -350,20 +350,20 @@ var ListItemText = function (_a) {
         React__default["default"].createElement("div", { className: "primary" }, primary),
         React__default["default"].createElement("div", { className: "secondary" }, second)));
 };
-var index$6 = styled__default["default"](ListItemText)(templateObject_1$7 || (templateObject_1$7 = __makeTemplateObject(["\n\t", "\n\tpadding: 10px 0;\n\twidth: 0; /* \u89E3\u51B3white-sapce\u6491\u5F00\u76D2\u5B50\u7684\u95EE\u9898*/\n\tdisplay: flex;\n\tflex-direction: column;\n\tflex: 1;\n\n\t.primary {\n\t\tfont-size: 20px;\n\t\tfont-weight: 600;\n\t\twidth: 90%;\n\t\toverflow: hidden;\n\t\ttext-overflow: ellipsis;\n\t\twhite-space: nowrap;\n\t}\n\n\t.secondary {\n\t\tfont-size: 15px;\n\t}\n"], ["\n\t", "\n\tpadding: 10px 0;\n\twidth: 0; /* \u89E3\u51B3white-sapce\u6491\u5F00\u76D2\u5B50\u7684\u95EE\u9898*/\n\tdisplay: flex;\n\tflex-direction: column;\n\tflex: 1;\n\n\t.primary {\n\t\tfont-size: 20px;\n\t\tfont-weight: 600;\n\t\twidth: 90%;\n\t\toverflow: hidden;\n\t\ttext-overflow: ellipsis;\n\t\twhite-space: nowrap;\n\t}\n\n\t.secondary {\n\t\tfont-size: 15px;\n\t}\n"])), hover);
-var templateObject_1$7;
+var index$6 = styled__default["default"](ListItemText)(templateObject_1$8 || (templateObject_1$8 = __makeTemplateObject(["\n\t", "\n\tpadding: 10px 0;\n\twidth: 0; /* \u89E3\u51B3white-sapce\u6491\u5F00\u76D2\u5B50\u7684\u95EE\u9898*/\n\tdisplay: flex;\n\tflex-direction: column;\n\tflex: 1;\n\n\t.primary {\n\t\tfont-size: 20px;\n\t\tfont-weight: 600;\n\t\twidth: 90%;\n\t\toverflow: hidden;\n\t\ttext-overflow: ellipsis;\n\t\twhite-space: nowrap;\n\t}\n\n\t.secondary {\n\t\tfont-size: 15px;\n\t}\n"], ["\n\t", "\n\tpadding: 10px 0;\n\twidth: 0; /* \u89E3\u51B3white-sapce\u6491\u5F00\u76D2\u5B50\u7684\u95EE\u9898*/\n\tdisplay: flex;\n\tflex-direction: column;\n\tflex: 1;\n\n\t.primary {\n\t\tfont-size: 20px;\n\t\tfont-weight: 600;\n\t\twidth: 90%;\n\t\toverflow: hidden;\n\t\ttext-overflow: ellipsis;\n\t\twhite-space: nowrap;\n\t}\n\n\t.secondary {\n\t\tfont-size: 15px;\n\t}\n"])), hover);
+var templateObject_1$8;
 
 /**
  * Navbar组件
  * @author rivertwilight
  */
-var fixedStyle = styled.css(templateObject_1$6 || (templateObject_1$6 = __makeTemplateObject(["\n\tposition: sticky;\n\ttop: 0;\n\tright: 0;\n\tleft: 0;\n\tz-index: 1;\n"], ["\n\tposition: sticky;\n\ttop: 0;\n\tright: 0;\n\tleft: 0;\n\tz-index: 1;\n"])));
+var fixedStyle = styled.css(templateObject_1$7 || (templateObject_1$7 = __makeTemplateObject(["\n\tposition: sticky;\n\ttop: 0;\n\tright: 0;\n\tleft: 0;\n\tz-index: 1;\n"], ["\n\tposition: sticky;\n\ttop: 0;\n\tright: 0;\n\tleft: 0;\n\tz-index: 1;\n"])));
 var Navbar = styled__default["default"].nav(templateObject_2$1 || (templateObject_2$1 = __makeTemplateObject(["\n\t--border-color: #c1b2b2;\n\tdisplay: flex;\n\tflex-direction: column;\n\tborder-bottom: ", ";\n\tbackground-color: var(--bg-color);\n\tz-index: 20;\n\t", "\n"], ["\n\t--border-color: #c1b2b2;\n\tdisplay: flex;\n\tflex-direction: column;\n\tborder-bottom: ", ";\n\tbackground-color: var(--bg-color);\n\tz-index: 20;\n\t", "\n"])), border, function (props) { return (props.fixed ? fixedStyle : ""); });
 var index$5 = (function (_a) {
     _a.autoClose; var fixed = _a.fixed, children = _a.children;
     return React__default["default"].createElement(Navbar, { fixed: fixed }, children);
 });
-var templateObject_1$6, templateObject_2$1;
+var templateObject_1$7, templateObject_2$1;
 
 var _path$b;
 function _extends$b() { _extends$b = Object.assign ? Object.assign.bind() : function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends$b.apply(this, arguments); }
@@ -428,7 +428,7 @@ var StatuBar = function (_a) {
     var className = _a.className, children = _a.children;
     return (React__default["default"].createElement("div", { className: className }, children));
 };
-var StyledStatuBar = styled__default["default"](StatuBar)(templateObject_1$5 || (templateObject_1$5 = __makeTemplateObject(["\n\tdisplay: flex;\n\tjustify-content: space-between;\n\tborder-bottom: ", ";\n\tpadding: 3px 18px;\n\theight: 22px;\n\t.statu-item {\n\t\tmargin-left: 12px;\n\t\tline-height: 1.5em;\n\t\tdisplay: flex;\n\t}\n\t.statu-group {\n\t\tdisplay: flex;\n\t\talign-content: center;\n\t}\n\t.device-name {\n\t\ttext-overflow: ellipsis;\n\t\twhite-space: nowrap;\n\t\toverflow: hidden;\n\t}\n\t.battery {\n\t\tdisplay: flex;\n\t\talign-content: center;\n\t\t& svg {\n\t\t\ttransform: translate(1px, -4px);\n\t\t\twidth: 25px;\n\t\t\theight: 30px;\n\t\t}\n\t\t& > label {\n\t\t\tfont-size: 0.9em;\n\t\t}\n\t}\n\t.celluar {\n\t\t& label {\n\t\t\ttransform: translate(-1px, 0px);\n\t\t\tfont-size: 0.9em;\n\t\t}\n\t\t& svg {\n\t\t\theight: 20px;\n\t\t}\n\t}\n\t.airplane {\n\t\talign-content: center;\n\t\t& svg {\n\t\t\ttransform: rotate(-90deg);\n\t\t\theight: 20px;\n\t\t}\n\t}\n"], ["\n\tdisplay: flex;\n\tjustify-content: space-between;\n\tborder-bottom: ", ";\n\tpadding: 3px 18px;\n\theight: 22px;\n\t.statu-item {\n\t\tmargin-left: 12px;\n\t\tline-height: 1.5em;\n\t\tdisplay: flex;\n\t}\n\t.statu-group {\n\t\tdisplay: flex;\n\t\talign-content: center;\n\t}\n\t.device-name {\n\t\ttext-overflow: ellipsis;\n\t\twhite-space: nowrap;\n\t\toverflow: hidden;\n\t}\n\t.battery {\n\t\tdisplay: flex;\n\t\talign-content: center;\n\t\t& svg {\n\t\t\ttransform: translate(1px, -4px);\n\t\t\twidth: 25px;\n\t\t\theight: 30px;\n\t\t}\n\t\t& > label {\n\t\t\tfont-size: 0.9em;\n\t\t}\n\t}\n\t.celluar {\n\t\t& label {\n\t\t\ttransform: translate(-1px, 0px);\n\t\t\tfont-size: 0.9em;\n\t\t}\n\t\t& svg {\n\t\t\theight: 20px;\n\t\t}\n\t}\n\t.airplane {\n\t\talign-content: center;\n\t\t& svg {\n\t\t\ttransform: rotate(-90deg);\n\t\t\theight: 20px;\n\t\t}\n\t}\n"])), border);
+var StyledStatuBar = styled__default["default"](StatuBar)(templateObject_1$6 || (templateObject_1$6 = __makeTemplateObject(["\n\tdisplay: flex;\n\tjustify-content: space-between;\n\tborder-bottom: ", ";\n\tpadding: 3px 18px;\n\theight: 22px;\n\t.statu-item {\n\t\tmargin-left: 12px;\n\t\tline-height: 1.5em;\n\t\tdisplay: flex;\n\t}\n\t.statu-group {\n\t\tdisplay: flex;\n\t\talign-content: center;\n\t}\n\t.device-name {\n\t\ttext-overflow: ellipsis;\n\t\twhite-space: nowrap;\n\t\toverflow: hidden;\n\t}\n\t.battery {\n\t\tdisplay: flex;\n\t\talign-content: center;\n\t\t& svg {\n\t\t\ttransform: translate(1px, -4px);\n\t\t\twidth: 25px;\n\t\t\theight: 30px;\n\t\t}\n\t\t& > label {\n\t\t\tfont-size: 0.9em;\n\t\t}\n\t}\n\t.celluar {\n\t\t& label {\n\t\t\ttransform: translate(-1px, 0px);\n\t\t\tfont-size: 0.9em;\n\t\t}\n\t\t& svg {\n\t\t\theight: 20px;\n\t\t}\n\t}\n\t.airplane {\n\t\talign-content: center;\n\t\t& svg {\n\t\t\ttransform: rotate(-90deg);\n\t\t\theight: 20px;\n\t\t}\n\t}\n"], ["\n\tdisplay: flex;\n\tjustify-content: space-between;\n\tborder-bottom: ", ";\n\tpadding: 3px 18px;\n\theight: 22px;\n\t.statu-item {\n\t\tmargin-left: 12px;\n\t\tline-height: 1.5em;\n\t\tdisplay: flex;\n\t}\n\t.statu-group {\n\t\tdisplay: flex;\n\t\talign-content: center;\n\t}\n\t.device-name {\n\t\ttext-overflow: ellipsis;\n\t\twhite-space: nowrap;\n\t\toverflow: hidden;\n\t}\n\t.battery {\n\t\tdisplay: flex;\n\t\talign-content: center;\n\t\t& svg {\n\t\t\ttransform: translate(1px, -4px);\n\t\t\twidth: 25px;\n\t\t\theight: 30px;\n\t\t}\n\t\t& > label {\n\t\t\tfont-size: 0.9em;\n\t\t}\n\t}\n\t.celluar {\n\t\t& label {\n\t\t\ttransform: translate(-1px, 0px);\n\t\t\tfont-size: 0.9em;\n\t\t}\n\t\t& svg {\n\t\t\theight: 20px;\n\t\t}\n\t}\n\t.airplane {\n\t\talign-content: center;\n\t\t& svg {\n\t\t\ttransform: rotate(-90deg);\n\t\t\theight: 20px;\n\t\t}\n\t}\n"])), border);
 /**
  * Statubar
  */
@@ -455,7 +455,7 @@ var index$4 = (function (props) {
                 charging ? React__default["default"].createElement(SvgBatteryChargingSharp, null) : React__default["default"].createElement(SvgBatteryFullSharp, null))),
             React__default["default"].createElement("div", { className: "statu-item time" }, timeStr))));
 });
-var templateObject_1$5;
+var templateObject_1$6;
 
 var _path$7, _path2$3;
 function _extends$7() { _extends$7 = Object.assign ? Object.assign.bind() : function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends$7.apply(this, arguments); }
@@ -486,7 +486,20 @@ var SearchBar = function (_a) {
         React__default["default"].createElement(SvgSearchOutline, null),
         React__default["default"].createElement("input", { placeholder: "Search" })));
 };
-var index$3 = styled__default["default"](SearchBar)(templateObject_1$4 || (templateObject_1$4 = __makeTemplateObject(["\n\tdisplay: flex;\n\talign-items: center;\n\tmargin: 0 1px;\n\t& > svg {\n\t\theight: 36px;\n\t\ttransform: translate(51%, 0px);\n\t\tdisplay: inline;\n\t\tposition: absolute; /*\u8131\u79BB\u6807\u51C6\u6D41\u4E0D\u5360\u7A7A\u95F4*/\n\t}\n\t& input {\n\t\theight: 100%;\n\t\twidth: 150px;\n\t\tborder-top: none;\n\t\tborder-right: ", ";\n\t\tborder-left: ", ";\n\t\tborder-bottom: none;\n\t\tpadding: 5px 10px;\n\t\tbox-sizing: border-box;\n\t\ttext-align: center;\n\t\tbackground-color: transparent;\n\t}\n"], ["\n\tdisplay: flex;\n\talign-items: center;\n\tmargin: 0 1px;\n\t& > svg {\n\t\theight: 36px;\n\t\ttransform: translate(51%, 0px);\n\t\tdisplay: inline;\n\t\tposition: absolute; /*\u8131\u79BB\u6807\u51C6\u6D41\u4E0D\u5360\u7A7A\u95F4*/\n\t}\n\t& input {\n\t\theight: 100%;\n\t\twidth: 150px;\n\t\tborder-top: none;\n\t\tborder-right: ", ";\n\t\tborder-left: ", ";\n\t\tborder-bottom: none;\n\t\tpadding: 5px 10px;\n\t\tbox-sizing: border-box;\n\t\ttext-align: center;\n\t\tbackground-color: transparent;\n\t}\n"])), border, border);
+var index$3 = styled__default["default"](SearchBar)(templateObject_1$5 || (templateObject_1$5 = __makeTemplateObject(["\n\tdisplay: flex;\n\talign-items: center;\n\tmargin: 0 1px;\n\t& > svg {\n\t\theight: 36px;\n\t\ttransform: translate(51%, 0px);\n\t\tdisplay: inline;\n\t\tposition: absolute; /*\u8131\u79BB\u6807\u51C6\u6D41\u4E0D\u5360\u7A7A\u95F4*/\n\t}\n\t& input {\n\t\theight: 100%;\n\t\twidth: 150px;\n\t\tborder-top: none;\n\t\tborder-right: ", ";\n\t\tborder-left: ", ";\n\t\tborder-bottom: none;\n\t\tpadding: 5px 10px;\n\t\tbox-sizing: border-box;\n\t\ttext-align: center;\n\t\tbackground-color: transparent;\n\t}\n"], ["\n\tdisplay: flex;\n\talign-items: center;\n\tmargin: 0 1px;\n\t& > svg {\n\t\theight: 36px;\n\t\ttransform: translate(51%, 0px);\n\t\tdisplay: inline;\n\t\tposition: absolute; /*\u8131\u79BB\u6807\u51C6\u6D41\u4E0D\u5360\u7A7A\u95F4*/\n\t}\n\t& input {\n\t\theight: 100%;\n\t\twidth: 150px;\n\t\tborder-top: none;\n\t\tborder-right: ", ";\n\t\tborder-left: ", ";\n\t\tborder-bottom: none;\n\t\tpadding: 5px 10px;\n\t\tbox-sizing: border-box;\n\t\ttext-align: center;\n\t\tbackground-color: transparent;\n\t}\n"])), border, border);
+var templateObject_1$5;
+
+var Switch = function (_a) {
+    var className = _a.className, _b = _a.component, component = _b === void 0 ? "div" : _b, _c = _a.LinkComponent, LinkComponent = _c === void 0 ? "a" : _c; _a.children; var id = _a.id, _d = _a.checked, checked = _d === void 0 ? false : _d, onChange = _a.onChange, _e = _a.disabled, disabled = _e === void 0 ? false : _e, ariaLabel = _a.ariaLabel, other = __rest(_a, ["className", "component", "LinkComponent", "children", "id", "checked", "onChange", "disabled", "ariaLabel"]);
+    var ComponentProp = component;
+    if (ComponentProp === "div" && (other.href || other.to)) {
+        ComponentProp = LinkComponent;
+    }
+    return (React__default["default"].createElement("label", { className: "switch ".concat(className) },
+        React__default["default"].createElement("input", { type: "checkbox", id: id, checked: checked, onChange: onChange, disabled: disabled, "aria-label": ariaLabel }),
+        React__default["default"].createElement("span", { className: "slider" })));
+};
+var StyledListItem = styled__default["default"](Switch)(templateObject_1$4 || (templateObject_1$4 = __makeTemplateObject(["\n\t& {\n\t\t--button-width: 3.5em;\n\t\t--button-height: 2em;\n\t\t--toggle-diameter: 1.5em;\n\t\t--toggle-diameter-width: 1em;\n\t\t--button-toggle-offset: calc(\n\t\t\t(var(--button-height) - var(--toggle-diameter)) / 2\n\t\t);\n\t\t--toggle-shadow-offset: 10px;\n\t\t--toggle-wider: 3em;\n\t\t--color-grey: #cccccc;\n\t\t--color-green: #4296f4;\n\t}\n\n\t.slider {\n\t\tdisplay: inline-block;\n\t\twidth: var(--button-width);\n\t\theight: var(--button-height);\n\t\tbackground-color: var(--color-grey);\n\t\tposition: relative;\n\t}\n\n\t.slider::after {\n\t\tcontent: \"\";\n\t\tdisplay: inline-block;\n\t\twidth: var(--toggle-diameter-width);\n\t\theight: var(--toggle-diameter);\n\t\tbackground-color: var(--bg-color);\n\t\tposition: absolute;\n\t\ttop: var(--button-toggle-offset);\n\t\ttransform: translateX(var(--button-toggle-offset));\n\t\tbox-shadow: var(--toggle-shadow-offset) 0\n\t\t\tcalc(var(--toggle-shadow-offset) * 4) rgba(0, 0, 0, 0.1);\n\t}\n\n\t& input[type=\"checkbox\"]:checked + .slider {\n\t\tbackground-color: var(--text-color);\n\t}\n\n\t& input[type=\"checkbox\"]:checked + .slider::after {\n\t\ttransform: translateX(\n\t\t\tcalc(\n\t\t\t\tvar(--button-width) - var(--toggle-diameter-width) -\n\t\t\t\t\tvar(--button-toggle-offset)\n\t\t\t)\n\t\t);\n\t\tbox-shadow: calc(var(--toggle-shadow-offset) * -1) 0\n\t\t\tcalc(var(--toggle-shadow-offset) * 4) rgba(0, 0, 0, 0.1);\n\t}\n\n\t& input[type=\"checkbox\"] {\n\t\tdisplay: none;\n\t}\n\n\t& input[type=\"checkbox\"]:active + .slider::after {\n\t\twidth: var(--toggle-wider);\n\t}\n\n\t& input[type=\"checkbox\"]:checked:active + .slider::after {\n\t\ttransform: translateX(\n\t\t\tcalc(\n\t\t\t\tvar(--button-width) - var(--toggle-wider) -\n\t\t\t\t\tvar(--button-toggle-offset)\n\t\t\t)\n\t\t);\n\t}\n"], ["\n\t& {\n\t\t--button-width: 3.5em;\n\t\t--button-height: 2em;\n\t\t--toggle-diameter: 1.5em;\n\t\t--toggle-diameter-width: 1em;\n\t\t--button-toggle-offset: calc(\n\t\t\t(var(--button-height) - var(--toggle-diameter)) / 2\n\t\t);\n\t\t--toggle-shadow-offset: 10px;\n\t\t--toggle-wider: 3em;\n\t\t--color-grey: #cccccc;\n\t\t--color-green: #4296f4;\n\t}\n\n\t.slider {\n\t\tdisplay: inline-block;\n\t\twidth: var(--button-width);\n\t\theight: var(--button-height);\n\t\tbackground-color: var(--color-grey);\n\t\tposition: relative;\n\t}\n\n\t.slider::after {\n\t\tcontent: \"\";\n\t\tdisplay: inline-block;\n\t\twidth: var(--toggle-diameter-width);\n\t\theight: var(--toggle-diameter);\n\t\tbackground-color: var(--bg-color);\n\t\tposition: absolute;\n\t\ttop: var(--button-toggle-offset);\n\t\ttransform: translateX(var(--button-toggle-offset));\n\t\tbox-shadow: var(--toggle-shadow-offset) 0\n\t\t\tcalc(var(--toggle-shadow-offset) * 4) rgba(0, 0, 0, 0.1);\n\t}\n\n\t& input[type=\"checkbox\"]:checked + .slider {\n\t\tbackground-color: var(--text-color);\n\t}\n\n\t& input[type=\"checkbox\"]:checked + .slider::after {\n\t\ttransform: translateX(\n\t\t\tcalc(\n\t\t\t\tvar(--button-width) - var(--toggle-diameter-width) -\n\t\t\t\t\tvar(--button-toggle-offset)\n\t\t\t)\n\t\t);\n\t\tbox-shadow: calc(var(--toggle-shadow-offset) * -1) 0\n\t\t\tcalc(var(--toggle-shadow-offset) * 4) rgba(0, 0, 0, 0.1);\n\t}\n\n\t& input[type=\"checkbox\"] {\n\t\tdisplay: none;\n\t}\n\n\t& input[type=\"checkbox\"]:active + .slider::after {\n\t\twidth: var(--toggle-wider);\n\t}\n\n\t& input[type=\"checkbox\"]:checked:active + .slider::after {\n\t\ttransform: translateX(\n\t\t\tcalc(\n\t\t\t\tvar(--button-width) - var(--toggle-wider) -\n\t\t\t\t\tvar(--button-toggle-offset)\n\t\t\t)\n\t\t);\n\t}\n"])));
 var templateObject_1$4;
 
 // FXIME  小屏幕文字溢出
@@ -712,13 +725,14 @@ exports.GridItem = StyledGridItem;
 exports.HomeOutlineIcon = SvgHomeOutline;
 exports.KindleOasis = Container;
 exports.List = List;
-exports.ListItem = StyledListItem;
+exports.ListItem = StyledListItem$1;
 exports.ListItemIcon = StyledListItemIcon;
 exports.ListItemText = index$6;
 exports.Menu = Menu$1;
 exports.Navbar = index$5;
 exports.SearchBar = index$3;
 exports.StatuBar = index$4;
+exports.Switch = StyledListItem;
 exports.Tab = index$2;
 exports.TabItem = index$1;
 exports.TimeBar = index;

@@ -4,6 +4,7 @@ import List from "../examples/List";
 import TabExample from "../examples/Tab";
 import DialogExample from "../examples/Dialog";
 import GridExample from "../examples/Grid";
+import SwitchExample from "../examples/Switch";
 import TextFieldExample from "../examples/TextField";
 import { Card } from "@kindle-ui/core";
 
@@ -48,6 +49,9 @@ export default () => {
 					<h2>Grid</h2>
 					<p>This is grid book list in Kindle.</p>
 					<GridExample />
+					<h2>Switch</h2>
+					<p>This is grid book list in Kindle.</p>
+					<SwitchExample />
 					<h2>TextField</h2>
 					<TextFieldExample />
 				</Typography>
