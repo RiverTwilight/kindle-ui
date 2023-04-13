@@ -39,5 +39,8 @@ export default styled(SearchBar)`
 		text-align: center;
 		background-color: transparent;
 		-webkit-border-radius: 0; /* disable default border-radius on Safari */
+		&:focus {
+			outline: none;
+		}
 	}
 `;

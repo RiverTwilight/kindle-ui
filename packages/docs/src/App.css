@@ -11,11 +11,14 @@ body {
 	flex-direction: row;
 	justify-content: center;
 	max-width: 1000px;
+	padding-bottom: 50px;
 }
 
 @media screen and (max-width: 768px) {
 	.wrapper {
-		flex-direction: column;
+		display: block;
+		background-color: var(--bg-color);
+		min-height: 80vh;
 	}
 }
 
@@ -24,4 +27,18 @@ aside {
 	display: flex;
 	flex-direction: column;
 	width: 280px;
+}
+
+@media (min-width: 1000px) {
+	.container {
+		min-height: 100vh;
+		display: flex;
+		justify-content: center;
+		max-width: 1800px;
+		position: relative;
+	}
+	main {
+		min-width: 900px;
+		padding-bottom: 100px;
+	}
 }

@@ -10,7 +10,7 @@ import { Card } from "@kindle-ui/core";
 
 export default () => {
 	return (
-		<div className="wrapper">
+		<>
 			<aside>
 				<Card>目录</Card>
 			</aside>
@@ -29,7 +29,9 @@ export default () => {
 						a <u>newer UI</u>, this classic desgin is still
 						valuable.
 					</p>
-					<img src="/Kindle-UI.png"></img>
+					<img width={200} src="/Kindle-UI.png"></img>
+				</Typography>
+				<Typography greyImage={true}>
 					<h2>Button</h2>
 					<Button>Button</Button>
 					&nbsp;
@@ -56,6 +58,6 @@ export default () => {
 					<TextFieldExample />
 				</Typography>
 			</div>
-		</div>
+		</>
 	);
 };

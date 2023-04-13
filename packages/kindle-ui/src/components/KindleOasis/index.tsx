@@ -17,13 +17,13 @@ const environmentDark = css`
 `;
 
 const StyledContainer = styled.div`
-	@media screen and (max-width: 799px) {
+	@media screen and (max-width: 768px) {
 		.hardButton {
 			display: none;
 		}
 	}
 
-	@media screen and (min-width: 800px) {
+	@media screen and (min-width: 767px) {
 		* {
 			--hbutton-height: 148px;
 			--border-shadow-width: 6px;

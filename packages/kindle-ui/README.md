@@ -6,7 +6,7 @@
 
 [English Version](./README.en.md) | 简体中文
 
-一个用于在浏览器中构建 Kindle 系统的组件库。
+一个用于在浏览器中构建 Kindle 界面的 React 组件库。
 
 ~~本项目是我高考前最后一个坑啦，欢迎 PR！~~
 
@@ -17,11 +17,11 @@ Amazon 官方已于今年八月陆续推送新版本的 UI。
 -   [x] 11 个交互式 Kindle 组件（对话框、按钮、列表、文本框、导航栏...）
 -   [x] 夜间模式
 -   [x] 原汁原味 Kindle OS 字体（可选）
--   [ ] 100% TypeScript
+-   [x] Kindle 经典外观复刻（Kindle Oasis, Kindle Paperwhite, Kindle Voyage）
+-   [x] 100% TypeScript
 -   [ ] 多样式对话框
 -   [ ] `Expermintal Browser` App
 -   [ ] `Font Setting` App
--   [ ] Unit test
 
 ```bash
 npm i kindle-ui
@@ -44,7 +44,16 @@ Navbar 是一个集成的 Kindle 原生组件。 所有图标都是不可编辑�
   
 ```JSX
 <Navbar>
-	<StatuBar airplane battery={86} deviceName="My Kindle" />
+	<StatuBar
+		airplane
+		celluar={{
+			on: true,
+			label: "LTE",
+			siginal: 3,
+		}}
+		battery={86}
+		deviceName="My Kindle"
+	/>
 	<ActionBar>
 		<ActionGroup>
 			<ActionItem
@@ -88,20 +97,18 @@ Navbar 是一个集成的 Kindle 原生组件。 所有图标都是不可编辑�
 
 ### Container
 
-如果你想使用 AmazonEmber 字体（约 106kb）和深色模式来获得更接近原生 Kindle 的 ui，你可以用`Container` 组件包裹你的 App，它添加了一个全局字体系列。
+使用 Container 容器可以赋予颜色模式切换的能力，并且可以添加设备外观。
 
 ```JSX
-import { Container } from "kindyle";
+import { Container, KindleOasis } from "@kindle-ui/core";
 
 function App() {
 	return (
-		<Container>
+		<Container dark deviceFrame={KindleOasis}>
             {/* ... */}
 		</Container>
 	);
 }
-
-export default App;
 ```
 
 ### Typography
@@ -135,7 +142,7 @@ export default App;
 			/>
 			<ListItemIcon
 				onClick={() => {
-					alert("sdf");
+					alert("Hello");
 				}}
 			>
 				<EllipsisVerticalIcon />
@@ -149,6 +156,27 @@ export default App;
 | name | optional | default | description |
 | :--- | :------: | :-----: | ----------- |
 | href |   true   |   --    | --          |
+
+### Grid
+
+该组件模仿 Kindle 的书架布局。
+
+## 字体
+
+如果要使用 Kindle 原生字体，需要先安装`kindle-fonts`.
+
+```bash
+npm i kindle-fonts
+# or
+yarn add kindle-fonts
+```
+
+Then import it in your project:
+
+```JSX
+import "kindle-fonts/bookerly.css";
+import "kindle-fonts/amazon-ember.css";
+```
 
 ## 贡献
 

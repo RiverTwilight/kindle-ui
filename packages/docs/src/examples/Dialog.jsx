@@ -6,6 +6,13 @@ export default function () {
 
 	return (
 		<>
+			<Button
+				onClick={() => {
+					setOpen(true);
+				}}
+			>
+				Open Dialog
+			</Button>
 			<Dialog
 				open={open}
 				onClose={() => {
@@ -15,13 +22,6 @@ export default function () {
 				<DialogContent>This is a dialog</DialogContent>
 				<DialogAction></DialogAction>
 			</Dialog>
-			<Button
-				onClick={() => {
-					setOpen(true);
-				}}
-			>
-				Open Dialog
-			</Button>
 		</>
 	);
 }
