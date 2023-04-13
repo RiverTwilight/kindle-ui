@@ -6,14 +6,12 @@ import DialogExample from "../examples/Dialog";
 import GridExample from "../examples/Grid";
 import SwitchExample from "../examples/Switch";
 import TextFieldExample from "../examples/TextField";
-import { Card } from "@kindle-ui/core";
+import Sidebar from "../components/Sidebar";
 
 export default () => {
 	return (
 		<>
-			<aside>
-				<Card>目录</Card>
-			</aside>
+			<Sidebar />
 			<div>
 				<Typography greyImage={true}>
 					<h1>Hi, kindle-ui!</h1>

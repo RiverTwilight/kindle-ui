@@ -14,22 +14,26 @@ body {
 	padding-bottom: 50px;
 }
 
+aside {
+	padding-top: 40px;
+	display: flex;
+	flex-direction: column;
+	padding: 10px;
+	width: 80vw;
+}
+
 @media screen and (max-width: 768px) {
 	.wrapper {
 		display: block;
 		background-color: var(--bg-color);
 		min-height: 80vh;
 	}
+	aside {
+		width: 90vw;
+	}
 }
 
-aside {
-	padding-top: 40px;
-	display: flex;
-	flex-direction: column;
-	width: 280px;
-}
-
-@media (min-width: 1000px) {
+@media (min-width: 780px) {
 	.container {
 		min-height: 100vh;
 		display: flex;
@@ -41,4 +45,14 @@ aside {
 		min-width: 900px;
 		padding-bottom: 100px;
 	}
+
+	.category {
+		position: sticky;
+		top: 75px;
+	}
+}
+
+.category.collapsed ul {
+	height: 200px;
+	overflow-y: scroll;
 }

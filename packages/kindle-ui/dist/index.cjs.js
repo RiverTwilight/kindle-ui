@@ -291,17 +291,16 @@ var templateObject_1$g;
 var index$8 = styled__default["default"].div(templateObject_1$f || (templateObject_1$f = __makeTemplateObject(["\n\tpadding: 10px\n"], ["\n\tpadding: 10px\n"])));
 var templateObject_1$f;
 
-var StyledGrid = styled__default["default"].div(templateObject_1$e || (templateObject_1$e = __makeTemplateObject(["\n  display: flex;\n  justify-content: space-between;\n  flex-flow: row wrap;\n  gap: ", "px;\n\n  @media (max-width: 768px) {\n    & > * {\n      flex-basis: 50%;\n    }\n  }\n\n  @media (min-width: 768px) {\n    & > * {\n      flex-basis: calc(100% / ", ");\n    }\n  }\n"], ["\n  display: flex;\n  justify-content: space-between;\n  flex-flow: row wrap;\n  gap: ", "px;\n\n  @media (max-width: 768px) {\n    & > * {\n      flex-basis: 50%;\n    }\n  }\n\n  @media (min-width: 768px) {\n    & > * {\n      flex-basis: calc(100% / ", ");\n    }\n  }\n"])), function (_a) {
+var StyledGrid = styled__default["default"].div(templateObject_1$e || (templateObject_1$e = __makeTemplateObject(["\n\tdisplay: grid;\n\tgrid-template-columns: repeat(auto-fill, minmax(250px, 1fr));\n\tgap: ", "px;\n\tgrid-row-gap: ", "px;\n\n\t@media (min-width: 768px) {\n\t\tgrid-template-columns: repeat(3, 1fr);\n\t}\n"], ["\n\tdisplay: grid;\n\tgrid-template-columns: repeat(auto-fill, minmax(250px, 1fr));\n\tgap: ", "px;\n\tgrid-row-gap: ", "px;\n\n\t@media (min-width: 768px) {\n\t\tgrid-template-columns: repeat(3, 1fr);\n\t}\n"])), function (_a) {
     var gap = _a.gap;
     return gap;
 }, function (_a) {
-    var cldLength = _a.cldLength;
-    return cldLength;
+    var rowGap = _a.rowGap;
+    return rowGap;
 });
 function Grid(_a) {
-    var children = _a.children, _b = _a.gap, gap = _b === void 0 ? 0 : _b;
-    var cldLength = React__namespace.Children.count(children);
-    return (React__namespace.createElement(StyledGrid, { cldLength: cldLength, gap: gap }, children));
+    var children = _a.children, _b = _a.gap, gap = _b === void 0 ? 0 : _b, _c = _a.rowGap, rowGap = _c === void 0 ? 0 : _c;
+    return (React__namespace.createElement(StyledGrid, { gap: gap, rowGap: rowGap }, children));
 }
 var templateObject_1$e;
 
