@@ -2,28 +2,37 @@ import * as React from "react";
 import styled from "styled-components";
 
 export interface IGrid extends React.HTMLAttributes<HTMLDivElement> {
-	children: JSX.Element | JSX.Element[];
+  children: JSX.Element | JSX.Element[];
+  gap?: number;
 }
+const StyledGrid = styled.div<IGrid>`
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
+  gap: ${({ gap }) => gap}px;
 
-const StyledGrid = styled.div`
-	display: flex;
-	justify-content: space-between;
+  @media (max-width: 768px) {
+    & > * {
+      flex-basis: 50%;
+    }
+  }
 
-	@media (max-width: 768px) {
-		flex-flow: row wrap;
-	}
-
-	@media (min-width: 768px) {
-		row-gap: 16px;
-		flex-direction: row;
-		flex-flow: row wrap;
-	}
+  @media (min-width: 768px) {
+    & > * {
+      flex-basis: calc(100% / ${({ cldLength }) => cldLength});
+    }
+  }
 `;
 
-function Grid({ children }: IGrid) {
-	const cldLength = React.Children.count(children);
 
-	return <StyledGrid cldLength={cldLength}>{children}</StyledGrid>;
+function Grid({ children, gap = 0 }: IGrid) {
+  const cldLength = React.Children.count(children);
+
+  return (
+    <StyledGrid cldLength={cldLength} gap={gap}>
+      {children}
+    </StyledGrid>
+  );
 }
 
 export default Grid;

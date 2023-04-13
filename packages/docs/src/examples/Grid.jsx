@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 export default function () {
 	return (
 		<>
-			<Grid>
+			<Grid gap={2}>
 				<GridItem greyImage src="/img/cover_0.jpg" />
 				<GridItem src="/img/cover_1.jpg" />
 				<GridItem src="/img/cover_2.jpg" />

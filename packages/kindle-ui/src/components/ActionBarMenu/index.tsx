@@ -4,8 +4,6 @@ import MenuItem, { IMenuItem } from "../MenuItem";
 import Menu from "../Menu";
 import Ellipsis from "../../icons/ellipsis-vertical.svg";
 
-// FIXME 每次打开左上角闪现
-
 export default ({ items }: { items?: IMenuItem[] }) => {
 	const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
 

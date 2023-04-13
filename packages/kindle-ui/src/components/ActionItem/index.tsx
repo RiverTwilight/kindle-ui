@@ -4,7 +4,7 @@ import hover from "@/utils/hover";
 
 const StyledActionItem = styled.button`
 	border: none;
-	box-sizing: border-box;
+	box-sizing: content-box;
 	width: 50px;
 	background-color: var(--bg-color);
 	color: var(--text-color);
@@ -15,7 +15,7 @@ const StyledActionItem = styled.button`
 	justify-content: center;
 	place-content: center;
 	aspect-ratio: 1;
-	padding: 2ch;
+	padding: 0;
 
 	@media (min-width: 460px) {
 		margin-left: 10px;

@@ -34,14 +34,16 @@ const StyledMenu = styled(Menu)`
 export default ({ children, anchorEl, open, onClose }: IMenu) => {
 	const targetPosition = useMemo(() => {
 		if (anchorEl) {
-			console.log(anchorEl);
+			const el = anchorEl as Element; // explicitly cast anchorEl to Element
 			return {
-				// @ts-expect-error
-				top:  anchorEl.getBoundingClientRect().top + anchorEl.getBoundingClientRect().height + 2,
-				left: anchorEl.getBoundingClientRect().right - WIDTH_PX
+				top:
+					el.getBoundingClientRect().top +
+					el.getBoundingClientRect().height +
+					2,
+				left: el.getBoundingClientRect().right - WIDTH_PX,
 			};
 		}
-		return { top:0, left: 0}
+		return { top: 0, left: 0 };
 	}, [anchorEl]);
 
 	return (

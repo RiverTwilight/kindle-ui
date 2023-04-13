@@ -30,15 +30,17 @@ const GridItem: React.FC<IGridItem> = ({ className, src, href, target }) => {
 
 const StyledGridItem = styled(GridItem)`
 	display: flex;
+	--item-height: 140px;
 
 	@media (max-width: 768px) {
-		width: 25vh;
-		height: calc(25vh / 0.626);
+		width: var(--item-height);
+		height: calc(var(--item-height) / 0.626);
 	}
 
 	@media (min-width: 768px) {
 		width: 200px;
 		height: 317px;
+		aspect-ratio: 0.625;
 	}
 
 	& img {

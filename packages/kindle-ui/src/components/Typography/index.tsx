@@ -65,7 +65,7 @@ export default ({
 	lineHeight = 25,
 	greyImage = false,
 	...props
-}: ITypography) => {
+}: ITypography & React.HTMLAttributes<HTMLDivElement>) => {
 	return (
 		<Typography {...props} greyImage={greyImage} lineHeight={lineHeight}>
 			{children}

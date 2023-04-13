@@ -1,13 +1,18 @@
-import React from "react";
+import React, { InputHTMLAttributes } from "react";
 import styled from "styled-components";
 import border from "@/utils/border";
 import SearchOutlinIcon from "../../icons/search-outline.svg";
 
-const SearchBar = ({ className }: any) => {
+interface ISearchBarProps extends InputHTMLAttributes<HTMLInputElement> {
+	className?: string;
+	disable?: boolean;
+}
+
+const SearchBar = ({ className, disable, ...rest }: ISearchBarProps) => {
 	return (
 		<div className={className}>
 			<SearchOutlinIcon />
-			<input placeholder="Search"></input>
+			<input placeholder="Search" disabled={disable} {...rest}></input>
 		</div>
 	);
 };
@@ -33,5 +38,6 @@ export default styled(SearchBar)`
 		box-sizing: border-box;
 		text-align: center;
 		background-color: transparent;
+		-webkit-border-radius: 0; /* disable default border-radius on Safari */
 	}
 `;
