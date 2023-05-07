@@ -13,6 +13,10 @@ const StyledGrid = styled.div<IGrid>`
 	gap: ${({ gap }) => gap}px;
 	grid-row-gap: ${({ rowGap }) => rowGap}px;
 
+	@media (max-width: 767px) {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
 	@media (min-width: 768px) {
 		grid-template-columns: repeat(3, 1fr);
 	}

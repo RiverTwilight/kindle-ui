@@ -25,7 +25,7 @@ const StyledDialog = styled.div`
 	transform: translate(-50%, -50%);
 	max-width: 400px;
 	min-width: 250px;
-	z-index: 1000;
+	z-index: 1001;
 `;
 
 export default ({ children, anchorEl, open, onClose }: IDialog) => {

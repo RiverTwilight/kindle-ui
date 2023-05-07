@@ -29,25 +29,27 @@ const GridItem: React.FC<IGridItem> = ({ className, src, href, target }) => {
 };
 
 const StyledGridItem = styled(GridItem)`
+	width: 100%;
 	display: flex;
+	justify-content: center; // Added to center the items horizontally
 	--item-height: 140px;
 
 	@media (max-width: 768px) {
-		width: var(--item-height);
-		height: calc(var(--item-height) / 0.626);
+		& img {
+			${(props) => props.greyImage && greyImage}
+			width: var(--item-height);
+			height: calc(var(--item-height) / 0.626);
+			object-fit: cover;
+		}
 	}
 
 	@media (min-width: 768px) {
-		width: 200px;
-		height: 317px;
-		aspect-ratio: 0.625;
-	}
-
-	& img {
-		${(props) => props.greyImage && greyImage}
-		width: 100%;
-		height: 100%;
-		object-fit: cover;
+		& img {
+			${(props) => props.greyImage && greyImage}
+			width: 200px;
+			height: 317px;
+			object-fit: cover;
+		}
 	}
 
 	a {
