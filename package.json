@@ -23,7 +23,7 @@
 		"postbuild": "scripts/postbuild.sh",
 		"build:watch": "yarn workspace @kindle-ui/core build:watch",
 		"dev": "npm-run-all --parallel docs:dev build:watch",
-		"dev:install": "cd ./packages/kindle-ui && yarn install && cd ../docs && yarn install",
+		"dev:install": "yarn && cd ./packages/kindle-ui && yarn && cd ../docs && yarn",
 		"docs:dev": "yarn workspace docs start",
 		"docs:build": "yarn workspace docs build",
 		"publish:core": "yarn workspace @kindle-ui/core publish",

@@ -2,11 +2,40 @@
 
 Want to contribute to kindle-ui? There are a few things you need to know.
 
+## Start development
+
 ```bash
 git clone https://gitee.com/rivertwilight/kindle-ui.git
-npm run i-all
-npm run dev
 ```
+
+We recommend you to use vscode workspace to open this project. You can do this by cliking the [kindle-ui.codespace](./kindle-ui.code-workspace) file.
+
+Then, run this commands in root folder with Yarn 2.
+
+```bash
+yarn
+yarn run dev
+```
+
+<details>
+    <summary>How does it work?</summary>
+    
+    We use yarn's workspace to manage the dependency, which is enabled in package.json by:
+
+    ```json
+    "workspaces": [
+        "packages/*"
+    ]
+    ```
+
+    In the [docs](./packages/docs/) folder, we'll link '@kindle-ui/core' to local version instead of the online so we can test the component locally.
+
+    ```json
+    "dependencies": {
+        "@kindle-ui/core": "workspace:*",
+    }
+    ```
+</detials>
 
 ## 常见问题
 

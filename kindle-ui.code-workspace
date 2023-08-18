@@ -1,0 +1,25 @@
+{
+	"folders": [
+		{
+			"name": "kindle-ui",
+			"path": "./packages/kindle-ui"
+		},
+		{
+			"name": "kindle-fonts",
+			"path": "./packages/kindle-fonts"
+		},
+		{
+			"name": "docs",
+			"path": "./packages/docs"
+		},		{
+			"name": "project-root",
+			"path": "./"
+		}
+	],
+	"settings": {
+		"files.exclude": {
+			"node_modules/": true,
+			"app/": true,
+		}
+	}
+}
