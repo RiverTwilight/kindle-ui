@@ -3,6 +3,7 @@ import ReactDOM from "react-dom";
 import "./index.css";
 import "kindle-fonts/bookerly.css";
 import "kindle-fonts/amazon-ember.css";
+import "kindle-fonts/noto-serif.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 

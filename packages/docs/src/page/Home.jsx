@@ -27,6 +27,7 @@ export default () => {
 						a <u>newer UI</u>, this classic desgin is still
 						valuable.
 					</p>
+					<p>拣尽寒枝不肯栖，寂寞沙洲冷</p>
 					<img width={200} src="/Kindle-UI.png"></img>
 				</Typography>
 				<Typography greyImage={true}>

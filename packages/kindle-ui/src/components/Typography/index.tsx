@@ -24,7 +24,7 @@ const Typography = styled.article`
 	padding: 15px;
 	max-width: 1000px;
 	font-size: 1.1rem;
-	font-family: Bookerly, AmazonEmber-Rg;
+	font-family: Bookerly, noto_serif_scregular, AmazonEmber-Rg;
 	color: var(--text-color);
 	& ::selection {
 		background-color: var(--text-color);
