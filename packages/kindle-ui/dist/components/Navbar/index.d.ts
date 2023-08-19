@@ -1,4 +1,5 @@
-export declare type TActionItems = {
+import React from "react";
+export type TActionItems = {
     [order: number]: {
         onClick: () => void;
         text: string;
@@ -9,5 +10,5 @@ export interface INavbar {
     fixed?: boolean;
     children: JSX.Element | JSX.Element[];
 }
-declare const _default: ({ autoClose, fixed, children }: INavbar) => JSX.Element;
+declare const _default: ({ autoClose, fixed, children }: INavbar) => React.JSX.Element;
 export default _default;

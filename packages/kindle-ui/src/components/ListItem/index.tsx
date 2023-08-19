@@ -34,7 +34,7 @@ const StyledListItem = styled(ListItem)`
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	padding: 0 10px;
+	padding: 0 2px;
 	font-size: 1.1rem;
 	font-family: AmazonEmber-Rg, sans-serif;
 	border-bottom: ${border};

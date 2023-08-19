@@ -1,7 +1,7 @@
 {
 	"name": "kindle-ui",
 	"description": "A react component library to build Kindle OS in the browser.",
-	"version": "1.1.1",
+	"version": "1.1.4",
 	"keywords": [
 		"kindle",
 		"react",
@@ -13,11 +13,9 @@
 	"module": "packages/kindle-ui/dist/index.esm.js",
 	"source": "packages/kindle-ui/src/index.ts",
 	"typings": "packages/kindle-ui/dist/index.d.ts",
-	"workspaces": {
-		"packages": [
-			"packages/*"
-		]
-	},
+	"workspaces": [
+		"packages/*"
+	],
 	"scripts": {
 		"build": "yarn workspace @kindle-ui/core build",
 		"postbuild": "scripts/postbuild.sh",

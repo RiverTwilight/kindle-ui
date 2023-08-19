@@ -3,13 +3,14 @@ body {
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+	background: #dadaa5;
 }
 
 .wrapper {
 	margin: 0 auto;
-	display: flex;
+	/* display: flex;
 	flex-direction: row;
-	justify-content: center;
+	justify-content: center; */
 	max-width: 1000px;
 	padding-bottom: 50px;
 }

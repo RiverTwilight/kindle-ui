@@ -25,32 +25,35 @@ const StyledContainer = styled.div`
 
 	@media screen and (min-width: 767px) {
 		* {
-			--hbutton-height: 148px;
+			--hbutton-height: 12.5vh;
+			--hbutton-padding: 4vh;
 			--border-shadow-width: 6px;
 		}
 
-		max-width: 900px;
+		max-width: 980px;
 		position: relative;
-		box-sizing: content-box;
-		padding-left: 40px;
-		padding-top: 40px;
-		padding-bottom: 40px;
-		padding-right: 150px;
+		aspect-ratio: 0.89;
+		box-sizing: border-box;
+		padding-left: 34px;
+		padding-top: 34px;
+		padding-bottom: 34px;
+		padding-right: 145px;
 		border-radius: 30px;
-        background: ${(props) =>
-            props.dark ? environmentDark : environmentLight};
+		background: ${(props) =>
+			props.dark ? environmentDark : environmentLight};
 		border: 8px double #3a3737;
 		overflow: hidden;
 		height: 100vh;
+		box-shadow: #0000004f 0px 0px 11px 6px;
 
 		.hardButton {
-			width: 13px;
+			width: 10px;
 			height: var(--hbutton-height);
 			border-radius: 20px;
 			background: #414449;
 			position: absolute;
-			right: 45px;
-			top: calc(50vh + 30px);
+			right: 35px;
+			top: 50vh;
 			border-left: 3px solid black;
 			border-right: 4px ridge #888;
 			border-top: 1px solid black;
@@ -58,11 +61,12 @@ const StyledContainer = styled.div`
 		}
 
 		.hardButton-up {
-			transform: translateY(-150px);
+			transform: translateY(calc(-1 * var(--hbutton-height) - var(--hbutton-padding)));
+
 		}
 
 		.hardButton-down {
-			transform: translateY(100px);
+			transform: translateY(var(--hbutton-padding));
 		}
 
 		.shadowTop::after {
@@ -71,6 +75,23 @@ const StyledContainer = styled.div`
 			z-index: 3;
 			right: 1px;
 			left: 1px;
+			height: var(--border-shadow-width);
+			display: inline;
+			background: linear-gradient(
+				180deg,
+				rgba(0, 0, 0, 0.5) 0%,
+				rgba(0, 212, 255, 0) 100%
+			);
+		}
+
+		.shadowBottom::after {
+			content: "";
+			position: absolute;
+			z-index: 3;
+			right: 1px;
+			left: 1px;
+			bottom: 0px;
+			transform: rotate(180deg);
 			height: var(--border-shadow-width);
 			display: inline;
 			background: linear-gradient(
@@ -122,6 +143,7 @@ const StyledContainer = styled.div`
 
 		.content {
 			overflow-y: scroll;
+			overflow-x: hidden;
 			height: 100%;
 			background: var(--bg-color);
 		}

@@ -1,13 +1,14 @@
-export declare type TMenuItem = {
+import React from "react";
+export type TMenuItem = {
     text: string;
     link?: string;
 };
-export declare type TActionItems = {
+export type TActionItems = {
     [order: number]: {
         handleClick: () => void;
     };
 };
-export declare type StatuInfo = {
+export type StatuInfo = {
     deviceName: string;
     battery?: number;
     airplane?: boolean;
@@ -22,5 +23,5 @@ export interface INavbar {
     actionItems: TActionItems;
     menuItems?: TMenuItem[];
 }
-declare const _default: ({ deviceName, autoClose, battery, airplane, actionItems, charging, menuItems, }: INavbar) => JSX.Element;
+declare const _default: ({ deviceName, autoClose, battery, airplane, actionItems, charging, menuItems, }: INavbar) => React.JSX.Element;
 export default _default;

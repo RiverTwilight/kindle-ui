@@ -17,6 +17,8 @@ yarn
 yarn run dev
 ```
 
+Open [https://localhost:3000](https://localhost:3000) at your browser and start hacking!.
+
 <details>
     <summary>How does it work?</summary>
     

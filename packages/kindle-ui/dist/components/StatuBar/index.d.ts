@@ -1,3 +1,4 @@
+import React from "react";
 export interface IStatubar {
     deviceName: string;
     battery?: number;
@@ -12,5 +13,5 @@ export interface IStatubar {
 /**
  * Statubar
  */
-declare const _default: (props: IStatubar) => JSX.Element;
+declare const _default: (props: IStatubar) => React.JSX.Element;
 export default _default;

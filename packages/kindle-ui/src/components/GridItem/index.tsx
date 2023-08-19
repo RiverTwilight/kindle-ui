@@ -8,6 +8,7 @@ export interface IGridItem extends React.HTMLAttributes<HTMLDivElement> {
 	href?: string;
 	target?: string;
 	greyImage?: boolean;
+	dense?: boolean;
 }
 
 const GridItem: React.FC<IGridItem> = ({ className, src, href, target }) => {
@@ -29,34 +30,40 @@ const GridItem: React.FC<IGridItem> = ({ className, src, href, target }) => {
 };
 
 const StyledGridItem = styled(GridItem)`
-	width: 100%;
-	display: flex;
-	justify-content: center; // Added to center the items horizontally
-	--item-height: 140px;
-
 	@media (max-width: 768px) {
+		--item-height: calc(20vh);
 		& img {
 			${(props) => props.greyImage && greyImage}
-			width: var(--item-height);
-			height: calc(var(--item-height) / 0.626);
-			object-fit: cover;
+			width: 100%;
+			height: 100%;
+			object-fit: contain;
 		}
 	}
 
 	@media (min-width: 768px) {
+		--item-height: ${(props) =>
+			props.dense ? "calc(20vh - 20px)" : "calc(25vh)"};
+
 		& img {
 			${(props) => props.greyImage && greyImage}
-			width: 200px;
-			height: 317px;
-			object-fit: cover;
+			width: 100%;
+			height: 100%;
+			object-fit: contain;
 		}
 	}
 
+	width: 100%;
+	display: flex;
+
+	& img,
 	a {
-		width: 100%;
-		height: 100%;
 		display: block;
+
+		height: var(--item-height);
+		width: calc(var(--item-height) * 0.626);
 	}
+
+	justify-content: center; // Added to center the items horizontally
 `;
 
 export default StyledGridItem;

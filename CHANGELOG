@@ -1,0 +1,6 @@
+## 1.1.4 (2023-08-19)
+
+* fix: Fix the Grid style
+* feat: Support dense grid
+* feat: Add `Section` and `SectionTitle`
+* style: Optimize the visual effect of the device frame

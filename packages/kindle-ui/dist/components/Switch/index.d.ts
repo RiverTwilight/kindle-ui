@@ -10,5 +10,5 @@ export interface SwitchProps {
     disabled?: boolean;
     ariaLabel?: string;
 }
-declare const StyledListItem: import("styled-components").StyledComponent<({ className, component, LinkComponent, children, id, checked, onChange, disabled, ariaLabel, ...other }: SwitchProps) => JSX.Element, any, {}, never>;
+declare const StyledListItem: import("styled-components").StyledComponent<({ className, component, LinkComponent, children, id, checked, onChange, disabled, ariaLabel, ...other }: SwitchProps) => React.JSX.Element, any, {}, never>;
 export default StyledListItem;

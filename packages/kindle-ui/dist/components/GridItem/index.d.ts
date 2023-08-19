@@ -5,6 +5,7 @@ export interface IGridItem extends React.HTMLAttributes<HTMLDivElement> {
     href?: string;
     target?: string;
     greyImage?: boolean;
+    dense?: boolean;
 }
 declare const StyledGridItem: import("styled-components").StyledComponent<React.FC<IGridItem>, any, {}, never>;
 export default StyledGridItem;

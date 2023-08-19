@@ -1,4 +1,4 @@
-import { Typography, Button } from "@kindle-ui/core";
+import { Typography, Button, SectionTitle, Section } from "@kindle-ui/core";
 import CardExample from "../examples/Card";
 import List from "../examples/List";
 import TabExample from "../examples/Tab";
@@ -11,7 +11,7 @@ import Sidebar from "../components/Sidebar";
 export default () => {
 	return (
 		<>
-			<Sidebar />
+			{/* <Sidebar /> */}
 			<div>
 				<Typography greyImage={true}>
 					<h1>Hi, kindle-ui!</h1>
@@ -46,15 +46,15 @@ export default () => {
 					<CardExample />
 					<h2>Dialog</h2>
 					<DialogExample />
-					<h2>Grid</h2>
-					<p>This is grid book list in Kindle.</p>
-					<GridExample />
 					<h2>Switch</h2>
-					<p>This is grid book list in Kindle.</p>
 					<SwitchExample />
 					<h2>TextField</h2>
 					<TextFieldExample />
 				</Typography>
+				<Section>
+					<SectionTitle label="Grid" />
+					<GridExample />
+				</Section>
 			</div>
 		</>
 	);

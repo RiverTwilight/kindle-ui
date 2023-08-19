@@ -1,3 +1,4 @@
+import React from "react";
 export interface IPopover {
     open?: boolean;
     onClose?: () => void;
@@ -7,5 +8,5 @@ export interface IPopover {
  * Popover
  * @author rivertwilight
  */
-declare const _default: ({ children, open, onClose }: IPopover) => JSX.Element;
+declare const _default: ({ children, open, onClose }: IPopover) => React.JSX.Element;
 export default _default;
