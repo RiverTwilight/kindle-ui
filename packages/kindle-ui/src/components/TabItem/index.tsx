@@ -9,11 +9,12 @@ interface ITabItem {
 
 export default styled.div`
 	font-family: AmazonEmber-Rg, sans-serif;
-	display: flex;
+	text-wrap: nowrap;
 	padding: 0 10px;
 	cursor: pointer;
 	color: #888;
 	text-transform: uppercase;
+
 	${hover}
 	border-right: ${border};
 	${(props: ITabItem) =>

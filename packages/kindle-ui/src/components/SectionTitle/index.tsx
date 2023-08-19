@@ -26,12 +26,11 @@ const SectionTitle = ({ label }: ISectionTitle) => {
 const StyledSectionTitle = styled.div`
 	display: flex;
 	align-items: center;
-	gap: .5rem;
+	gap: 0.5rem;
 	padding: 10px 0;
 	font-size: 1.1rem;
 
 	& .text {
-		font-family: AmazonEmber-Rg, sans-serif;
 		text-decoration: none;
 		color: var(--text-color);
 	}

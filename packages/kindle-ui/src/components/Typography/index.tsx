@@ -3,7 +3,7 @@ import styled, { css } from "styled-components";
 
 interface typoStyle {
 	// px
-	lineHeight: number;
+	lineHeight?: number;
 	greyImage?: boolean;
 }
 
@@ -30,7 +30,9 @@ const Typography = styled.article`
 		background-color: var(--text-color);
 		color: var(--bg-color);
 	}
-	a {
+	p > a {
+		text-decoration: underline;
+		cursor: pointer;
 		color: var(--text-color);
 	}
 	blockquote {

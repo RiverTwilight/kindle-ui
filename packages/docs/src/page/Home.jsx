@@ -23,11 +23,11 @@ export default () => {
 					<p>
 						kindle-ui is a <b>react</b> component library inspired
 						by
-						<a>Amazon Kindle reader</a>. Though amazon has released
+						<i>Amazon Kindle reader</i>. Though amazon has released
 						a <u>newer UI</u>, this classic desgin is still
 						valuable.
 					</p>
-					<p>拣尽寒枝不肯栖，寂寞沙洲冷</p>
+					<p>拣尽寒枝不肯栖，寂寞沙洲冷。<a herf="https://zh.wikipedia.org/wiki/%E8%8B%8F%E8%BD%BC">苏轼</a></p>
 					<img width={200} src="/Kindle-UI.png"></img>
 				</Typography>
 				<Typography greyImage={true}>

@@ -1,6 +1,6 @@
 import React from "react";
 interface typoStyle {
-    lineHeight: number;
+    lineHeight?: number;
     greyImage?: boolean;
 }
 interface ITypography extends typoStyle {
