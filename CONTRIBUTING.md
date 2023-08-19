@@ -50,3 +50,7 @@ Open [https://localhost:3000](https://localhost:3000) at your browser and start 
 2. 检查`playground/node_modules/kindle-ui`是否存在并链接到根目录。 如果没有，你可能需要在 `playgrpund` 文件夹中手动运行 `npm i ../ -save`。
 
 3. 如果 1 和 2 都不起作用，打开两个终端，在第一个终端运行`npm run build-watch`，在另一个终端运行`npm run start-playground`。
+
+## Reference
+
+- [YouTube](https://www.youtube.com/watch?v=jsooU1Hgaf4)
