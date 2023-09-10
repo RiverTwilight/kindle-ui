@@ -8,6 +8,7 @@ export interface IDialog {
     open?: boolean;
     onClose?: () => void;
     children?: JSX.Element | JSX.Element[];
+    showCloseButton?: boolean;
 }
-declare const _default: ({ children, anchorEl, open, onClose }: IDialog) => React.JSX.Element;
+declare const _default: ({ children, anchorEl, open, onClose, showCloseButton, }: IDialog) => React.JSX.Element;
 export default _default;

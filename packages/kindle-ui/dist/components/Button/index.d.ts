@@ -4,7 +4,7 @@ import React from "react";
  * @author rivertwilight
  */
 export interface BaseButtonProps {
-    variant?: "outline" | "default";
+    variant?: "outline" | "default" | "secondary";
     component: string | JSX.Element;
     disabled?: boolean;
     children: React.ReactNode;

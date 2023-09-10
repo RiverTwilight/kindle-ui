@@ -1,6 +1,6 @@
 {
 	"name": "kindle-fonts",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "Some fonts used by Amazon kindle e-reader",
 	"main": "index.js",
 	"files": [

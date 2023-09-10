@@ -13,6 +13,7 @@ export { default as Container } from "./components/Container/index";
 export { default as Dialog } from "./components/Dialog/index";
 export { default as DialogAction } from "./components/DialogAction/index";
 export { default as DialogContent } from "./components/DialogContent/index";
+export { default as DialogTitle } from "./components/DialogTitle/index";
 export { default as Grid } from "./components/Grid/index";
 export { default as GridItem } from "./components/GridItem/index";
 export { default as List } from "./components/List/index";

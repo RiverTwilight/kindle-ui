@@ -1,5 +1,11 @@
 import { useState } from "react";
-import { DialogContent, Dialog, DialogAction, Button } from "@kindle-ui/core";
+import {
+	DialogContent,
+	DialogTitle,
+	Dialog,
+	DialogAction,
+	Button,
+} from "@kindle-ui/core";
 
 export default function () {
 	const [open, setOpen] = useState(false);
@@ -19,8 +25,11 @@ export default function () {
 					setOpen(false);
 				}}
 			>
-				<DialogContent>This is a dialog</DialogContent>
-				<DialogAction></DialogAction>
+				<DialogTitle>Device Info</DialogTitle>
+				<DialogContent>One of the reasons that flexbox quickly caught the interest of web developers is that it brought proper alignment capabilities to the web for the first time. It enabled proper vertical alignment, so we can at last easily center a box. In this guide, we will take a thorough look at how the alignment and justificati</DialogContent>
+				<DialogAction>
+					<Button variant="secondary">EMAIL ME</Button>
+				</DialogAction>
 			</Dialog>
 		</>
 	);

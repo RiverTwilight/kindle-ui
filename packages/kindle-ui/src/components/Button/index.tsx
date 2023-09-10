@@ -8,7 +8,7 @@ import hover from "@/utils/hover";
  */
 
 export interface BaseButtonProps {
-	variant?: "outline" | "default";
+	variant?: "outline" | "default" | "secondary";
 	component: string | JSX.Element;
 	disabled?: boolean;
 	children: React.ReactNode;
@@ -73,7 +73,8 @@ const StyledButton = styled.div`
 	outline: 0;
 	background: var(--bg-color);
 
-	font-weight: 600;
+	font-weight: ${(props: NativeButtonProps) =>
+		props.variant === "secondary" ? "500" : "600"};
 	font-size: 1rem;
 	color: var(--text-color);
 	text-decoration: none;
