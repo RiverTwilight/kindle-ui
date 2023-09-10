@@ -27,6 +27,7 @@ const Mask = styled.div`
 
 const StyledPopover = styled.div`
 	z-index: 2;
+	padding: 12px;
 	height: 100%;
 `;
 

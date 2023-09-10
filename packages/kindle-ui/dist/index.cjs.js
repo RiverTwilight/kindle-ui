@@ -106,7 +106,7 @@ var MenuItem$1 = styled__default["default"](MenuItem)(templateObject_1$x || (tem
 var templateObject_1$x;
 
 var Mask = styled__default["default"].div(templateObject_1$w || (templateObject_1$w = __makeTemplateObject(["\n\tposition: fixed;\n\ttop: 0;\n\tleft: 0;\n\tbottom: 0;\n\tright: 0;\n\tdisplay: ", ";\n"], ["\n\tposition: fixed;\n\ttop: 0;\n\tleft: 0;\n\tbottom: 0;\n\tright: 0;\n\tdisplay: ", ";\n"])), function (props) { return (props.show ? "block" : "none"); });
-var StyledPopover = styled__default["default"].div(templateObject_2$4 || (templateObject_2$4 = __makeTemplateObject(["\n\tz-index: 2;\n\theight: 100%;\n"], ["\n\tz-index: 2;\n\theight: 100%;\n"])));
+var StyledPopover = styled__default["default"].div(templateObject_2$4 || (templateObject_2$4 = __makeTemplateObject(["\n\tz-index: 2;\n\tpadding: 12px;\n\theight: 100%;\n"], ["\n\tz-index: 2;\n\tpadding: 12px;\n\theight: 100%;\n"])));
 /**
  * Popover
  * @author rivertwilight
