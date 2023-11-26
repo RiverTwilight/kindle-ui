@@ -49,7 +49,7 @@ typeof SuppressedError === "function" ? SuppressedError : function (error, suppr
     return e.name = "SuppressedError", e.error = error, e.suppressed = suppressed, e;
 };
 
-var index$m = styled.div(templateObject_1$B || (templateObject_1$B = __makeTemplateObject(["\n\tdisplay: flex;\n\theight: 54px;\n\tpadding: 0;\n"], ["\n\tdisplay: flex;\n\theight: 54px;\n\tpadding: 0;\n"])));
+var index$l = styled.div(templateObject_1$B || (templateObject_1$B = __makeTemplateObject(["\n\tdisplay: flex;\n\theight: 54px;\n\tpadding: 0;\n"], ["\n\tdisplay: flex;\n\theight: 54px;\n\tpadding: 0;\n"])));
 var templateObject_1$B;
 
 var hover = css(templateObject_1$A || (templateObject_1$A = __makeTemplateObject(["\n\ttransition: background-color 0.5s;\n\n\t&:hover {\n\t\tbackground-color: var(--text-color);\n\t\tcolor: var(--bg-color) !important;\n\t\ta {\n\t\t\tcolor: var(--bg-color) !important;\n\t\t}\n\t\tsvg path,\n\t\tcircle {\n\t\t\ttransition: stroke 0.5s;\n\t\t\tstroke: var(--bg-color);\n\t\t\tfill: var(--bg-color);\n\t\t}\n\t}\n"], ["\n\ttransition: background-color 0.5s;\n\n\t&:hover {\n\t\tbackground-color: var(--text-color);\n\t\tcolor: var(--bg-color) !important;\n\t\ta {\n\t\t\tcolor: var(--bg-color) !important;\n\t\t}\n\t\tsvg path,\n\t\tcircle {\n\t\t\ttransition: stroke 0.5s;\n\t\t\tstroke: var(--bg-color);\n\t\t\tfill: var(--bg-color);\n\t\t}\n\t}\n"])));
@@ -62,7 +62,7 @@ function ActionItem(props) {
 }
 var templateObject_1$z;
 
-var index$l = styled.div(templateObject_1$y || (templateObject_1$y = __makeTemplateObject(["\n\tdisplay: flex;\n\tbox-sizing: border-box;\n"], ["\n\tdisplay: flex;\n\tbox-sizing: border-box;\n"])));
+var index$k = styled.div(templateObject_1$y || (templateObject_1$y = __makeTemplateObject(["\n\tdisplay: flex;\n\tbox-sizing: border-box;\n"], ["\n\tdisplay: flex;\n\tbox-sizing: border-box;\n"])));
 var templateObject_1$y;
 
 /**
@@ -84,7 +84,7 @@ var StyledPopover = styled.div(templateObject_2$4 || (templateObject_2$4 = __mak
  * Popover
  * @author rivertwilight
  */
-var Popover = (function (_a) {
+function Popover(_a) {
     var children = _a.children, open = _a.open, onClose = _a.onClose;
     var mask = useRef();
     var handleMouseDown = function (event) {
@@ -113,7 +113,7 @@ var Popover = (function (_a) {
     return (React__default.createElement(React__default.Fragment, null,
         React__default.createElement(Mask, { onClick: handleClickMask, show: open, ref: mask },
             React__default.createElement(StyledPopover, { onMouseDown: handleMouseDown }, childrenWithProps))));
-});
+}
 var templateObject_1$w, templateObject_2$4;
 
 /**
@@ -167,7 +167,7 @@ function SvgEllipsisVertical(props) {
   })));
 }
 
-var index$k = (function (_a) {
+var index$j = (function (_a) {
     var items = _a.items;
     var _b = useState(null), anchorEl = _b[0], setAnchorEl = _b[1];
     var handleClick = function (event) {
@@ -183,10 +183,10 @@ var index$k = (function (_a) {
             items.map(function (item, i) { return (React__default.createElement(MenuItem$1, __assign({ key: i + item.textPrimary }, item))); }))));
 });
 
-var index$j = styled.div(templateObject_1$u || (templateObject_1$u = __makeTemplateObject(["\n\tflex: 2 4 auto;\n\twidth: 10px;\n"], ["\n\tflex: 2 4 auto;\n\twidth: 10px;\n"])));
+var index$i = styled.div(templateObject_1$u || (templateObject_1$u = __makeTemplateObject(["\n\tflex: 2 4 auto;\n\twidth: 10px;\n"], ["\n\tflex: 2 4 auto;\n\twidth: 10px;\n"])));
 var templateObject_1$u;
 
-var index$i = (function (_a) {
+var index$h = (function (_a) {
     var children = _a.children, className = _a.className, _b = _a.variant, variant = _b === void 0 ? "default" : _b, _c = _a.component, component = _c === void 0 ? "button" : _c, _d = _a.LinkComponent, LinkComponent = _d === void 0 ? "a" : _d, disabled = _a.disabled, type = _a.type, other = __rest(_a, ["children", "className", "variant", "component", "LinkComponent", "disabled", "type"]);
     var ComponentProp = component;
     if (ComponentProp === "button" && (other.href || other.to)) {
@@ -218,26 +218,26 @@ var border = css(templateObject_1$s || (templateObject_1$s = __makeTemplateObjec
 var templateObject_1$s;
 
 // TODO rich content
-var index$h = styled.div(templateObject_1$r || (templateObject_1$r = __makeTemplateObject(["\n\tborder: ", ";\n\tborder-radius: 7px;\n\tpadding: 10px;\n"], ["\n\tborder: ", ";\n\tborder-radius: 7px;\n\tpadding: 10px;\n"])), border);
+var index$g = styled.div(templateObject_1$r || (templateObject_1$r = __makeTemplateObject(["\n\tborder: ", ";\n\tborder-radius: 7px;\n\tpadding: 10px;\n"], ["\n\tborder: ", ";\n\tborder-radius: 7px;\n\tpadding: 10px;\n"])), border);
 var templateObject_1$r;
 
 var greyImage$1 = css(templateObject_1$q || (templateObject_1$q = __makeTemplateObject(["\n\t-webkit-filter: grayscale(100%);\n\t-moz-filter: grayscale(100%);\n\t-ms-filter: grayscale(100%);\n\t-o-filter: grayscale(100%);\n\tfilter: grayscale(100%);\n\tfilter: gray;\n"], ["\n\t-webkit-filter: grayscale(100%);\n\t-moz-filter: grayscale(100%);\n\t-ms-filter: grayscale(100%);\n\t-o-filter: grayscale(100%);\n\tfilter: grayscale(100%);\n\tfilter: gray;\n"])));
 var templateObject_1$q;
 
-var index$g = styled.div(templateObject_1$p || (templateObject_1$p = __makeTemplateObject(["\n\tflex: 0 0 33.33333333%;\n\tmax-height: 200px;\n\tmargin-right: 16px;\n\timg {\n\t\t", "\n\t\tobject-fit: cover;\n\t\theight: 100%;\n\t\twidth: 100%;\n\t\tborder-radius: 3px;\n\t}\n"], ["\n\tflex: 0 0 33.33333333%;\n\tmax-height: 200px;\n\tmargin-right: 16px;\n\timg {\n\t\t", "\n\t\tobject-fit: cover;\n\t\theight: 100%;\n\t\twidth: 100%;\n\t\tborder-radius: 3px;\n\t}\n"])), greyImage$1);
+var index$f = styled.div(templateObject_1$p || (templateObject_1$p = __makeTemplateObject(["\n\tflex: 0 0 33.33333333%;\n\tmax-height: 200px;\n\tmargin-right: 16px;\n\timg {\n\t\t", "\n\t\tobject-fit: cover;\n\t\theight: 100%;\n\t\twidth: 100%;\n\t\tborder-radius: 3px;\n\t}\n"], ["\n\tflex: 0 0 33.33333333%;\n\tmax-height: 200px;\n\tmargin-right: 16px;\n\timg {\n\t\t", "\n\t\tobject-fit: cover;\n\t\theight: 100%;\n\t\twidth: 100%;\n\t\tborder-radius: 3px;\n\t}\n"])), greyImage$1);
 var templateObject_1$p;
 
-var index$f = styled.div(templateObject_1$o || (templateObject_1$o = __makeTemplateObject(["\n\tdisplay: flex;\n\trow-gap: 8px;\n\tfont-family: AmazonEmber-Rg, sans-serif;\n"], ["\n\tdisplay: flex;\n\trow-gap: 8px;\n\tfont-family: AmazonEmber-Rg, sans-serif;\n"])));
+var index$e = styled.div(templateObject_1$o || (templateObject_1$o = __makeTemplateObject(["\n\tdisplay: flex;\n\trow-gap: 8px;\n\tfont-family: AmazonEmber-Rg, sans-serif;\n"], ["\n\tdisplay: flex;\n\trow-gap: 8px;\n\tfont-family: AmazonEmber-Rg, sans-serif;\n"])));
 var templateObject_1$o;
 
-var index$e = styled.div(templateObject_1$n || (templateObject_1$n = __makeTemplateObject(["\n\tfont-size: 1.5rem;\n\tfont-weight: 500;\n\tmargin-bottom: 10px;\n"], ["\n\tfont-size: 1.5rem;\n\tfont-weight: 500;\n\tmargin-bottom: 10px;\n"])));
+var index$d = styled.div(templateObject_1$n || (templateObject_1$n = __makeTemplateObject(["\n\tfont-size: 1.5rem;\n\tfont-weight: 500;\n\tmargin-bottom: 10px;\n"], ["\n\tfont-size: 1.5rem;\n\tfont-weight: 500;\n\tmargin-bottom: 10px;\n"])));
 var templateObject_1$n;
 
 /**
  * Card Content
  * // FIXME Button Layout Problem
  */
-var index$d = styled.div(templateObject_1$m || (templateObject_1$m = __makeTemplateObject(["\n\tpadding: 10px 10px 0 10px;\n\tdisplay: flex;\n\tflex-direction: row-reverse;\n"], ["\n\tpadding: 10px 10px 0 10px;\n\tdisplay: flex;\n\tflex-direction: row-reverse;\n"])));
+var index$c = styled.div(templateObject_1$m || (templateObject_1$m = __makeTemplateObject(["\n\tpadding: 10px 10px 0 10px;\n\tdisplay: flex;\n\tflex-direction: row-reverse;\n"], ["\n\tpadding: 10px 10px 0 10px;\n\tdisplay: flex;\n\tflex-direction: row-reverse;\n"])));
 var templateObject_1$m;
 
 var StyledContainer$1 = styled.div(templateObject_1$l || (templateObject_1$l = __makeTemplateObject(["\n\tmargin: 0;\n\tfont-family: \"Amazon Ember\", \"Bookerly\";\n\n\t--text-color-secondary: #9d9797;\n\t", ";\n"], ["\n\tmargin: 0;\n\tfont-family: \"Amazon Ember\", \"Bookerly\";\n\n\t--text-color-secondary: #9d9797;\n\t", ";\n"])), function (props) {
@@ -256,17 +256,35 @@ var Container$1 = function (_a) {
 };
 var templateObject_1$l;
 
-var StyledDialog = styled.div(templateObject_1$k || (templateObject_1$k = __makeTemplateObject(["\n\tpadding: 1.8rem 1.4rem;\n\tborder: 3px solid var(--text-color);\n\tbackground: var(--bg-color);\n\tborder-radius: 6px;\n\tposition: fixed;\n\tleft: 50%;\n\ttop: 50%;\n\ttransform: translate(-50%, -50%);\n\tmax-width: 400px;\n\tmin-width: 250px;\n\tz-index: 1001;\n\tposition: relative;\n"], ["\n\tpadding: 1.8rem 1.4rem;\n\tborder: 3px solid var(--text-color);\n\tbackground: var(--bg-color);\n\tborder-radius: 6px;\n\tposition: fixed;\n\tleft: 50%;\n\ttop: 50%;\n\ttransform: translate(-50%, -50%);\n\tmax-width: 400px;\n\tmin-width: 250px;\n\tz-index: 1001;\n\tposition: relative;\n"])));
+var StyledDialog = styled.div(templateObject_1$k || (templateObject_1$k = __makeTemplateObject(["\n\tpadding: 1.8rem 1.4rem;\n\tborder: 3px solid var(--text-color);\n\tbackground: var(--bg-color);\n\tborder-radius: 6px;\n\tposition: fixed;\n\tmax-width: 400px;\n\tmin-width: 250px;\n\tz-index: 1001;\n\tposition: relative;\n\t// Removed hardcoded centering styles\n"], ["\n\tpadding: 1.8rem 1.4rem;\n\tborder: 3px solid var(--text-color);\n\tbackground: var(--bg-color);\n\tborder-radius: 6px;\n\tposition: fixed;\n\tmax-width: 400px;\n\tmin-width: 250px;\n\tz-index: 1001;\n\tposition: relative;\n\t// Removed hardcoded centering styles\n"])));
 var StyledCloseButton = styled.button(templateObject_2$3 || (templateObject_2$3 = __makeTemplateObject(["\n\t", "\n\tbackground: none;\n\tborder: none;\n\theight: 34px;\n\twidth: 34px;\n\ttop: 1.6rem;\n\tright: 1.8rem;\n\tposition: absolute;\n\tdisplay: flex;\n\tjustify-content: center;\n\tpadding: 0;\n"], ["\n\t", "\n\tbackground: none;\n\tborder: none;\n\theight: 34px;\n\twidth: 34px;\n\ttop: 1.6rem;\n\tright: 1.8rem;\n\tposition: absolute;\n\tdisplay: flex;\n\tjustify-content: center;\n\tpadding: 0;\n"])), hover);
-var index$c = (function (_a) {
-    var children = _a.children; _a.anchorEl; var open = _a.open, onClose = _a.onClose, _b = _a.showCloseButton, showCloseButton = _b === void 0 ? true : _b;
+function Dialog(_a) {
+    var children = _a.children, anchorEl = _a.anchorEl, open = _a.open, onClose = _a.onClose, _b = _a.showCloseButton, showCloseButton = _b === void 0 ? true : _b;
+    var _c = useState({}), dialogStyle = _c[0], setDialogStyle = _c[1];
+    useEffect(function () {
+        if (anchorEl) {
+            var rect = anchorEl.getBoundingClientRect();
+            setDialogStyle({
+                left: rect.left + rect.width / 2 + window.scrollX,
+                top: rect.top + rect.height / 2 + window.scrollY,
+                transform: "translate(-50%, -50%)",
+            });
+        }
+        else {
+            setDialogStyle({
+                left: "50%",
+                top: "50%",
+                transform: "translate(-50%, -50%)",
+            });
+        }
+    }, [anchorEl, open]);
     return (React__default.createElement(Popover, { open: open, onClose: onClose },
-        React__default.createElement(StyledDialog, null,
+        React__default.createElement(StyledDialog, { style: dialogStyle },
             children,
             showCloseButton && (React__default.createElement(StyledCloseButton, { onClick: onClose },
                 React__default.createElement("svg", { xmlns: "http://www.w3.org/2000/svg", height: "34", viewBox: "0 -960 960 960", width: "34" },
                     React__default.createElement("path", { d: "m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" })))))));
-});
+}
 var templateObject_1$k, templateObject_2$3;
 
 var index$b = styled.div(templateObject_1$j || (templateObject_1$j = __makeTemplateObject(["\n\tdisplay: flex;\n\tflex-direction: row-reverse;\n"], ["\n\tdisplay: flex;\n\tflex-direction: row-reverse;\n"])));
@@ -524,9 +542,9 @@ var templateObject_1$4;
 var index$2 = styled.div(templateObject_1$3 || (templateObject_1$3 = __makeTemplateObject(["\n\tdisplay: flex;\n    padding: 10px 5px;\n    overflow-x: auto;\n"], ["\n\tdisplay: flex;\n    padding: 10px 5px;\n    overflow-x: auto;\n"])));
 var templateObject_1$3;
 
-var index$1 = styled.div(templateObject_1$2 || (templateObject_1$2 = __makeTemplateObject(["\n\tfont-family: AmazonEmber-Rg, sans-serif;\n\ttext-wrap: nowrap;\n\tpadding: 0 10px;\n\tcursor: pointer;\n\tcolor: #888;\n\ttext-transform: uppercase;\n\n\t", "\n\tborder-right: ", ";\n\t", "\n\t&:last-child {\n\t\tborder-right: none;\n\t}\n"], ["\n\tfont-family: AmazonEmber-Rg, sans-serif;\n\ttext-wrap: nowrap;\n\tpadding: 0 10px;\n\tcursor: pointer;\n\tcolor: #888;\n\ttext-transform: uppercase;\n\n\t", "\n\tborder-right: ", ";\n\t", "\n\t&:last-child {\n\t\tborder-right: none;\n\t}\n"])), hover, border, function (props) {
+var index$1 = styled.div(templateObject_1$2 || (templateObject_1$2 = __makeTemplateObject(["\n\tfont-family: AmazonEmber-Rg, sans-serif;\n\twhite-space: nowrap; // Corrected property\n\tpadding: 0 10px;\n\tcursor: pointer;\n\tcolor: #888;\n\ttext-transform: uppercase;\n\n\t", "\n\tborder-right: ", ";\n\t", "\n\t&:last-child {\n\t\tborder-right: none;\n\t}\n"], ["\n\tfont-family: AmazonEmber-Rg, sans-serif;\n\twhite-space: nowrap; // Corrected property\n\tpadding: 0 10px;\n\tcursor: pointer;\n\tcolor: #888;\n\ttext-transform: uppercase;\n\n\t", "\n\tborder-right: ", ";\n\t", "\n\t&:last-child {\n\t\tborder-right: none;\n\t}\n"])), hover, border, function (props) {
     return props.active &&
-        "\n        font-weight: 700;\n        color: var(--text-color);\n        ";
+        "\n      font-weight: 700;\n      color: var(--text-color);\n    ";
 });
 var templateObject_1$2;
 
@@ -715,4 +733,4 @@ if (ENV !== "production" &&
         "please use https://www.npmjs.com/package/babel-plugin-import to reduce app bundle size.");
 }
 
-export { index$m as ActionBar, index$k as ActionBarMenu, index$j as ActionBarSpace, index$l as ActionGroup, ActionItem, SvgAirplane as AirplaneIcon, SvgArrowBackSharp as ArrowBackSharpIcon, SvgBatteryFull as BatteryFullIcon, SvgBatteryHalfSharp as BatteryHalfSharpIcon, index$i as Button, index$h as Card, index$d as CardAction, index$f as CardContent, index$g as CardMedia, index$e as CardTitle, SvgCellularSharp as CelluarIcon, SvgCogSharp as CogSharpIcon, Container$1 as Container, index$c as Dialog, index$b as DialogAction, index$a as DialogContent, index$9 as DialogTitle, SvgEllipsisVerticalCircleSharp as EllipsisVerticalCircleSharpIcon, SvgEllipsisVertical as EllipsisVerticalIcon, Grid, StyledGridItem as GridItem, SvgHomeOutline as HomeOutlineIcon, Container as KindleOasis, List, StyledListItem$1 as ListItem, StyledListItemIcon as ListItemIcon, index$7 as ListItemText, Menu$1 as Menu, index$6 as Navbar, index$4 as SearchBar, index$3 as Section, SectionTitle, index$5 as StatuBar, StyledListItem as Switch, index$2 as Tab, index$1 as TabItem, index as TimeBar, index$8 as Typography, SvgWifiSharp as WifiSharpIcon };
+export { index$l as ActionBar, index$j as ActionBarMenu, index$i as ActionBarSpace, index$k as ActionGroup, ActionItem, SvgAirplane as AirplaneIcon, SvgArrowBackSharp as ArrowBackSharpIcon, SvgBatteryFull as BatteryFullIcon, SvgBatteryHalfSharp as BatteryHalfSharpIcon, index$h as Button, index$g as Card, index$c as CardAction, index$e as CardContent, index$f as CardMedia, index$d as CardTitle, SvgCellularSharp as CelluarIcon, SvgCogSharp as CogSharpIcon, Container$1 as Container, Dialog, index$b as DialogAction, index$a as DialogContent, index$9 as DialogTitle, SvgEllipsisVerticalCircleSharp as EllipsisVerticalCircleSharpIcon, SvgEllipsisVertical as EllipsisVerticalIcon, Grid, StyledGridItem as GridItem, SvgHomeOutline as HomeOutlineIcon, Container as KindleOasis, List, StyledListItem$1 as ListItem, StyledListItemIcon as ListItemIcon, index$7 as ListItemText, Menu$1 as Menu, index$6 as Navbar, index$4 as SearchBar, index$3 as Section, SectionTitle, index$5 as StatuBar, StyledListItem as Switch, index$2 as Tab, index$1 as TabItem, index as TimeBar, index$8 as Typography, SvgWifiSharp as WifiSharpIcon };

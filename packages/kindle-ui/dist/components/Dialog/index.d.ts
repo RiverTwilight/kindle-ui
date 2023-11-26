@@ -10,5 +10,4 @@ export interface IDialog {
     children?: JSX.Element | JSX.Element[];
     showCloseButton?: boolean;
 }
-declare const _default: ({ children, anchorEl, open, onClose, showCloseButton, }: IDialog) => React.JSX.Element;
-export default _default;
+export default function Dialog({ children, anchorEl, open, onClose, showCloseButton, }: IDialog): React.JSX.Element;

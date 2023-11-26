@@ -7,7 +7,7 @@ export interface IPopover {
 	children?: JSX.Element | JSX.Element[];
 }
 
-const Popover = ({ children, className }: any) => (
+const PopoverInner = ({ children, className }: any) => (
 	<div className={className}>{children}</div>
 );
 
@@ -35,7 +35,7 @@ const StyledPopover = styled.div`
  * Popover
  * @author rivertwilight
  */
-export default ({ children, open, onClose }: IPopover) => {
+export default function Popover({ children, open, onClose }: IPopover) {
 	const mask = useRef();
 
 	const handleMouseDown = (event) => {
@@ -76,4 +76,4 @@ export default ({ children, open, onClose }: IPopover) => {
 			</Mask>
 		</>
 	);
-};
+}

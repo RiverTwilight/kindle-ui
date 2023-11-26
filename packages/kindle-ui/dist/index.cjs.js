@@ -76,7 +76,7 @@ typeof SuppressedError === "function" ? SuppressedError : function (error, suppr
     return e.name = "SuppressedError", e.error = error, e.suppressed = suppressed, e;
 };
 
-var index$m = styled__default["default"].div(templateObject_1$B || (templateObject_1$B = __makeTemplateObject(["\n\tdisplay: flex;\n\theight: 54px;\n\tpadding: 0;\n"], ["\n\tdisplay: flex;\n\theight: 54px;\n\tpadding: 0;\n"])));
+var index$l = styled__default["default"].div(templateObject_1$B || (templateObject_1$B = __makeTemplateObject(["\n\tdisplay: flex;\n\theight: 54px;\n\tpadding: 0;\n"], ["\n\tdisplay: flex;\n\theight: 54px;\n\tpadding: 0;\n"])));
 var templateObject_1$B;
 
 var hover = styled.css(templateObject_1$A || (templateObject_1$A = __makeTemplateObject(["\n\ttransition: background-color 0.5s;\n\n\t&:hover {\n\t\tbackground-color: var(--text-color);\n\t\tcolor: var(--bg-color) !important;\n\t\ta {\n\t\t\tcolor: var(--bg-color) !important;\n\t\t}\n\t\tsvg path,\n\t\tcircle {\n\t\t\ttransition: stroke 0.5s;\n\t\t\tstroke: var(--bg-color);\n\t\t\tfill: var(--bg-color);\n\t\t}\n\t}\n"], ["\n\ttransition: background-color 0.5s;\n\n\t&:hover {\n\t\tbackground-color: var(--text-color);\n\t\tcolor: var(--bg-color) !important;\n\t\ta {\n\t\t\tcolor: var(--bg-color) !important;\n\t\t}\n\t\tsvg path,\n\t\tcircle {\n\t\t\ttransition: stroke 0.5s;\n\t\t\tstroke: var(--bg-color);\n\t\t\tfill: var(--bg-color);\n\t\t}\n\t}\n"])));
@@ -89,7 +89,7 @@ function ActionItem(props) {
 }
 var templateObject_1$z;
 
-var index$l = styled__default["default"].div(templateObject_1$y || (templateObject_1$y = __makeTemplateObject(["\n\tdisplay: flex;\n\tbox-sizing: border-box;\n"], ["\n\tdisplay: flex;\n\tbox-sizing: border-box;\n"])));
+var index$k = styled__default["default"].div(templateObject_1$y || (templateObject_1$y = __makeTemplateObject(["\n\tdisplay: flex;\n\tbox-sizing: border-box;\n"], ["\n\tdisplay: flex;\n\tbox-sizing: border-box;\n"])));
 var templateObject_1$y;
 
 /**
@@ -111,7 +111,7 @@ var StyledPopover = styled__default["default"].div(templateObject_2$4 || (templa
  * Popover
  * @author rivertwilight
  */
-var Popover = (function (_a) {
+function Popover(_a) {
     var children = _a.children, open = _a.open, onClose = _a.onClose;
     var mask = React.useRef();
     var handleMouseDown = function (event) {
@@ -140,7 +140,7 @@ var Popover = (function (_a) {
     return (React__default["default"].createElement(React__default["default"].Fragment, null,
         React__default["default"].createElement(Mask, { onClick: handleClickMask, show: open, ref: mask },
             React__default["default"].createElement(StyledPopover, { onMouseDown: handleMouseDown }, childrenWithProps))));
-});
+}
 var templateObject_1$w, templateObject_2$4;
 
 /**
@@ -194,7 +194,7 @@ function SvgEllipsisVertical(props) {
   })));
 }
 
-var index$k = (function (_a) {
+var index$j = (function (_a) {
     var items = _a.items;
     var _b = React.useState(null), anchorEl = _b[0], setAnchorEl = _b[1];
     var handleClick = function (event) {
@@ -210,10 +210,10 @@ var index$k = (function (_a) {
             items.map(function (item, i) { return (React__default["default"].createElement(MenuItem$1, __assign({ key: i + item.textPrimary }, item))); }))));
 });
 
-var index$j = styled__default["default"].div(templateObject_1$u || (templateObject_1$u = __makeTemplateObject(["\n\tflex: 2 4 auto;\n\twidth: 10px;\n"], ["\n\tflex: 2 4 auto;\n\twidth: 10px;\n"])));
+var index$i = styled__default["default"].div(templateObject_1$u || (templateObject_1$u = __makeTemplateObject(["\n\tflex: 2 4 auto;\n\twidth: 10px;\n"], ["\n\tflex: 2 4 auto;\n\twidth: 10px;\n"])));
 var templateObject_1$u;
 
-var index$i = (function (_a) {
+var index$h = (function (_a) {
     var children = _a.children, className = _a.className, _b = _a.variant, variant = _b === void 0 ? "default" : _b, _c = _a.component, component = _c === void 0 ? "button" : _c, _d = _a.LinkComponent, LinkComponent = _d === void 0 ? "a" : _d, disabled = _a.disabled, type = _a.type, other = __rest(_a, ["children", "className", "variant", "component", "LinkComponent", "disabled", "type"]);
     var ComponentProp = component;
     if (ComponentProp === "button" && (other.href || other.to)) {
@@ -245,26 +245,26 @@ var border = styled.css(templateObject_1$s || (templateObject_1$s = __makeTempla
 var templateObject_1$s;
 
 // TODO rich content
-var index$h = styled__default["default"].div(templateObject_1$r || (templateObject_1$r = __makeTemplateObject(["\n\tborder: ", ";\n\tborder-radius: 7px;\n\tpadding: 10px;\n"], ["\n\tborder: ", ";\n\tborder-radius: 7px;\n\tpadding: 10px;\n"])), border);
+var index$g = styled__default["default"].div(templateObject_1$r || (templateObject_1$r = __makeTemplateObject(["\n\tborder: ", ";\n\tborder-radius: 7px;\n\tpadding: 10px;\n"], ["\n\tborder: ", ";\n\tborder-radius: 7px;\n\tpadding: 10px;\n"])), border);
 var templateObject_1$r;
 
 var greyImage$1 = styled.css(templateObject_1$q || (templateObject_1$q = __makeTemplateObject(["\n\t-webkit-filter: grayscale(100%);\n\t-moz-filter: grayscale(100%);\n\t-ms-filter: grayscale(100%);\n\t-o-filter: grayscale(100%);\n\tfilter: grayscale(100%);\n\tfilter: gray;\n"], ["\n\t-webkit-filter: grayscale(100%);\n\t-moz-filter: grayscale(100%);\n\t-ms-filter: grayscale(100%);\n\t-o-filter: grayscale(100%);\n\tfilter: grayscale(100%);\n\tfilter: gray;\n"])));
 var templateObject_1$q;
 
-var index$g = styled__default["default"].div(templateObject_1$p || (templateObject_1$p = __makeTemplateObject(["\n\tflex: 0 0 33.33333333%;\n\tmax-height: 200px;\n\tmargin-right: 16px;\n\timg {\n\t\t", "\n\t\tobject-fit: cover;\n\t\theight: 100%;\n\t\twidth: 100%;\n\t\tborder-radius: 3px;\n\t}\n"], ["\n\tflex: 0 0 33.33333333%;\n\tmax-height: 200px;\n\tmargin-right: 16px;\n\timg {\n\t\t", "\n\t\tobject-fit: cover;\n\t\theight: 100%;\n\t\twidth: 100%;\n\t\tborder-radius: 3px;\n\t}\n"])), greyImage$1);
+var index$f = styled__default["default"].div(templateObject_1$p || (templateObject_1$p = __makeTemplateObject(["\n\tflex: 0 0 33.33333333%;\n\tmax-height: 200px;\n\tmargin-right: 16px;\n\timg {\n\t\t", "\n\t\tobject-fit: cover;\n\t\theight: 100%;\n\t\twidth: 100%;\n\t\tborder-radius: 3px;\n\t}\n"], ["\n\tflex: 0 0 33.33333333%;\n\tmax-height: 200px;\n\tmargin-right: 16px;\n\timg {\n\t\t", "\n\t\tobject-fit: cover;\n\t\theight: 100%;\n\t\twidth: 100%;\n\t\tborder-radius: 3px;\n\t}\n"])), greyImage$1);
 var templateObject_1$p;
 
-var index$f = styled__default["default"].div(templateObject_1$o || (templateObject_1$o = __makeTemplateObject(["\n\tdisplay: flex;\n\trow-gap: 8px;\n\tfont-family: AmazonEmber-Rg, sans-serif;\n"], ["\n\tdisplay: flex;\n\trow-gap: 8px;\n\tfont-family: AmazonEmber-Rg, sans-serif;\n"])));
+var index$e = styled__default["default"].div(templateObject_1$o || (templateObject_1$o = __makeTemplateObject(["\n\tdisplay: flex;\n\trow-gap: 8px;\n\tfont-family: AmazonEmber-Rg, sans-serif;\n"], ["\n\tdisplay: flex;\n\trow-gap: 8px;\n\tfont-family: AmazonEmber-Rg, sans-serif;\n"])));
 var templateObject_1$o;
 
-var index$e = styled__default["default"].div(templateObject_1$n || (templateObject_1$n = __makeTemplateObject(["\n\tfont-size: 1.5rem;\n\tfont-weight: 500;\n\tmargin-bottom: 10px;\n"], ["\n\tfont-size: 1.5rem;\n\tfont-weight: 500;\n\tmargin-bottom: 10px;\n"])));
+var index$d = styled__default["default"].div(templateObject_1$n || (templateObject_1$n = __makeTemplateObject(["\n\tfont-size: 1.5rem;\n\tfont-weight: 500;\n\tmargin-bottom: 10px;\n"], ["\n\tfont-size: 1.5rem;\n\tfont-weight: 500;\n\tmargin-bottom: 10px;\n"])));
 var templateObject_1$n;
 
 /**
  * Card Content
  * // FIXME Button Layout Problem
  */
-var index$d = styled__default["default"].div(templateObject_1$m || (templateObject_1$m = __makeTemplateObject(["\n\tpadding: 10px 10px 0 10px;\n\tdisplay: flex;\n\tflex-direction: row-reverse;\n"], ["\n\tpadding: 10px 10px 0 10px;\n\tdisplay: flex;\n\tflex-direction: row-reverse;\n"])));
+var index$c = styled__default["default"].div(templateObject_1$m || (templateObject_1$m = __makeTemplateObject(["\n\tpadding: 10px 10px 0 10px;\n\tdisplay: flex;\n\tflex-direction: row-reverse;\n"], ["\n\tpadding: 10px 10px 0 10px;\n\tdisplay: flex;\n\tflex-direction: row-reverse;\n"])));
 var templateObject_1$m;
 
 var StyledContainer$1 = styled__default["default"].div(templateObject_1$l || (templateObject_1$l = __makeTemplateObject(["\n\tmargin: 0;\n\tfont-family: \"Amazon Ember\", \"Bookerly\";\n\n\t--text-color-secondary: #9d9797;\n\t", ";\n"], ["\n\tmargin: 0;\n\tfont-family: \"Amazon Ember\", \"Bookerly\";\n\n\t--text-color-secondary: #9d9797;\n\t", ";\n"])), function (props) {
@@ -283,17 +283,35 @@ var Container$1 = function (_a) {
 };
 var templateObject_1$l;
 
-var StyledDialog = styled__default["default"].div(templateObject_1$k || (templateObject_1$k = __makeTemplateObject(["\n\tpadding: 1.8rem 1.4rem;\n\tborder: 3px solid var(--text-color);\n\tbackground: var(--bg-color);\n\tborder-radius: 6px;\n\tposition: fixed;\n\tleft: 50%;\n\ttop: 50%;\n\ttransform: translate(-50%, -50%);\n\tmax-width: 400px;\n\tmin-width: 250px;\n\tz-index: 1001;\n\tposition: relative;\n"], ["\n\tpadding: 1.8rem 1.4rem;\n\tborder: 3px solid var(--text-color);\n\tbackground: var(--bg-color);\n\tborder-radius: 6px;\n\tposition: fixed;\n\tleft: 50%;\n\ttop: 50%;\n\ttransform: translate(-50%, -50%);\n\tmax-width: 400px;\n\tmin-width: 250px;\n\tz-index: 1001;\n\tposition: relative;\n"])));
+var StyledDialog = styled__default["default"].div(templateObject_1$k || (templateObject_1$k = __makeTemplateObject(["\n\tpadding: 1.8rem 1.4rem;\n\tborder: 3px solid var(--text-color);\n\tbackground: var(--bg-color);\n\tborder-radius: 6px;\n\tposition: fixed;\n\tmax-width: 400px;\n\tmin-width: 250px;\n\tz-index: 1001;\n\tposition: relative;\n\t// Removed hardcoded centering styles\n"], ["\n\tpadding: 1.8rem 1.4rem;\n\tborder: 3px solid var(--text-color);\n\tbackground: var(--bg-color);\n\tborder-radius: 6px;\n\tposition: fixed;\n\tmax-width: 400px;\n\tmin-width: 250px;\n\tz-index: 1001;\n\tposition: relative;\n\t// Removed hardcoded centering styles\n"])));
 var StyledCloseButton = styled__default["default"].button(templateObject_2$3 || (templateObject_2$3 = __makeTemplateObject(["\n\t", "\n\tbackground: none;\n\tborder: none;\n\theight: 34px;\n\twidth: 34px;\n\ttop: 1.6rem;\n\tright: 1.8rem;\n\tposition: absolute;\n\tdisplay: flex;\n\tjustify-content: center;\n\tpadding: 0;\n"], ["\n\t", "\n\tbackground: none;\n\tborder: none;\n\theight: 34px;\n\twidth: 34px;\n\ttop: 1.6rem;\n\tright: 1.8rem;\n\tposition: absolute;\n\tdisplay: flex;\n\tjustify-content: center;\n\tpadding: 0;\n"])), hover);
-var index$c = (function (_a) {
-    var children = _a.children; _a.anchorEl; var open = _a.open, onClose = _a.onClose, _b = _a.showCloseButton, showCloseButton = _b === void 0 ? true : _b;
+function Dialog(_a) {
+    var children = _a.children, anchorEl = _a.anchorEl, open = _a.open, onClose = _a.onClose, _b = _a.showCloseButton, showCloseButton = _b === void 0 ? true : _b;
+    var _c = React.useState({}), dialogStyle = _c[0], setDialogStyle = _c[1];
+    React.useEffect(function () {
+        if (anchorEl) {
+            var rect = anchorEl.getBoundingClientRect();
+            setDialogStyle({
+                left: rect.left + rect.width / 2 + window.scrollX,
+                top: rect.top + rect.height / 2 + window.scrollY,
+                transform: "translate(-50%, -50%)",
+            });
+        }
+        else {
+            setDialogStyle({
+                left: "50%",
+                top: "50%",
+                transform: "translate(-50%, -50%)",
+            });
+        }
+    }, [anchorEl, open]);
     return (React__default["default"].createElement(Popover, { open: open, onClose: onClose },
-        React__default["default"].createElement(StyledDialog, null,
+        React__default["default"].createElement(StyledDialog, { style: dialogStyle },
             children,
             showCloseButton && (React__default["default"].createElement(StyledCloseButton, { onClick: onClose },
                 React__default["default"].createElement("svg", { xmlns: "http://www.w3.org/2000/svg", height: "34", viewBox: "0 -960 960 960", width: "34" },
                     React__default["default"].createElement("path", { d: "m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" })))))));
-});
+}
 var templateObject_1$k, templateObject_2$3;
 
 var index$b = styled__default["default"].div(templateObject_1$j || (templateObject_1$j = __makeTemplateObject(["\n\tdisplay: flex;\n\tflex-direction: row-reverse;\n"], ["\n\tdisplay: flex;\n\tflex-direction: row-reverse;\n"])));
@@ -551,9 +569,9 @@ var templateObject_1$4;
 var index$2 = styled__default["default"].div(templateObject_1$3 || (templateObject_1$3 = __makeTemplateObject(["\n\tdisplay: flex;\n    padding: 10px 5px;\n    overflow-x: auto;\n"], ["\n\tdisplay: flex;\n    padding: 10px 5px;\n    overflow-x: auto;\n"])));
 var templateObject_1$3;
 
-var index$1 = styled__default["default"].div(templateObject_1$2 || (templateObject_1$2 = __makeTemplateObject(["\n\tfont-family: AmazonEmber-Rg, sans-serif;\n\ttext-wrap: nowrap;\n\tpadding: 0 10px;\n\tcursor: pointer;\n\tcolor: #888;\n\ttext-transform: uppercase;\n\n\t", "\n\tborder-right: ", ";\n\t", "\n\t&:last-child {\n\t\tborder-right: none;\n\t}\n"], ["\n\tfont-family: AmazonEmber-Rg, sans-serif;\n\ttext-wrap: nowrap;\n\tpadding: 0 10px;\n\tcursor: pointer;\n\tcolor: #888;\n\ttext-transform: uppercase;\n\n\t", "\n\tborder-right: ", ";\n\t", "\n\t&:last-child {\n\t\tborder-right: none;\n\t}\n"])), hover, border, function (props) {
+var index$1 = styled__default["default"].div(templateObject_1$2 || (templateObject_1$2 = __makeTemplateObject(["\n\tfont-family: AmazonEmber-Rg, sans-serif;\n\twhite-space: nowrap; // Corrected property\n\tpadding: 0 10px;\n\tcursor: pointer;\n\tcolor: #888;\n\ttext-transform: uppercase;\n\n\t", "\n\tborder-right: ", ";\n\t", "\n\t&:last-child {\n\t\tborder-right: none;\n\t}\n"], ["\n\tfont-family: AmazonEmber-Rg, sans-serif;\n\twhite-space: nowrap; // Corrected property\n\tpadding: 0 10px;\n\tcursor: pointer;\n\tcolor: #888;\n\ttext-transform: uppercase;\n\n\t", "\n\tborder-right: ", ";\n\t", "\n\t&:last-child {\n\t\tborder-right: none;\n\t}\n"])), hover, border, function (props) {
     return props.active &&
-        "\n        font-weight: 700;\n        color: var(--text-color);\n        ";
+        "\n      font-weight: 700;\n      color: var(--text-color);\n    ";
 });
 var templateObject_1$2;
 
@@ -742,25 +760,25 @@ if (ENV !== "production" &&
         "please use https://www.npmjs.com/package/babel-plugin-import to reduce app bundle size.");
 }
 
-exports.ActionBar = index$m;
-exports.ActionBarMenu = index$k;
-exports.ActionBarSpace = index$j;
-exports.ActionGroup = index$l;
+exports.ActionBar = index$l;
+exports.ActionBarMenu = index$j;
+exports.ActionBarSpace = index$i;
+exports.ActionGroup = index$k;
 exports.ActionItem = ActionItem;
 exports.AirplaneIcon = SvgAirplane;
 exports.ArrowBackSharpIcon = SvgArrowBackSharp;
 exports.BatteryFullIcon = SvgBatteryFull;
 exports.BatteryHalfSharpIcon = SvgBatteryHalfSharp;
-exports.Button = index$i;
-exports.Card = index$h;
-exports.CardAction = index$d;
-exports.CardContent = index$f;
-exports.CardMedia = index$g;
-exports.CardTitle = index$e;
+exports.Button = index$h;
+exports.Card = index$g;
+exports.CardAction = index$c;
+exports.CardContent = index$e;
+exports.CardMedia = index$f;
+exports.CardTitle = index$d;
 exports.CelluarIcon = SvgCellularSharp;
 exports.CogSharpIcon = SvgCogSharp;
 exports.Container = Container$1;
-exports.Dialog = index$c;
+exports.Dialog = Dialog;
 exports.DialogAction = index$b;
 exports.DialogContent = index$a;
 exports.DialogTitle = index$9;

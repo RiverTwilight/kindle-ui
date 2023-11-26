@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 import Popover from "../Popover";
 import hover from "@/utils/hover";
@@ -9,6 +9,7 @@ import hover from "@/utils/hover";
  */
 
 export interface IDialog {
+	/* Position the dialog based on particular element instead of the whole window */
 	anchorEl?: null | Element | ((element: Element) => Element);
 	open?: boolean;
 	onClose?: () => void;
@@ -22,13 +23,11 @@ const StyledDialog = styled.div`
 	background: var(--bg-color);
 	border-radius: 6px;
 	position: fixed;
-	left: 50%;
-	top: 50%;
-	transform: translate(-50%, -50%);
 	max-width: 400px;
 	min-width: 250px;
 	z-index: 1001;
 	position: relative;
+	// Removed hardcoded centering styles
 `;
 
 const StyledCloseButton = styled.button`
@@ -45,16 +44,35 @@ const StyledCloseButton = styled.button`
 	padding: 0;
 `;
 
-export default ({
+export default function Dialog({
 	children,
 	anchorEl,
 	open,
 	onClose,
 	showCloseButton = true,
-}: IDialog) => {
+}: IDialog) {
+	const [dialogStyle, setDialogStyle] = useState({});
+
+	useEffect(() => {
+		if (anchorEl) {
+			const rect = anchorEl.getBoundingClientRect();
+			setDialogStyle({
+				left: rect.left + rect.width / 2 + window.scrollX,
+				top: rect.top + rect.height / 2 + window.scrollY,
+				transform: "translate(-50%, -50%)",
+			});
+		} else {
+			setDialogStyle({
+				left: "50%",
+				top: "50%",
+				transform: "translate(-50%, -50%)",
+			});
+		}
+	}, [anchorEl, open]);
+
 	return (
 		<Popover open={open} onClose={onClose}>
-			<StyledDialog>
+			<StyledDialog style={dialogStyle}>
 				{children}
 				{showCloseButton && (
 					<StyledCloseButton onClick={onClose}>
@@ -71,4 +89,4 @@ export default ({
 			</StyledDialog>
 		</Popover>
 	);
-};
+}

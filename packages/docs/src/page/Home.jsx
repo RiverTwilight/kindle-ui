@@ -7,12 +7,14 @@ import GridExample from "../examples/Grid";
 import SwitchExample from "../examples/Switch";
 import TextFieldExample from "../examples/TextField";
 import Sidebar from "../components/Sidebar";
+import React, { useRef } from 'react';
 
 export default () => {
+	const rootDivRef = useRef(null);
 	return (
 		<>
 			{/* <Sidebar /> */}
-			<div>
+			<div ref={rootDivRef}>
 				<Typography greyImage={true}>
 					<h1>Hi, kindle-ui!</h1>
 					<h2>Typography</h2>
@@ -46,7 +48,7 @@ export default () => {
 					<h2>Card</h2>
 					<CardExample />
 					<h2>Dialog</h2>
-					<DialogExample />
+					<DialogExample rootRef={rootDivRef} />
 					<h2>Switch</h2>
 					<SwitchExample />
 					<h2>TextField</h2>

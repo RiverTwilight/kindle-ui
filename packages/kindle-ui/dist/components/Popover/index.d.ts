@@ -8,5 +8,4 @@ export interface IPopover {
  * Popover
  * @author rivertwilight
  */
-declare const _default: ({ children, open, onClose }: IPopover) => React.JSX.Element;
-export default _default;
+export default function Popover({ children, open, onClose }: IPopover): React.JSX.Element;
