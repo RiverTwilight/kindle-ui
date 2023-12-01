@@ -26,7 +26,7 @@ const StyledDialog = styled.div`
 	max-width: 400px;
 	min-width: 250px;
 	z-index: 1001;
-	position: relative;
+	// position: relative;
 	// Removed hardcoded centering styles
 `;
 

@@ -79,7 +79,7 @@ var MenuItem$1 = styled(MenuItem)(templateObject_1$x || (templateObject_1$x = __
 var templateObject_1$x;
 
 var Mask = styled.div(templateObject_1$w || (templateObject_1$w = __makeTemplateObject(["\n\tposition: fixed;\n\ttop: 0;\n\tleft: 0;\n\tbottom: 0;\n\tright: 0;\n\tdisplay: ", ";\n"], ["\n\tposition: fixed;\n\ttop: 0;\n\tleft: 0;\n\tbottom: 0;\n\tright: 0;\n\tdisplay: ", ";\n"])), function (props) { return (props.show ? "block" : "none"); });
-var StyledPopover = styled.div(templateObject_2$4 || (templateObject_2$4 = __makeTemplateObject(["\n\tz-index: 2;\n\tpadding: 12px;\n\theight: 100%;\n"], ["\n\tz-index: 2;\n\tpadding: 12px;\n\theight: 100%;\n"])));
+var StyledPopover = styled.div(templateObject_2$4 || (templateObject_2$4 = __makeTemplateObject(["\n\tz-index: 2;\n\tpadding: 8px;\n\theight: 100%;\n"], ["\n\tz-index: 2;\n\tpadding: 8px;\n\theight: 100%;\n"])));
 /**
  * Popover
  * @author rivertwilight
@@ -256,7 +256,7 @@ var Container$1 = function (_a) {
 };
 var templateObject_1$l;
 
-var StyledDialog = styled.div(templateObject_1$k || (templateObject_1$k = __makeTemplateObject(["\n\tpadding: 1.8rem 1.4rem;\n\tborder: 3px solid var(--text-color);\n\tbackground: var(--bg-color);\n\tborder-radius: 6px;\n\tposition: fixed;\n\tmax-width: 400px;\n\tmin-width: 250px;\n\tz-index: 1001;\n\tposition: relative;\n\t// Removed hardcoded centering styles\n"], ["\n\tpadding: 1.8rem 1.4rem;\n\tborder: 3px solid var(--text-color);\n\tbackground: var(--bg-color);\n\tborder-radius: 6px;\n\tposition: fixed;\n\tmax-width: 400px;\n\tmin-width: 250px;\n\tz-index: 1001;\n\tposition: relative;\n\t// Removed hardcoded centering styles\n"])));
+var StyledDialog = styled.div(templateObject_1$k || (templateObject_1$k = __makeTemplateObject(["\n\tpadding: 1.8rem 1.4rem;\n\tborder: 3px solid var(--text-color);\n\tbackground: var(--bg-color);\n\tborder-radius: 6px;\n\tposition: fixed;\n\tmax-width: 400px;\n\tmin-width: 250px;\n\tz-index: 1001;\n\t// position: relative;\n\t// Removed hardcoded centering styles\n"], ["\n\tpadding: 1.8rem 1.4rem;\n\tborder: 3px solid var(--text-color);\n\tbackground: var(--bg-color);\n\tborder-radius: 6px;\n\tposition: fixed;\n\tmax-width: 400px;\n\tmin-width: 250px;\n\tz-index: 1001;\n\t// position: relative;\n\t// Removed hardcoded centering styles\n"])));
 var StyledCloseButton = styled.button(templateObject_2$3 || (templateObject_2$3 = __makeTemplateObject(["\n\t", "\n\tbackground: none;\n\tborder: none;\n\theight: 34px;\n\twidth: 34px;\n\ttop: 1.6rem;\n\tright: 1.8rem;\n\tposition: absolute;\n\tdisplay: flex;\n\tjustify-content: center;\n\tpadding: 0;\n"], ["\n\t", "\n\tbackground: none;\n\tborder: none;\n\theight: 34px;\n\twidth: 34px;\n\ttop: 1.6rem;\n\tright: 1.8rem;\n\tposition: absolute;\n\tdisplay: flex;\n\tjustify-content: center;\n\tpadding: 0;\n"])), hover);
 function Dialog(_a) {
     var children = _a.children, anchorEl = _a.anchorEl, open = _a.open, onClose = _a.onClose, _b = _a.showCloseButton, showCloseButton = _b === void 0 ? true : _b;

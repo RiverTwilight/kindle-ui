@@ -34,6 +34,12 @@ export default styled(ListItemText)`
 		white-space: nowrap;
 	}
 
+	@media (max-width: 768px) {
+		.primary {
+			font-size: 18px;
+		}
+	}
+
 	.secondary {
 		font-size: 15px;
 	}
