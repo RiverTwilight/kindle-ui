@@ -31,10 +31,11 @@ const ListItem = ({
 };
 
 const StyledListItem = styled(ListItem)`
+    height: 60px;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	padding: 0 2px;
+	padding: 0 0px;
 	font-size: 1.1rem;
 	font-family: AmazonEmber-Rg, sans-serif;
 	border-bottom: ${border};

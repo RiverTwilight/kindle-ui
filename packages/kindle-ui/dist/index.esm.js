@@ -146,9 +146,9 @@ var Menu$1 = (function (_a) {
 var templateObject_1$v;
 
 var _circle, _circle2, _circle3;
-function _extends$c() { _extends$c = Object.assign ? Object.assign.bind() : function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends$c.apply(this, arguments); }
+function _extends$d() { _extends$d = Object.assign ? Object.assign.bind() : function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends$d.apply(this, arguments); }
 function SvgEllipsisVertical(props) {
-  return /*#__PURE__*/React.createElement("svg", _extends$c({
+  return /*#__PURE__*/React.createElement("svg", _extends$d({
     xmlns: "http://www.w3.org/2000/svg",
     className: "ellipsis-vertical_svg__ionicon",
     viewBox: "0 0 512 512"
@@ -354,7 +354,7 @@ var ListItem = function (_a) {
     }
     return (React__default.createElement(ComponentProp, __assign({ role: "ListItem", className: className }, other), children));
 };
-var StyledListItem$1 = styled(ListItem)(templateObject_1$c || (templateObject_1$c = __makeTemplateObject(["\n\tdisplay: flex;\n\talign-items: center;\n\tjustify-content: space-between;\n\tpadding: 0 2px;\n\tfont-size: 1.1rem;\n\tfont-family: AmazonEmber-Rg, sans-serif;\n\tborder-bottom: ", ";\n\n\t&:last-child {\n\t\tborder-bottom: none;\n\t}\n\n\ttext-decoration: none;\n\tcolor: var(--text-color);\n"], ["\n\tdisplay: flex;\n\talign-items: center;\n\tjustify-content: space-between;\n\tpadding: 0 2px;\n\tfont-size: 1.1rem;\n\tfont-family: AmazonEmber-Rg, sans-serif;\n\tborder-bottom: ", ";\n\n\t&:last-child {\n\t\tborder-bottom: none;\n\t}\n\n\ttext-decoration: none;\n\tcolor: var(--text-color);\n"])), border);
+var StyledListItem$1 = styled(ListItem)(templateObject_1$c || (templateObject_1$c = __makeTemplateObject(["\n    height: 60px;\n\tdisplay: flex;\n\talign-items: center;\n\tjustify-content: space-between;\n\tpadding: 0 0px;\n\tfont-size: 1.1rem;\n\tfont-family: AmazonEmber-Rg, sans-serif;\n\tborder-bottom: ", ";\n\n\t&:last-child {\n\t\tborder-bottom: none;\n\t}\n\n\ttext-decoration: none;\n\tcolor: var(--text-color);\n"], ["\n    height: 60px;\n\tdisplay: flex;\n\talign-items: center;\n\tjustify-content: space-between;\n\tpadding: 0 0px;\n\tfont-size: 1.1rem;\n\tfont-family: AmazonEmber-Rg, sans-serif;\n\tborder-bottom: ", ";\n\n\t&:last-child {\n\t\tborder-bottom: none;\n\t}\n\n\ttext-decoration: none;\n\tcolor: var(--text-color);\n"])), border);
 var templateObject_1$c;
 
 var ListItemIcon = function (_a) {
@@ -373,7 +373,7 @@ var ListItemText = function (_a) {
         React__default.createElement("div", { className: "primary" }, primary),
         React__default.createElement("div", { className: "secondary" }, second)));
 };
-var index$7 = styled(ListItemText)(templateObject_1$a || (templateObject_1$a = __makeTemplateObject(["\n\t", "\n\tpadding: 10px 0;\n\twidth: 0; /* \u89E3\u51B3white-sapce\u6491\u5F00\u76D2\u5B50\u7684\u95EE\u9898*/\n\tdisplay: flex;\n\tflex-direction: column;\n\tflex: 1;\n\n\t.primary {\n\t\tfont-size: 20px;\n\t\tfont-weight: 600;\n\t\twidth: 90%;\n\t\toverflow: hidden;\n\t\ttext-overflow: ellipsis;\n\t\twhite-space: nowrap;\n\t}\n\n\t.secondary {\n\t\tfont-size: 15px;\n\t}\n"], ["\n\t", "\n\tpadding: 10px 0;\n\twidth: 0; /* \u89E3\u51B3white-sapce\u6491\u5F00\u76D2\u5B50\u7684\u95EE\u9898*/\n\tdisplay: flex;\n\tflex-direction: column;\n\tflex: 1;\n\n\t.primary {\n\t\tfont-size: 20px;\n\t\tfont-weight: 600;\n\t\twidth: 90%;\n\t\toverflow: hidden;\n\t\ttext-overflow: ellipsis;\n\t\twhite-space: nowrap;\n\t}\n\n\t.secondary {\n\t\tfont-size: 15px;\n\t}\n"])), hover);
+var index$7 = styled(ListItemText)(templateObject_1$a || (templateObject_1$a = __makeTemplateObject(["\n\t", "\n\tpadding: 0;\n\theight: 100%;\n\twidth: 0; /* \u89E3\u51B3white-sapce\u6491\u5F00\u76D2\u5B50\u7684\u95EE\u9898*/\n\tdisplay: flex;\n\tflex-direction: column;\n\tjustify-content: center;\n\tflex: 1;\n\n\t.primary {\n\t\tfont-size: 20px;\n\t\tfont-weight: 600;\n\t\twidth: 90%;\n\t\toverflow: hidden;\n\t\ttext-overflow: ellipsis;\n\t\twhite-space: nowrap;\n\t}\n\n\t.secondary {\n\t\tfont-size: 15px;\n\t}\n"], ["\n\t", "\n\tpadding: 0;\n\theight: 100%;\n\twidth: 0; /* \u89E3\u51B3white-sapce\u6491\u5F00\u76D2\u5B50\u7684\u95EE\u9898*/\n\tdisplay: flex;\n\tflex-direction: column;\n\tjustify-content: center;\n\tflex: 1;\n\n\t.primary {\n\t\tfont-size: 20px;\n\t\tfont-weight: 600;\n\t\twidth: 90%;\n\t\toverflow: hidden;\n\t\ttext-overflow: ellipsis;\n\t\twhite-space: nowrap;\n\t}\n\n\t.secondary {\n\t\tfont-size: 15px;\n\t}\n"])), hover);
 var templateObject_1$a;
 
 /**
@@ -388,40 +388,40 @@ var index$6 = (function (_a) {
 });
 var templateObject_1$9, templateObject_2$1;
 
-var _path$b;
-function _extends$b() { _extends$b = Object.assign ? Object.assign.bind() : function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends$b.apply(this, arguments); }
+var _path$c;
+function _extends$c() { _extends$c = Object.assign ? Object.assign.bind() : function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends$c.apply(this, arguments); }
 function SvgAirplane(props) {
-  return /*#__PURE__*/React.createElement("svg", _extends$b({
+  return /*#__PURE__*/React.createElement("svg", _extends$c({
     xmlns: "http://www.w3.org/2000/svg",
     className: "airplane_svg__ionicon",
     viewBox: "0 0 512 512"
-  }, props), _path$b || (_path$b = /*#__PURE__*/React.createElement("path", {
+  }, props), _path$c || (_path$c = /*#__PURE__*/React.createElement("path", {
     d: "M186.62 464H160a16 16 0 01-14.57-22.6l64.46-142.25L113.1 297l-35.3 42.77C71.07 348.23 65.7 352 52 352H34.08a17.66 17.66 0 01-14.7-7.06c-2.38-3.21-4.72-8.65-2.44-16.41l19.82-71c.15-.53.33-1.06.53-1.58a.38.38 0 000-.15 14.82 14.82 0 01-.53-1.59l-19.84-71.45c-2.15-7.61.2-12.93 2.56-16.06a16.83 16.83 0 0113.6-6.7H52c10.23 0 20.16 4.59 26 12l34.57 42.05 97.32-1.44-64.44-142A16 16 0 01160 48h26.91a25 25 0 0119.35 9.8l125.05 152 57.77-1.52c4.23-.23 15.95-.31 18.66-.31C463 208 496 225.94 496 256c0 9.46-3.78 27-29.07 38.16-14.93 6.6-34.85 9.94-59.21 9.94-2.68 0-14.37-.08-18.66-.31l-57.76-1.54-125.36 152a25 25 0 01-19.32 9.75z"
   })));
 }
 
-var _path$a, _path2$5;
-function _extends$a() { _extends$a = Object.assign ? Object.assign.bind() : function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends$a.apply(this, arguments); }
+var _path$b, _path2$5;
+function _extends$b() { _extends$b = Object.assign ? Object.assign.bind() : function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends$b.apply(this, arguments); }
 function SvgBatteryFullSharp(props) {
-  return /*#__PURE__*/React.createElement("svg", _extends$a({
+  return /*#__PURE__*/React.createElement("svg", _extends$b({
     xmlns: "http://www.w3.org/2000/svg",
     className: "battery-full-sharp_svg__ionicon",
     viewBox: "0 0 512 512"
-  }, props), _path$a || (_path$a = /*#__PURE__*/React.createElement("path", {
+  }, props), _path$b || (_path$b = /*#__PURE__*/React.createElement("path", {
     d: "M17 384h432V128H17zm32-224h368v192H49z"
   })), _path2$5 || (_path2$5 = /*#__PURE__*/React.createElement("path", {
     d: "M70.69 182.94h324.63v146.13H70.69zM465 202.67h32v106.67h-32z"
   })));
 }
 
-var _path$9, _path2$4, _path3;
-function _extends$9() { _extends$9 = Object.assign ? Object.assign.bind() : function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends$9.apply(this, arguments); }
+var _path$a, _path2$4, _path3;
+function _extends$a() { _extends$a = Object.assign ? Object.assign.bind() : function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends$a.apply(this, arguments); }
 function SvgBatteryChargingSharp(props) {
-  return /*#__PURE__*/React.createElement("svg", _extends$9({
+  return /*#__PURE__*/React.createElement("svg", _extends$a({
     xmlns: "http://www.w3.org/2000/svg",
     className: "battery-charging-sharp_svg__ionicon",
     viewBox: "0 0 512 512"
-  }, props), _path$9 || (_path$9 = /*#__PURE__*/React.createElement("path", {
+  }, props), _path$a || (_path$a = /*#__PURE__*/React.createElement("path", {
     d: "M306.68 237.62h-66.5l15.33-54.7 6.43-22.92 3.94-14 4.29-15.33a3.56 3.56 0 00.06-.44v-.19a1.85 1.85 0 000-.23 2 2 0 000-.24v-.14c0-.1-.07-.19-.11-.29v-.05a2.33 2.33 0 00-2-1.35h-.1a2.25 2.25 0 00-1.8 1l-12.5 17.15-18.82 25.55-8.36 11.48-35.41 48.6L160 274.26h66.44l-30 107a3.93 3.93 0 00-.06.48v.1a1.94 1.94 0 000 .34.29.29 0 000 .09 3 3 0 00.07.32v.06a1.83 1.83 0 00.14.32 2.38 2.38 0 001.52 1.16h.57a2.1 2.1 0 001.31-.5l.06-.05a2.6 2.6 0 00.42-.45L223.3 352l13-17.82z"
   })), _path2$4 || (_path2$4 = /*#__PURE__*/React.createElement("path", {
     d: "M289.78 134.55l-.14.74-.21.73-6.72 24H417V352H248.05l-23.33 32H449V128H290.13a22.62 22.62 0 01-.35 6.55zM49 160h169.49l23.31-32H17v256h159.49a22.73 22.73 0 01.34-6.67l.15-.75.2-.73 6.69-23.85H49z"
@@ -430,14 +430,14 @@ function SvgBatteryChargingSharp(props) {
   })));
 }
 
-var _path$8;
-function _extends$8() { _extends$8 = Object.assign ? Object.assign.bind() : function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends$8.apply(this, arguments); }
+var _path$9;
+function _extends$9() { _extends$9 = Object.assign ? Object.assign.bind() : function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends$9.apply(this, arguments); }
 function SvgCellularSharp(props) {
-  return /*#__PURE__*/React.createElement("svg", _extends$8({
+  return /*#__PURE__*/React.createElement("svg", _extends$9({
     xmlns: "http://www.w3.org/2000/svg",
     className: "cellular-sharp_svg__ionicon",
     viewBox: "0 0 512 512"
-  }, props), _path$8 || (_path$8 = /*#__PURE__*/React.createElement("path", {
+  }, props), _path$9 || (_path$9 = /*#__PURE__*/React.createElement("path", {
     d: "M496 432h-96V80h96zm-128 0h-96V160h96zm-128 0h-96V224h96zm-128 0H16V288h96z"
   })));
 }
@@ -480,14 +480,14 @@ var index$5 = (function (props) {
 });
 var templateObject_1$8;
 
-var _path$7, _path2$3;
-function _extends$7() { _extends$7 = Object.assign ? Object.assign.bind() : function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends$7.apply(this, arguments); }
+var _path$8, _path2$3;
+function _extends$8() { _extends$8 = Object.assign ? Object.assign.bind() : function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends$8.apply(this, arguments); }
 function SvgSearchOutline(props) {
-  return /*#__PURE__*/React.createElement("svg", _extends$7({
+  return /*#__PURE__*/React.createElement("svg", _extends$8({
     xmlns: "http://www.w3.org/2000/svg",
     className: "search-outline_svg__ionicon",
     viewBox: "0 0 512 512"
-  }, props), _path$7 || (_path$7 = /*#__PURE__*/React.createElement("path", {
+  }, props), _path$8 || (_path$8 = /*#__PURE__*/React.createElement("path", {
     d: "M221.09 64a157.09 157.09 0 10157.09 157.09A157.1 157.1 0 00221.09 64z",
     fill: "none",
     stroke: "currentColor",
@@ -539,7 +539,7 @@ var Switch = function (_a) {
 var StyledListItem = styled(Switch)(templateObject_1$4 || (templateObject_1$4 = __makeTemplateObject(["\n\t& {\n\t\t--button-width: 3.5em;\n\t\t--button-height: 2em;\n\t\t--toggle-diameter: 1.5em;\n\t\t--toggle-diameter-width: 1em;\n\t\t--button-toggle-offset: calc(\n\t\t\t(var(--button-height) - var(--toggle-diameter)) / 2\n\t\t);\n\t\t--toggle-shadow-offset: 10px;\n\t\t--toggle-wider: 3em;\n\t\t--color-grey: #cccccc;\n\t\t--color-green: #4296f4;\n\t}\n\n\t.slider {\n\t\tdisplay: inline-block;\n\t\twidth: var(--button-width);\n\t\theight: var(--button-height);\n\t\tbackground-color: var(--color-grey);\n\t\tposition: relative;\n\t}\n\n\t.slider::after {\n\t\tcontent: \"\";\n\t\tdisplay: inline-block;\n\t\twidth: var(--toggle-diameter-width);\n\t\theight: var(--toggle-diameter);\n\t\tbackground-color: var(--bg-color);\n\t\tposition: absolute;\n\t\ttop: var(--button-toggle-offset);\n\t\ttransform: translateX(var(--button-toggle-offset));\n\t\tbox-shadow: var(--toggle-shadow-offset) 0\n\t\t\tcalc(var(--toggle-shadow-offset) * 4) rgba(0, 0, 0, 0.1);\n\t}\n\n\t& input[type=\"checkbox\"]:checked + .slider {\n\t\tbackground-color: var(--text-color);\n\t}\n\n\t& input[type=\"checkbox\"]:checked + .slider::after {\n\t\ttransform: translateX(\n\t\t\tcalc(\n\t\t\t\tvar(--button-width) - var(--toggle-diameter-width) -\n\t\t\t\t\tvar(--button-toggle-offset)\n\t\t\t)\n\t\t);\n\t\tbox-shadow: calc(var(--toggle-shadow-offset) * -1) 0\n\t\t\tcalc(var(--toggle-shadow-offset) * 4) rgba(0, 0, 0, 0.1);\n\t}\n\n\t& input[type=\"checkbox\"] {\n\t\tdisplay: none;\n\t}\n\n\t& input[type=\"checkbox\"]:active + .slider::after {\n\t\twidth: var(--toggle-wider);\n\t}\n\n\t& input[type=\"checkbox\"]:checked:active + .slider::after {\n\t\ttransform: translateX(\n\t\t\tcalc(\n\t\t\t\tvar(--button-width) - var(--toggle-wider) -\n\t\t\t\t\tvar(--button-toggle-offset)\n\t\t\t)\n\t\t);\n\t}\n"], ["\n\t& {\n\t\t--button-width: 3.5em;\n\t\t--button-height: 2em;\n\t\t--toggle-diameter: 1.5em;\n\t\t--toggle-diameter-width: 1em;\n\t\t--button-toggle-offset: calc(\n\t\t\t(var(--button-height) - var(--toggle-diameter)) / 2\n\t\t);\n\t\t--toggle-shadow-offset: 10px;\n\t\t--toggle-wider: 3em;\n\t\t--color-grey: #cccccc;\n\t\t--color-green: #4296f4;\n\t}\n\n\t.slider {\n\t\tdisplay: inline-block;\n\t\twidth: var(--button-width);\n\t\theight: var(--button-height);\n\t\tbackground-color: var(--color-grey);\n\t\tposition: relative;\n\t}\n\n\t.slider::after {\n\t\tcontent: \"\";\n\t\tdisplay: inline-block;\n\t\twidth: var(--toggle-diameter-width);\n\t\theight: var(--toggle-diameter);\n\t\tbackground-color: var(--bg-color);\n\t\tposition: absolute;\n\t\ttop: var(--button-toggle-offset);\n\t\ttransform: translateX(var(--button-toggle-offset));\n\t\tbox-shadow: var(--toggle-shadow-offset) 0\n\t\t\tcalc(var(--toggle-shadow-offset) * 4) rgba(0, 0, 0, 0.1);\n\t}\n\n\t& input[type=\"checkbox\"]:checked + .slider {\n\t\tbackground-color: var(--text-color);\n\t}\n\n\t& input[type=\"checkbox\"]:checked + .slider::after {\n\t\ttransform: translateX(\n\t\t\tcalc(\n\t\t\t\tvar(--button-width) - var(--toggle-diameter-width) -\n\t\t\t\t\tvar(--button-toggle-offset)\n\t\t\t)\n\t\t);\n\t\tbox-shadow: calc(var(--toggle-shadow-offset) * -1) 0\n\t\t\tcalc(var(--toggle-shadow-offset) * 4) rgba(0, 0, 0, 0.1);\n\t}\n\n\t& input[type=\"checkbox\"] {\n\t\tdisplay: none;\n\t}\n\n\t& input[type=\"checkbox\"]:active + .slider::after {\n\t\twidth: var(--toggle-wider);\n\t}\n\n\t& input[type=\"checkbox\"]:checked:active + .slider::after {\n\t\ttransform: translateX(\n\t\t\tcalc(\n\t\t\t\tvar(--button-width) - var(--toggle-wider) -\n\t\t\t\t\tvar(--button-toggle-offset)\n\t\t\t)\n\t\t);\n\t}\n"])));
 var templateObject_1$4;
 
-var index$2 = styled.div(templateObject_1$3 || (templateObject_1$3 = __makeTemplateObject(["\n\tdisplay: flex;\n    padding: 10px 5px;\n    overflow-x: auto;\n"], ["\n\tdisplay: flex;\n    padding: 10px 5px;\n    overflow-x: auto;\n"])));
+var index$2 = styled.div(templateObject_1$3 || (templateObject_1$3 = __makeTemplateObject(["\n\tdisplay: flex;\n\talign-items: center;\n\tpadding: 10px 5px;\n\toverflow-x: auto;\n"], ["\n\tdisplay: flex;\n\talign-items: center;\n\tpadding: 10px 5px;\n\toverflow-x: auto;\n"])));
 var templateObject_1$3;
 
 var index$1 = styled.div(templateObject_1$2 || (templateObject_1$2 = __makeTemplateObject(["\n\tfont-family: AmazonEmber-Rg, sans-serif;\n\twhite-space: nowrap; // Corrected property\n\tpadding: 0 10px;\n\tcursor: pointer;\n\tcolor: #888;\n\ttext-transform: uppercase;\n\n\t", "\n\tborder-right: ", ";\n\t", "\n\t&:last-child {\n\t\tborder-right: none;\n\t}\n"], ["\n\tfont-family: AmazonEmber-Rg, sans-serif;\n\twhite-space: nowrap; // Corrected property\n\tpadding: 0 10px;\n\tcursor: pointer;\n\tcolor: #888;\n\ttext-transform: uppercase;\n\n\t", "\n\tborder-right: ", ";\n\t", "\n\t&:last-child {\n\t\tborder-right: none;\n\t}\n"])), hover, border, function (props) {
@@ -584,14 +584,14 @@ var Container = function (_a) {
 };
 var templateObject_1, templateObject_2, templateObject_3;
 
-var _path$6;
-function _extends$6() { _extends$6 = Object.assign ? Object.assign.bind() : function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends$6.apply(this, arguments); }
+var _path$7;
+function _extends$7() { _extends$7 = Object.assign ? Object.assign.bind() : function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends$7.apply(this, arguments); }
 function SvgArrowBackSharp(props) {
-  return /*#__PURE__*/React.createElement("svg", _extends$6({
+  return /*#__PURE__*/React.createElement("svg", _extends$7({
     xmlns: "http://www.w3.org/2000/svg",
     className: "arrow-back-sharp_svg__ionicon",
     viewBox: "0 0 512 512"
-  }, props), _path$6 || (_path$6 = /*#__PURE__*/React.createElement("path", {
+  }, props), _path$7 || (_path$7 = /*#__PURE__*/React.createElement("path", {
     fill: "none",
     stroke: "currentColor",
     strokeLinecap: "square",
@@ -601,10 +601,10 @@ function SvgArrowBackSharp(props) {
   })));
 }
 
-var _rect, _rect2, _path$5;
-function _extends$5() { _extends$5 = Object.assign ? Object.assign.bind() : function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends$5.apply(this, arguments); }
+var _rect, _rect2, _path$6;
+function _extends$6() { _extends$6 = Object.assign ? Object.assign.bind() : function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends$6.apply(this, arguments); }
 function SvgBatteryFull(props) {
-  return /*#__PURE__*/React.createElement("svg", _extends$5({
+  return /*#__PURE__*/React.createElement("svg", _extends$6({
     xmlns: "http://www.w3.org/2000/svg",
     className: "battery-full_svg__ionicon",
     viewBox: "0 0 512 512"
@@ -631,7 +631,7 @@ function SvgBatteryFull(props) {
     strokeLinecap: "square",
     strokeMiterlimit: 10,
     strokeWidth: 32
-  })), _path$5 || (_path$5 = /*#__PURE__*/React.createElement("path", {
+  })), _path$6 || (_path$6 = /*#__PURE__*/React.createElement("path", {
     fill: "none",
     stroke: "currentColor",
     strokeLinecap: "round",
@@ -641,17 +641,34 @@ function SvgBatteryFull(props) {
   })));
 }
 
-var _path$4, _path2$2;
-function _extends$4() { _extends$4 = Object.assign ? Object.assign.bind() : function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends$4.apply(this, arguments); }
+var _path$5, _path2$2;
+function _extends$5() { _extends$5 = Object.assign ? Object.assign.bind() : function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends$5.apply(this, arguments); }
 function SvgBatteryHalfSharp(props) {
-  return /*#__PURE__*/React.createElement("svg", _extends$4({
+  return /*#__PURE__*/React.createElement("svg", _extends$5({
     xmlns: "http://www.w3.org/2000/svg",
     className: "battery-half-sharp_svg__ionicon",
     viewBox: "0 0 512 512"
-  }, props), _path$4 || (_path$4 = /*#__PURE__*/React.createElement("path", {
+  }, props), _path$5 || (_path$5 = /*#__PURE__*/React.createElement("path", {
     d: "M17 384h432V128H17zm32-224h368v192H49z"
   })), _path2$2 || (_path2$2 = /*#__PURE__*/React.createElement("path", {
     d: "M70.69 182.92H256v146.16H70.69zM465 202.67h32v106.67h-32z"
+  })));
+}
+
+var _path$4;
+function _extends$4() { _extends$4 = Object.assign ? Object.assign.bind() : function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends$4.apply(this, arguments); }
+function SvgChevronForwardSharp(props) {
+  return /*#__PURE__*/React.createElement("svg", _extends$4({
+    xmlns: "http://www.w3.org/2000/svg",
+    className: "chevron-forward-sharp_svg__ionicon",
+    viewBox: "0 0 512 512"
+  }, props), _path$4 || (_path$4 = /*#__PURE__*/React.createElement("path", {
+    fill: "none",
+    stroke: "currentColor",
+    strokeLinecap: "square",
+    strokeMiterlimit: 10,
+    strokeWidth: 48,
+    d: "M184 112l144 144-144 144"
   })));
 }
 
@@ -733,4 +750,4 @@ if (ENV !== "production" &&
         "please use https://www.npmjs.com/package/babel-plugin-import to reduce app bundle size.");
 }
 
-export { index$l as ActionBar, index$j as ActionBarMenu, index$i as ActionBarSpace, index$k as ActionGroup, ActionItem, SvgAirplane as AirplaneIcon, SvgArrowBackSharp as ArrowBackSharpIcon, SvgBatteryFull as BatteryFullIcon, SvgBatteryHalfSharp as BatteryHalfSharpIcon, index$h as Button, index$g as Card, index$c as CardAction, index$e as CardContent, index$f as CardMedia, index$d as CardTitle, SvgCellularSharp as CelluarIcon, SvgCogSharp as CogSharpIcon, Container$1 as Container, Dialog, index$b as DialogAction, index$a as DialogContent, index$9 as DialogTitle, SvgEllipsisVerticalCircleSharp as EllipsisVerticalCircleSharpIcon, SvgEllipsisVertical as EllipsisVerticalIcon, Grid, StyledGridItem as GridItem, SvgHomeOutline as HomeOutlineIcon, Container as KindleOasis, List, StyledListItem$1 as ListItem, StyledListItemIcon as ListItemIcon, index$7 as ListItemText, Menu$1 as Menu, index$6 as Navbar, index$4 as SearchBar, index$3 as Section, SectionTitle, index$5 as StatuBar, StyledListItem as Switch, index$2 as Tab, index$1 as TabItem, index as TimeBar, index$8 as Typography, SvgWifiSharp as WifiSharpIcon };
+export { index$l as ActionBar, index$j as ActionBarMenu, index$i as ActionBarSpace, index$k as ActionGroup, ActionItem, SvgAirplane as AirplaneIcon, SvgArrowBackSharp as ArrowBackSharpIcon, SvgBatteryFull as BatteryFullIcon, SvgBatteryHalfSharp as BatteryHalfSharpIcon, index$h as Button, index$g as Card, index$c as CardAction, index$e as CardContent, index$f as CardMedia, index$d as CardTitle, SvgCellularSharp as CelluarIcon, SvgChevronForwardSharp as ChevronForwardSharpIcon, SvgCogSharp as CogSharpIcon, Container$1 as Container, Dialog, index$b as DialogAction, index$a as DialogContent, index$9 as DialogTitle, SvgEllipsisVerticalCircleSharp as EllipsisVerticalCircleSharpIcon, SvgEllipsisVertical as EllipsisVerticalIcon, Grid, StyledGridItem as GridItem, SvgHomeOutline as HomeOutlineIcon, Container as KindleOasis, List, StyledListItem$1 as ListItem, StyledListItemIcon as ListItemIcon, index$7 as ListItemText, Menu$1 as Menu, index$6 as Navbar, index$4 as SearchBar, index$3 as Section, SectionTitle, index$5 as StatuBar, StyledListItem as Switch, index$2 as Tab, index$1 as TabItem, index as TimeBar, index$8 as Typography, SvgWifiSharp as WifiSharpIcon };

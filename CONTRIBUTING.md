@@ -5,12 +5,12 @@ Want to contribute to kindle-ui? There are a few things you need to know.
 ## Start development
 
 ```bash
-git clone https://gitee.com/rivertwilight/kindle-ui.git
+git clone https://github.com/rivertwilight/kindle-ui.git
 ```
 
 We recommend you to use vscode workspace to open this project. You can do this by cliking the [kindle-ui.codespace](./kindle-ui.code-workspace) file.
 
-Then, run this commands in root folder with Yarn 2.
+Then, run this commands in root folder with Yarn 1.x.
 
 ```bash
 yarn

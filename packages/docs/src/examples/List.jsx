@@ -3,11 +3,12 @@ import {
 	ListItem,
 	ListItemText,
 	EllipsisVerticalIcon,
+	ChevronForwardSharpIcon,
 	ListItemIcon,
 } from "@kindle-ui/core";
 import { Link } from "react-router-dom";
 
-export default function () {
+export default function ListExample() {
 	return (
 		<List>
 			<ListItem component={Link} to="/reader">
@@ -24,6 +25,16 @@ export default function () {
 					}}
 				>
 					<EllipsisVerticalIcon />
+				</ListItemIcon>
+			</ListItem>
+			<ListItem component="a" href="https://github.com">
+				<ListItemText primary="Network Settings" />
+				<ListItemIcon
+					onClick={() => {
+						alert("sdf");
+					}}
+				>
+					<ChevronForwardSharpIcon />
 				</ListItemIcon>
 			</ListItem>
 		</List>

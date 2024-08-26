@@ -53,6 +53,7 @@ export { default as ArrowBackSharpIcon } from "./icons/arrow-back-sharp.svg";
 export { default as BatteryFullIcon } from "./icons/battery-full.svg";
 export { default as BatteryHalfSharpIcon } from "./icons/battery-half-sharp.svg";
 export { default as CelluarIcon } from "./icons/cellular-sharp.svg";
+export { default as ChevronForwardSharpIcon } from "./icons/chevron-forward-sharp.svg";
 export { default as CogSharpIcon } from "./icons/cog-sharp.svg";
 export { default as EllipsisVerticalIcon } from "./icons/ellipsis-vertical.svg";
 export { default as EllipsisVerticalCircleSharpIcon } from "./icons/ellipsis-vertical-circle-sharp.svg";

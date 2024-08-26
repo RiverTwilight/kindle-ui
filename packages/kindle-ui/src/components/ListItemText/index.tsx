@@ -17,10 +17,12 @@ const ListItemText = ({ primary, second, className }: IListItemText) => (
 
 export default styled(ListItemText)`
 	${hover}
-	padding: 10px 0;
+	padding: 0;
+	height: 100%;
 	width: 0; /* 解决white-sapce撑开盒子的问题*/
 	display: flex;
 	flex-direction: column;
+	justify-content: center;
 	flex: 1;
 
 	.primary {
