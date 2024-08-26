@@ -37,7 +37,18 @@ Open [https://localhost:3000](https://localhost:3000) at your browser and start 
         "@kindle-ui/core": "workspace:*",
     }
     ```
+
 </detials>
+
+## Publish the package
+
+1. Change the version number in `package.json` of the package you want to update (e.g. `@kindle-ui/core`)
+
+2. Run these command at the package directory
+
+```bash
+npm publishg
+```
 
 ## 常见问题
 
@@ -53,4 +64,4 @@ Open [https://localhost:3000](https://localhost:3000) at your browser and start 
 
 ## Reference
 
-- [YouTube](https://www.youtube.com/watch?v=jsooU1Hgaf4)
+-   [YouTube](https://www.youtube.com/watch?v=jsooU1Hgaf4)
