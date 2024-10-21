@@ -47,7 +47,7 @@ Open [https://localhost:3000](https://localhost:3000) at your browser and start 
 2. Run these command at the package directory
 
 ```bash
-npm publishg
+npm publish
 ```
 
 ## 常见问题

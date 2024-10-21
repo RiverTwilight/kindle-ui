@@ -28,6 +28,20 @@ export default function ListExample() {
 				</ListItemIcon>
 			</ListItem>
 			<ListItem component="a" href="https://github.com">
+				<ListItemText
+					primary="This Is A Very Looooooooooooooooong Title That Should Be Wrapped"
+					second="Arthur Conan Doyle"
+					allowWrap
+				/>
+				<ListItemIcon
+					onClick={() => {
+						alert("sdf");
+					}}
+				>
+					<EllipsisVerticalIcon />
+				</ListItemIcon>
+			</ListItem>
+			<ListItem component="a" href="https://github.com">
 				<ListItemText primary="Network Settings" />
 				<ListItemIcon
 					onClick={() => {

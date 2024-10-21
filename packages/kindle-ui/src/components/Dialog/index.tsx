@@ -26,8 +26,6 @@ const StyledDialog = styled.div`
 	max-width: 400px;
 	min-width: 250px;
 	z-index: 1001;
-	// position: relative;
-	// Removed hardcoded centering styles
 `;
 
 const StyledCloseButton = styled.button`
@@ -36,7 +34,7 @@ const StyledCloseButton = styled.button`
 	border: none;
 	height: 34px;
 	width: 34px;
-	top: 1.6rem;
+	top: 1.5rem;
 	right: 1.8rem;
 	position: absolute;
 	display: flex;

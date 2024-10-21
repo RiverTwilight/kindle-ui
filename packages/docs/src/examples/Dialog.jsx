@@ -21,7 +21,7 @@ export default function DialogExample({ rootRef }) {
 			</Button>
 			<Dialog
 				open={open}
-				anchorEl={rootRef.current}
+				// anchorEl={rootRef.current}
 				onClose={() => {
 					setOpen(false);
 				}}

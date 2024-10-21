@@ -1,3 +1,7 @@
+## 1.1.14 (2024-10-21)
+
+-   feat: Add `allowWrap` prop to `ListItemText`
+
 ## 1.1.5 (2023-08-19)
 
 -   fix: add missing font
