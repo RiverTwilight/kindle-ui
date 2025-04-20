@@ -1,9 +1,22 @@
 body {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	background: #c3c3c3;
+	margin: 0;
+	overflow-x: hidden;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	font-family: -apple-system, system-ui, Segoe UI, Roboto, Ubuntu, Cantarell,
+		Noto Sans, sans-serif, BlinkMacSystemFont, Helvetica Neue, PingFang SC,
+		Hiragino Sans GB, Microsoft YaHei, Arial;
+
+	@media (min-width: 767px) {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		background-color: rgb(210, 210, 210);
+
+		@media (prefers-color-scheme: dark) {
+			background-color: rgb(30, 30, 30);
+		}
+	}
 }
 
 .wrapper {

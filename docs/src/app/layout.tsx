@@ -1,5 +1,8 @@
 import type { Metadata } from "next";
 
+import "kindle-fonts/bookerly.css";
+import "kindle-fonts/amazon-ember.css";
+
 import "./global.css";
 
 export const metadata: Metadata = {
