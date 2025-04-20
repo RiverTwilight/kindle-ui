@@ -18,7 +18,6 @@
 	"scripts": {
 		"build:packages": "turbo run build --filter=./packages/*",
 		"build:docs": "turbo run build --filter=docs",
-		"build:watch": "yarn workspace @kindle-ui/core build:watch",
 		"postbuild": "scripts/postbuild.sh",
 		"dev": "turbo run dev",
 		"publish:core": "turbo run publish --filter=@kindle-ui/core",
