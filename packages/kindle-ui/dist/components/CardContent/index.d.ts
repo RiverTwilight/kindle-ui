@@ -1,3 +1,4 @@
+/// <reference types="react" />
 /**
  * Card Content
  */

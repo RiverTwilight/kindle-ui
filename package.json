@@ -16,6 +16,7 @@
 	"typings": "packages/kindle-ui/dist/index.d.ts",
 	"packageManager": "pnpm@8.15.4",
 	"scripts": {
+		"build": "turbo run build",
 		"build:packages": "turbo run build --filter=./packages/*",
 		"build:docs": "turbo run build --filter=docs",
 		"postbuild": "scripts/postbuild.sh",
@@ -23,7 +24,6 @@
 		"publish:core": "turbo run publish --filter=@kindle-ui/core",
 		"publish:fonts": "turbo run publish --filter=kindle-fonts",
 		"prepublishOnly": "cp ./README.md ./packages/kindle-ui/README.md && yarn build && yarn docs:build",
-		"test": "react-scripts test",
 		"test:unit": "cross-env NODE_ENV=test mocha --config .mocharc.js 'packages/kindle-ui/**/*.test.{mjs,js,ts,tsx}' 'test/utils/**/*.test.{js,ts,tsx}'"
 	},
 	"eslintConfig": {
@@ -61,7 +61,10 @@
 	"pnpm": {
 		"overrides": {
 			"react": "18.2.0",
-			"react-dom": "18.2.0"
+			"@types/react": "18.2.31",
+			"react-dom": "18.2.0",
+			"@types/react-dom": "18.2.10",
+			"typescript": "5.3.3"
 		}
 	}
 }

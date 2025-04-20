@@ -1,8 +1,7 @@
 import babel from "@rollup/plugin-babel";
 import external from "rollup-plugin-peer-deps-external";
 import del from "rollup-plugin-delete";
-import pkg from "./package.json";
-import typescript from "rollup-plugin-typescript2";
+import typescript from "@rollup/plugin-typescript";
 import svgr from "@svgr/rollup";
 import url from "rollup-plugin-url";
 // import { uglify } from "rollup-plugin-uglify";
@@ -14,7 +13,7 @@ const plugins = [
 			exclude: "node_modules/**",
 		}),
 		typescript({
-			check: false,
+			checkJs: false,
 		}),
 		svgr(),
 		url({
@@ -27,10 +26,7 @@ const plugins = [
 		del({ targets: ["dist/*"] }),
 		// uglify()
 	],
-	externals = [
-		...Object.keys(pkg.peerDependencies || {}),
-		"styled-components",
-	];
+	externals = ["react", "react-dom", "styled-components"];
 
 // var splitBundles = [];
 
@@ -50,10 +46,10 @@ const plugins = [
 
 export default [
 	{
-		input: pkg.source,
+		input: "src/index.ts",
 		output: [
-			{ file: pkg.main, format: "cjs" },
-			{ file: pkg.module, format: "esm" },
+			{ file: "dist/index.cjs.js", format: "cjs" },
+			{ file: "dist/index.esm.js", format: "esm" },
 		],
 		plugins,
 		external: externals,
