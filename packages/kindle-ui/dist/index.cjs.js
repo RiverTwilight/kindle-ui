@@ -76,7 +76,7 @@ typeof SuppressedError === "function" ? SuppressedError : function (error, suppr
     return e.name = "SuppressedError", e.error = error, e.suppressed = suppressed, e;
 };
 
-var index$l = styled__default["default"].div(templateObject_1$B || (templateObject_1$B = __makeTemplateObject(["\n\tdisplay: flex;\n\theight: 54px;\n\tpadding: 0;\n"], ["\n\tdisplay: flex;\n\theight: 54px;\n\tpadding: 0;\n"])));
+var index$k = styled__default["default"].div(templateObject_1$B || (templateObject_1$B = __makeTemplateObject(["\n\tdisplay: flex;\n\theight: 54px;\n\tpadding: 0;\n"], ["\n\tdisplay: flex;\n\theight: 54px;\n\tpadding: 0;\n"])));
 var templateObject_1$B;
 
 var hover = styled.css(templateObject_1$A || (templateObject_1$A = __makeTemplateObject(["\n\ttransition: background-color 0.5s;\n\n\t&:hover {\n\t\tbackground-color: var(--text-color);\n\t\tcolor: var(--bg-color) !important;\n\t\ta {\n\t\t\tcolor: var(--bg-color) !important;\n\t\t}\n\t\tsvg path,\n\t\tcircle {\n\t\t\ttransition: stroke 0.5s;\n\t\t\tstroke: var(--bg-color);\n\t\t\tfill: var(--bg-color);\n\t\t}\n\t}\n"], ["\n\ttransition: background-color 0.5s;\n\n\t&:hover {\n\t\tbackground-color: var(--text-color);\n\t\tcolor: var(--bg-color) !important;\n\t\ta {\n\t\t\tcolor: var(--bg-color) !important;\n\t\t}\n\t\tsvg path,\n\t\tcircle {\n\t\t\ttransition: stroke 0.5s;\n\t\t\tstroke: var(--bg-color);\n\t\t\tfill: var(--bg-color);\n\t\t}\n\t}\n"])));
@@ -89,7 +89,7 @@ function ActionItem(props) {
 }
 var templateObject_1$z;
 
-var index$k = styled__default["default"].div(templateObject_1$y || (templateObject_1$y = __makeTemplateObject(["\n\tdisplay: flex;\n\tbox-sizing: border-box;\n"], ["\n\tdisplay: flex;\n\tbox-sizing: border-box;\n"])));
+var index$j = styled__default["default"].div(templateObject_1$y || (templateObject_1$y = __makeTemplateObject(["\n\tdisplay: flex;\n\tbox-sizing: border-box;\n"], ["\n\tdisplay: flex;\n\tbox-sizing: border-box;\n"])));
 var templateObject_1$y;
 
 /**
@@ -194,7 +194,7 @@ function SvgEllipsisVertical(props) {
   })));
 }
 
-var index$j = (function (_a) {
+var index$i = (function (_a) {
     var items = _a.items;
     var _b = React.useState(null), anchorEl = _b[0], setAnchorEl = _b[1];
     var handleClick = function (event) {
@@ -210,10 +210,10 @@ var index$j = (function (_a) {
             items.map(function (item, i) { return (React__default["default"].createElement(MenuItem$1, __assign({ key: i + item.textPrimary }, item))); }))));
 });
 
-var index$i = styled__default["default"].div(templateObject_1$u || (templateObject_1$u = __makeTemplateObject(["\n\tflex: 2 4 auto;\n\twidth: 10px;\n"], ["\n\tflex: 2 4 auto;\n\twidth: 10px;\n"])));
+var index$h = styled__default["default"].div(templateObject_1$u || (templateObject_1$u = __makeTemplateObject(["\n\tflex: 2 4 auto;\n\twidth: 10px;\n"], ["\n\tflex: 2 4 auto;\n\twidth: 10px;\n"])));
 var templateObject_1$u;
 
-var index$h = (function (_a) {
+var Button = function (_a) {
     var children = _a.children, className = _a.className, _b = _a.variant, variant = _b === void 0 ? "default" : _b, _c = _a.component, component = _c === void 0 ? "button" : _c, _d = _a.LinkComponent, LinkComponent = _d === void 0 ? "a" : _d, disabled = _a.disabled, type = _a.type, other = __rest(_a, ["children", "className", "variant", "component", "LinkComponent", "disabled", "type"]);
     var ComponentProp = component;
     if (ComponentProp === "button" && (other.href || other.to)) {
@@ -233,7 +233,7 @@ var index$h = (function (_a) {
         }
     }
     return (React__default["default"].createElement(StyledButton, __assign({ as: ComponentProp, className: className, variant: variant }, buttonProps, other), children));
-});
+};
 var StyledButton = styled__default["default"].div(templateObject_1$t || (templateObject_1$t = __makeTemplateObject(["\n\tboxsizing: border-box;\n\tborder: ", ";\n\tmin-width: 70px;\n\theight: 50px;\n\toutline: 0;\n\tbackground: var(--bg-color);\n\n\tfont-weight: ", ";\n\tfont-size: 1rem;\n\tcolor: var(--text-color);\n\ttext-decoration: none;\n\tfont-family: \"Amazon Ember\";\n\ttextdecoration: none;\n\ttext-transform: uppercase;\n\n\tdisplay: inline-flex;\n\talign-items: center;\n\tjustifycontent: center;\n\tposition: relative;\n\tboxsizing: border-box;\n\n\tpadding: 0 30px;\n\toverflow: hidden;\n\t", "\n\tcursor: pointer;\n\tuserselect: none;\n\tverticalalign: middle;\n\tmozappearance: none;\n\twebkitappearance: none;\n"], ["\n\tboxsizing: border-box;\n\tborder: ", ";\n\tmin-width: 70px;\n\theight: 50px;\n\toutline: 0;\n\tbackground: var(--bg-color);\n\n\tfont-weight: ", ";\n\tfont-size: 1rem;\n\tcolor: var(--text-color);\n\ttext-decoration: none;\n\tfont-family: \"Amazon Ember\";\n\ttextdecoration: none;\n\ttext-transform: uppercase;\n\n\tdisplay: inline-flex;\n\talign-items: center;\n\tjustifycontent: center;\n\tposition: relative;\n\tboxsizing: border-box;\n\n\tpadding: 0 30px;\n\toverflow: hidden;\n\t", "\n\tcursor: pointer;\n\tuserselect: none;\n\tverticalalign: middle;\n\tmozappearance: none;\n\twebkitappearance: none;\n"])), function (props) {
     return props.variant === "outline" ? "3px solid var(--text-color)" : "none";
 }, function (props) {
@@ -553,6 +553,10 @@ var SectionTitle = function (_a) {
 var StyledSectionTitle = styled__default["default"].div(templateObject_1$5 || (templateObject_1$5 = __makeTemplateObject(["\n\tdisplay: flex;\n\talign-items: center;\n\tgap: 0.5rem;\n\tpadding: 10px 0;\n\tfont-size: 1.1rem;\n\n\t& .text {\n\t\ttext-decoration: none;\n\t\tcolor: var(--text-color);\n\t}\n\n\t& .icon {\n\t\tdisplay: flex;\n\t\tflex-direction: column;\n\t\tjustifiy-content: center;\n\t}\n\n\t& svg {\n\t\tfill: var(--text-color);\n\t\tstroke: var(--text-color);\n\t}\n"], ["\n\tdisplay: flex;\n\talign-items: center;\n\tgap: 0.5rem;\n\tpadding: 10px 0;\n\tfont-size: 1.1rem;\n\n\t& .text {\n\t\ttext-decoration: none;\n\t\tcolor: var(--text-color);\n\t}\n\n\t& .icon {\n\t\tdisplay: flex;\n\t\tflex-direction: column;\n\t\tjustifiy-content: center;\n\t}\n\n\t& svg {\n\t\tfill: var(--text-color);\n\t\tstroke: var(--text-color);\n\t}\n"])));
 var templateObject_1$5;
 
+/**
+ * Switch
+ * @author rivertwilight
+ */
 var Switch = function (_a) {
     var className = _a.className, _b = _a.component, component = _b === void 0 ? "div" : _b, _c = _a.LinkComponent, LinkComponent = _c === void 0 ? "a" : _c; _a.children; var id = _a.id, _d = _a.checked, checked = _d === void 0 ? false : _d, onChange = _a.onChange, _e = _a.disabled, disabled = _e === void 0 ? false : _e, ariaLabel = _a.ariaLabel, other = __rest(_a, ["className", "component", "LinkComponent", "children", "id", "checked", "onChange", "disabled", "ariaLabel"]);
     var ComponentProp = component;
@@ -777,16 +781,16 @@ if (ENV !== "production" &&
         "please use https://www.npmjs.com/package/babel-plugin-import to reduce app bundle size.");
 }
 
-exports.ActionBar = index$l;
-exports.ActionBarMenu = index$j;
-exports.ActionBarSpace = index$i;
-exports.ActionGroup = index$k;
+exports.ActionBar = index$k;
+exports.ActionBarMenu = index$i;
+exports.ActionBarSpace = index$h;
+exports.ActionGroup = index$j;
 exports.ActionItem = ActionItem;
 exports.AirplaneIcon = SvgAirplane;
 exports.ArrowBackSharpIcon = SvgArrowBackSharp;
 exports.BatteryFullIcon = SvgBatteryFull;
 exports.BatteryHalfSharpIcon = SvgBatteryHalfSharp;
-exports.Button = index$h;
+exports.Button = Button;
 exports.Card = index$g;
 exports.CardAction = index$c;
 exports.CardContent = index$e;

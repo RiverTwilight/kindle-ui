@@ -9,7 +9,7 @@ import hover from "@/utils/hover";
 
 export interface BaseButtonProps {
 	variant?: "outline" | "default" | "secondary";
-	component: string | JSX.Element;
+	component?: string | JSX.Element;
 	disabled?: boolean;
 	children: React.ReactNode;
 }
@@ -18,10 +18,12 @@ export type NativeButtonProps = {
 	to?: string;
 	href?: string;
 	onClick?: React.MouseEventHandler<HTMLElement>;
+	LinkComponent?: string | JSX.Element;
+	type?: string;
 } & BaseButtonProps &
 	Omit<React.ButtonHTMLAttributes<any>, "type" | "onClick">;
 
-export default ({
+const Button = ({
 	children,
 	className,
 	variant = "default",
@@ -97,3 +99,5 @@ const StyledButton = styled.div`
 	mozappearance: none;
 	webkitappearance: none;
 `;
+
+export default Button;

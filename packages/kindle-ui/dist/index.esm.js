@@ -49,7 +49,7 @@ typeof SuppressedError === "function" ? SuppressedError : function (error, suppr
     return e.name = "SuppressedError", e.error = error, e.suppressed = suppressed, e;
 };
 
-var index$l = styled.div(templateObject_1$B || (templateObject_1$B = __makeTemplateObject(["\n\tdisplay: flex;\n\theight: 54px;\n\tpadding: 0;\n"], ["\n\tdisplay: flex;\n\theight: 54px;\n\tpadding: 0;\n"])));
+var index$k = styled.div(templateObject_1$B || (templateObject_1$B = __makeTemplateObject(["\n\tdisplay: flex;\n\theight: 54px;\n\tpadding: 0;\n"], ["\n\tdisplay: flex;\n\theight: 54px;\n\tpadding: 0;\n"])));
 var templateObject_1$B;
 
 var hover = css(templateObject_1$A || (templateObject_1$A = __makeTemplateObject(["\n\ttransition: background-color 0.5s;\n\n\t&:hover {\n\t\tbackground-color: var(--text-color);\n\t\tcolor: var(--bg-color) !important;\n\t\ta {\n\t\t\tcolor: var(--bg-color) !important;\n\t\t}\n\t\tsvg path,\n\t\tcircle {\n\t\t\ttransition: stroke 0.5s;\n\t\t\tstroke: var(--bg-color);\n\t\t\tfill: var(--bg-color);\n\t\t}\n\t}\n"], ["\n\ttransition: background-color 0.5s;\n\n\t&:hover {\n\t\tbackground-color: var(--text-color);\n\t\tcolor: var(--bg-color) !important;\n\t\ta {\n\t\t\tcolor: var(--bg-color) !important;\n\t\t}\n\t\tsvg path,\n\t\tcircle {\n\t\t\ttransition: stroke 0.5s;\n\t\t\tstroke: var(--bg-color);\n\t\t\tfill: var(--bg-color);\n\t\t}\n\t}\n"])));
@@ -62,7 +62,7 @@ function ActionItem(props) {
 }
 var templateObject_1$z;
 
-var index$k = styled.div(templateObject_1$y || (templateObject_1$y = __makeTemplateObject(["\n\tdisplay: flex;\n\tbox-sizing: border-box;\n"], ["\n\tdisplay: flex;\n\tbox-sizing: border-box;\n"])));
+var index$j = styled.div(templateObject_1$y || (templateObject_1$y = __makeTemplateObject(["\n\tdisplay: flex;\n\tbox-sizing: border-box;\n"], ["\n\tdisplay: flex;\n\tbox-sizing: border-box;\n"])));
 var templateObject_1$y;
 
 /**
@@ -167,7 +167,7 @@ function SvgEllipsisVertical(props) {
   })));
 }
 
-var index$j = (function (_a) {
+var index$i = (function (_a) {
     var items = _a.items;
     var _b = useState(null), anchorEl = _b[0], setAnchorEl = _b[1];
     var handleClick = function (event) {
@@ -183,10 +183,10 @@ var index$j = (function (_a) {
             items.map(function (item, i) { return (React__default.createElement(MenuItem$1, __assign({ key: i + item.textPrimary }, item))); }))));
 });
 
-var index$i = styled.div(templateObject_1$u || (templateObject_1$u = __makeTemplateObject(["\n\tflex: 2 4 auto;\n\twidth: 10px;\n"], ["\n\tflex: 2 4 auto;\n\twidth: 10px;\n"])));
+var index$h = styled.div(templateObject_1$u || (templateObject_1$u = __makeTemplateObject(["\n\tflex: 2 4 auto;\n\twidth: 10px;\n"], ["\n\tflex: 2 4 auto;\n\twidth: 10px;\n"])));
 var templateObject_1$u;
 
-var index$h = (function (_a) {
+var Button = function (_a) {
     var children = _a.children, className = _a.className, _b = _a.variant, variant = _b === void 0 ? "default" : _b, _c = _a.component, component = _c === void 0 ? "button" : _c, _d = _a.LinkComponent, LinkComponent = _d === void 0 ? "a" : _d, disabled = _a.disabled, type = _a.type, other = __rest(_a, ["children", "className", "variant", "component", "LinkComponent", "disabled", "type"]);
     var ComponentProp = component;
     if (ComponentProp === "button" && (other.href || other.to)) {
@@ -206,7 +206,7 @@ var index$h = (function (_a) {
         }
     }
     return (React__default.createElement(StyledButton, __assign({ as: ComponentProp, className: className, variant: variant }, buttonProps, other), children));
-});
+};
 var StyledButton = styled.div(templateObject_1$t || (templateObject_1$t = __makeTemplateObject(["\n\tboxsizing: border-box;\n\tborder: ", ";\n\tmin-width: 70px;\n\theight: 50px;\n\toutline: 0;\n\tbackground: var(--bg-color);\n\n\tfont-weight: ", ";\n\tfont-size: 1rem;\n\tcolor: var(--text-color);\n\ttext-decoration: none;\n\tfont-family: \"Amazon Ember\";\n\ttextdecoration: none;\n\ttext-transform: uppercase;\n\n\tdisplay: inline-flex;\n\talign-items: center;\n\tjustifycontent: center;\n\tposition: relative;\n\tboxsizing: border-box;\n\n\tpadding: 0 30px;\n\toverflow: hidden;\n\t", "\n\tcursor: pointer;\n\tuserselect: none;\n\tverticalalign: middle;\n\tmozappearance: none;\n\twebkitappearance: none;\n"], ["\n\tboxsizing: border-box;\n\tborder: ", ";\n\tmin-width: 70px;\n\theight: 50px;\n\toutline: 0;\n\tbackground: var(--bg-color);\n\n\tfont-weight: ", ";\n\tfont-size: 1rem;\n\tcolor: var(--text-color);\n\ttext-decoration: none;\n\tfont-family: \"Amazon Ember\";\n\ttextdecoration: none;\n\ttext-transform: uppercase;\n\n\tdisplay: inline-flex;\n\talign-items: center;\n\tjustifycontent: center;\n\tposition: relative;\n\tboxsizing: border-box;\n\n\tpadding: 0 30px;\n\toverflow: hidden;\n\t", "\n\tcursor: pointer;\n\tuserselect: none;\n\tverticalalign: middle;\n\tmozappearance: none;\n\twebkitappearance: none;\n"])), function (props) {
     return props.variant === "outline" ? "3px solid var(--text-color)" : "none";
 }, function (props) {
@@ -526,6 +526,10 @@ var SectionTitle = function (_a) {
 var StyledSectionTitle = styled.div(templateObject_1$5 || (templateObject_1$5 = __makeTemplateObject(["\n\tdisplay: flex;\n\talign-items: center;\n\tgap: 0.5rem;\n\tpadding: 10px 0;\n\tfont-size: 1.1rem;\n\n\t& .text {\n\t\ttext-decoration: none;\n\t\tcolor: var(--text-color);\n\t}\n\n\t& .icon {\n\t\tdisplay: flex;\n\t\tflex-direction: column;\n\t\tjustifiy-content: center;\n\t}\n\n\t& svg {\n\t\tfill: var(--text-color);\n\t\tstroke: var(--text-color);\n\t}\n"], ["\n\tdisplay: flex;\n\talign-items: center;\n\tgap: 0.5rem;\n\tpadding: 10px 0;\n\tfont-size: 1.1rem;\n\n\t& .text {\n\t\ttext-decoration: none;\n\t\tcolor: var(--text-color);\n\t}\n\n\t& .icon {\n\t\tdisplay: flex;\n\t\tflex-direction: column;\n\t\tjustifiy-content: center;\n\t}\n\n\t& svg {\n\t\tfill: var(--text-color);\n\t\tstroke: var(--text-color);\n\t}\n"])));
 var templateObject_1$5;
 
+/**
+ * Switch
+ * @author rivertwilight
+ */
 var Switch = function (_a) {
     var className = _a.className, _b = _a.component, component = _b === void 0 ? "div" : _b, _c = _a.LinkComponent, LinkComponent = _c === void 0 ? "a" : _c; _a.children; var id = _a.id, _d = _a.checked, checked = _d === void 0 ? false : _d, onChange = _a.onChange, _e = _a.disabled, disabled = _e === void 0 ? false : _e, ariaLabel = _a.ariaLabel, other = __rest(_a, ["className", "component", "LinkComponent", "children", "id", "checked", "onChange", "disabled", "ariaLabel"]);
     var ComponentProp = component;
@@ -750,4 +754,4 @@ if (ENV !== "production" &&
         "please use https://www.npmjs.com/package/babel-plugin-import to reduce app bundle size.");
 }
 
-export { index$l as ActionBar, index$j as ActionBarMenu, index$i as ActionBarSpace, index$k as ActionGroup, ActionItem, SvgAirplane as AirplaneIcon, SvgArrowBackSharp as ArrowBackSharpIcon, SvgBatteryFull as BatteryFullIcon, SvgBatteryHalfSharp as BatteryHalfSharpIcon, index$h as Button, index$g as Card, index$c as CardAction, index$e as CardContent, index$f as CardMedia, index$d as CardTitle, SvgCellularSharp as CelluarIcon, SvgChevronForwardSharp as ChevronForwardSharpIcon, SvgCogSharp as CogSharpIcon, Container$1 as Container, Dialog, index$b as DialogAction, index$a as DialogContent, index$9 as DialogTitle, SvgEllipsisVerticalCircleSharp as EllipsisVerticalCircleSharpIcon, SvgEllipsisVertical as EllipsisVerticalIcon, Grid, StyledGridItem as GridItem, SvgHomeOutline as HomeOutlineIcon, Container as KindleOasis, List, StyledListItem$1 as ListItem, StyledListItemIcon as ListItemIcon, index$7 as ListItemText, Menu$1 as Menu, index$6 as Navbar, index$4 as SearchBar, index$3 as Section, SectionTitle, index$5 as StatuBar, StyledListItem as Switch, index$2 as Tab, index$1 as TabItem, index as TimeBar, index$8 as Typography, SvgWifiSharp as WifiSharpIcon };
+export { index$k as ActionBar, index$i as ActionBarMenu, index$h as ActionBarSpace, index$j as ActionGroup, ActionItem, SvgAirplane as AirplaneIcon, SvgArrowBackSharp as ArrowBackSharpIcon, SvgBatteryFull as BatteryFullIcon, SvgBatteryHalfSharp as BatteryHalfSharpIcon, Button, index$g as Card, index$c as CardAction, index$e as CardContent, index$f as CardMedia, index$d as CardTitle, SvgCellularSharp as CelluarIcon, SvgChevronForwardSharp as ChevronForwardSharpIcon, SvgCogSharp as CogSharpIcon, Container$1 as Container, Dialog, index$b as DialogAction, index$a as DialogContent, index$9 as DialogTitle, SvgEllipsisVerticalCircleSharp as EllipsisVerticalCircleSharpIcon, SvgEllipsisVertical as EllipsisVerticalIcon, Grid, StyledGridItem as GridItem, SvgHomeOutline as HomeOutlineIcon, Container as KindleOasis, List, StyledListItem$1 as ListItem, StyledListItemIcon as ListItemIcon, index$7 as ListItemText, Menu$1 as Menu, index$6 as Navbar, index$4 as SearchBar, index$3 as Section, SectionTitle, index$5 as StatuBar, StyledListItem as Switch, index$2 as Tab, index$1 as TabItem, index as TimeBar, index$8 as Typography, SvgWifiSharp as WifiSharpIcon };

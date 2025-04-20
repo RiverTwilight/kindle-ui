@@ -8,7 +8,7 @@ interface typoStyle {
 }
 
 interface ITypography extends typoStyle {
-	children: JSX.Element | JSX.Element[];
+	// children: JSX.Element | JSX.Element[];
 }
 
 const greyImage = css`

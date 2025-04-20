@@ -3,17 +3,21 @@ import styled from "styled-components";
 import border from "@/utils/border";
 
 export interface SwitchProps {
-	children: JSX.Element | JSX.Element[];
+	children?: JSX.Element | JSX.Element[];
 	component?: string;
 	className?: string;
 	LinkComponent?: string;
-	id: string; // a unique identifier for the switch component
+	id?: string; // a unique identifier for the switch component
 	checked?: boolean; // to set the default state of the switch
-	onChange: (event: React.ChangeEvent<HTMLInputElement>) => void; // a callback function that will be called when the switch is toggled
+	onChange?: (event: React.ChangeEvent<HTMLInputElement>) => void; // a callback function that will be called when the switch is toggled
 	disabled?: boolean; // to disable the switch component
 	ariaLabel?: string; // to provide accessibility information for the switch component
 }
 
+/**
+ * Switch
+ * @author rivertwilight
+ */
 const Switch = ({
 	className,
 	component = "div",

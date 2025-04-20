@@ -1,5 +1,3 @@
-"use client";
-
 import React, { useState } from "react";
 import { Switch } from "@kindle-ui/core";
 
@@ -10,10 +8,17 @@ const SwitchExample = ({
 	disabled = false,
 	"aria-label": ariaLabel,
 	onChange,
+}: {
+	className?: string;
+	id?: string;
+	checked?: boolean;
+	disabled?: boolean;
+	"aria-label"?: string;
+	onChange?: (event: React.ChangeEvent<HTMLInputElement>) => void;
 }) => {
 	const [isChecked, setIsChecked] = useState(checked);
 
-	const handleChange = (event) => {
+	const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
 		setIsChecked(event.target.checked);
 		if (onChange) {
 			onChange(event);
