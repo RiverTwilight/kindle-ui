@@ -2,7 +2,7 @@ import styled, { css } from 'styled-components';
 import * as React from 'react';
 import React__default, { useRef, useMemo, useState, useEffect } from 'react';
 
-/*! *****************************************************************************
+/******************************************************************************
 Copyright (c) Microsoft Corporation.
 
 Permission to use, copy, modify, and/or distribute this software for any
@@ -16,7 +16,7 @@ LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR
 OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
 PERFORMANCE OF THIS SOFTWARE.
 ***************************************************************************** */
-/* global Reflect, Promise */
+/* global Reflect, Promise, SuppressedError, Symbol, Iterator */
 
 var __assign = function () {
   __assign = Object.assign || function __assign(t) {
@@ -46,6 +46,10 @@ function __makeTemplateObject(cooked, raw) {
   }
   return cooked;
 }
+typeof SuppressedError === "function" ? SuppressedError : function (error, suppressed, message) {
+  var e = new Error(message);
+  return e.name = "SuppressedError", e.error = error, e.suppressed = suppressed, e;
+};
 
 var index$k = styled.div(templateObject_1$B || (templateObject_1$B = __makeTemplateObject(["\n\tdisplay: flex;\n\theight: 54px;\n\tpadding: 0;\n"], ["\n\tdisplay: flex;\n\theight: 54px;\n\tpadding: 0;\n"])));
 var templateObject_1$B;
