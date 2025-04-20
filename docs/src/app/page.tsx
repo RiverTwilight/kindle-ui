@@ -1,19 +1,18 @@
 "use client";
 
 import { Typography, Button, SectionTitle, Section } from "@kindle-ui/core";
-import CardExample from "../examples/Card";
-import List from "../examples/List";
-import TabExample from "../examples/Tab";
-import DialogExample from "../examples/Dialog";
-import GridExample from "../examples/Grid";
-import SwitchExample from "../examples/Switch";
-import TextFieldExample from "../examples/TextField";
-import Sidebar from "../components/Sidebar";
+import CardExample from "@components/examples/Card";
+import List from "@components/examples/List";
+import TabExample from "@components/examples/Tab";
+import DialogExample from "@components/examples/Dialog";
+import GridExample from "@components/examples/Grid";
+import SwitchExample from "@components/examples/Switch";
+import TextFieldExample from "@components/examples/TextField";
 import React, { useRef } from "react";
 import { KindleOasis, Container } from "@kindle-ui/core";
-import Header from "../components/Header";
-import Image from "next/image";
+import Header from "@components/Header";
 import Link from "next/link";
+
 export default function Page() {
 	const rootDivRef = useRef(null);
 
@@ -49,7 +48,7 @@ export default function Page() {
 						className="rounded-md"
 					/>
 				</Typography>
-				{/* <Typography greyImage={true}>
+				<Typography greyImage={true}>
 					<h2>Button</h2>
 					<Button>Button</Button>
 					&nbsp;
@@ -70,7 +69,7 @@ export default function Page() {
 					<SwitchExample />
 					<h2>TextField</h2>
 					<TextFieldExample />
-				</Typography> */}
+				</Typography>
 				<Section>
 					<SectionTitle label="Grid" />
 					<GridExample />

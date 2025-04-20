@@ -6,12 +6,11 @@ import {
 	ChevronForwardSharpIcon,
 	ListItemIcon,
 } from "@kindle-ui/core";
-import { Link } from "react-router-dom";
 
 export default function ListExample() {
 	return (
 		<List>
-			<ListItem component={Link} to="/reader">
+			<ListItem component="a" to="/reader">
 				<ListItemText primary="尘埃落定" second="阿来著" />
 			</ListItem>
 			<ListItem component="a" href="https://github.com">

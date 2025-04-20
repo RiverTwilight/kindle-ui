@@ -11,10 +11,10 @@ import {
 	HomeOutlineIcon,
 	CogSharpIcon,
 } from "@kindle-ui/core";
-import { useHistory } from "react-router-dom";
+import { useRouter } from "next/navigation";
 
-export default () => {
-	let history = useHistory();
+const Header = () => {
+	const router = useRouter();
 
 	return (
 		<Navbar fixed>
@@ -23,7 +23,7 @@ export default () => {
 				celluar={{
 					on: true,
 					label: "LTE",
-					siginal: 3,
+					signal: 3,
 				}}
 				battery={86}
 				deviceName="My Kindle"
@@ -32,7 +32,7 @@ export default () => {
 				<ActionGroup>
 					<ActionItem
 						onClick={() => {
-							history.push("/");
+							router.push("/");
 						}}
 					>
 						<HomeOutlineIcon />
@@ -40,7 +40,7 @@ export default () => {
 					</ActionItem>
 					<ActionItem
 						onClick={() => {
-							history.goBack();
+							router.back();
 						}}
 					>
 						<ArrowBackSharpIcon />
@@ -71,3 +71,5 @@ export default () => {
 		</Navbar>
 	);
 };
+
+export default Header;
