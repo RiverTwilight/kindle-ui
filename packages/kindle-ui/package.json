@@ -25,10 +25,8 @@
 		"README.md"
 	],
 	"scripts": {
-		"build": "rollup -c",
-		"build:watch": "rollup -c -w",
-		"prepublishOnly": "",
-		"test": "react-scripts test"
+		"dev": "rollup -c -w",
+		"build": "rollup -c"
 	},
 	"eslintConfig": {
 		"extends": [

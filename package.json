@@ -17,16 +17,15 @@
 	"workspaces": [
 		"packages/*"
 	],
+	"packageManager": "pnpm@8.15.4",
 	"scripts": {
-		"build": "yarn workspace @kindle-ui/core build",
-		"postbuild": "scripts/postbuild.sh",
+		"build:packages": "turbo run build --filter=./packages/*",
+		"build:docs": "turbo run build --filter=docs",
 		"build:watch": "yarn workspace @kindle-ui/core build:watch",
-		"dev": "npm-run-all --parallel docs:dev build:watch",
-		"dev:install": "yarn && cd ./packages/kindle-ui && yarn && cd ../docs && yarn",
-		"docs:dev": "yarn workspace docs start",
-		"docs:build": "yarn workspace docs build",
-		"publish:core": "yarn workspace @kindle-ui/core publish",
-		"publish:fonts": "yarn workspace kindle-fonts publish",
+		"postbuild": "scripts/postbuild.sh",
+		"dev": "turbo run dev",
+		"publish:core": "turbo run publish --filter=@kindle-ui/core",
+		"publish:fonts": "turbo run publish --filter=kindle-fonts",
 		"prepublishOnly": "cp ./README.md ./packages/kindle-ui/README.md && yarn build && yarn docs:build",
 		"test": "react-scripts test",
 		"test:unit": "cross-env NODE_ENV=test mocha --config .mocharc.js 'packages/kindle-ui/**/*.test.{mjs,js,ts,tsx}' 'test/utils/**/*.test.{js,ts,tsx}'"
@@ -61,6 +60,13 @@
 		"mocha": "^10.2.0",
 		"npm-run-all": "^4.1.5",
 		"react-test-renderer": "17.0.2",
-		"ts-node": "^10.9.1"
+		"ts-node": "^10.9.1",
+		"turbo": "^2.5.0"
+	},
+	"pnpm": {
+		"overrides": {
+			"react": "18.2.0",
+			"react-dom": "18.2.0"
+		}
 	}
 }

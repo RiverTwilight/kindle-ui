@@ -31,8 +31,8 @@
 		"README.md"
 	],
 	"scripts": {
-		"build": "rollup -c",
-		"build:watch": "rollup -c -w"
+		"dev": "rollup -c -w",
+		"build": "rollup -c"
 	},
 	"eslintConfig": {
 		"extends": [

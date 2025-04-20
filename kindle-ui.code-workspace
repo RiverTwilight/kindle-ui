@@ -1,18 +1,18 @@
 {
 	"folders": [
 		{
-			"name": "kindle-ui",
+			"name": "KINDLE-UI",
 			"path": "./packages/kindle-ui"
 		},
 		{
-			"name": "kindle-fonts",
+			"name": "KINDLE-FONTS",
 			"path": "./packages/kindle-fonts"
 		},
 		{
-			"name": "docs",
-			"path": "./packages/docs"
+			"name": "DOCS",
+			"path": "./docs"
 		},		{
-			"name": "project-root",
+			"name": "ROOT",
 			"path": "./"
 		}
 	],

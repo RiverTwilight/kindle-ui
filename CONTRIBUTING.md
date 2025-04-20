@@ -10,35 +10,14 @@ git clone https://github.com/rivertwilight/kindle-ui.git
 
 It's recommended to use vscode workspace to open this project. You can do this by cliking the [kindle-ui.codespace](./kindle-ui.code-workspace) file.
 
-Then, run this commands in root folder with Yarn 1.x.
+Then, run this commands in root folder with `pnpm`.
 
 ```bash
-yarn
-yarn run dev
+pnpm install
+pnpm dev
 ```
 
-Open [https://localhost:3000](https://localhost:3000) at your browser and start hacking!.
-
-<details>
-    <summary>How does it work?</summary>
-    
-    We use yarn's workspace to manage the dependency, which is enabled in package.json by:
-
-    ```json
-    "workspaces": [
-        "packages/*"
-    ]
-    ```
-
-    In the [docs](./packages/docs/) folder, we'll link '@kindle-ui/core' to local version instead of the online so we can test the component locally.
-
-    ```json
-    "dependencies": {
-        "@kindle-ui/core": "workspace:*",
-    }
-    ```
-
-</detials>
+Open [http://localhost:3000](http://localhost:3000) at your browser and start hacking (it should opened automatically).
 
 ## Publish the package
 

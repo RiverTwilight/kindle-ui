@@ -173,7 +173,7 @@ var Menu$1 = (function (_a) {
 var templateObject_1$v;
 
 var _circle, _circle2, _circle3;
-function _extends$d() { _extends$d = Object.assign ? Object.assign.bind() : function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends$d.apply(this, arguments); }
+function _extends$d() { return _extends$d = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends$d.apply(null, arguments); }
 function SvgEllipsisVertical(props) {
   return /*#__PURE__*/React__namespace.createElement("svg", _extends$d({
     xmlns: "http://www.w3.org/2000/svg",
@@ -416,7 +416,7 @@ var index$6 = (function (_a) {
 var templateObject_1$9, templateObject_2$1;
 
 var _path$c;
-function _extends$c() { _extends$c = Object.assign ? Object.assign.bind() : function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends$c.apply(this, arguments); }
+function _extends$c() { return _extends$c = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends$c.apply(null, arguments); }
 function SvgAirplane(props) {
   return /*#__PURE__*/React__namespace.createElement("svg", _extends$c({
     xmlns: "http://www.w3.org/2000/svg",
@@ -428,7 +428,7 @@ function SvgAirplane(props) {
 }
 
 var _path$b, _path2$5;
-function _extends$b() { _extends$b = Object.assign ? Object.assign.bind() : function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends$b.apply(this, arguments); }
+function _extends$b() { return _extends$b = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends$b.apply(null, arguments); }
 function SvgBatteryFullSharp(props) {
   return /*#__PURE__*/React__namespace.createElement("svg", _extends$b({
     xmlns: "http://www.w3.org/2000/svg",
@@ -442,7 +442,7 @@ function SvgBatteryFullSharp(props) {
 }
 
 var _path$a, _path2$4, _path3;
-function _extends$a() { _extends$a = Object.assign ? Object.assign.bind() : function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends$a.apply(this, arguments); }
+function _extends$a() { return _extends$a = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends$a.apply(null, arguments); }
 function SvgBatteryChargingSharp(props) {
   return /*#__PURE__*/React__namespace.createElement("svg", _extends$a({
     xmlns: "http://www.w3.org/2000/svg",
@@ -458,7 +458,7 @@ function SvgBatteryChargingSharp(props) {
 }
 
 var _path$9;
-function _extends$9() { _extends$9 = Object.assign ? Object.assign.bind() : function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends$9.apply(this, arguments); }
+function _extends$9() { return _extends$9 = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends$9.apply(null, arguments); }
 function SvgCellularSharp(props) {
   return /*#__PURE__*/React__namespace.createElement("svg", _extends$9({
     xmlns: "http://www.w3.org/2000/svg",
@@ -508,7 +508,7 @@ var index$5 = (function (props) {
 var templateObject_1$8;
 
 var _path$8, _path2$3;
-function _extends$8() { _extends$8 = Object.assign ? Object.assign.bind() : function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends$8.apply(this, arguments); }
+function _extends$8() { return _extends$8 = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends$8.apply(null, arguments); }
 function SvgSearchOutline(props) {
   return /*#__PURE__*/React__namespace.createElement("svg", _extends$8({
     xmlns: "http://www.w3.org/2000/svg",
@@ -612,7 +612,7 @@ var Container = function (_a) {
 var templateObject_1, templateObject_2, templateObject_3;
 
 var _path$7;
-function _extends$7() { _extends$7 = Object.assign ? Object.assign.bind() : function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends$7.apply(this, arguments); }
+function _extends$7() { return _extends$7 = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends$7.apply(null, arguments); }
 function SvgArrowBackSharp(props) {
   return /*#__PURE__*/React__namespace.createElement("svg", _extends$7({
     xmlns: "http://www.w3.org/2000/svg",
@@ -629,7 +629,7 @@ function SvgArrowBackSharp(props) {
 }
 
 var _rect, _rect2, _path$6;
-function _extends$6() { _extends$6 = Object.assign ? Object.assign.bind() : function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends$6.apply(this, arguments); }
+function _extends$6() { return _extends$6 = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends$6.apply(null, arguments); }
 function SvgBatteryFull(props) {
   return /*#__PURE__*/React__namespace.createElement("svg", _extends$6({
     xmlns: "http://www.w3.org/2000/svg",
@@ -669,7 +669,7 @@ function SvgBatteryFull(props) {
 }
 
 var _path$5, _path2$2;
-function _extends$5() { _extends$5 = Object.assign ? Object.assign.bind() : function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends$5.apply(this, arguments); }
+function _extends$5() { return _extends$5 = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends$5.apply(null, arguments); }
 function SvgBatteryHalfSharp(props) {
   return /*#__PURE__*/React__namespace.createElement("svg", _extends$5({
     xmlns: "http://www.w3.org/2000/svg",
@@ -683,7 +683,7 @@ function SvgBatteryHalfSharp(props) {
 }
 
 var _path$4;
-function _extends$4() { _extends$4 = Object.assign ? Object.assign.bind() : function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends$4.apply(this, arguments); }
+function _extends$4() { return _extends$4 = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends$4.apply(null, arguments); }
 function SvgChevronForwardSharp(props) {
   return /*#__PURE__*/React__namespace.createElement("svg", _extends$4({
     xmlns: "http://www.w3.org/2000/svg",
@@ -700,7 +700,7 @@ function SvgChevronForwardSharp(props) {
 }
 
 var _path$3;
-function _extends$3() { _extends$3 = Object.assign ? Object.assign.bind() : function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends$3.apply(this, arguments); }
+function _extends$3() { return _extends$3 = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends$3.apply(null, arguments); }
 function SvgCogSharp(props) {
   return /*#__PURE__*/React__namespace.createElement("svg", _extends$3({
     xmlns: "http://www.w3.org/2000/svg",
@@ -712,7 +712,7 @@ function SvgCogSharp(props) {
 }
 
 var _path$2;
-function _extends$2() { _extends$2 = Object.assign ? Object.assign.bind() : function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends$2.apply(this, arguments); }
+function _extends$2() { return _extends$2 = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends$2.apply(null, arguments); }
 function SvgEllipsisVerticalCircleSharp(props) {
   return /*#__PURE__*/React__namespace.createElement("svg", _extends$2({
     xmlns: "http://www.w3.org/2000/svg",
@@ -724,7 +724,7 @@ function SvgEllipsisVerticalCircleSharp(props) {
 }
 
 var _path$1, _path2$1;
-function _extends$1() { _extends$1 = Object.assign ? Object.assign.bind() : function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends$1.apply(this, arguments); }
+function _extends$1() { return _extends$1 = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends$1.apply(null, arguments); }
 function SvgHomeOutline(props) {
   return /*#__PURE__*/React__namespace.createElement("svg", _extends$1({
     xmlns: "http://www.w3.org/2000/svg",
@@ -748,7 +748,7 @@ function SvgHomeOutline(props) {
 }
 
 var _path, _path2;
-function _extends() { _extends = Object.assign ? Object.assign.bind() : function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
 function SvgWifiSharp(props) {
   return /*#__PURE__*/React__namespace.createElement("svg", _extends({
     xmlns: "http://www.w3.org/2000/svg",

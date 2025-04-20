@@ -1,3 +1,5 @@
+"use client";
+
 import { Typography, Button, SectionTitle, Section } from "@kindle-ui/core";
 import CardExample from "../examples/Card";
 import List from "../examples/List";
@@ -7,13 +9,18 @@ import GridExample from "../examples/Grid";
 import SwitchExample from "../examples/Switch";
 import TextFieldExample from "../examples/TextField";
 import Sidebar from "../components/Sidebar";
-import React, { useRef } from 'react';
-
-export default () => {
+import React, { useRef } from "react";
+import { KindleOasis, Container } from "@kindle-ui/core";
+import Header from "../components/Header";
+import Image from "next/image";
+import Link from "next/link";
+export default function Page() {
 	const rootDivRef = useRef(null);
+
 	return (
-		<>
-			{/* <Sidebar /> */}
+		<Container dark={false} deviceFrame={KindleOasis}>
+			<Header />
+
 			<div ref={rootDivRef}>
 				<Typography greyImage={true}>
 					<h1>Hi, kindle-ui!</h1>
@@ -29,10 +36,20 @@ export default () => {
 						a <u>newer UI</u>, this classic desgin is still
 						valuable.
 					</p>
-					<p>拣尽寒枝不肯栖，寂寞沙洲冷。<a herf="https://zh.wikipedia.org/wiki/%E8%8B%8F%E8%BD%BC">苏轼</a></p>
-					<img width={200} src="/Kindle-UI.png"></img>
+					<p>
+						拣尽寒枝不肯栖，寂寞沙洲冷。
+						<Link href="https://zh.wikipedia.org/wiki/%E8%8B%8F%E8%BD%BC">
+							苏轼
+						</Link>
+					</p>
+					<img
+						width={200}
+						src="/Kindle-UI.png"
+						alt="Kindle-UI"
+						className="rounded-md"
+					/>
 				</Typography>
-				<Typography greyImage={true}>
+				{/* <Typography greyImage={true}>
 					<h2>Button</h2>
 					<Button>Button</Button>
 					&nbsp;
@@ -53,12 +70,12 @@ export default () => {
 					<SwitchExample />
 					<h2>TextField</h2>
 					<TextFieldExample />
-				</Typography>
+				</Typography> */}
 				<Section>
 					<SectionTitle label="Grid" />
 					<GridExample />
 				</Section>
 			</div>
-		</>
+		</Container>
 	);
-};
+}
