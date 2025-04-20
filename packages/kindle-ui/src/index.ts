@@ -37,7 +37,7 @@ export { default as ListItemIcon } from "./components/ListItemIcon/index";
 export { default as ListItemText } from "./components/ListItemText/index";
 export { default as Menu } from "./components/Menu/index";
 export { default as Navbar } from "./components/Navbar/index";
-export { default as StatuBar } from "./components/StatuBar/index";
+export { default as StatuBar } from "./components/Statubar/index";
 export { default as SearchBar } from "./components/SearchBar/index";
 export { default as Section } from "./components/Section/index";
 export { default as SectionTitle } from "./components/SectionTitle/index";
