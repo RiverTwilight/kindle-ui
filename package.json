@@ -26,12 +26,6 @@
 		"prepublishOnly": "cp ./README.md ./packages/kindle-ui/README.md && yarn build && yarn docs:build",
 		"test:unit": "cross-env NODE_ENV=test mocha --config .mocharc.js 'packages/kindle-ui/**/*.test.{mjs,js,ts,tsx}' 'test/utils/**/*.test.{js,ts,tsx}'"
 	},
-	"eslintConfig": {
-		"extends": [
-			"react-app",
-			"react-app/jest"
-		]
-	},
 	"browserslist": {
 		"production": [
 			">0.2%",

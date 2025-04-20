@@ -27,12 +27,6 @@
 		"dev": "rollup -c -w",
 		"build": "rollup -c"
 	},
-	"eslintConfig": {
-		"extends": [
-			"react-app",
-			"react-app/jest"
-		]
-	},
 	"browserslist": {
 		"production": [
 			">0.2%",
