@@ -14,7 +14,7 @@
 	"module": "packages/kindle-ui/dist/index.esm.js",
 	"source": "packages/kindle-ui/src/index.ts",
 	"typings": "packages/kindle-ui/dist/index.d.ts",
-	"packageManager": "pnpm@8.15.4",
+	"packageManager": "pnpm@10.17.1",
 	"scripts": {
 		"build": "turbo run build",
 		"build:packages": "turbo run build --filter=./packages/*",
@@ -51,7 +51,7 @@
 		"react-test-renderer": "17.0.2",
 		"ts-node": "^10.9.1",
 		"turbo": "^2.5.0",
-		"eslint": "^8.56.0"
+		"eslint": "^9.36.0"
 	},
 	"pnpm": {
 		"overrides": {

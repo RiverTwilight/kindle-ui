@@ -4,10 +4,6 @@ Want to contribute to kindle-ui? There are a few things you need to know.
 
 ## Start development
 
-```bash
-git clone https://github.com/rivertwilight/kindle-ui.git
-```
-
 It's recommended to use vscode workspace to open this project. You can do this by cliking the [kindle-ui.codespace](./kindle-ui.code-workspace) file.
 
 Then, run this commands in root folder with `pnpm`.
@@ -29,7 +25,7 @@ Open [http://localhost:3000](http://localhost:3000) at your browser and start ha
 npm publish
 ```
 
-## 常见问题
+## Troubleshooting
 
 ### I. 抛出“Can't resolve 'kindle-ui'...”之类的错误
 
@@ -43,4 +39,4 @@ npm publish
 
 ## Reference
 
--   [YouTube](https://www.youtube.com/watch?v=jsooU1Hgaf4)
+- [YouTube](https://www.youtube.com/watch?v=jsooU1Hgaf4)
